@@ -1,0 +1,231 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : null,
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "945db7e0-5ba7-11ee-9559-2f8be92bafca"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "ea9913b0-4362-11ed-b66e-bd8d8d68617d"
+    },
+    "name" : "Root Rule Chain",
+    "root" : true,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 1,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "RPC Request from Device"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 4,
+      "type" : "Other"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 5,
+      "type" : "RPC Request to Device"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 7,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 0,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 6,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1201,
+        "layoutY" : 315
+      },
+      "configuration" : {
+        "defaultTTL" : 0
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9459e750-5ba7-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Save Timeseries",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 931,
+        "layoutY" : 219
+      },
+      "configuration" : {
+        "scope" : "CLIENT_SCOPE",
+        "notifyDevice" : "false"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "945d1ba0-5ba7-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Save Client Attributes",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 480,
+        "layoutY" : 311
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "945d42b0-5ba7-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Message Type Switch",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 930,
+        "layoutY" : 409
+      },
+      "configuration" : {
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "945d69c0-5ba7-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Log RPC from Device",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 931,
+        "layoutY" : 497
+      },
+      "configuration" : {
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "945d90d0-5ba7-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Log Other",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 934,
+        "layoutY" : 590
+      },
+      "configuration" : {
+        "timeoutInSeconds" : 60
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "945d90d1-5ba7-11ee-9559-2f8be92bafca"
+      },
+      "name" : "RPC Call Request",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCRequestNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Process incoming messages from devices with the alarm rules defined in the device profile. Dispatch all incoming messages with \"Success\" relation type.",
+        "layoutX" : 220,
+        "layoutY" : 373
+      },
+      "configuration" : {
+        "persistAlarmRulesState" : false,
+        "fetchAlarmRulesStateOnStart" : false
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "945db7e0-5ba7-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Device Profile Node",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 930,
+        "layoutY" : 315
+      },
+      "configuration" : {
+        "jsScript" : "var parseFloatSensorStatus = function(sensorStatus) {\r\n    return {\r\n        \"errorStatus\": sensorStatus.errorStatus,\r\n        \"sensorValue\": parseFloat(sensorStatus.sensorValue)\r\n    };\r\n};\r\n\r\nvar newMsg = {\r\n    \"event\": msg.event,\r\n    \"currentStatus\": msg.currentStatus,\r\n    \"accumulatedWaste_kg\": msg.accumulatedWaste_kg,\r\n    \"currentWeight_kg\": msg.currentWeight_kg,\r\n    //\"lastWaste\": msg.lastWaste.weight > 0 ? msg.lastWaste : undefined,\r\n    \"totalUsedEnergy_KWh\": msg.totalUsedEnergy_KWh,\r\n    \"totalWaterUsage_l\": msg.totalWaterUsage_l\r\n};\r\n\r\nvar filler = function(dst, src, key, field) {\r\n    dst[key] = src[key][field];\r\n}; \r\n\r\nvar fillerFloat = function(dst, src, key, field) {\r\n    dst[key] = parseFloat(src[key][field]);\r\n};\r\n\r\nvar fillerFlow = function(dst, src, key, field) {\r\n    dst[key + '_instantly'] = parseFloat(src[key][field].instantly);\r\n    dst[key + '_lastMinute'] = parseFloat(src[key][field].lastMinute);\r\n    dst[key + '_last15Minutes'] = parseFloat(src[key][field].last15Minutes);\r\n};\r\n\r\nvar fillerMap = {\r\n    \"temperatureDrum\": fillerFloat,\r\n    \"temperatureWater\": fillerFloat,\r\n    \"temperatureInternal\": fillerFloat,\r\n    \"currentPhase01_A\": fillerFloat,\r\n    \"currentPhase02_A\": fillerFloat,\r\n    \"currentPhase03_A\": fillerFloat,\r\n    \"loadCell01_kg\": fillerFloat,\r\n    \"loadCell02_kg\": fillerFloat,\r\n    \"loadCell03_kg\": fillerFloat,\r\n    \"loadCell04_kg\": fillerFloat,\r\n    \"doorSensor\": filler,\r\n    \"flowSensor_l_per_min\": fillerFlow,\r\n};\r\n\r\nfor(var key in msg.sensorsStatus) {\r\n    newMsg[key + '_status'] = msg.sensorsStatus[key].errorStatus;\r\n    \r\n    if(fillerMap[key]) {\r\n        fillerMap[key](newMsg, msg.sensorsStatus, key, 'sensorValue');\r\n    }\r\n}\r\n\r\nfor(var key in msg.actuatorsStatus) {\r\n    newMsg[key + '_status'] = msg.actuatorsStatus[key].errorStatus;\r\n    newMsg[key] = msg.actuatorsStatus[key].actuatorStatus;\r\n}\r\n\r\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "22692500-5ee2-11ee-9559-2f8be92bafca"
+      },
+      "name" : "ECO PRO DECODER",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1484,
+        "layoutY" : 314
+      },
+      "configuration" : {
+        "ruleChainId" : "1c02c400-4363-11ed-b66e-bd8d8d68617d"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "67f4aee0-5ee3-11ee-9559-2f8be92bafca"
+      },
+      "name" : "GOTO RULES",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
