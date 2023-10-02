@@ -49,10 +49,6 @@
       "toIndex" : 3,
       "type" : "True"
     }, {
-      "fromIndex" : 5,
-      "toIndex" : 8,
-      "type" : "False"
-    }, {
       "fromIndex" : 6,
       "toIndex" : 7,
       "type" : "True"
@@ -118,8 +114,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1587,
-        "layoutY" : 100
+        "layoutX" : 1584,
+        "layoutY" : 160
       },
       "configuration" : {
         "alarmDetailsBuildJs" : "var details = msg.status;\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
@@ -228,26 +224,6 @@
       "name" : "Alarme tambor",
       "ruleChainId" : null,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1592,
-        "layoutY" : 201
-      },
-      "configuration" : {
-        "alarmType" : "General Alarm",
-        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;"
-      },
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "a49cb710-613c-11ee-9559-2f8be92bafca"
-      },
-      "name" : "Limpar agua",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
     } ],
     "ruleChainConnections" : null
   },
