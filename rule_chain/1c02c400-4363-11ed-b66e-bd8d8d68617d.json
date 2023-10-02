@@ -184,7 +184,7 @@
         "layoutY" : 271
       },
       "configuration" : {
-        "jsScript" : "return msg.temperatureDrum < 30;\n\n"
+        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
       },
       "createdTime" : 0,
       "debugMode" : false,
