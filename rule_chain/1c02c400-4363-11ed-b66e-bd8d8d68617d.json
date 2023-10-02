@@ -1,0 +1,258 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "ad2e0c50-5d7f-11ee-9559-2f8be92bafca"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "1c02c400-4363-11ed-b66e-bd8d8d68617d"
+    },
+    "name" : "ECOPRO Alarms",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 0,
+      "type" : "True"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 4,
+      "type" : "True"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 3,
+      "type" : "True"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 8,
+      "type" : "False"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 7,
+      "type" : "True"
+    } ],
+    "firstNodeIndex" : 1,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1016,
+        "layoutY" : 155
+      },
+      "configuration" : {
+        "jsScript" : "var isolatedStatus = msg.temperatureWater_status;\r\nvar temperature    = msg.temperatureWater;\r\nvar alarmType      = \"Temperatura da agua\";\r\nvar message        = \"Temperatura da agua em \" + temperature + \"°C\";\r\n\r\n\r\nif (isolatedStatus === \"ALERT\") {\r\n    if (temperature < 30 || temperature > 50){\r\n        var alertMessage  = \"A temperatura da água está em ALERTA: \" + temperature + \"°C\";\r\n        var isolatedStatus = \"ALERTA\";\r\n\r\n        msg.status = {\r\n            errorStatus: isolatedStatus,\r\n            message: alertMessage,\r\n            alarmType: alarmType,\r\n        };\r\n    }  \r\n\r\n}\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "89943d90-5d4e-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Water",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 289,
+        "layoutY" : 148
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ad2e0c50-5d7f-11ee-9559-2f8be92bafca"
+      },
+      "name" : "filter",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 731,
+        "layoutY" : 151
+      },
+      "configuration" : {
+        "originatorTypes" : [ "DEVICE", "CUSTOMER", "USER" ]
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4b5625e0-5d83-11ee-9559-2f8be92bafca"
+      },
+      "name" : "teste",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbOriginatorTypeFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1587,
+        "layoutY" : 100
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = msg.status;\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "$[status.alarmType]",
+        "severity" : "CRITICAL",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : false
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b7266050-5e0f-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Alarme agua",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1019,
+        "layoutY" : 266
+      },
+      "configuration" : {
+        "jsScript" : "var isolatedStatus = msg.temperatureDrum_status;\nvar temperature    = msg.temperatureDrum;\nvar alarmType      = \"Temperatura do tambor\";\nvar message        = \"Temperatura do tambor em \" + temperature + \"°C\";\n\n\nif (isolatedStatus === \"ALERT\") {\n    if (temperature < 25 || temperature > 50){\n        var alertMessage  = \"A temperatura do tambor está em ALERTA: \" + temperature + \"°C\";\n        var isolatedStatus = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: alertMessage,\n            alarmType: alarmType,\n        };        \n    }\n\n\n\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "03837c90-612f-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Drum Temperature",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1310,
+        "layoutY" : 161
+      },
+      "configuration" : {
+        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a070c1a0-6131-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Filter status",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1309,
+        "layoutY" : 271
+      },
+      "configuration" : {
+        "jsScript" : "return msg.temperatureDrum < 30;\n\n"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a85c8260-6135-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Filter status",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1585,
+        "layoutY" : 273
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = msg.status;\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "$[status.alarmType]",
+        "severity" : "CRITICAL",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : false
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "08b39860-6136-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Alarme tambor",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1592,
+        "layoutY" : 201
+      },
+      "configuration" : {
+        "alarmType" : "General Alarm",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a49cb710-613c-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Limpar agua",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

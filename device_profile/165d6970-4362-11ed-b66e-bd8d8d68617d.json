@@ -1,0 +1,392 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : true,
+    "defaultDashboardId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "165d6970-4362-11ed-b66e-bd8d8d68617d"
+    },
+    "image" : null,
+    "name" : "ECOPRO",
+    "profileData" : {
+      "alarms" : [ {
+        "alarmType" : "Motor Parado por sobrepeso",
+        "clearRule" : null,
+        "createRules" : {
+          "CRITICAL" : {
+            "alarmDetails" : null,
+            "condition" : {
+              "condition" : [ {
+                "key" : {
+                  "key" : "motor",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "STRING",
+                  "ignoreCase" : false,
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "defaultValue" : "STOPPED",
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "STRING"
+              }, {
+                "key" : {
+                  "key" : "loadCellkgAll_status",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "STRING",
+                  "ignoreCase" : false,
+                  "operation" : "NOT_EQUAL",
+                  "value" : {
+                    "defaultValue" : "OK;OK;OK;OK",
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "STRING"
+              } ],
+              "spec" : {
+                "type" : "DURATION",
+                "predicate" : {
+                  "defaultValue" : 30,
+                  "dynamicValue" : {
+                    "inherit" : false,
+                    "sourceAttribute" : "timeoutMotor_minutos",
+                    "sourceType" : "CURRENT_DEVICE"
+                  },
+                  "userValue" : null
+                },
+                "unit" : "MINUTES"
+              }
+            },
+            "dashboardId" : null,
+            "schedule" : null
+          }
+        },
+        "id" : "db541333-a512-0a6d-e657-bf5f664d65ad",
+        "propagate" : false,
+        "propagateRelationTypes" : null,
+        "propagateToOwner" : false,
+        "propagateToTenant" : false
+      }, {
+        "alarmType" : "Motor parado por falta d'água",
+        "clearRule" : null,
+        "createRules" : {
+          "CRITICAL" : {
+            "alarmDetails" : null,
+            "condition" : {
+              "condition" : [ {
+                "key" : {
+                  "key" : "motor",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "STRING",
+                  "ignoreCase" : false,
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "defaultValue" : "STOPPED",
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "STRING"
+              }, {
+                "key" : {
+                  "key" : "flowSensor_l_per_min_status",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "STRING",
+                  "ignoreCase" : false,
+                  "operation" : "NOT_EQUAL",
+                  "value" : {
+                    "defaultValue" : "OK",
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "STRING"
+              } ],
+              "spec" : {
+                "type" : "DURATION",
+                "predicate" : {
+                  "defaultValue" : 30,
+                  "dynamicValue" : {
+                    "inherit" : false,
+                    "sourceAttribute" : "timeoutMotor_minutos",
+                    "sourceType" : "CURRENT_DEVICE"
+                  },
+                  "userValue" : null
+                },
+                "unit" : "MINUTES"
+              }
+            },
+            "dashboardId" : null,
+            "schedule" : null
+          }
+        },
+        "id" : "d9e17cb7-8821-1d98-e71e-6a52474ce4a0",
+        "propagate" : false,
+        "propagateRelationTypes" : null,
+        "propagateToOwner" : false,
+        "propagateToTenant" : false
+      }, {
+        "alarmType" : "Motor parado por excesso de corrente",
+        "clearRule" : null,
+        "createRules" : {
+          "CRITICAL" : {
+            "alarmDetails" : null,
+            "condition" : {
+              "condition" : [ {
+                "key" : {
+                  "key" : "motor",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "STRING",
+                  "ignoreCase" : false,
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "defaultValue" : "STOPPED",
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "STRING"
+              }, {
+                "key" : {
+                  "key" : "currentPhaseAll_A_status",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "STRING",
+                  "ignoreCase" : false,
+                  "operation" : "NOT_EQUAL",
+                  "value" : {
+                    "defaultValue" : "OK;OK;OK",
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "STRING"
+              } ],
+              "spec" : {
+                "type" : "DURATION",
+                "predicate" : {
+                  "defaultValue" : 30,
+                  "dynamicValue" : {
+                    "inherit" : false,
+                    "sourceAttribute" : "timeoutMotor_minutos",
+                    "sourceType" : "CURRENT_DEVICE"
+                  },
+                  "userValue" : null
+                },
+                "unit" : "MINUTES"
+              }
+            },
+            "dashboardId" : null,
+            "schedule" : null
+          }
+        },
+        "id" : "7fa23617-be2f-1c36-9197-072f8c224cc4",
+        "propagate" : false,
+        "propagateRelationTypes" : null,
+        "propagateToOwner" : false,
+        "propagateToTenant" : false
+      }, {
+        "alarmType" : "Motor parado por temperatura na placa",
+        "clearRule" : null,
+        "createRules" : {
+          "CRITICAL" : {
+            "alarmDetails" : null,
+            "condition" : {
+              "condition" : [ {
+                "key" : {
+                  "key" : "motor",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "STRING",
+                  "ignoreCase" : false,
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "defaultValue" : "STOPPED",
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "STRING"
+              }, {
+                "key" : {
+                  "key" : "temperatureInternal_status",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "STRING",
+                  "ignoreCase" : false,
+                  "operation" : "NOT_EQUAL",
+                  "value" : {
+                    "defaultValue" : "OK",
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "STRING"
+              } ],
+              "spec" : {
+                "type" : "DURATION",
+                "predicate" : {
+                  "defaultValue" : 30,
+                  "dynamicValue" : {
+                    "inherit" : false,
+                    "sourceAttribute" : "timeoutMotor_minutos",
+                    "sourceType" : "CURRENT_DEVICE"
+                  },
+                  "userValue" : null
+                },
+                "unit" : "MINUTES"
+              }
+            },
+            "dashboardId" : null,
+            "schedule" : null
+          }
+        },
+        "id" : "62eefffd-24a8-033e-fdf4-f7509cd0df31",
+        "propagate" : false,
+        "propagateRelationTypes" : null,
+        "propagateToOwner" : false,
+        "propagateToTenant" : false
+      }, {
+        "alarmType" : "Motor muito tempo parado",
+        "clearRule" : null,
+        "createRules" : {
+          "WARNING" : {
+            "alarmDetails" : null,
+            "condition" : {
+              "condition" : [ {
+                "key" : {
+                  "key" : "motor",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "STRING",
+                  "ignoreCase" : false,
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "defaultValue" : "STOPPED",
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "STRING"
+              } ],
+              "spec" : {
+                "type" : "DURATION",
+                "predicate" : {
+                  "defaultValue" : 60,
+                  "dynamicValue" : {
+                    "inherit" : false,
+                    "sourceAttribute" : "timeoutMotor_minutos",
+                    "sourceType" : "CURRENT_DEVICE"
+                  },
+                  "userValue" : null
+                },
+                "unit" : "MINUTES"
+              }
+            },
+            "dashboardId" : null,
+            "schedule" : null
+          }
+        },
+        "id" : "242f4391-ebe7-f8c0-c7d4-440039063a2a",
+        "propagate" : false,
+        "propagateRelationTypes" : null,
+        "propagateToOwner" : false,
+        "propagateToTenant" : false
+      }, {
+        "alarmType" : "Motor parado 30 minutos",
+        "clearRule" : null,
+        "createRules" : {
+          "WARNING" : {
+            "alarmDetails" : null,
+            "condition" : {
+              "condition" : [ {
+                "key" : {
+                  "key" : "motor",
+                  "type" : "TIME_SERIES"
+                },
+                "predicate" : {
+                  "type" : "STRING",
+                  "ignoreCase" : false,
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "defaultValue" : "STOPPED",
+                    "dynamicValue" : null,
+                    "userValue" : null
+                  }
+                },
+                "value" : null,
+                "valueType" : "STRING"
+              } ],
+              "spec" : {
+                "type" : "DURATION",
+                "predicate" : {
+                  "defaultValue" : 30,
+                  "dynamicValue" : null,
+                  "userValue" : null
+                },
+                "unit" : "MINUTES"
+              }
+            },
+            "dashboardId" : null,
+            "schedule" : null
+          }
+        },
+        "id" : "4c2a97b8-67a8-f3fa-7227-7210f3ff93ed",
+        "propagate" : false,
+        "propagateRelationTypes" : null,
+        "propagateToOwner" : false,
+        "propagateToTenant" : false
+      } ],
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
