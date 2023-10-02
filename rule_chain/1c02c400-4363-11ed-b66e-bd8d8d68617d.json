@@ -41,6 +41,10 @@
       "toIndex" : 4,
       "type" : "True"
     }, {
+      "fromIndex" : 2,
+      "toIndex" : 8,
+      "type" : "True"
+    }, {
       "fromIndex" : 4,
       "toIndex" : 6,
       "type" : "Success"
@@ -51,6 +55,14 @@
     }, {
       "fromIndex" : 6,
       "toIndex" : 7,
+      "type" : "True"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 10,
       "type" : "True"
     } ],
     "firstNodeIndex" : 1,
@@ -102,7 +114,7 @@
         "originatorTypes" : [ "DEVICE", "CUSTOMER", "USER" ]
       },
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -220,6 +232,72 @@
       "id" : {
         "entityType" : "RULE_NODE",
         "id" : "08b39860-6136-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Alarme tambor",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1021,
+        "layoutY" : 375
+      },
+      "configuration" : {
+        "jsScript" : "var isolatedStatus = msg.temperatureDrum_status;\nvar temperature    = msg.temperatureDrum;\nvar alarmType      = \"Temperatura do tambor\";\nvar message        = \"Temperatura do tambor em \" + temperature + \"°C\";\n\n\nif (isolatedStatus === \"ALERT\") {\n    if (temperature < 25 || temperature > 50){\n        var alertMessage  = \"A temperatura do tambor está em ALERTA: \" + temperature + \"°C\";\n        var isolatedStatus = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: alertMessage,\n            alarmType: alarmType,\n        };        \n    }\n\n\n\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f9580630-6144-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Drum Temperature",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1311,
+        "layoutY" : 380
+      },
+      "configuration" : {
+        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f9580631-6144-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Filter status",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1587,
+        "layoutY" : 382
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "$[status.alarmType]",
+        "severity" : "CRITICAL",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : false
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f9582d40-6144-11ee-9559-2f8be92bafca"
       },
       "name" : "Alarme tambor",
       "ruleChainId" : null,
