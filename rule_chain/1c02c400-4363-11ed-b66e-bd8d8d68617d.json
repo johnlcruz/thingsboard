@@ -58,11 +58,11 @@
       "type" : "True"
     }, {
       "fromIndex" : 3,
-      "toIndex" : 21,
+      "toIndex" : 24,
       "type" : "Created"
     }, {
       "fromIndex" : 3,
-      "toIndex" : 23,
+      "toIndex" : 24,
       "type" : "Updated"
     }, {
       "fromIndex" : 4,
@@ -117,8 +117,32 @@
       "toIndex" : 19,
       "type" : "True"
     }, {
+      "fromIndex" : 20,
+      "toIndex" : 26,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 27,
+      "type" : "Success"
+    }, {
       "fromIndex" : 21,
       "toIndex" : 22,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 24,
+      "toIndex" : 21,
+      "type" : "True"
+    }, {
+      "fromIndex" : 24,
+      "toIndex" : 25,
+      "type" : "False"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 23,
+      "type" : "True"
+    }, {
+      "fromIndex" : 27,
+      "toIndex" : 28,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -182,15 +206,15 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1602,
-        "layoutY" : 155
+        "layoutX" : 1603,
+        "layoutY" : 154
       },
       "configuration" : {
-        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
+        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n    var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n    delete metadata.prevAlarmDetails;\n    if (prevDetails.count) {\n        details.count = prevDetails.count + 1;\n    }\n\n  \n}\n\nreturn details;\n",
         "useMessageAlarmData" : false,
         "overwriteAlarmDetails" : true,
         "alarmType" : "$[status.alarmType]",
-        "severity" : "CRITICAL",
+        "severity" : "INDETERMINATE",
         "propagate" : false,
         "relationTypes" : [ ],
         "propagateToOwner" : false,
@@ -198,7 +222,7 @@
         "dynamicSeverity" : false
       },
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -566,7 +590,7 @@
         "jsScript" : "var elapsedMillis = msg.endTs - msg.startTs;\nvar elapsedMinutes = Math.floor(elapsedMillis / (1000 * 60));\n\nif (elapsedMinutes >= 30) {\n  // Dispare o alarme, pois passaram 15 minutos\n  // Reinicie o zeroTimestamp para futuras verificações\n  msg.currentTime = elapsedMinutes;\n  // Tome a ação adequada aqui, como criar um alarme\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -578,21 +602,21 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1877,
-        "layoutY" : 155
+        "layoutX" : 2149,
+        "layoutY" : 153
       },
       "configuration" : {
         "fromTemplate" : "alertas@ecocircuito.com.br",
         "toTemplate" : "john.lennon@ecocircuito.com.br",
         "ccTemplate" : null,
         "bccTemplate" : null,
-        "subjectTemplate" : "Device ${deviceType} temperature high",
+        "subjectTemplate" : "Biodigestor ${deviceName} em $[details.status.alarmType] ",
         "mailBodyType" : "false",
         "isHtmlTemplate" : null,
-        "bodyTemplate" : "Device ${deviceName} has high temperature ${temp}"
+        "bodyTemplate" : "Biodigestor ${deviceName} em alarme:\nSTATUS: $[details.status.errorStatus]\nMENSAGEM: $[details.status.message]\nTIPO DO ALARME: $[details.status.alarmType] "
       },
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -604,8 +628,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2151,
-        "layoutY" : 155
+        "layoutX" : 2403,
+        "layoutY" : 153
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -624,7 +648,7 @@
         "password" : null
       },
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -636,23 +660,139 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1877,
-        "layoutY" : 81
+        "layoutX" : 2404,
+        "layoutY" : 58
       },
       "configuration" : {
-        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmType" : "$[status.alarmType]"
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    \n    //now metadata is the same as it comes IN this rule node\n}\n\n \nreturn details;",
+        "alarmType" : "$[name]"
       },
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "48faaff0-6184-11ee-9559-2f8be92bafca"
+        "id" : "a770fff0-61f0-11ee-9559-2f8be92bafca"
       },
-      "name" : "limpar",
+      "name" : "teste",
       "ruleChainId" : null,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1912,
+        "layoutY" : 155
+      },
+      "configuration" : {
+        "jsScript" : "return msg.details.count == 10;"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "353a9da0-6200-11ee-9559-2f8be92bafca"
+      },
+      "name" : "FILTRO EMAIL",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2153,
+        "layoutY" : 55
+      },
+      "configuration" : {
+        "jsScript" : "return msg.details.count > 10;"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f89f9a50-6202-11ee-9559-2f8be92bafca"
+      },
+      "name" : "FILTRO LIMPEZA",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2180,
+        "layoutY" : 476
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "$[name]"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e211c270-6204-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Limpeza",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2182,
+        "layoutY" : 553
+      },
+      "configuration" : {
+        "fromTemplate" : "alertas@ecocircuito.com.br",
+        "toTemplate" : "john.lennon@ecocircuito.com.br",
+        "ccTemplate" : null,
+        "bccTemplate" : null,
+        "subjectTemplate" : "Biodigestor ${deviceName} em $[details.status.alarmType] ",
+        "mailBodyType" : "false",
+        "isHtmlTemplate" : null,
+        "bodyTemplate" : "Biodigestor ${deviceName} em alarme:\nSTATUS: $[details.status.errorStatus]\nMENSAGEM: $[details.status.message]\nTIPO DO ALARME: $[details.status.alarmType] "
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b08fd9c0-6205-11ee-9559-2f8be92bafca"
+      },
+      "name" : "envio teste",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2436,
+        "layoutY" : 553
+      },
+      "configuration" : {
+        "useSystemSmtpSettings" : true,
+        "smtpProtocol" : "smtp",
+        "smtpHost" : "localhost",
+        "smtpPort" : 25,
+        "timeout" : 10000,
+        "enableTls" : false,
+        "tlsVersion" : "TLSv1.2",
+        "enableProxy" : false,
+        "proxyHost" : null,
+        "proxyPort" : null,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "username" : null,
+        "password" : null
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b08fd9c1-6205-11ee-9559-2f8be92bafca"
+      },
+      "name" : "teste email",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.mail.TbSendEmailNode"
     } ],
     "ruleChainConnections" : null
   },
