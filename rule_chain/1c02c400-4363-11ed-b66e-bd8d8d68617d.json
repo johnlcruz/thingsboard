@@ -45,6 +45,26 @@
       "toIndex" : 8,
       "type" : "True"
     }, {
+      "fromIndex" : 2,
+      "toIndex" : 11,
+      "type" : "True"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 14,
+      "type" : "True"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 17,
+      "type" : "True"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 21,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 23,
+      "type" : "Updated"
+    }, {
       "fromIndex" : 4,
       "toIndex" : 6,
       "type" : "Success"
@@ -64,16 +84,52 @@
       "fromIndex" : 9,
       "toIndex" : 10,
       "type" : "True"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 12,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 13,
+      "type" : "True"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 16,
+      "type" : "True"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 20,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 20,
+      "type" : "Updated"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 18,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 19,
+      "type" : "True"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 22,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1016,
-        "layoutY" : 155
+        "layoutX" : 1027,
+        "layoutY" : 153
       },
       "configuration" : {
-        "jsScript" : "var isolatedStatus = msg.temperatureWater_status;\r\nvar temperature    = msg.temperatureWater;\r\nvar alarmType      = \"Temperatura da agua\";\r\nvar message        = \"Temperatura da agua em \" + temperature + \"°C\";\r\n\r\n\r\nif (isolatedStatus === \"ALERT\") {\r\n    if (temperature < 30 || temperature > 50){\r\n        var alertMessage  = \"A temperatura da água está em ALERTA: \" + temperature + \"°C\";\r\n        var isolatedStatus = \"ALERTA\";\r\n\r\n        msg.status = {\r\n            errorStatus: isolatedStatus,\r\n            message: alertMessage,\r\n            alarmType: alarmType,\r\n        };\r\n    }  \r\n\r\n}\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "jsScript" : "var isolatedStatus = msg.temperatureWater_status;\r\nvar temperature    = msg.temperatureWater;\r\nvar alarmType      = \"Temperatura da agua\";\r\nvar message        = \"Temperatura da agua em \" + temperature + \"°C\";\r\n\r\n\r\nif (isolatedStatus != \"OK\" && temperature > 30 && temperature < 50) {\r\n    var alertMessage  = \"Sensor de Temperatura em alerta\";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n\r\nif (temperature < 30 || temperature > 50){\r\n    var alertMessage  = \"A temperatura da água está em ALERTA: \" + temperature + \"°C\";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}  \r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "createdTime" : 0,
       "debugMode" : false,
@@ -114,7 +170,7 @@
         "originatorTypes" : [ "DEVICE", "CUSTOMER", "USER" ]
       },
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -126,13 +182,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1584,
-        "layoutY" : 160
+        "layoutX" : 1602,
+        "layoutY" : 155
       },
       "configuration" : {
-        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
+        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
         "useMessageAlarmData" : false,
-        "overwriteAlarmDetails" : false,
+        "overwriteAlarmDetails" : true,
         "alarmType" : "$[status.alarmType]",
         "severity" : "CRITICAL",
         "propagate" : false,
@@ -142,7 +198,7 @@
         "dynamicSeverity" : false
       },
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -154,11 +210,11 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1019,
-        "layoutY" : 266
+        "layoutX" : 1028,
+        "layoutY" : 253
       },
       "configuration" : {
-        "jsScript" : "var isolatedStatus = msg.temperatureDrum_status;\nvar temperature    = msg.temperatureDrum;\nvar alarmType      = \"Temperatura do tambor\";\nvar message        = \"Temperatura do tambor em \" + temperature + \"°C\";\n\n\nif (isolatedStatus === \"ALERT\") {\n    if (temperature < 25 || temperature > 50){\n        var alertMessage  = \"A temperatura do tambor está em ALERTA: \" + temperature + \"°C\";\n        var isolatedStatus = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: alertMessage,\n            alarmType: alarmType,\n        };        \n    }\n\n\n\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "jsScript" : "var isolatedStatus = msg.temperatureDrum_status;\nvar temperature    = msg.temperatureDrum;\nvar alarmType      = \"Temperatura do tambor\";\nvar message        = \"Temperatura do tambor em \" + temperature + \"°C\";\n\n\n\nif (isolatedStatus != \"OK\" && temperature > 25 && temperature < 50) {\n    var alertMessage  = \"Sensor de Temperatura do tambor em alerta\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };\n}\n\n\nif (temperature < 25 || temperature > 50){\n    var alertMessage  = \"A temperatura do tambor está em ALERTA: \" + temperature + \"°C\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "createdTime" : 0,
       "debugMode" : false,
@@ -173,8 +229,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1310,
-        "layoutY" : 161
+        "layoutX" : 1317,
+        "layoutY" : 155
       },
       "configuration" : {
         "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
@@ -192,8 +248,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1309,
-        "layoutY" : 271
+        "layoutX" : 1318,
+        "layoutY" : 258
       },
       "configuration" : {
         "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
@@ -211,8 +267,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1585,
-        "layoutY" : 273
+        "layoutX" : 1594,
+        "layoutY" : 260
       },
       "configuration" : {
         "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
@@ -239,11 +295,11 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1021,
-        "layoutY" : 375
+        "layoutX" : 1029,
+        "layoutY" : 354
       },
       "configuration" : {
-        "jsScript" : "var isolatedStatus = msg.temperatureDrum_status;\nvar temperature    = msg.temperatureDrum;\nvar alarmType      = \"Temperatura do tambor\";\nvar message        = \"Temperatura do tambor em \" + temperature + \"°C\";\n\n\nif (isolatedStatus === \"ALERT\") {\n    if (temperature < 25 || temperature > 50){\n        var alertMessage  = \"A temperatura do tambor está em ALERTA: \" + temperature + \"°C\";\n        var isolatedStatus = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: alertMessage,\n            alarmType: alarmType,\n        };        \n    }\n\n\n\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "jsScript" : "var isolatedStatus = msg.temperatureInternal_status;\nvar temperature    = msg.temperatureInternal;\nvar alarmType      = \"Temperatura do painel\";\n\nif (isolatedStatus != \"OK\" && temperature > 40 && temperature < 60) {\n    var alertMessage  = \"Sensor de Temperatura do painel em alerta\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };\n}\n\n\nif (temperature < 40 || temperature > 60){\n    var alertMessage  = \"A temperatura do painel está em ALERTA: \" + temperature + \"°C\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };        \n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "createdTime" : 0,
       "debugMode" : false,
@@ -252,14 +308,14 @@
         "entityType" : "RULE_NODE",
         "id" : "f9580630-6144-11ee-9559-2f8be92bafca"
       },
-      "name" : "Drum Temperature",
+      "name" : "Painel Temperature",
       "ruleChainId" : null,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1311,
-        "layoutY" : 380
+        "layoutX" : 1319,
+        "layoutY" : 359
       },
       "configuration" : {
         "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
@@ -277,8 +333,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1587,
-        "layoutY" : 382
+        "layoutX" : 1595,
+        "layoutY" : 361
       },
       "configuration" : {
         "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
@@ -299,9 +355,304 @@
         "entityType" : "RULE_NODE",
         "id" : "f9582d40-6144-11ee-9559-2f8be92bafca"
       },
-      "name" : "Alarme tambor",
+      "name" : "Alarme Painel",
       "ruleChainId" : null,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1029,
+        "layoutY" : 454
+      },
+      "configuration" : {
+        "jsScript" : "var isolatedStatus1 = msg.currentPhase01_A_status;\nvar isolatedStatus2 = msg.currentPhase02_A_status;\nvar isolatedStatus3 = msg.currentPhase03_A_status;\n\nvar Phase01 = msg.currentPhase01_A;\nvar Phase02 = msg.currentPhase02_A;\nvar Phase03 = msg.currentPhase03_A;\n\nvar temperature     = msg.temperatureInternal;\nvar alarmType       = \"Alertas de fases\";\nvar alertMessage    = \"Correntes do motor: \" \n                     + (parseFloat(Phase01) / 1000.0).toFixed(1) + \"A, \"\n                     + (parseFloat(Phase02) / 1000.0).toFixed(1) + \"A, \"\n                     + (parseFloat(Phase03) / 1000.0).toFixed(1) + \"A\";\n\n\nif (isolatedStatus1 != \"OK\" || isolatedStatus2 != \"OK\" || isolatedStatus3 != \"OK\" ) {\n        var isolatedStatus = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: alertMessage,\n            alarmType: alarmType,\n        };        \n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "168a03a0-6147-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Current Evaluation",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1320,
+        "layoutY" : 455
+      },
+      "configuration" : {
+        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "168a03a1-6147-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Filter status",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1598,
+        "layoutY" : 455
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "$[status.alarmType]",
+        "severity" : "CRITICAL",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : false
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "168a03a2-6147-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Current Evaluation",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1028,
+        "layoutY" : 554
+      },
+      "configuration" : {
+        "jsScript" : "var isolatedStatus = msg.flowSensor_l_per_min_status;\nvar flow_per_min   = msg.flowSensor_l_per_min_instantly;\nvar flow_min_last  = msg.flowSensor_l_per_min_lastMinute; \nvar flow_last_15   = msg.flowSensor_l_per_min_last15Minutes; \n\nisolatedStatus = \"ALERTA\";\n\n    if(flow_per_min == 0 && flow_min_last == 0 && flow_last_15 == 0 ){\n        var alarmType      = \"Falta de água\";\n        var message        = \"Possivel falta, fluxo de água em \" + flow_per_min + \" l/min\";\n        var alarmCount     = true;\n        var isolatedStatus = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: message,\n            alarmType: alarmType,\n            alarmCount: alarmCount\n        };   \n    }else if (flow_per_min > 10){\n        var alarmType      = \"Vazão excessiva de água\";\n        var message        = \"Fluxo de água em \" + flow_per_min + \" l/min\";\n        var isolatedStatus = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: message,\n            alarmType: alarmType,\n        };   \n    }\n     \n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ad3c02d0-6160-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Water Flow Evaluation",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1317,
+        "layoutY" : 555
+      },
+      "configuration" : {
+        "jsScript" : "if (msg.status){\n        return true;\n}else{\n    return false;\n}\n"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ad3c02d1-6160-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Filter status",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1599,
+        "layoutY" : 554
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "$[status.alarmType]",
+        "severity" : "CRITICAL",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : false
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ad3c02d2-6160-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Water Flow Evaluation",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1029,
+        "layoutY" : 653
+      },
+      "configuration" : {
+        "jsScript" : "var currentWeight_kg = msg.currentWeight_kg;\nvar alarmType        = \"Excesso de peso\";\nvar alertMessage     = \"Peso atual em : \" + currentWeight_kg + \"Kg\";\nvar deviceName       = metadata.deviceName; // Obtém o valor do campo deviceName\nvar modeldevice      = deviceName.substring(0, 3); // Pega os 3 primeiros caracteres\nvar limit            = parseInt(modeldevice) + (parseInt(modeldevice)*0.2);//limit= modelo do equipamento + 20%\n\nif (currentWeight_kg > limit) {\n        var isolatedStatus = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: alertMessage,\n            alarmType: alarmType,\n        };        \n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e9aa6920-6163-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Overweight",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1320,
+        "layoutY" : 654
+      },
+      "configuration" : {
+        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e9aa6921-6163-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Filter status",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1598,
+        "layoutY" : 654
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "$[status.alarmType]",
+        "severity" : "CRITICAL",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : false
+      },
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e9aa6922-6163-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Overweight",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1918,
+        "layoutY" : 554
+      },
+      "configuration" : {
+        "jsScript" : "var elapsedMillis = msg.endTs - msg.startTs;\nvar elapsedMinutes = Math.floor(elapsedMillis / (1000 * 60));\n\nif (elapsedMinutes >= 30) {\n  // Dispare o alarme, pois passaram 15 minutos\n  // Reinicie o zeroTimestamp para futuras verificações\n  msg.currentTime = elapsedMinutes;\n  // Tome a ação adequada aqui, como criar um alarme\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0c07aa0-6178-11ee-9559-2f8be92bafca"
+      },
+      "name" : "Count Time",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1877,
+        "layoutY" : 155
+      },
+      "configuration" : {
+        "fromTemplate" : "alertas@ecocircuito.com.br",
+        "toTemplate" : "john.lennon@ecocircuito.com.br",
+        "ccTemplate" : null,
+        "bccTemplate" : null,
+        "subjectTemplate" : "Device ${deviceType} temperature high",
+        "mailBodyType" : "false",
+        "isHtmlTemplate" : null,
+        "bodyTemplate" : "Device ${deviceName} has high temperature ${temp}"
+      },
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "bf37ba81-6181-11ee-9559-2f8be92bafca"
+      },
+      "name" : "envio teste",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2151,
+        "layoutY" : 155
+      },
+      "configuration" : {
+        "useSystemSmtpSettings" : true,
+        "smtpProtocol" : "smtp",
+        "smtpHost" : "localhost",
+        "smtpPort" : 25,
+        "timeout" : 10000,
+        "enableTls" : false,
+        "tlsVersion" : "TLSv1.2",
+        "enableProxy" : false,
+        "proxyHost" : null,
+        "proxyPort" : null,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "username" : null,
+        "password" : null
+      },
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "fb9c6ec0-6182-11ee-9559-2f8be92bafca"
+      },
+      "name" : "teste email",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.mail.TbSendEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1877,
+        "layoutY" : 81
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "$[status.alarmType]"
+      },
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "48faaff0-6184-11ee-9559-2f8be92bafca"
+      },
+      "name" : "limpar",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
     } ],
     "ruleChainConnections" : null
   },
