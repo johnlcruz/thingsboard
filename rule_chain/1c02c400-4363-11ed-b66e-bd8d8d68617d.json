@@ -37,6 +37,22 @@
       "toIndex" : 2,
       "type" : "Timeseries Updated"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 35,
+      "type" : "Activity Event"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 35,
+      "type" : "Connect Event"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 35,
+      "type" : "Disconnect Event"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 35,
+      "type" : "Inactivity Event"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 0,
       "type" : "True"
@@ -259,7 +275,7 @@
         "version" : 0
       },
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -986,6 +1002,31 @@
       "name" : "Filter status",
       "ruleChainId" : null,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 488,
+        "layoutY" : 564
+      },
+      "configuration" : {
+        "inputValueKey" : "pulseCounter",
+        "outputValueKey" : "delta",
+        "useCache" : true,
+        "addPeriodBetweenMsgs" : true,
+        "periodValueKey" : "lastMsg",
+        "round" : 3,
+        "tellFailureIfDeltaIsNegative" : true
+      },
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "ca5ab950-62b5-11ee-9559-2f8be92bafca"
+      },
+      "name" : "teste",
+      "ruleChainId" : null,
+      "type" : "org.thingsboard.rule.engine.metadata.CalculateDeltaNode"
     } ],
     "ruleChainConnections" : null
   },
