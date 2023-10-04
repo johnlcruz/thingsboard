@@ -41,7 +41,7 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 552,
+        "layoutX" : 604,
         "layoutY" : 154
       },
       "configuration" : {
@@ -55,7 +55,7 @@
         "bodyTemplate" : "Biodigestor ${deviceName} em alarme:\nSTATUS: $[details.status.errorStatus]\nMENSAGEM: $[details.status.message]\nTIPO DO ALARME: $[details.status.alarmType] "
       },
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -67,7 +67,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 826,
+        "layoutX" : 932,
         "layoutY" : 155
       },
       "configuration" : {
@@ -87,7 +87,7 @@
         "password" : null
       },
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -99,7 +99,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 825,
+        "layoutX" : 931,
         "layoutY" : 79
       },
       "configuration" : {
@@ -107,7 +107,7 @@
         "alarmType" : "$[name]"
       },
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -119,11 +119,11 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 325,
-        "layoutY" : 151
+        "layoutX" : 327,
+        "layoutY" : 153
       },
       "configuration" : {
-        "jsScript" : "return msg.details.count == 10;"
+        "jsScript" : "return msg.details.count > 1 && msg.currentTime == 10;"
       },
       "createdTime" : 0,
       "debugMode" : false,
@@ -138,14 +138,14 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 552,
-        "layoutY" : 80
+        "layoutX" : 601,
+        "layoutY" : 79
       },
       "configuration" : {
-        "jsScript" : "return msg.details.count > 10;"
+        "jsScript" : "return msg.details.count > 10 && msg.currentTime > 10;"
       },
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
