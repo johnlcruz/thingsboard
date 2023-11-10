@@ -61,6 +61,7 @@
       "configuration" : {
         "defaultTTL" : 0
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -70,6 +71,7 @@
       },
       "name" : "Save Timeseries",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     }, {
       "additionalInfo" : {
@@ -79,8 +81,10 @@
       },
       "configuration" : {
         "scope" : "CLIENT_SCOPE",
-        "notifyDevice" : "false"
+        "notifyDevice" : "false",
+        "updateAttributesOnlyOnValueChange" : "false"
       },
+      "configurationVersion" : 1,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -90,6 +94,7 @@
       },
       "name" : "Save Client Attributes",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
     }, {
       "additionalInfo" : {
@@ -99,6 +104,7 @@
       "configuration" : {
         "version" : 0
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -108,6 +114,7 @@
       },
       "name" : "Message Type Switch",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
     }, {
       "additionalInfo" : {
@@ -117,6 +124,7 @@
       "configuration" : {
         "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -126,6 +134,7 @@
       },
       "name" : "Log RPC from Device",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     }, {
       "additionalInfo" : {
@@ -135,6 +144,7 @@
       "configuration" : {
         "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -144,6 +154,7 @@
       },
       "name" : "Log Other",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     }, {
       "additionalInfo" : {
@@ -153,6 +164,7 @@
       "configuration" : {
         "timeoutInSeconds" : 60
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -162,6 +174,7 @@
       },
       "name" : "RPC Call Request",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCRequestNode"
     }, {
       "additionalInfo" : {
@@ -173,6 +186,7 @@
         "persistAlarmRulesState" : true,
         "fetchAlarmRulesStateOnStart" : false
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -182,6 +196,7 @@
       },
       "name" : "Device Profile Node",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
     }, {
       "additionalInfo" : {
@@ -192,6 +207,7 @@
       "configuration" : {
         "jsScript" : "var parseFloatSensorStatus = function(sensorStatus) {\r\n    return {\r\n        \"errorStatus\": sensorStatus.errorStatus,\r\n        \"sensorValue\": parseFloat(sensorStatus.sensorValue)\r\n    };\r\n};\r\n\r\nvar newMsg = {\r\n    \"event\": msg.event,\r\n    \"currentStatus\": msg.currentStatus,\r\n    \"accumulatedWaste_kg\": msg.accumulatedWaste_kg,\r\n    \"currentWeight_kg\": msg.currentWeight_kg,\r\n    //\"lastWaste\": msg.lastWaste.weight > 0 ? msg.lastWaste : undefined,\r\n    \"totalUsedEnergy_KWh\": msg.totalUsedEnergy_KWh,\r\n    \"totalWaterUsage_l\": msg.totalWaterUsage_l\r\n};\r\n\r\nvar filler = function(dst, src, key, field) {\r\n    dst[key] = src[key][field];\r\n}; \r\n\r\nvar fillerFloat = function(dst, src, key, field) {\r\n    dst[key] = parseFloat(src[key][field]);\r\n};\r\n\r\nvar fillerFlow = function(dst, src, key, field) {\r\n    dst[key + '_instantly'] = parseFloat(src[key][field].instantly);\r\n    dst[key + '_lastMinute'] = parseFloat(src[key][field].lastMinute);\r\n    dst[key + '_last15Minutes'] = parseFloat(src[key][field].last15Minutes);\r\n};\r\n\r\nvar fillerMap = {\r\n    \"temperatureDrum\": fillerFloat,\r\n    \"temperatureWater\": fillerFloat,\r\n    \"temperatureInternal\": fillerFloat,\r\n    \"currentPhase01_A\": fillerFloat,\r\n    \"currentPhase02_A\": fillerFloat,\r\n    \"currentPhase03_A\": fillerFloat,\r\n    \"loadCell01_kg\": fillerFloat,\r\n    \"loadCell02_kg\": fillerFloat,\r\n    \"loadCell03_kg\": fillerFloat,\r\n    \"loadCell04_kg\": fillerFloat,\r\n    \"doorSensor\": filler,\r\n    \"flowSensor_l_per_min\": fillerFlow,\r\n};\r\n\r\nfor(var key in msg.sensorsStatus) {\r\n    newMsg[key + '_status'] = msg.sensorsStatus[key].errorStatus;\r\n    \r\n    if(fillerMap[key]) {\r\n        fillerMap[key](newMsg, msg.sensorsStatus, key, 'sensorValue');\r\n    }\r\n}\r\n\r\nfor(var key in msg.actuatorsStatus) {\r\n    newMsg[key + '_status'] = msg.actuatorsStatus[key].errorStatus;\r\n    newMsg[key] = msg.actuatorsStatus[key].actuatorStatus;\r\n}\r\n\r\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -201,6 +217,7 @@
       },
       "name" : "ECO PRO DECODER",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
@@ -211,6 +228,7 @@
       "configuration" : {
         "ruleChainId" : "1c02c400-4363-11ed-b66e-bd8d8d68617d"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -220,6 +238,7 @@
       },
       "name" : "GOTO RULES",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
