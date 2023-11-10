@@ -22,227 +22,227 @@
   "metaData" : {
     "connections" : [ {
       "fromIndex" : 0,
-      "toIndex" : 5,
+      "toIndex" : 4,
       "type" : "Success"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 2,
-      "type" : "Post attributes"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 2,
+      "toIndex" : 0,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 2,
-      "type" : "Timeseries Updated"
+      "toIndex" : 3,
+      "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 35,
-      "type" : "Activity Event"
+      "toIndex" : 7,
+      "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 35,
-      "type" : "Connect Event"
+      "toIndex" : 10,
+      "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 35,
+      "toIndex" : 13,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 16,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 20,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 24,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 36,
       "type" : "Disconnect Event"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 35,
+      "toIndex" : 36,
       "type" : "Inactivity Event"
     }, {
-      "fromIndex" : 2,
-      "toIndex" : 0,
-      "type" : "True"
+      "fromIndex" : 1,
+      "toIndex" : 37,
+      "type" : "Activity Event"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 37,
+      "type" : "Connect Event"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 4,
-      "type" : "True"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 8,
-      "type" : "True"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 11,
-      "type" : "True"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 14,
-      "type" : "True"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 17,
-      "type" : "True"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 22,
-      "type" : "True"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 32,
-      "type" : "True"
-    }, {
-      "fromIndex" : 3,
-      "toIndex" : 21,
+      "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 3,
-      "toIndex" : 21,
+      "fromIndex" : 2,
+      "toIndex" : 34,
       "type" : "Updated"
     }, {
-      "fromIndex" : 4,
-      "toIndex" : 6,
+      "fromIndex" : 3,
+      "toIndex" : 5,
       "type" : "Success"
     }, {
+      "fromIndex" : 4,
+      "toIndex" : 2,
+      "type" : "True"
+    }, {
       "fromIndex" : 5,
-      "toIndex" : 3,
+      "toIndex" : 6,
       "type" : "True"
     }, {
       "fromIndex" : 6,
-      "toIndex" : 7,
-      "type" : "True"
-    }, {
-      "fromIndex" : 7,
-      "toIndex" : 21,
+      "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 7,
-      "toIndex" : 21,
+      "fromIndex" : 6,
+      "toIndex" : 34,
       "type" : "Updated"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 8,
+      "type" : "Success"
     }, {
       "fromIndex" : 8,
       "toIndex" : 9,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 9,
-      "toIndex" : 10,
       "type" : "True"
     }, {
-      "fromIndex" : 10,
-      "toIndex" : 21,
+      "fromIndex" : 9,
+      "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 10,
-      "toIndex" : 21,
+      "fromIndex" : 9,
+      "toIndex" : 34,
       "type" : "Updated"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 11,
+      "type" : "Success"
     }, {
       "fromIndex" : 11,
       "toIndex" : 12,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 12,
-      "toIndex" : 13,
       "type" : "True"
     }, {
-      "fromIndex" : 13,
-      "toIndex" : 21,
+      "fromIndex" : 12,
+      "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 13,
-      "toIndex" : 21,
+      "fromIndex" : 12,
+      "toIndex" : 34,
       "type" : "Updated"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 14,
+      "type" : "Success"
     }, {
       "fromIndex" : 14,
       "toIndex" : 15,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 15,
-      "toIndex" : 16,
       "type" : "True"
     }, {
-      "fromIndex" : 16,
-      "toIndex" : 21,
+      "fromIndex" : 15,
+      "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 16,
-      "toIndex" : 21,
+      "fromIndex" : 15,
+      "toIndex" : 34,
       "type" : "Updated"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 17,
+      "type" : "Success"
     }, {
       "fromIndex" : 17,
       "toIndex" : 18,
-      "type" : "Success"
+      "type" : "True"
     }, {
       "fromIndex" : 18,
       "toIndex" : 19,
-      "type" : "True"
-    }, {
-      "fromIndex" : 19,
-      "toIndex" : 21,
       "type" : "Created"
     }, {
-      "fromIndex" : 19,
-      "toIndex" : 21,
+      "fromIndex" : 18,
+      "toIndex" : 34,
       "type" : "Updated"
     }, {
-      "fromIndex" : 21,
-      "toIndex" : 20,
+      "fromIndex" : 20,
+      "toIndex" : 21,
       "type" : "Success"
     }, {
       "fromIndex" : 21,
-      "toIndex" : 27,
-      "type" : "Failure"
-    }, {
-      "fromIndex" : 22,
       "toIndex" : 23,
-      "type" : "Success"
+      "type" : "False"
     }, {
-      "fromIndex" : 23,
-      "toIndex" : 26,
+      "fromIndex" : 21,
+      "toIndex" : 29,
+      "type" : "False"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 30,
       "type" : "True"
     }, {
-      "fromIndex" : 23,
+      "fromIndex" : 22,
+      "toIndex" : 19,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 32,
+      "type" : "Updated"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 34,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 24,
+      "toIndex" : 26,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 19,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 34,
+      "type" : "Updated"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 25,
+      "type" : "True"
+    }, {
+      "fromIndex" : 28,
+      "toIndex" : 22,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 29,
+      "toIndex" : 28,
+      "type" : "True"
+    }, {
+      "fromIndex" : 29,
       "toIndex" : 31,
       "type" : "False"
     }, {
-      "fromIndex" : 24,
-      "toIndex" : 21,
+      "fromIndex" : 30,
+      "toIndex" : 19,
       "type" : "Created"
-    }, {
-      "fromIndex" : 24,
-      "toIndex" : 21,
-      "type" : "Updated"
-    }, {
-      "fromIndex" : 25,
-      "toIndex" : 30,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 26,
-      "toIndex" : 24,
-      "type" : "True"
-    }, {
-      "fromIndex" : 26,
-      "toIndex" : 28,
-      "type" : "False"
-    }, {
-      "fromIndex" : 28,
-      "toIndex" : 25,
-      "type" : "Created"
-    }, {
-      "fromIndex" : 28,
-      "toIndex" : 25,
-      "type" : "Updated"
     }, {
       "fromIndex" : 30,
-      "toIndex" : 29,
-      "type" : "True"
+      "toIndex" : 34,
+      "type" : "Updated"
     }, {
       "fromIndex" : 32,
-      "toIndex" : 34,
+      "toIndex" : 33,
       "type" : "Success"
     }, {
       "fromIndex" : 33,
-      "toIndex" : 21,
-      "type" : "Created"
-    }, {
-      "fromIndex" : 33,
-      "toIndex" : 21,
-      "type" : "Updated"
+      "toIndex" : 31,
+      "type" : "True"
     }, {
       "fromIndex" : 34,
-      "toIndex" : 33,
+      "toIndex" : 35,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 35,
+      "toIndex" : 27,
       "type" : "True"
     } ],
     "firstNodeIndex" : 1,
@@ -255,6 +255,7 @@
       "configuration" : {
         "jsScript" : "var isolatedStatus = msg.temperatureWater_status;\r\nvar temperature    = msg.temperatureWater;\r\nvar alarmType      = \"Temperatura da agua\";\r\nvar message        = \"Temperatura da agua em \" + temperature + \"°C\";\r\n\r\n\r\nif (isolatedStatus != \"OK\" && temperature > 30 && temperature < 50) {\r\n    var alertMessage  = \"Sensor de Temperatura em alerta\";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n\r\nif (temperature < 30 || temperature > 50){\r\n    var alertMessage  = \"A temperatura da água está em ALERTA: \" + temperature + \"°C\";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}  \r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -264,6 +265,7 @@
       },
       "name" : "Water",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
@@ -274,8 +276,9 @@
       "configuration" : {
         "version" : 0
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -283,26 +286,8 @@
       },
       "name" : "filter",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 731,
-        "layoutY" : 151
-      },
-      "configuration" : {
-        "originatorTypes" : [ "DEVICE", "CUSTOMER", "USER" ]
-      },
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "4b5625e0-5d83-11ee-9559-2f8be92bafca"
-      },
-      "name" : "teste",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.filter.TbOriginatorTypeFilterNode"
     }, {
       "additionalInfo" : {
         "description" : "",
@@ -321,6 +306,7 @@
         "propagateToTenant" : false,
         "dynamicSeverity" : false
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -330,6 +316,7 @@
       },
       "name" : "Alarme agua",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
     }, {
       "additionalInfo" : {
@@ -340,6 +327,7 @@
       "configuration" : {
         "jsScript" : "var isolatedStatus = msg.temperatureDrum_status;\nvar temperature    = msg.temperatureDrum;\nvar alarmType      = \"Temperatura do tambor\";\nvar message        = \"Temperatura do tambor em \" + temperature + \"°C\";\n\n\n\nif (isolatedStatus != \"OK\" && temperature > 25 && temperature < 50) {\n    var alertMessage  = \"Sensor de Temperatura do tambor em alerta\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };\n}\n\n\nif (temperature < 25 || temperature > 50){\n    var alertMessage  = \"A temperatura do tambor está em ALERTA: \" + temperature + \"°C\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -349,6 +337,7 @@
       },
       "name" : "Drum Temperature",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
@@ -359,6 +348,7 @@
       "configuration" : {
         "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -368,6 +358,7 @@
       },
       "name" : "Filter status",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
@@ -378,6 +369,7 @@
       "configuration" : {
         "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -387,6 +379,7 @@
       },
       "name" : "Filter status",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
@@ -406,6 +399,7 @@
         "propagateToTenant" : false,
         "dynamicSeverity" : false
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -415,6 +409,7 @@
       },
       "name" : "Alarme tambor",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
     }, {
       "additionalInfo" : {
@@ -425,6 +420,7 @@
       "configuration" : {
         "jsScript" : "var isolatedStatus = msg.temperatureInternal_status;\nvar temperature    = msg.temperatureInternal;\nvar alarmType      = \"Temperatura do painel\";\n\nif (isolatedStatus != \"OK\" && temperature > 40 && temperature < 60) {\n    var alertMessage  = \"Sensor de Temperatura do painel em alerta\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };\n}\n\n\nif (temperature < 40 || temperature > 60){\n    var alertMessage  = \"A temperatura do painel está em ALERTA: \" + temperature + \"°C\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };        \n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -434,6 +430,7 @@
       },
       "name" : "Painel Temperature",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
@@ -444,6 +441,7 @@
       "configuration" : {
         "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -453,6 +451,7 @@
       },
       "name" : "Filter status",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
@@ -472,6 +471,7 @@
         "propagateToTenant" : false,
         "dynamicSeverity" : false
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -481,6 +481,7 @@
       },
       "name" : "Alarme Painel",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
     }, {
       "additionalInfo" : {
@@ -489,8 +490,11 @@
         "layoutY" : 454
       },
       "configuration" : {
-        "jsScript" : "var isolatedStatus1 = msg.currentPhase01_A_status;\nvar isolatedStatus2 = msg.currentPhase02_A_status;\nvar isolatedStatus3 = msg.currentPhase03_A_status;\n\nvar Phase01 = msg.currentPhase01_A;\nvar Phase02 = msg.currentPhase02_A;\nvar Phase03 = msg.currentPhase03_A;\n\nvar temperature     = msg.temperatureInternal;\nvar alarmType       = \"Alertas de fases\";\nvar alertMessage    = \"Correntes do motor: \" \n                     + (parseFloat(Phase01) / 1000.0).toFixed(1) + \"A, \"\n                     + (parseFloat(Phase02) / 1000.0).toFixed(1) + \"A, \"\n                     + (parseFloat(Phase03) / 1000.0).toFixed(1) + \"A\";\n\n\nif (isolatedStatus1 != \"OK\" || isolatedStatus2 != \"OK\" || isolatedStatus3 != \"OK\" ) {\n        var isolatedStatus = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: alertMessage,\n            alarmType: alarmType,\n        };        \n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "scriptLang" : "JS",
+        "jsScript" : "var isolatedStatus1 = msg.currentPhase01_A_status;\nvar isolatedStatus2 = msg.currentPhase02_A_status;\nvar isolatedStatus3 = msg.currentPhase03_A_status;\n\nvar Phase01 = parseFloat(msg.currentPhase01_A)/1000.0;\nvar Phase02 = parseFloat(msg.currentPhase02_A)/1000.0;\nvar Phase03 = parseFloat(msg.currentPhase03_A)/1000.0;\n\nvar temperature     = msg.temperatureInternal;\nvar alarmType       = \"Alertas de fases\";\nvar alertMessage    = \"Correntes do motor: \" \n                     + Phase01.toFixed(1) + \"A, \"\n                     + Phase02.toFixed(1) + \"A, \"\n                     + Phase03.toFixed(1) + \"A\";\n\n\nif (isolatedStatus1 != \"OK\" || isolatedStatus2 != \"OK\" || isolatedStatus3 != \"OK\" ||\n    Phase01 > 9 || Phase02 > 9 || Phase03 > 9\n) {\n        var isolatedStatus = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: alertMessage,\n            alarmType: alarmType,\n        };        \n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : null
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -500,6 +504,7 @@
       },
       "name" : "Current Evaluation",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
@@ -510,6 +515,7 @@
       "configuration" : {
         "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -519,6 +525,7 @@
       },
       "name" : "Filter status",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
@@ -538,6 +545,7 @@
         "propagateToTenant" : false,
         "dynamicSeverity" : false
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -547,6 +555,7 @@
       },
       "name" : "Current Evaluation",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
     }, {
       "additionalInfo" : {
@@ -557,6 +566,7 @@
       "configuration" : {
         "jsScript" : "var isolatedStatus = msg.flowSensor_l_per_min_status;\nvar flow_per_min   = msg.flowSensor_l_per_min_instantly;\nvar flow_min_last  = msg.flowSensor_l_per_min_lastMinute; \nvar flow_last_15   = msg.flowSensor_l_per_min_last15Minutes; \n\nisolatedStatus = \"ALERTA\";\n\n    if(flow_per_min == 0 && flow_min_last == 0 && flow_last_15 == 0 ){\n        var alarmType      = \"Falta de água\";\n        var message        = \"Possivel falta, fluxo de água em \" + flow_per_min + \" l/min\";\n        var alarmCount     = true;\n        var isolatedStatus = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: message,\n            alarmType: alarmType,\n            alarmCount: alarmCount\n        };   \n    }else if (flow_per_min > 10){\n        var alarmType      = \"Vazão excessiva de água\";\n        var message        = \"Fluxo de água em \" + flow_per_min + \" l/min\";\n        var isolatedStatus = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: message,\n            alarmType: alarmType,\n        };   \n    }\n     \n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -566,6 +576,7 @@
       },
       "name" : "Water Flow Evaluation",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
@@ -576,6 +587,7 @@
       "configuration" : {
         "jsScript" : "if (msg.status){\n        return true;\n}else{\n    return false;\n}\n"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -585,6 +597,7 @@
       },
       "name" : "Filter status",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
@@ -604,6 +617,7 @@
         "propagateToTenant" : false,
         "dynamicSeverity" : false
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -613,6 +627,7 @@
       },
       "name" : "Water Flow Evaluation",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
     }, {
       "additionalInfo" : {
@@ -623,6 +638,7 @@
       "configuration" : {
         "jsScript" : "var currentWeight_kg = msg.currentWeight_kg;\nvar alarmType        = \"Excesso de peso\";\nvar alertMessage     = \"Peso atual em : \" + currentWeight_kg + \"Kg\";\nvar deviceName       = metadata.deviceName; // Obtém o valor do campo deviceName\nvar modeldevice      = deviceName.substring(0, 3); // Pega os 3 primeiros caracteres\nvar limit            = parseInt(modeldevice) + (parseInt(modeldevice)*0.2);//limit= modelo do equipamento + 20%\n\nif (currentWeight_kg > limit) {\n        var isolatedStatus = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: isolatedStatus,\n            message: alertMessage,\n            alarmType: alarmType,\n        };        \n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -632,6 +648,7 @@
       },
       "name" : "Overweight",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
@@ -642,6 +659,7 @@
       "configuration" : {
         "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -651,12 +669,13 @@
       },
       "name" : "Filter status",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1602,
-        "layoutY" : 654
+        "layoutY" : 650
       },
       "configuration" : {
         "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
@@ -670,6 +689,7 @@
         "propagateToTenant" : false,
         "dynamicSeverity" : false
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -679,16 +699,18 @@
       },
       "name" : "Overweight",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2432,
-        "layoutY" : 378
+        "layoutX" : 2448,
+        "layoutY" : 55
       },
       "configuration" : {
         "ruleChainId" : "10ceb940-4363-11ed-b66e-bd8d8d68617d"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -698,35 +720,20 @@
       },
       "name" : "ToEmail",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2094,
-        "layoutY" : 377
+        "layoutX" : 1025,
+        "layoutY" : 754
       },
       "configuration" : {
-        "jsScript" : "var elapsedMillis = msg.endTs - msg.startTs;\nvar elapsedMinutes = Math.floor(elapsedMillis / (1000 * 60));\n\n\nmsg.currentTime = elapsedMinutes;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "scriptLang" : "JS",
+        "jsScript" : "var isolatedStatus = msg.doorSensor_status;\nvar stateDoor      = msg.doorSensor;\nvar alarmType;\nvar status         = \"ALERTA\";\n\nif (isolatedStatus.trim() != \"OK\" ) {\n    var alertMessage  = \"Sensor de porta em alerta\";\n    alarmType = \"SENSOR REPORTOU PROBLEMA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n    msg.sensorproblem= true;\n}\n\n\nif (stateDoor.trim() != \"CLOSED\"){\n    var alertMessage  = \"A Porta do equipamento em ALERTA: \" + stateDoor;\n    alarmType = \"PORTA ABERTA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n    \n    msg.sensorproblem= false;\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : null
       },
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "95750940-6213-11ee-9559-2f8be92bafca"
-      },
-      "name" : "Count Time",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1026,
-        "layoutY" : 755
-      },
-      "configuration" : {
-        "jsScript" : "var isolatedStatus = msg.doorSensor_status;\nvar stateDoor      = msg.doorSensor;\nvar alarmType      = \"PORTA ABERTA\";\n\nif (isolatedStatus != \"OK\" ) {\n    var alertMessage  = \"Sensor de porta em alerta\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n    msg.startCount= false;\n}\n\n\nif (stateDoor != \"CLOSED\"){\n    var alertMessage  = \"A Porta do equipamento em ALERTA: \" + stateDoor;\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n    \n    msg.startCount= true;\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
-      },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -736,16 +743,20 @@
       },
       "name" : "Open Door",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1320,
+        "layoutX" : 1316,
         "layoutY" : 755
       },
       "configuration" : {
-        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+        "scriptLang" : "JS",
+        "jsScript" : "if (msg.sensorproblem){\n    return true\n}else{\n    return false\n}\n",
+        "tbelScript" : null
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -755,18 +766,21 @@
       },
       "name" : "Filter status",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1864,
-        "layoutY" : 754
+        "layoutX" : 1929,
+        "layoutY" : 897
       },
       "configuration" : {
+        "scriptLang" : "JS",
         "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
+        "alarmDetailsBuildTbel" : null,
         "useMessageAlarmData" : false,
         "overwriteAlarmDetails" : false,
-        "alarmType" : "$[status.alarmType]",
+        "alarmType" : "Porta Aberta",
         "severity" : "CRITICAL",
         "propagate" : false,
         "relationTypes" : [ ],
@@ -774,6 +788,7 @@
         "propagateToTenant" : false,
         "dynamicSeverity" : false
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -783,149 +798,21 @@
       },
       "name" : "Open Door",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2197,
-        "layoutY" : 834
+        "layoutX" : 1827,
+        "layoutY" : 772
       },
       "configuration" : {
-        "jsScript" : "var elapsedMillis = msg.endTs - msg.startTs;\nvar elapsedMinutes = Math.floor(elapsedMillis / (1000 * 60));\n\n\nmsg.currentTime = elapsedMinutes;\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "5394cbc0-6220-11ee-9559-2f8be92bafca"
-      },
-      "name" : "Count Time",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1603,
-        "layoutY" : 754
-      },
-      "configuration" : {
-        "jsScript" : "if (msg.startCount == false){\n    return true\n}else{\n    return false\n}\n"
-      },
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "0aa43300-6221-11ee-9559-2f8be92bafca"
-      },
-      "name" : "Filter status",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2431,
-        "layoutY" : 478
-      },
-      "configuration" : {
-        "version" : 0
-      },
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "228e1ba0-6223-11ee-9559-2f8be92bafca"
-      },
-      "name" : "Limpo",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.flow.TbAckNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1862,
-        "layoutY" : 832
-      },
-      "configuration" : {
-        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;",
-        "useMessageAlarmData" : false,
-        "overwriteAlarmDetails" : false,
-        "alarmType" : "$[status.alarmType]",
-        "severity" : "CRITICAL",
-        "propagate" : false,
-        "relationTypes" : [ ],
-        "propagateToOwner" : false,
-        "propagateToTenant" : false,
-        "dynamicSeverity" : false
-      },
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "2ae76e70-622b-11ee-9559-2f8be92bafca"
-      },
-      "name" : "Pre alarm Porta",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2439,
-        "layoutY" : 703
-      },
-      "configuration" : {
-        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1, time: msg.currentTime };\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;",
-        "useMessageAlarmData" : false,
-        "overwriteAlarmDetails" : false,
-        "alarmType" : "$[name]",
-        "severity" : "CRITICAL",
-        "propagate" : false,
-        "relationTypes" : [ ],
-        "propagateToOwner" : false,
-        "propagateToTenant" : false,
-        "dynamicSeverity" : false
-      },
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "82189c60-622f-11ee-9559-2f8be92bafca"
-      },
-      "name" : "Pre alarm Porta",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2446,
-        "layoutY" : 834
-      },
-      "configuration" : {
-        "jsScript" : "if (msg.currentTime > 30){\n    return true\n}else{\n    return false\n}\n"
-      },
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "2c2d9d80-6240-11ee-9559-2f8be92bafca"
-      },
-      "name" : "Filter status",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1603,
-        "layoutY" : 836
-      },
-      "configuration" : {
+        "scriptLang" : "JS",
         "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmType" : "PORTA ABERTA"
+        "alarmDetailsBuildTbel" : null,
+        "alarmType" : "Sensor da Porta"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -933,8 +820,9 @@
         "entityType" : "RULE_NODE",
         "id" : "66dd00a0-6241-11ee-9559-2f8be92bafca"
       },
-      "name" : "Clear alarm Door",
+      "name" : "Clear alarm Door Sensor",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
     }, {
       "additionalInfo" : {
@@ -945,8 +833,9 @@
       "configuration" : {
         "jsScript" : "var isolatedStatus = msg.motor_status;\r\nvar state          = msg.motor;\r\nvar alarmType      = \"Possivel problema no motor\";\r\n\r\n\r\n\r\nif (isolatedStatus != \"OK\") {\r\n    var alertMessage  = \"Motor apresenta falha, verificar !\";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -954,12 +843,13 @@
       },
       "name" : "Motor Error",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1602,
-        "layoutY" : 54
+        "layoutX" : 1597,
+        "layoutY" : 55
       },
       "configuration" : {
         "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n    var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n    delete metadata.prevAlarmDetails;\n    if (prevDetails.count) {\n        details.count = prevDetails.count + 1;\n    }\n\n  \n}\n\nreturn details;\n",
@@ -973,6 +863,7 @@
         "propagateToTenant" : false,
         "dynamicSeverity" : false
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -982,6 +873,7 @@
       },
       "name" : "Motor Error",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
     }, {
       "additionalInfo" : {
@@ -992,6 +884,7 @@
       "configuration" : {
         "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -1001,32 +894,281 @@
       },
       "name" : "Filter status",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 488,
-        "layoutY" : 564
+        "layoutX" : 2825,
+        "layoutY" : 529
       },
       "configuration" : {
-        "inputValueKey" : "pulseCounter",
-        "outputValueKey" : "delta",
-        "useCache" : true,
-        "addPeriodBetweenMsgs" : true,
-        "periodValueKey" : "lastMsg",
-        "round" : 3,
-        "tellFailureIfDeltaIsNegative" : true
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n  details = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  metadata.remove('prevAlarmDetails');\n  //now metadata is the same as it comes IN this rule node\n}\n",
+        "alarmType" : "$[name]"
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ca5ab950-62b5-11ee-9559-2f8be92bafca"
+        "id" : "e201e770-71bc-11ee-b282-e7e99d39da5a"
       },
-      "name" : "teste",
+      "name" : "Limpeza instatanea",
       "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.metadata.CalculateDeltaNode"
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1606,
+        "layoutY" : 900
+      },
+      "configuration" : {
+        "interval" : 120,
+        "telemetryPrefix" : "messageCount"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "70384320-71ec-11ee-b282-e7e99d39da5a"
+      },
+      "name" : "15min",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbMsgCountNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1602,
+        "layoutY" : 816
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0e9f340-729d-11ee-b282-e7e99d39da5a"
+      },
+      "name" : "startcount",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1602,
+        "layoutY" : 730
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "Sensor da Porta",
+        "severity" : "CRITICAL",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "7fe3bf70-72a0-11ee-b282-e7e99d39da5a"
+      },
+      "name" : "Sensor Door",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2455,
+        "layoutY" : 811
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n  details = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  metadata.remove('prevAlarmDetails');\n  //now metadata is the same as it comes IN this rule node\n}\n",
+        "alarmType" : "Porta Aberta"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "7d447190-72a2-11ee-b282-e7e99d39da5a"
+      },
+      "name" : "Porta Aberta limpar",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2197,
+        "layoutY" : 896
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\n msg.diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\nvar diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1f77b320-72a6-11ee-b282-e7e99d39da5a"
+      },
+      "name" : "teset",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2458,
+        "layoutY" : 896
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return msg.temperature > 20;",
+        "tbelScript" : "return msg.diferencaEmMinutos > 120;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "814482c0-72b2-11ee-b282-e7e99d39da5a"
+      },
+      "name" : "Finalizar após 2h para reenviar",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2309,
+        "layoutY" : 529
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\n msg.diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\nvar diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "8cc00150-72b3-11ee-b282-e7e99d39da5a"
+      },
+      "name" : "teset",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2571,
+        "layoutY" : 530
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return msg.temperature > 20;",
+        "tbelScript" : "return msg.diferencaEmMinutos > 300;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "8cc09d90-72b3-11ee-b282-e7e99d39da5a"
+      },
+      "name" : "Finalizar após 6h para reenviar",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1028,
+        "layoutY" : 851
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "Connectivity",
+        "severity" : "CRITICAL",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "fa4035b0-733f-11ee-8942-434d90bd9269"
+      },
+      "name" : "Connectivity",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1030,
+        "layoutY" : 932
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n  details = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  metadata.remove('prevAlarmDetails');\n  //now metadata is the same as it comes IN this rule node\n}\n",
+        "alarmType" : "Connectivity"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3c19f7a0-7340-11ee-8942-434d90bd9269"
+      },
+      "name" : "Connectivity_On",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
     } ],
     "ruleChainConnections" : null
   },
