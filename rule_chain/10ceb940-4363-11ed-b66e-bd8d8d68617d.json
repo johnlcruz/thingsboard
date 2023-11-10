@@ -9,7 +9,7 @@
     "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "66d4f5b1-6212-11ee-9559-2f8be92bafca"
+      "id" : "66d4cea0-6212-11ee-9559-2f8be92bafca"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -24,51 +24,40 @@
       "fromIndex" : 0,
       "toIndex" : 1,
       "type" : "Success"
-    }, {
-      "fromIndex" : 3,
-      "toIndex" : 0,
-      "type" : "True"
-    }, {
-      "fromIndex" : 3,
-      "toIndex" : 4,
-      "type" : "False"
-    }, {
-      "fromIndex" : 4,
-      "toIndex" : 2,
-      "type" : "True"
     } ],
-    "firstNodeIndex" : 3,
+    "firstNodeIndex" : 0,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 604,
-        "layoutY" : 154
+        "layoutX" : 475,
+        "layoutY" : 151
       },
       "configuration" : {
         "fromTemplate" : "alertas@ecocircuito.com.br",
-        "toTemplate" : "john.lennon@ecocircuito.com.br",
+        "toTemplate" : "john.lennon@ecocircuito.com.br, ricieri@ecocircuito.com.br, luis@ecocircuito.com.br, bruna@ecocircuito.com.br",
         "ccTemplate" : null,
         "bccTemplate" : null,
         "subjectTemplate" : "Biodigestor ${deviceName} em $[details.status.alarmType] ",
         "mailBodyType" : "false",
-        "isHtmlTemplate" : null,
         "bodyTemplate" : "Biodigestor ${deviceName} em alarme:\nSTATUS: $[details.status.errorStatus]\nMENSAGEM: $[details.status.message]\nTIPO DO ALARME: $[details.status.alarmType] "
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
         "id" : "66d4cea0-6212-11ee-9559-2f8be92bafca"
       },
-      "name" : "envio teste",
+      "name" : "Envio",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 932,
-        "layoutY" : 155
+        "layoutX" : 838,
+        "layoutY" : 151
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -86,8 +75,9 @@
         "username" : null,
         "password" : null
       },
+      "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -95,65 +85,8 @@
       },
       "name" : "teste email",
       "ruleChainId" : null,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.mail.TbSendEmailNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 931,
-        "layoutY" : 79
-      },
-      "configuration" : {
-        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    \n    //now metadata is the same as it comes IN this rule node\n}\n\n \nreturn details;",
-        "alarmType" : "$[name]"
-      },
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "66d4f5b0-6212-11ee-9559-2f8be92bafca"
-      },
-      "name" : "teste",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 327,
-        "layoutY" : 153
-      },
-      "configuration" : {
-        "jsScript" : "return msg.details.count > 1 && msg.currentTime == 10;"
-      },
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "66d4f5b1-6212-11ee-9559-2f8be92bafca"
-      },
-      "name" : "FILTRO EMAIL",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 601,
-        "layoutY" : 79
-      },
-      "configuration" : {
-        "jsScript" : "return msg.details.count > 10 && msg.currentTime > 10;"
-      },
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "66d4f5b2-6212-11ee-9559-2f8be92bafca"
-      },
-      "name" : "FILTRO LIMPEZA",
-      "ruleChainId" : null,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     } ],
     "ruleChainConnections" : null
   },
