@@ -670,7 +670,9 @@
         "layoutY" : 650
       },
       "configuration" : {
+        "scriptLang" : "JS",
         "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
+        "alarmDetailsBuildTbel" : null,
         "useMessageAlarmData" : false,
         "overwriteAlarmDetails" : false,
         "alarmType" : "$[status.alarmType]",
