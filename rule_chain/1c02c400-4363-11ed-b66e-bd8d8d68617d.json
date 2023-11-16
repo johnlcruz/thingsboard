@@ -1147,7 +1147,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\n msg.diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var startTs = metadata.ts;\nvar endTs   = new Date().getTime();\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\n msg.status.diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};\n",
         "tbelScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\nvar diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
