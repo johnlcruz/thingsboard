@@ -170,10 +170,6 @@
       "type" : "Success"
     }, {
       "fromIndex" : 21,
-      "toIndex" : 23,
-      "type" : "False"
-    }, {
-      "fromIndex" : 21,
       "toIndex" : 28,
       "type" : "False"
     }, {
