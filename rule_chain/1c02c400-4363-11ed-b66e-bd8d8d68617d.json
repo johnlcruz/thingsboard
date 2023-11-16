@@ -58,19 +58,19 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 36,
+      "toIndex" : 35,
       "type" : "Disconnect Event"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 36,
+      "toIndex" : 35,
       "type" : "Inactivity Event"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 37,
+      "toIndex" : 36,
       "type" : "Activity Event"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 37,
+      "toIndex" : 36,
       "type" : "Connect Event"
     }, {
       "fromIndex" : 2,
@@ -78,7 +78,7 @@
       "type" : "Created"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 34,
+      "toIndex" : 33,
       "type" : "Updated"
     }, {
       "fromIndex" : 3,
@@ -98,7 +98,7 @@
       "type" : "Created"
     }, {
       "fromIndex" : 6,
-      "toIndex" : 34,
+      "toIndex" : 33,
       "type" : "Updated"
     }, {
       "fromIndex" : 7,
@@ -114,7 +114,7 @@
       "type" : "Created"
     }, {
       "fromIndex" : 9,
-      "toIndex" : 34,
+      "toIndex" : 33,
       "type" : "Updated"
     }, {
       "fromIndex" : 10,
@@ -130,7 +130,7 @@
       "type" : "Created"
     }, {
       "fromIndex" : 12,
-      "toIndex" : 34,
+      "toIndex" : 33,
       "type" : "Updated"
     }, {
       "fromIndex" : 13,
@@ -146,7 +146,7 @@
       "type" : "Created"
     }, {
       "fromIndex" : 15,
-      "toIndex" : 34,
+      "toIndex" : 33,
       "type" : "Updated"
     }, {
       "fromIndex" : 16,
@@ -162,7 +162,7 @@
       "type" : "Created"
     }, {
       "fromIndex" : 18,
-      "toIndex" : 34,
+      "toIndex" : 33,
       "type" : "Updated"
     }, {
       "fromIndex" : 20,
@@ -174,11 +174,11 @@
       "type" : "False"
     }, {
       "fromIndex" : 21,
-      "toIndex" : 29,
+      "toIndex" : 28,
       "type" : "False"
     }, {
       "fromIndex" : 21,
-      "toIndex" : 30,
+      "toIndex" : 29,
       "type" : "True"
     }, {
       "fromIndex" : 22,
@@ -186,7 +186,7 @@
       "type" : "Created"
     }, {
       "fromIndex" : 22,
-      "toIndex" : 32,
+      "toIndex" : 31,
       "type" : "Updated"
     }, {
       "fromIndex" : 24,
@@ -198,7 +198,7 @@
       "type" : "Created"
     }, {
       "fromIndex" : 25,
-      "toIndex" : 34,
+      "toIndex" : 33,
       "type" : "Updated"
     }, {
       "fromIndex" : 26,
@@ -206,36 +206,36 @@
       "type" : "True"
     }, {
       "fromIndex" : 28,
-      "toIndex" : 22,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 29,
-      "toIndex" : 28,
+      "toIndex" : 37,
       "type" : "True"
     }, {
-      "fromIndex" : 30,
+      "fromIndex" : 29,
       "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 30,
-      "toIndex" : 34,
+      "fromIndex" : 29,
+      "toIndex" : 33,
       "type" : "Updated"
     }, {
-      "fromIndex" : 32,
-      "toIndex" : 33,
+      "fromIndex" : 31,
+      "toIndex" : 32,
       "type" : "Success"
+    }, {
+      "fromIndex" : 32,
+      "toIndex" : 30,
+      "type" : "True"
     }, {
       "fromIndex" : 33,
-      "toIndex" : 31,
-      "type" : "True"
-    }, {
-      "fromIndex" : 34,
-      "toIndex" : 35,
+      "toIndex" : 34,
       "type" : "Success"
     }, {
-      "fromIndex" : 35,
+      "fromIndex" : 34,
       "toIndex" : 27,
       "type" : "True"
+    }, {
+      "fromIndex" : 37,
+      "toIndex" : 22,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
     "nodes" : [ {
@@ -915,28 +915,6 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1606,
-        "layoutY" : 900
-      },
-      "configuration" : {
-        "interval" : 120,
-        "telemetryPrefix" : "messageCount"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "70384320-71ec-11ee-b282-e7e99d39da5a"
-      },
-      "name" : "15min",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbMsgCountNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 1602,
         "layoutY" : 816
       },
@@ -1161,6 +1139,29 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1692,
+        "layoutY" : 899
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\n msg.diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\nvar diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a3f7cc60-849a-11ee-85cc-5d11cf221994"
+      },
+      "name" : "teset",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
