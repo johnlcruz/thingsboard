@@ -189,10 +189,6 @@
       "toIndex" : 32,
       "type" : "Updated"
     }, {
-      "fromIndex" : 22,
-      "toIndex" : 34,
-      "type" : "Created"
-    }, {
       "fromIndex" : 24,
       "toIndex" : 26,
       "type" : "Success"
@@ -731,7 +727,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
