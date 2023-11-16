@@ -39,11 +39,11 @@
         "bccTemplate" : null,
         "subjectTemplate" : "Biodigestor ${deviceName} em $[details.status.alarmType] ",
         "mailBodyType" : "false",
-        "bodyTemplate" : "Biodigestor ${deviceName} em alarme:\nSTATUS: $[details.status.errorStatus]\nMENSAGEM: $[details.status.message]\nTIPO DO ALARME: $[details.status.alarmType] "
+        "bodyTemplate" : "Biodigestor ${deviceName} em alarme:\nSTATUS: $[details.status.errorStatus]\nMENSAGEM: $[details.status.message]\nTIPO DO ALARME: $[details.status.alarmType]\n $[details.status.diferencaEmMinutos] ? 'TEMPO ABERTO:  ' + $[details.status.diferencaEmMinutos];"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -90,7 +90,6 @@
     } ],
     "ruleChainConnections" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
