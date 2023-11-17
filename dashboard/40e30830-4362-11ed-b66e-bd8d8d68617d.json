@@ -1539,10 +1539,9 @@
                 "color" : "#4caf50",
                 "settings" : {
                   "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "cellStyleFunction" : "",
+                  "useCellStyleFunction" : true,
+                  "cellStyleFunction" : "var bgColor = (value == \"true\") ? 'green' : 'red';\n\nvar texto  = (value == \"true\") ? 'OK' : 'OffLine';\nreturn '<div style=\"background-color: ' + bgColor + ';\">' +\n       '<p>'+ texto +'</p>' +\n       '</div>';",
                   "useCellContentFunction" : false,
-                  "cellContentFunction" : "",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled"
                 },
@@ -1551,7 +1550,8 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value === \"true\" ? \"OK\" : \"Offline\";"
+                "postFuncBody" : "return value === \"true\" ? \"OK\" : \"Offline\";",
+                "aggregationType" : null
               }, {
                 "name" : "currentStatus",
                 "type" : "timeseries",
@@ -1728,6 +1728,25 @@
                 "_hash" : 0.1861706670540848,
                 "units" : null,
                 "decimals" : 1,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Inoperante",
+                "type" : "attribute",
+                "label" : "Inoperante",
+                "color" : "#03a9f4",
+                "settings" : {
+                  "columnWidth" : "0px",
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false,
+                  "defaultColumnVisibility" : "hidden",
+                  "columnSelectionToDisplay" : "disabled"
+                },
+                "_hash" : 0.7485113938533604,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
