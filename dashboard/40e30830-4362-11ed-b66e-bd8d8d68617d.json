@@ -8,18 +8,19 @@
       },
       "title" : "User",
       "public" : false
+    }, {
+      "customerId" : {
+        "entityType" : "CUSTOMER",
+        "id" : "75b71e50-1113-11ee-8856-f94267911765"
+      },
+      "title" : "Public",
+      "public" : true
     } ],
     "configuration" : {
       "description" : "",
       "widgets" : {
         "acc95a56-1819-b5f6-7443-2790a72935bf" : {
-          "isSystemType" : true,
-          "bundleAlias" : "charts",
-          "typeAlias" : "state_chart",
           "type" : "timeseries",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 8,
           "sizeY" : 5,
           "config" : {
@@ -166,7 +167,17 @@
                 "axisPosition" : "top",
                 "showLabels" : true
               },
-              "tooltipValueFormatter" : "return value;"
+              "tooltipValueFormatter" : "return value;",
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : null,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : false,
+                "showTotal" : false
+              }
             },
             "title" : "Monitoramento de temperatura",
             "dropShadow" : true,
@@ -177,17 +188,7 @@
             },
             "widgetStyle" : { },
             "useDashboardTimewindow" : true,
-            "showLegend" : true,
             "actions" : { },
-            "legendConfig" : {
-              "direction" : "column",
-              "position" : "bottom",
-              "sortDataKeys" : null,
-              "showMin" : false,
-              "showMax" : false,
-              "showAvg" : false,
-              "showTotal" : false
-            },
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
@@ -195,16 +196,11 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "acc95a56-1819-b5f6-7443-2790a72935bf"
+          "id" : "acc95a56-1819-b5f6-7443-2790a72935bf",
+          "typeFullFqn" : "system.charts.state_chart"
         },
         "9c8ca831-8b8d-aeb2-18ad-00c4409d0dd5" : {
-          "isSystemType" : true,
-          "bundleAlias" : "charts",
-          "typeAlias" : "state_chart",
           "type" : "timeseries",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 8,
           "sizeY" : 5,
           "config" : {
@@ -353,7 +349,17 @@
                 "axisPosition" : "top",
                 "showLabels" : true
               },
-              "tooltipValueFormatter" : "return value;"
+              "tooltipValueFormatter" : "return value;",
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : null,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : false,
+                "showTotal" : false
+              }
             },
             "title" : "Correntes das fases do motor",
             "dropShadow" : true,
@@ -364,17 +370,7 @@
             },
             "widgetStyle" : { },
             "useDashboardTimewindow" : true,
-            "showLegend" : true,
             "actions" : { },
-            "legendConfig" : {
-              "direction" : "column",
-              "position" : "bottom",
-              "sortDataKeys" : null,
-              "showMin" : false,
-              "showMax" : false,
-              "showAvg" : false,
-              "showTotal" : false
-            },
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
@@ -382,16 +378,11 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "9c8ca831-8b8d-aeb2-18ad-00c4409d0dd5"
+          "id" : "9c8ca831-8b8d-aeb2-18ad-00c4409d0dd5",
+          "typeFullFqn" : "system.charts.state_chart"
         },
         "3ac5bb9e-9a8e-c0a2-9bf3-3cb8c1d9a126" : {
-          "isSystemType" : true,
-          "bundleAlias" : "charts",
-          "typeAlias" : "state_chart",
           "type" : "timeseries",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 8,
           "sizeY" : 5,
           "config" : {
@@ -536,7 +527,17 @@
                 "axisPosition" : "top",
                 "showLabels" : true
               },
-              "tooltipValueFormatter" : "return value;"
+              "tooltipValueFormatter" : "return value;",
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : null,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : false,
+                "showTotal" : false
+              }
             },
             "title" : "Gráfico de Protocolo de operação",
             "dropShadow" : true,
@@ -547,17 +548,7 @@
             },
             "widgetStyle" : { },
             "useDashboardTimewindow" : true,
-            "showLegend" : true,
             "actions" : { },
-            "legendConfig" : {
-              "direction" : "column",
-              "position" : "bottom",
-              "sortDataKeys" : null,
-              "showMin" : false,
-              "showMax" : false,
-              "showAvg" : false,
-              "showTotal" : false
-            },
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
@@ -565,16 +556,11 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "3ac5bb9e-9a8e-c0a2-9bf3-3cb8c1d9a126"
+          "id" : "3ac5bb9e-9a8e-c0a2-9bf3-3cb8c1d9a126",
+          "typeFullFqn" : "system.charts.state_chart"
         },
         "a07c13d0-4ae4-1ad7-f5f2-2cd0add7fe25" : {
-          "isSystemType" : true,
-          "bundleAlias" : "charts",
-          "typeAlias" : "timeseries_bars_flot",
           "type" : "timeseries",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 8,
           "sizeY" : 5,
           "config" : {
@@ -664,6 +650,17 @@
               "xaxisSecond" : {
                 "axisPosition" : "top",
                 "showLabels" : true
+              },
+              "showLegend" : false,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
               }
             },
             "title" : "Uso de energia (últimos 7 dias)",
@@ -675,7 +672,6 @@
             },
             "widgetStyle" : { },
             "useDashboardTimewindow" : false,
-            "showLegend" : false,
             "actions" : { },
             "displayTimewindow" : true,
             "showTitleIcon" : false,
@@ -685,16 +681,11 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "a07c13d0-4ae4-1ad7-f5f2-2cd0add7fe25"
+          "id" : "a07c13d0-4ae4-1ad7-f5f2-2cd0add7fe25",
+          "typeFullFqn" : "system.charts.timeseries_bars_flot"
         },
         "d21d40ec-834d-11d0-377b-9154e0f326ef" : {
-          "isSystemType" : true,
-          "bundleAlias" : "charts",
-          "typeAlias" : "timeseries_bars_flot",
           "type" : "timeseries",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 8,
           "sizeY" : 5,
           "config" : {
@@ -786,6 +777,17 @@
               "xaxisSecond" : {
                 "axisPosition" : "top",
                 "showLabels" : true
+              },
+              "showLegend" : false,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
               }
             },
             "title" : "Uso de água (últimos 7 dias)",
@@ -797,7 +799,6 @@
             },
             "widgetStyle" : { },
             "useDashboardTimewindow" : false,
-            "showLegend" : false,
             "actions" : { },
             "displayTimewindow" : true,
             "showTitleIcon" : false,
@@ -807,16 +808,11 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "d21d40ec-834d-11d0-377b-9154e0f326ef"
+          "id" : "d21d40ec-834d-11d0-377b-9154e0f326ef",
+          "typeFullFqn" : "system.charts.timeseries_bars_flot"
         },
         "16c56c02-9193-5a11-784a-52260a08b2f3" : {
-          "isSystemType" : true,
-          "bundleAlias" : "charts",
-          "typeAlias" : "timeseries_bars_flot",
           "type" : "timeseries",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 8,
           "sizeY" : 5,
           "config" : {
@@ -908,6 +904,17 @@
               "xaxisSecond" : {
                 "axisPosition" : "top",
                 "showLabels" : true
+              },
+              "showLegend" : false,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : true,
+                "showTotal" : false,
+                "showLatest" : false
               }
             },
             "title" : "Acumulado de descartes (últimos 7 dias)",
@@ -919,7 +926,6 @@
             },
             "widgetStyle" : { },
             "useDashboardTimewindow" : false,
-            "showLegend" : false,
             "actions" : { },
             "displayTimewindow" : true,
             "showTitleIcon" : false,
@@ -929,16 +935,11 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "16c56c02-9193-5a11-784a-52260a08b2f3"
+          "id" : "16c56c02-9193-5a11-784a-52260a08b2f3",
+          "typeFullFqn" : "system.charts.timeseries_bars_flot"
         },
         "3c6497f0-fefe-e48a-18dc-f5d7ae21a941" : {
-          "isSystemType" : true,
-          "bundleAlias" : "charts",
-          "typeAlias" : "state_chart",
           "type" : "timeseries",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 8,
           "sizeY" : 5,
           "config" : {
@@ -1023,6 +1024,16 @@
               "xaxisSecond" : {
                 "axisPosition" : "top",
                 "showLabels" : true
+              },
+              "showLegend" : false,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : null,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : false,
+                "showTotal" : false
               }
             },
             "title" : "Monitoramento de Porta",
@@ -1034,17 +1045,7 @@
             },
             "widgetStyle" : { },
             "useDashboardTimewindow" : true,
-            "showLegend" : false,
             "actions" : { },
-            "legendConfig" : {
-              "direction" : "column",
-              "position" : "bottom",
-              "sortDataKeys" : null,
-              "showMin" : false,
-              "showMax" : false,
-              "showAvg" : false,
-              "showTotal" : false
-            },
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
@@ -1052,16 +1053,11 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "3c6497f0-fefe-e48a-18dc-f5d7ae21a941"
+          "id" : "3c6497f0-fefe-e48a-18dc-f5d7ae21a941",
+          "typeFullFqn" : "system.charts.state_chart"
         },
         "54f636e3-d436-87b2-9676-f722c1b54ea5" : {
-          "isSystemType" : true,
-          "bundleAlias" : "alarm_widgets",
-          "typeAlias" : "alarms_table",
           "type" : "alarm",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 10.5,
           "sizeY" : 6.5,
           "config" : {
@@ -1171,7 +1167,6 @@
                 "postFuncBody" : null
               } ]
             },
-            "alarmSearchStatus" : "ANY",
             "alarmsPollingInterval" : 5,
             "showTitleIcon" : false,
             "titleIcon" : "more_horiz",
@@ -1197,24 +1192,21 @@
                 "id" : "d5ddbfac-f1f6-4b86-ebda-cf947b87bd0d"
               } ]
             },
-            "alarmStatusList" : [ "ACTIVE" ],
-            "alarmSeverityList" : [ ],
-            "alarmTypeList" : [ ],
-            "searchPropagatedAlarms" : false,
-            "datasources" : [ ]
+            "datasources" : [ ],
+            "alarmFilterConfig" : {
+              "statusList" : [ "ACTIVE" ],
+              "severityList" : [ ],
+              "typeList" : [ ],
+              "searchPropagatedAlarms" : false
+            }
           },
           "row" : 0,
           "col" : 0,
-          "id" : "54f636e3-d436-87b2-9676-f722c1b54ea5"
+          "id" : "54f636e3-d436-87b2-9676-f722c1b54ea5",
+          "typeFullFqn" : "system.alarm_widgets.alarms_table"
         },
         "a1fd543c-247b-ddc6-de6b-36005c1f0c25" : {
-          "isSystemType" : true,
-          "bundleAlias" : "charts",
-          "typeAlias" : "state_chart",
           "type" : "timeseries",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 8,
           "sizeY" : 5,
           "config" : {
@@ -1330,7 +1322,17 @@
                 "axisPosition" : "top",
                 "showLabels" : true
               },
-              "tooltipValueFormatter" : "return value;"
+              "tooltipValueFormatter" : "return value;",
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : null,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : false,
+                "showTotal" : false
+              }
             },
             "title" : "Peso e Descartes",
             "dropShadow" : true,
@@ -1341,17 +1343,7 @@
             },
             "widgetStyle" : { },
             "useDashboardTimewindow" : true,
-            "showLegend" : true,
             "actions" : { },
-            "legendConfig" : {
-              "direction" : "column",
-              "position" : "bottom",
-              "sortDataKeys" : null,
-              "showMin" : false,
-              "showMax" : false,
-              "showAvg" : false,
-              "showTotal" : false
-            },
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
@@ -1359,16 +1351,11 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "a1fd543c-247b-ddc6-de6b-36005c1f0c25"
+          "id" : "a1fd543c-247b-ddc6-de6b-36005c1f0c25",
+          "typeFullFqn" : "system.charts.state_chart"
         },
         "d903e20d-c181-7684-85f4-2f7e109c1a50" : {
-          "isSystemType" : true,
-          "bundleAlias" : "charts",
-          "typeAlias" : "state_chart",
           "type" : "timeseries",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 8,
           "sizeY" : 5,
           "config" : {
@@ -1449,7 +1436,17 @@
                 "axisPosition" : "top",
                 "showLabels" : true
               },
-              "tooltipValueFormatter" : "return value;"
+              "tooltipValueFormatter" : "return value;",
+              "showLegend" : true,
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "bottom",
+                "sortDataKeys" : null,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : false,
+                "showTotal" : false
+              }
             },
             "title" : "Monitoramento do Fluxo de água",
             "dropShadow" : true,
@@ -1460,17 +1457,7 @@
             },
             "widgetStyle" : { },
             "useDashboardTimewindow" : true,
-            "showLegend" : true,
             "actions" : { },
-            "legendConfig" : {
-              "direction" : "column",
-              "position" : "bottom",
-              "sortDataKeys" : null,
-              "showMin" : false,
-              "showMax" : false,
-              "showAvg" : false,
-              "showTotal" : false
-            },
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
@@ -1478,30 +1465,39 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "d903e20d-c181-7684-85f4-2f7e109c1a50"
+          "id" : "d903e20d-c181-7684-85f4-2f7e109c1a50",
+          "typeFullFqn" : "system.charts.state_chart"
         },
         "67e063a0-6c80-a015-81af-97fc79e4591f" : {
-          "isSystemType" : true,
-          "bundleAlias" : "entity_admin_widgets",
-          "typeAlias" : "device_admin_table",
           "type" : "latest",
-          "title" : "New widget",
-          "image" : null,
-          "description" : null,
           "sizeX" : 7.5,
           "sizeY" : 6.5,
           "config" : {
             "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
               "realtime" : {
+                "realtimeType" : 1,
                 "interval" : 1000,
-                "timewindowMs" : 86400000
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1698183909476,
+                  "endTimeMs" : 1698270309476
+                },
+                "quickInterval" : "CURRENT_DAY"
               },
               "aggregation" : {
                 "type" : "NONE",
                 "limit" : 200
               }
             },
-            "showTitle" : false,
+            "showTitle" : true,
             "backgroundColor" : "#00404a",
             "color" : "#ffffff",
             "padding" : "4px",
@@ -1533,7 +1529,7 @@
               "type" : "entity",
               "name" : null,
               "entityAliasId" : "3cbee774-0ebe-54e1-ce2a-69811fc56258",
-              "filterId" : null,
+              "filterId" : "503e3b21-595b-4fb1-7e0d-a1f18ed1ed8d",
               "dataKeys" : [ {
                 "name" : "active",
                 "type" : "attribute",
@@ -1733,11 +1729,14 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              } ]
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
-            "showTitleIcon" : false,
-            "titleIcon" : "more_horiz",
-            "iconColor" : "#000000",
+            "showTitleIcon" : true,
+            "titleIcon" : "insert_chart",
+            "iconColor" : "#A90000",
             "iconSize" : "24px",
             "titleTooltip" : "Núcleo de Operações & Controle",
             "widgetStyle" : { },
@@ -1747,7 +1746,7 @@
                 "name" : "Adicionar",
                 "icon" : "add",
                 "type" : "customPretty",
-                "customHtml" : "<form #addDeviceForm=\"ngForm\" [formGroup]=\"addDeviceFormGroup\"\n      (ngSubmit)=\"save()\" style=\"width: 480px;\">\n  <mat-toolbar fxLayout=\"row\" color=\"primary\">\n    <h2>Criar Equipamento</h2>\n    <span fxFlex></span>\n    <button mat-button mat-icon-button\n            (click)=\"cancel()\"\n            type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n      <div class=\"mat-padding\" fxLayout=\"column\">\n            <mat-form-field class=\"mat-block\">\n                <mat-label>Número de Série</mat-label>\n                <input matInput formControlName=\"serialNumber\" required>\n                <mat-error *ngIf=\"addDeviceFormGroup.get('serialNumber').hasError('required')\">\n                    Número de Série é obrigatório.\n                </mat-error>\n            </mat-form-field>\n            <mat-form-field class=\"mat-block\">\n                <mat-label>Nome</mat-label>\n                <input matInput formControlName=\"deviceName\" required>\n                <mat-error *ngIf=\"addDeviceFormGroup.get('deviceName').hasError('required')\">\n                    Nome é obrigatório.\n                </mat-error>\n            </mat-form-field>\n            <div fxLayout=\"row\" fxLayoutGap=\"8px\">\n                <tb-entity-subtype-autocomplete\n                    fxFlex=\"50\"\n                    formControlName=\"deviceType\"\n                    [required]=\"true\"\n                    [entityType]=\"'DEVICE'\"\n                ></tb-entity-subtype-autocomplete>\n            </div>\n      </div>  \n  </div>\n  <div mat-dialog-actions fxLayout=\"row\">\n    <span fxFlex></span>\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            style=\"margin-right: 20px;\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || addDeviceForm.invalid || !addDeviceForm.dirty\">\n      Create\n    </button>\n  </div>\n</form>\n",
+                "customHtml" : "<form #addDeviceForm=\"ngForm\" [formGroup]=\"addDeviceFormGroup\"\n      (ngSubmit)=\"save()\" style=\"width: 480px;\">\n  <mat-toolbar fxLayout=\"row\" color=\"primary\">\n    <h2>Criar Equipamento</h2>\n    <span fxFlex></span>\n    <button mat-icon-button\n            (click)=\"cancel()\"\n            type=\"button\">\n      <mat-icon class=\"material-icons\">close</mat-icon>\n    </button>\n  </mat-toolbar>\n  <mat-progress-bar color=\"warn\" mode=\"indeterminate\" *ngIf=\"isLoading$ | async\">\n  </mat-progress-bar>\n  <div style=\"height: 4px;\" *ngIf=\"!(isLoading$ | async)\"></div>\n  <div mat-dialog-content>\n      <div class=\"mat-padding\" fxLayout=\"column\">\n            <mat-form-field class=\"mat-block\">\n                <mat-label>Número de Série</mat-label>\n                <input matInput formControlName=\"serialNumber\" required>\n                <mat-error *ngIf=\"addDeviceFormGroup.get('serialNumber').hasError('required')\">\n                    Número de Série é obrigatório.\n                </mat-error>\n            </mat-form-field>\n            <mat-form-field class=\"mat-block\">\n                <mat-label>Nome</mat-label>\n                <input matInput formControlName=\"deviceName\" required>\n                <mat-error *ngIf=\"addDeviceFormGroup.get('deviceName').hasError('required')\">\n                    Nome é obrigatório.\n                </mat-error>\n            </mat-form-field>\n            <div fxLayout=\"row\" fxLayoutGap=\"8px\">\n                <tb-entity-subtype-autocomplete\n                    fxFlex=\"50\"\n                    formControlName=\"deviceType\"\n                    [required]=\"true\"\n                    [entityType]=\"'DEVICE'\"\n                ></tb-entity-subtype-autocomplete>\n            </div>\n      </div>  \n  </div>\n  <div mat-dialog-actions fxLayout=\"row\">\n    <span fxFlex></span>\n    <button mat-button color=\"primary\"\n            type=\"button\"\n            [disabled]=\"(isLoading$ | async)\"\n            (click)=\"cancel()\" cdkFocusInitial>\n      Cancel\n    </button>\n    <button mat-button mat-raised-button color=\"primary\"\n            style=\"margin-right: 20px;\"\n            type=\"submit\"\n            [disabled]=\"(isLoading$ | async) || addDeviceForm.invalid || !addDeviceForm.dirty\">\n      Create\n    </button>\n  </div>\n</form>\n",
                 "customCss" : "",
                 "customFunction" : "let $injector = widgetContext.$scope.$injector;\nlet customDialog = $injector.get(widgetContext.servicesMap.get('customDialog'));\nlet deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\n//let attributeService = $injector.get(widgetContext.servicesMap.get('attributeService'));\n\nopenAddDeviceDialog();\n\nfunction openAddDeviceDialog() {\n    customDialog.customDialog(htmlTemplate, AddDeviceDialogController).subscribe();\n}\n\nfunction AddDeviceDialogController(instance) {\n    let vm = instance;\n    \n    vm.addDeviceFormGroup = vm.fb.group({\n      serialNumber: ['', [vm.validators.required]],\n      deviceName: ['', [vm.validators.required]],\n      deviceType: ['', [vm.validators.required]]\n      /*\n      deviceLabel: [''],\n      attributes: vm.fb.group({\n          latitude: [null],\n          longitude: [null]\n      })\n      */\n    });\n    \n    vm.cancel = function() {\n        vm.dialogRef.close(null);\n    };\n    \n    vm.save = function() {\n        vm.addDeviceFormGroup.markAsPristine();\n        let device = {\n            name: vm.addDeviceFormGroup.get('deviceName').value,\n            type: vm.addDeviceFormGroup.get('deviceType').value,\n            label: vm.addDeviceFormGroup.get('deviceName').value\n        };\n        deviceService.saveDevice(device).subscribe(\n            function (device) {\n                \n                deviceService.getDeviceCredentials(device.id.id, true).subscribe(function (deviceCredentials) {\n                    \n                    deviceCredentials.credentialsId = vm.addDeviceFormGroup.get('serialNumber').value;\n                    \n                    deviceService.saveDeviceCredentials(deviceCredentials).subscribe(function () {\n                        vm.dialogRef.close(null) \n                    });\n                });\n                \n\n                /*saveAttributes(device.id).subscribe(\n                    function () {\n                        widgetContext.updateAliases();\n                        vm.dialogRef.close(null);\n                    }\n                );*/\n            }\n        );\n    };\n    \n    /*function saveAttributes(entityId) {\n        let attributes = vm.addDeviceFormGroup.get('attributes').value;\n        let attributesArray = [];\n        for (let key in attributes) {\n            attributesArray.push({key: key, value: attributes[key]});\n        }\n        if (attributesArray.length > 0) {\n            return attributeService.saveEntityAttributes(entityId, \"SERVER_SCOPE\", attributesArray);\n        } else {\n            return widgetContext.rxjs.of([]);\n        }\n    }*/\n}",
                 "customResources" : [ ],
@@ -1767,12 +1766,38 @@
                 "dialogHeight" : null,
                 "openRightLayout" : false,
                 "id" : "bb69a90f-e07b-2360-7c63-eb62981f7fb3"
+              } ],
+              "rowClick" : [ {
+                "name" : "ir",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "default",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "18b5158a-c78e-aadd-5bc4-1d66999f2a3a"
               } ]
-            }
+            },
+            "widgetCss" : "",
+            "pageSize" : 2048,
+            "noDataDisplayMessage" : "",
+            "titleFont" : {
+              "size" : 24,
+              "sizeUnit" : "px",
+              "family" : "monospace",
+              "weight" : "bold",
+              "style" : "normal"
+            },
+            "titleColor" : "#BA0303"
           },
           "row" : 0,
           "col" : 0,
-          "id" : "67e063a0-6c80-a015-81af-97fc79e4591f"
+          "id" : "67e063a0-6c80-a015-81af-97fc79e4591f",
+          "typeFullFqn" : "system.entity_admin_widgets.device_admin_table"
         }
       },
       "states" : {
@@ -1841,7 +1866,8 @@
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
                 "margin" : 10,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "outerMargin" : true
               }
             }
           }
@@ -1869,7 +1895,8 @@
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
                 "margin" : 10,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "outerMargin" : true
               }
             }
           }
@@ -1892,8 +1919,8 @@
           "filter" : {
             "type" : "deviceType",
             "resolveMultiple" : true,
-            "deviceType" : "ECOPRO",
-            "deviceNameFilter" : ""
+            "deviceNameFilter" : "",
+            "deviceTypes" : [ "ECOPRO" ]
           }
         }
       },
@@ -1925,17 +1952,47 @@
             } ]
           } ],
           "editable" : true
+        },
+        "503e3b21-595b-4fb1-7e0d-a1f18ed1ed8d" : {
+          "id" : "503e3b21-595b-4fb1-7e0d-a1f18ed1ed8d",
+          "filter" : "ECO-PRO - inoperante",
+          "keyFilters" : [ {
+            "key" : {
+              "type" : "ENTITY_FIELD",
+              "key" : "Inoperante"
+            },
+            "valueType" : "BOOLEAN",
+            "predicates" : [ {
+              "keyFilterPredicate" : {
+                "operation" : "EQUAL",
+                "value" : {
+                  "defaultValue" : false,
+                  "dynamicValue" : null
+                },
+                "type" : "BOOLEAN"
+              },
+              "userInfo" : {
+                "editable" : true,
+                "label" : "",
+                "autogeneratedLabel" : true,
+                "order" : 0
+              }
+            } ]
+          } ],
+          "editable" : true
         }
       },
       "timewindow" : {
         "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
         "selectedTab" : 1,
         "history" : {
           "historyType" : 0,
-          "timewindowMs" : 604800000,
+          "timewindowMs" : 86400000,
           "interval" : 1800000,
           "fixedTimewindow" : {
             "startTimeMs" : 1.6451864970988008E12,
@@ -1946,7 +2003,8 @@
         "aggregation" : {
           "type" : "MAX",
           "limit" : 25000
-        }
+        },
+        "timezone" : null
       },
       "settings" : {
         "stateControllerId" : "entity",
@@ -1975,7 +2033,6 @@
     "name" : "[[ NOC ]] - Núcleo de Operações & Controle",
     "title" : "[[ NOC ]] - Núcleo de Operações & Controle"
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
