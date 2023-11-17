@@ -1531,7 +1531,7 @@
               "type" : "entity",
               "name" : null,
               "entityAliasId" : "3cbee774-0ebe-54e1-ce2a-69811fc56258",
-              "filterId" : "503e3b21-595b-4fb1-7e0d-a1f18ed1ed8d",
+              "filterId" : "4a5a23c0-53cf-f9e6-0f4e-899230c00203",
               "dataKeys" : [ {
                 "name" : "active",
                 "type" : "attribute",
@@ -1971,15 +1971,9 @@
                 "order" : 0
               }
             } ]
-          } ],
-          "editable" : true
-        },
-        "503e3b21-595b-4fb1-7e0d-a1f18ed1ed8d" : {
-          "id" : "503e3b21-595b-4fb1-7e0d-a1f18ed1ed8d",
-          "filter" : "ECO-PRO - inoperante",
-          "keyFilters" : [ {
+          }, {
             "key" : {
-              "type" : "ENTITY_FIELD",
+              "type" : "ATTRIBUTE",
               "key" : "Inoperante"
             },
             "valueType" : "BOOLEAN",
