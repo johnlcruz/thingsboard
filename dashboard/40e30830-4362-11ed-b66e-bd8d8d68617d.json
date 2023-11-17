@@ -1515,8 +1515,7 @@
               "displayPagination" : true,
               "defaultPageSize" : 30,
               "defaultSortOrder" : "entityName",
-              "useRowStyleFunction" : true,
-              "rowStyleFunction" : "var isActive   = ctx.active\nvar color      = ''// Modificando a cor se o atributo 'active' for false\nif (isActive==='OK') {\n    color = 'red'; // Ou qualquer outra cor desejada\n}else{\n    color = 'green'\n}\n\nreturn {\n    backgroundColor: color\n};\n"
+              "useRowStyleFunction" : false
             },
             "title" : "",
             "dropShadow" : true,
@@ -1541,7 +1540,8 @@
                 "settings" : {
                   "columnWidth" : "0px",
                   "useCellStyleFunction" : false,
-                  "useCellContentFunction" : false,
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "var color;\nvar active = value;\n\nif (active === 'OK') { // all key values here are strings\n  color = '#27AE60';\n} else {\n  color = '#EB5757';\n}\nreturn '<span style=\"font-size: 18px; color: ' + color + '\">&#11044;</span>';\n",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled"
                 },
