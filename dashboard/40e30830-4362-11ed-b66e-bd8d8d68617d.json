@@ -1511,11 +1511,12 @@
               "displayEntityName" : false,
               "displayEntityLabel" : true,
               "entityLabelColumnTitle" : "ECO-PRO",
-              "displayEntityType" : false,
+              "displayEntityType" : true,
               "displayPagination" : true,
-              "defaultPageSize" : 12,
+              "defaultPageSize" : 30,
               "defaultSortOrder" : "entityName",
-              "useRowStyleFunction" : false
+              "useRowStyleFunction" : true,
+              "rowStyleFunction" : "var isActive   = ctx.active\nvar color      = ''// Modificando a cor se o atributo 'active' for false\nif (isActive==='OK') {\n    color = 'red'; // Ou qualquer outra cor desejada\n}else{\n    color = 'green'\n}\n\nreturn {\n    backgroundColor: color\n};\n"
             },
             "title" : "",
             "dropShadow" : true,
@@ -1539,8 +1540,7 @@
                 "color" : "#4caf50",
                 "settings" : {
                   "columnWidth" : "0px",
-                  "useCellStyleFunction" : true,
-                  "cellStyleFunction" : "var bgColor = (value == \"true\") ? 'green' : 'red';\n\nvar texto  = (value == \"true\") ? 'OK' : 'OffLine';\nreturn '<div style=\"background-color: ' + bgColor + ';\">' +\n       '<p>'+ texto +'</p>' +\n       '</div>';",
+                  "useCellStyleFunction" : false,
                   "useCellContentFunction" : false,
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled"
