@@ -1620,8 +1620,8 @@
                 "settings" : {
                   "columnWidth" : "0px",
                   "useCellStyleFunction" : false,
-                  "useCellContentFunction" : false,
-                  "cellContentFunction" : "",
+                  "useCellContentFunction" : true,
+                  "cellContentFunction" : "function getIcon(value) {\n  if (value == \"OPEN\") {\n    return '<mat-icon class=\"mat-icon material-icons mat-icon-no-color\" data-mat-icon-type=\"font\" style=\"color: #EB5757;\">' + \n      'meeting_room' + \n    '</mat-icon>';\n  }else{\n    return '<mat-icon class=\"mat-icon notranslate material-icons mat-icon-no-color\" data-mat-icon-type=\"font\" style=\"color: #27AE60\">' +\n      'door_front' + \n    '</mat-icon>';\n  }\n  return '';\n}\nfunction capitalize (s) {\n  if (typeof s !== 'string') return '';\n  return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();\n}\nvar status = value;\nreturn getIcon(status) + '<span style=\"vertical-align: super;padding-left: 8px;\">' + capitalize(status) + '</span>';\n",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled"
                 },
@@ -1630,7 +1630,8 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
-                "postFuncBody" : null
+                "postFuncBody" : null,
+                "aggregationType" : "NONE"
               }, {
                 "name" : "temperatureDrum",
                 "type" : "timeseries",
