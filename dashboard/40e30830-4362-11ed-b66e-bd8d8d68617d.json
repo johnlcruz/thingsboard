@@ -1497,25 +1497,27 @@
                 "limit" : 200
               }
             },
-            "showTitle" : true,
+            "showTitle" : false,
             "backgroundColor" : "#00404a",
             "color" : "#ffffff",
             "padding" : "4px",
             "settings" : {
               "enableSearch" : true,
-              "displayPagination" : true,
-              "defaultPageSize" : 12,
-              "defaultSortOrder" : "entityName",
-              "displayEntityName" : false,
-              "displayEntityType" : false,
-              "entitiesTitle" : "Lista de Equipamentos",
               "enableSelectColumnDisplay" : true,
               "enableStickyHeader" : true,
               "enableStickyAction" : true,
+              "showCellActionsMenu" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : false,
               "displayEntityLabel" : true,
-              "entityLabelColumnTitle" : "ECO-PRO"
+              "entityLabelColumnTitle" : "ECO-PRO",
+              "displayEntityType" : false,
+              "displayPagination" : true,
+              "defaultPageSize" : 12,
+              "defaultSortOrder" : "entityName",
+              "useRowStyleFunction" : false
             },
-            "title" : "ECO-PRO",
+            "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
@@ -1734,9 +1736,9 @@
                 "statusList" : [ "ACTIVE" ]
               }
             } ],
-            "showTitleIcon" : true,
+            "showTitleIcon" : false,
             "titleIcon" : "insert_chart",
-            "iconColor" : "#A90000",
+            "iconColor" : "#FFFFFF",
             "iconSize" : "24px",
             "titleTooltip" : "Núcleo de Operações & Controle",
             "widgetStyle" : { },
@@ -1792,7 +1794,7 @@
               "weight" : "bold",
               "style" : "normal"
             },
-            "titleColor" : "#BA0303"
+            "titleColor" : "#FFFFFF"
           },
           "row" : 0,
           "col" : 0,
