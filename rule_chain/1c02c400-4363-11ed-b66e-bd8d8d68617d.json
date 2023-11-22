@@ -255,7 +255,7 @@
         "entityType" : "RULE_NODE",
         "id" : "89943d90-5d4e-11ee-9559-2f8be92bafca"
       },
-      "name" : "Water Shortage",
+      "name" : "Water Temperature",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -632,7 +632,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -653,7 +653,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -729,7 +729,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -752,7 +752,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -784,7 +784,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -825,7 +825,9 @@
         "layoutY" : 55
       },
       "configuration" : {
-        "jsScript" : "var isolatedStatus = msg.motor_status;\r\nvar state          = msg.motor;\r\nvar alarmType      = \"Possivel problema no motor\";\r\n\r\n\r\n\r\nif (isolatedStatus != \"OK\") {\r\n    var alertMessage  = \"Motor apresenta falha, verificar !\";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "scriptLang" : "JS",
+        "jsScript" : "var isolatedStatus = msg.motor_status;\r\nvar state          = msg.motor;\r\nvar alarmType      = \"Possivel problema no motor\";\r\n\r\n\r\n\r\nif (isolatedStatus != \"OK\") {\r\n    var alertMessage  = \"Motor apresenta falha, verificar estado \"+state;\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -927,7 +929,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1154,7 +1156,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
