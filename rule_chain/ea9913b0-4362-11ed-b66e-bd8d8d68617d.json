@@ -184,7 +184,7 @@
       },
       "configuration" : {
         "persistAlarmRulesState" : true,
-        "fetchAlarmRulesStateOnStart" : false
+        "fetchAlarmRulesStateOnStart" : true
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -243,7 +243,6 @@
     } ],
     "ruleChainConnections" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
