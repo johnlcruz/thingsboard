@@ -195,15 +195,6 @@
         }
       },
       "entityAliases" : {
-        "bc797609-1503-f8e9-3faf-590cacdf21e0" : {
-          "id" : "bc797609-1503-f8e9-3faf-590cacdf21e0",
-          "alias" : "Função",
-          "filter" : {
-            "type" : "entityType",
-            "resolveMultiple" : true,
-            "entityType" : "DEVICE"
-          }
-        },
         "6a9234d1-e593-7d43-8d19-f662ccf505d7" : {
           "id" : "6a9234d1-e593-7d43-8d19-f662ccf505d7",
           "alias" : "teste",
@@ -214,6 +205,16 @@
               "entityType" : "ASSET",
               "id" : "cb2d5d70-4361-11ed-b66e-bd8d8d68617d"
             }
+          }
+        },
+        "9f0832ae-ba92-c8f1-df63-744ea5bd8ddf" : {
+          "id" : "9f0832ae-ba92-c8f1-df63-744ea5bd8ddf",
+          "alias" : "aleatorio",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "b2e1ec80-4362-11ed-b66e-bd8d8d68617d", "2dd6fde0-dadf-11ed-8b16-118240e818cd" ]
           }
         }
       },
