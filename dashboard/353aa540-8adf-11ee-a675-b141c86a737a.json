@@ -1,0 +1,22 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : "teset"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "353aa540-8adf-11ee-a675-b141c86a737a"
+    },
+    "image" : null,
+    "mobileHide" : true,
+    "mobileOrder" : null,
+    "name" : "teste",
+    "title" : "teste"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
