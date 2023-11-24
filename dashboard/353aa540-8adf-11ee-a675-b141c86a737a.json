@@ -173,10 +173,10 @@
             "main" : {
               "widgets" : {
                 "278452f2-8dbf-fab4-2ca0-1cdfc179b5fb" : {
-                  "sizeX" : 10,
-                  "sizeY" : 6,
+                  "sizeX" : 24,
+                  "sizeY" : 25,
                   "row" : 0,
-                  "col" : 2
+                  "col" : 0
                 }
               },
               "gridSettings" : {
