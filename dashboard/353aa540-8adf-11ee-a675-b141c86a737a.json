@@ -5,8 +5,8 @@
     "configuration" : {
       "description" : "teset",
       "widgets" : {
-        "3be95323-4b91-fde1-2709-3ca39d62f227" : {
-          "typeFullFqn" : "system.alarm_widgets.alarms_table",
+        "278452f2-8dbf-fab4-2ca0-1cdfc179b5fb" : {
+          "typeFullFqn" : "system.teste_alarme",
           "type" : "alarm",
           "sizeX" : 10.5,
           "sizeY" : 6.5,
@@ -42,7 +42,7 @@
               "entitiesTitle" : null,
               "alarmsTitle" : "Alarms"
             },
-            "title" : "Alarms table",
+            "title" : "Teste alarme",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
@@ -50,67 +50,111 @@
               "fontWeight" : 400,
               "padding" : "5px 10px 5px 10px"
             },
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "showLegend" : false,
             "alarmSource" : {
-              "type" : "function",
-              "name" : "alarm, alarms",
-              "entityAliasId" : null,
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "6a9234d1-e593-7d43-8d19-f662ccf505d7",
               "dataKeys" : [ {
                 "name" : "createdTime",
                 "type" : "alarm",
-                "label" : "Hora de criação",
+                "label" : "Created time",
                 "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.30808037424386436
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.021092237451093787,
+                "funcBody" : null
               }, {
-                "name" : "originator",
+                "name" : "originatorLabel",
                 "type" : "alarm",
-                "label" : "Originador",
+                "label" : "Originator john1",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.4378605486934011
+                "_hash" : 0.9023564479902523,
+                "funcBody" : null
               }, {
                 "name" : "type",
                 "type" : "alarm",
-                "label" : "Tipo",
+                "label" : "Type",
                 "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.645353707593744
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.7323586880398418,
+                "funcBody" : null
               }, {
                 "name" : "severity",
                 "type" : "alarm",
-                "label" : "Severidade",
+                "label" : "Severity",
                 "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.7080536668211291
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false
+                },
+                "_hash" : 0.09927019860088193,
+                "funcBody" : null
               }, {
                 "name" : "status",
                 "type" : "alarm",
                 "label" : "Status",
                 "color" : "#607d8b",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.6588418951443418,
+                "funcBody" : null
+              }, {
+                "name" : "assignee",
+                "type" : "alarm",
+                "label" : "Assignee",
+                "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.20125342525461987
+                "_hash" : 0.5008441077416634,
+                "funcBody" : null
+              }, {
+                "name" : "originatorType",
+                "type" : "alarm",
+                "label" : "Tipo de originador",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.03938644862853946,
+                "decimals" : 0,
+                "funcBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
             },
+            "alarmSearchStatus" : "ANY",
             "alarmsPollingInterval" : 5,
             "showTitleIcon" : true,
             "titleIcon" : "warning",
-            "iconColor" : "rgba(159, 0, 0, 0.87)",
+            "iconColor" : "rgba(137, 0, 0, 0.87)",
             "iconSize" : "24px",
             "titleTooltip" : "",
             "widgetStyle" : { },
             "displayTimewindow" : true,
             "actions" : { },
-            "configMode" : "advanced",
+            "alarmStatusList" : [ ],
+            "alarmSeverityList" : [ ],
+            "alarmTypeList" : [ ],
+            "searchPropagatedAlarms" : false,
+            "configMode" : "basic",
             "alarmFilterConfig" : {
-              "statusList" : [ ],
               "severityList" : [ ],
-              "typeList" : [ ],
-              "searchPropagatedAlarms" : false
+              "assignedToCurrentUser" : false,
+              "assigneeId" : null
             },
             "titleFont" : null,
             "titleColor" : null,
@@ -118,7 +162,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "3be95323-4b91-fde1-2709-3ca39d62f227"
+          "id" : "278452f2-8dbf-fab4-2ca0-1cdfc179b5fb"
         }
       },
       "states" : {
@@ -128,7 +172,7 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "3be95323-4b91-fde1-2709-3ca39d62f227" : {
+                "278452f2-8dbf-fab4-2ca0-1cdfc179b5fb" : {
                   "sizeX" : 10,
                   "sizeY" : 6,
                   "row" : 0,
@@ -146,7 +190,29 @@
           }
         }
       },
-      "entityAliases" : { },
+      "entityAliases" : {
+        "bc797609-1503-f8e9-3faf-590cacdf21e0" : {
+          "id" : "bc797609-1503-f8e9-3faf-590cacdf21e0",
+          "alias" : "Função",
+          "filter" : {
+            "type" : "entityType",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE"
+          }
+        },
+        "6a9234d1-e593-7d43-8d19-f662ccf505d7" : {
+          "id" : "6a9234d1-e593-7d43-8d19-f662ccf505d7",
+          "alias" : "teste",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "ASSET",
+              "id" : "cb2d5d70-4361-11ed-b66e-bd8d8d68617d"
+            }
+          }
+        }
+      },
       "filters" : { },
       "timewindow" : {
         "displayValue" : "",
