@@ -1,9 +1,16 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : null,
+    "assignedCustomers" : [ {
+      "customerId" : {
+        "entityType" : "CUSTOMER",
+        "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+      },
+      "title" : "User",
+      "public" : false
+    } ],
     "configuration" : {
-      "description" : "teset",
+      "description" : "Alertas urgentes",
       "widgets" : {
         "278452f2-8dbf-fab4-2ca0-1cdfc179b5fb" : {
           "typeFullFqn" : "system.teste_alarme",
@@ -272,8 +279,8 @@
     "image" : null,
     "mobileHide" : true,
     "mobileOrder" : null,
-    "name" : "teste",
-    "title" : "teste"
+    "name" : "[[AU]] - Alertas urgentes",
+    "title" : "[[AU]] - Alertas urgentes"
   },
   "attributes" : {
     "SERVER_SCOPE" : [ ]
