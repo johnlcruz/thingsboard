@@ -55,7 +55,7 @@
             "alarmSource" : {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "6a9234d1-e593-7d43-8d19-f662ccf505d7",
+              "entityAliasId" : "9f0832ae-ba92-c8f1-df63-744ea5bd8ddf",
               "dataKeys" : [ {
                 "name" : "createdTime",
                 "type" : "alarm",
@@ -176,7 +176,7 @@
                   "sizeX" : 10,
                   "sizeY" : 6,
                   "row" : 0,
-                  "col" : 0
+                  "col" : 2
                 }
               },
               "gridSettings" : {
