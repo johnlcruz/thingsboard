@@ -77,10 +77,6 @@
       "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 2,
-      "toIndex" : 33,
-      "type" : "Updated"
-    }, {
       "fromIndex" : 3,
       "toIndex" : 5,
       "type" : "Success"
@@ -89,17 +85,21 @@
       "toIndex" : 2,
       "type" : "True"
     }, {
+      "fromIndex" : 4,
+      "toIndex" : 27,
+      "type" : "False"
+    }, {
       "fromIndex" : 5,
       "toIndex" : 6,
       "type" : "True"
     }, {
+      "fromIndex" : 5,
+      "toIndex" : 27,
+      "type" : "False"
+    }, {
       "fromIndex" : 6,
       "toIndex" : 19,
       "type" : "Created"
-    }, {
-      "fromIndex" : 6,
-      "toIndex" : 33,
-      "type" : "Updated"
     }, {
       "fromIndex" : 7,
       "toIndex" : 8,
@@ -109,13 +109,13 @@
       "toIndex" : 9,
       "type" : "True"
     }, {
+      "fromIndex" : 8,
+      "toIndex" : 27,
+      "type" : "False"
+    }, {
       "fromIndex" : 9,
       "toIndex" : 19,
       "type" : "Created"
-    }, {
-      "fromIndex" : 9,
-      "toIndex" : 33,
-      "type" : "Updated"
     }, {
       "fromIndex" : 10,
       "toIndex" : 11,
@@ -125,13 +125,13 @@
       "toIndex" : 12,
       "type" : "True"
     }, {
+      "fromIndex" : 11,
+      "toIndex" : 27,
+      "type" : "False"
+    }, {
       "fromIndex" : 12,
       "toIndex" : 19,
       "type" : "Created"
-    }, {
-      "fromIndex" : 12,
-      "toIndex" : 33,
-      "type" : "Updated"
     }, {
       "fromIndex" : 13,
       "toIndex" : 14,
@@ -141,13 +141,13 @@
       "toIndex" : 15,
       "type" : "True"
     }, {
+      "fromIndex" : 14,
+      "toIndex" : 27,
+      "type" : "False"
+    }, {
       "fromIndex" : 15,
       "toIndex" : 19,
       "type" : "Created"
-    }, {
-      "fromIndex" : 15,
-      "toIndex" : 33,
-      "type" : "Updated"
     }, {
       "fromIndex" : 16,
       "toIndex" : 17,
@@ -157,13 +157,13 @@
       "toIndex" : 18,
       "type" : "True"
     }, {
+      "fromIndex" : 17,
+      "toIndex" : 27,
+      "type" : "False"
+    }, {
       "fromIndex" : 18,
       "toIndex" : 19,
       "type" : "Created"
-    }, {
-      "fromIndex" : 18,
-      "toIndex" : 33,
-      "type" : "Updated"
     }, {
       "fromIndex" : 20,
       "toIndex" : 21,
@@ -193,13 +193,13 @@
       "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 25,
-      "toIndex" : 33,
-      "type" : "Updated"
-    }, {
       "fromIndex" : 26,
       "toIndex" : 25,
       "type" : "True"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 27,
+      "type" : "False"
     }, {
       "fromIndex" : 28,
       "toIndex" : 23,
@@ -213,10 +213,6 @@
       "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 29,
-      "toIndex" : 33,
-      "type" : "Updated"
-    }, {
       "fromIndex" : 31,
       "toIndex" : 32,
       "type" : "Success"
@@ -228,10 +224,6 @@
       "fromIndex" : 33,
       "toIndex" : 34,
       "type" : "Success"
-    }, {
-      "fromIndex" : 34,
-      "toIndex" : 27,
-      "type" : "True"
     }, {
       "fromIndex" : 37,
       "toIndex" : 22,
@@ -895,14 +887,14 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2825,
-        "layoutY" : 529
+        "layoutX" : 2224,
+        "layoutY" : 617
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
         "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n  details = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  metadata.remove('prevAlarmDetails');\n  //now metadata is the same as it comes IN this rule node\n}\n",
-        "alarmType" : "$[name]"
+        "alarmType" : "$[status.alarmType]"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -1044,8 +1036,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2309,
-        "layoutY" : 529
+        "layoutX" : 2225,
+        "layoutY" : 697
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1067,8 +1059,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2571,
-        "layoutY" : 530
+        "layoutX" : 2481,
+        "layoutY" : 699
       },
       "configuration" : {
         "scriptLang" : "TBEL",
