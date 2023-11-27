@@ -201,20 +201,12 @@
       "toIndex" : 27,
       "type" : "False"
     }, {
-      "fromIndex" : 28,
-      "toIndex" : 35,
-      "type" : "True"
-    }, {
       "fromIndex" : 29,
       "toIndex" : 19,
       "type" : "Created"
     }, {
       "fromIndex" : 31,
       "toIndex" : 32,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 35,
-      "toIndex" : 22,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -1077,28 +1069,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1879,
-        "layoutY" : 915
-      },
-      "configuration" : {
-        "interval" : 60,
-        "telemetryPrefix" : "Opendoortime"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "203b7b20-8d3b-11ee-b06e-df1ec5eb3f75"
-      },
-      "name" : "teste",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbMsgCountNode"
     }, {
       "additionalInfo" : {
         "description" : "",
