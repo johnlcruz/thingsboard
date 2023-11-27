@@ -58,19 +58,19 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 35,
+      "toIndex" : 33,
       "type" : "Disconnect Event"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 35,
+      "toIndex" : 33,
       "type" : "Inactivity Event"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 36,
+      "toIndex" : 34,
       "type" : "Activity Event"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 36,
+      "toIndex" : 34,
       "type" : "Connect Event"
     }, {
       "fromIndex" : 2,
@@ -170,6 +170,10 @@
       "type" : "Success"
     }, {
       "fromIndex" : 21,
+      "toIndex" : 23,
+      "type" : "False"
+    }, {
+      "fromIndex" : 21,
       "toIndex" : 28,
       "type" : "False"
     }, {
@@ -180,10 +184,6 @@
       "fromIndex" : 22,
       "toIndex" : 19,
       "type" : "Created"
-    }, {
-      "fromIndex" : 22,
-      "toIndex" : 31,
-      "type" : "Updated"
     }, {
       "fromIndex" : 24,
       "toIndex" : 26,
@@ -202,11 +202,7 @@
       "type" : "False"
     }, {
       "fromIndex" : 28,
-      "toIndex" : 23,
-      "type" : "False"
-    }, {
-      "fromIndex" : 28,
-      "toIndex" : 37,
+      "toIndex" : 35,
       "type" : "True"
     }, {
       "fromIndex" : 29,
@@ -217,15 +213,7 @@
       "toIndex" : 32,
       "type" : "Success"
     }, {
-      "fromIndex" : 32,
-      "toIndex" : 30,
-      "type" : "True"
-    }, {
-      "fromIndex" : 33,
-      "toIndex" : 34,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 37,
+      "fromIndex" : 35,
       "toIndex" : 22,
       "type" : "Success"
     } ],
@@ -757,8 +745,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1945,
-        "layoutY" : 897
+        "layoutX" : 2148,
+        "layoutY" : 917
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -789,8 +777,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1851,
-        "layoutY" : 814
+        "layoutX" : 1607,
+        "layoutY" : 913
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -966,8 +954,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2455,
-        "layoutY" : 811
+        "layoutX" : 1954,
+        "layoutY" : 1049
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -987,52 +975,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2197,
-        "layoutY" : 896
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\n msg.diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\nvar diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "1f77b320-72a6-11ee-b282-e7e99d39da5a"
-      },
-      "name" : "teset",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2458,
-        "layoutY" : 896
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return msg.temperature > 20;",
-        "tbelScript" : "return msg.diferencaEmMinutos > 120;"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "814482c0-72b2-11ee-b282-e7e99d39da5a"
-      },
-      "name" : "Finalizar após 2h para reenviar",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
         "description" : "",
@@ -1138,26 +1080,25 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1692,
-        "layoutY" : 899
+        "layoutX" : 1879,
+        "layoutY" : 915
       },
       "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "var startTs = metadata.ts;\nvar endTs   = new Date().getTime();\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\n msg.status.diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};\n",
-        "tbelScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\nvar diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "interval" : 60,
+        "telemetryPrefix" : "Opendoortime"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "a3f7cc60-849a-11ee-85cc-5d11cf221994"
+        "id" : "203b7b20-8d3b-11ee-b06e-df1ec5eb3f75"
       },
-      "name" : "teset",
+      "name" : "teste",
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+      "type" : "org.thingsboard.rule.engine.action.TbMsgCountNode"
     } ],
     "ruleChainConnections" : null
   },
