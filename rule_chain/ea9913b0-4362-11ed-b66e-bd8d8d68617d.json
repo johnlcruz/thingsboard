@@ -259,8 +259,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 930,
-        "layoutY" : 681
+        "layoutX" : 933,
+        "layoutY" : 687
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -291,8 +291,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 933,
-        "layoutY" : 760
+        "layoutX" : 932,
+        "layoutY" : 775
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -302,7 +302,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
