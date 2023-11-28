@@ -50,10 +50,6 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 20,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
       "toIndex" : 24,
       "type" : "Post telemetry"
     }, {
@@ -195,6 +191,10 @@
     }, {
       "fromIndex" : 31,
       "toIndex" : 32,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 33,
+      "toIndex" : 20,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -1006,8 +1006,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 445,
-        "layoutY" : 548
+        "layoutX" : 454,
+        "layoutY" : 602
       },
       "configuration" : {
         "latestTsKeyNames" : [ "doorSensor" ],
