@@ -522,7 +522,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -686,12 +686,12 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var isolatedStatus = msg.doorSensor_status;\nvar stateDoor      = msg.doorSensor;\nvar alarmType;\nvar status         = \"ALERTA\";\n\nif (isolatedStatus.trim() != \"OK\" ) {\n    var alertMessage  = \"Sensor de porta em alerta\";\n    alarmType = \"SENSOR REPORTOU PROBLEMA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n    msg.sensorproblem= true;\n}\n\n\nif (stateDoor.trim() != \"CLOSED\"){\n    var alertMessage  = \"A Porta do equipamento em ALERTA: \" + stateDoor;\n    alarmType = \"PORTA ABERTA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n    \n    msg.sensorproblem= false;\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var isolatedStatus = msg.doorSensor_status;\nvar stateDoor      = msg.doorSensor;\nvar alarmType;\nvar status         = \"ALERTA\";\n\n\n\nmsg.deltaTemperature = parseFloat(Math.abs(metadata.ts - JSON.parse(metadata.ts)).toFixed(2));\n\n\nif (isolatedStatus.trim() != \"OK\" ) {\n    var alertMessage  = \"Sensor de porta em alerta\";\n    alarmType = \"SENSOR REPORTOU PROBLEMA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n    msg.sensorproblem= true;\n}\n\n\nif (stateDoor.trim() != \"CLOSED\"){\n    var alertMessage  = \"A Porta do equipamento em ALERTA: \" + stateDoor;\n    alarmType = \"PORTA ABERTA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n    \n    msg.sensorproblem= false;\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -746,7 +746,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1025,7 +1025,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
