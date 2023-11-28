@@ -1,14 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ {
-      "customerId" : {
-        "entityType" : "CUSTOMER",
-        "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
-      },
-      "title" : "User",
-      "public" : false
-    } ],
+    "assignedCustomers" : [ ],
     "configuration" : {
       "description" : "Alertas urgentes",
       "widgets" : {
@@ -163,6 +156,7 @@
             "searchPropagatedAlarms" : false,
             "configMode" : "advanced",
             "alarmFilterConfig" : {
+              "statusList" : [ "ACTIVE" ],
               "severityList" : [ ],
               "assignedToCurrentUser" : false,
               "assigneeId" : null
