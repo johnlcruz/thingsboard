@@ -1006,8 +1006,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 454,
-        "layoutY" : 602
+        "layoutX" : 466,
+        "layoutY" : 650
       },
       "configuration" : {
         "latestTsKeyNames" : [ "doorSensor" ],
