@@ -57,22 +57,6 @@
       "toIndex" : 24,
       "type" : "Post telemetry"
     }, {
-      "fromIndex" : 1,
-      "toIndex" : 33,
-      "type" : "Disconnect Event"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 33,
-      "type" : "Inactivity Event"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 34,
-      "type" : "Activity Event"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 34,
-      "type" : "Connect Event"
-    }, {
       "fromIndex" : 2,
       "toIndex" : 19,
       "type" : "Created"
@@ -1013,62 +997,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1028,
-        "layoutY" : 851
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "useMessageAlarmData" : false,
-        "overwriteAlarmDetails" : false,
-        "alarmType" : "Connectivity",
-        "severity" : "CRITICAL",
-        "propagate" : false,
-        "relationTypes" : [ ],
-        "propagateToOwner" : false,
-        "propagateToTenant" : false,
-        "dynamicSeverity" : false
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "fa4035b0-733f-11ee-8942-434d90bd9269"
-      },
-      "name" : "Connectivity",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1030,
-        "layoutY" : 932
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n  details = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  metadata.remove('prevAlarmDetails');\n  //now metadata is the same as it comes IN this rule node\n}\n",
-        "alarmType" : "Connectivity"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "3c19f7a0-7340-11ee-8942-434d90bd9269"
-      },
-      "name" : "Connectivity_On",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
     }, {
       "additionalInfo" : {
         "description" : "",
