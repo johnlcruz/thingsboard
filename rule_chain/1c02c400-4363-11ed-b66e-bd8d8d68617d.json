@@ -1035,6 +1035,34 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 202,
+        "layoutY" : 717
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 1,
+        "scriptLang" : "TBEL",
+        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+        "queueName" : null,
+        "originatorId" : "b2e1ec80-4362-11ed-b66e-bd8d8d68617d",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "30571430-8e38-11ee-a58a-eb4f99e88ddb"
+      },
+      "name" : "teste door",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
     } ],
     "ruleChainConnections" : null
   },
