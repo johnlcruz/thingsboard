@@ -681,12 +681,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1025,
-        "layoutY" : 754
+        "layoutX" : 1024,
+        "layoutY" : 750
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var isolatedStatus = msg.doorSensor_status;\nvar stateDoor      = msg.doorSensor;\nvar alarmType;\nvar status         = \"ALERTA\";\n\n\n\nmsg.deltaTemperature = parseFloat(Math.abs(metadata.ts - JSON.parse(metadata.ts)).toFixed(2));\n\n\nif (isolatedStatus.trim() != \"OK\" ) {\n    var alertMessage  = \"Sensor de porta em alerta\";\n    alarmType = \"SENSOR REPORTOU PROBLEMA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n    msg.sensorproblem= true;\n}\n\n\nif (stateDoor.trim() != \"CLOSED\"){\n    var alertMessage  = \"A Porta do equipamento em ALERTA: \" + stateDoor;\n    alarmType = \"PORTA ABERTA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n    \n    msg.sensorproblem= false;\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var isolatedStatus = msg.doorSensor_status;\nvar stateDoor      = msg.doorSensor;\nvar alarmType;\nvar status         = \"ALERTA\";\n\n\n\nvar deltadoor = JSON.parse(metadata.doorSensor);\n\nmsg.deltadoor = deltadoor;\n\nif (isolatedStatus.trim() != \"OK\" ) {\n    var alertMessage  = \"Sensor de porta em alerta\";\n    alarmType = \"SENSOR REPORTOU PROBLEMA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n    msg.sensorproblem= true;\n}\n\n\nif (stateDoor.trim() != \"CLOSED\"){\n    var alertMessage  = \"A Porta do equipamento em ALERTA: \" + stateDoor;\n    alarmType = \"PORTA ABERTA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n    \n    msg.sensorproblem= false;\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
