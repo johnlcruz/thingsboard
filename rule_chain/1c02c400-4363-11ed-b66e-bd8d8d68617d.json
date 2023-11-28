@@ -1010,7 +1010,7 @@
         "layoutY" : 548
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "ts" ],
+        "latestTsKeyNames" : [ "doorSensor" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
