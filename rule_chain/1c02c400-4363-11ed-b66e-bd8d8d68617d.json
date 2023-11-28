@@ -196,10 +196,6 @@
       "fromIndex" : 33,
       "toIndex" : 20,
       "type" : "Success"
-    }, {
-      "fromIndex" : 33,
-      "toIndex" : 34,
-      "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
     "nodes" : [ {
@@ -1010,8 +1006,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 466,
-        "layoutY" : 650
+        "layoutX" : 519,
+        "layoutY" : 722
       },
       "configuration" : {
         "latestTsKeyNames" : [ "doorSensor" ],
@@ -1039,33 +1035,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 588,
-        "layoutY" : 825
-      },
-      "configuration" : {
-        "inputValueKey" : "doorSensor",
-        "outputValueKey" : "deltaDoor",
-        "useCache" : true,
-        "addPeriodBetweenMsgs" : false,
-        "periodValueKey" : "periodInMs",
-        "round" : null,
-        "tellFailureIfDeltaIsNegative" : true
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "adf1d150-8e2e-11ee-a58a-eb4f99e88ddb"
-      },
-      "name" : "teste",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.CalculateDeltaNode"
     } ],
     "ruleChainConnections" : null
   },
