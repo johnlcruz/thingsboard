@@ -1006,15 +1006,15 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 519,
-        "layoutY" : 722
+        "layoutX" : 565,
+        "layoutY" : 755
       },
       "configuration" : {
         "latestTsKeyNames" : [ "doorSensor" ],
-        "aggregation" : "SUM",
+        "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
-        "limit" : 1000,
+        "limit" : 100,
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
