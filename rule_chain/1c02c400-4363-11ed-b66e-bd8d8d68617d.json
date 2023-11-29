@@ -185,6 +185,14 @@
       "toIndex" : 27,
       "type" : "False"
     }, {
+      "fromIndex" : 28,
+      "toIndex" : 22,
+      "type" : "True"
+    }, {
+      "fromIndex" : 28,
+      "toIndex" : 30,
+      "type" : "False"
+    }, {
       "fromIndex" : 29,
       "toIndex" : 19,
       "type" : "Created"
@@ -686,7 +694,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var isolatedStatus = msg.doorSensor_status;\nvar stateDoor      = msg.doorSensor;\nvar alarmType;\nvar status         = \"ALERTA\";\n\n\n\nvar deltadoor = JSON.parse(metadata.doorSensor);\n\nmsg.deltadoor = deltadoor;\n\nif (isolatedStatus.trim() != \"OK\" ) {\n    var alertMessage  = \"Sensor de porta em alerta\";\n    alarmType = \"SENSOR REPORTOU PROBLEMA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n    msg.sensorproblem= true;\n}\n\n\nif (stateDoor.trim() != \"CLOSED\"){\n    var alertMessage  = \"A Porta do equipamento em ALERTA: \" + stateDoor;\n    alarmType = \"PORTA ABERTA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n    \n    msg.sensorproblem= false;\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var isolatedStatus = msg.doorSensor_status;\nvar stateDoor      = msg.doorSensor;\nvar alarmType;\nvar status         = \"ALERTA\";\n\n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaTempoEmMinutos(data) {\n    var primeiraData = data[0].ts; // Primeiro timestamp\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\n    return diferencaEmMinutos;\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSaoOPEN(data) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value !== \"OPEN\") {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"OPEN\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nvar deltadoor          = JSON.parse(metadata.doorSensor);\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(deltadoor);\nvar todosOPEN          = todosSaoOPEN(deltadoor);\n\nmsg.deltadoor = diferencaEmMinutos;\nmsg.disparar  = todosOPEN;\n\nif (isolatedStatus.trim() != \"OK\" ) {\n    var alertMessage  = \"Sensor de porta em alerta\";\n    alarmType = \"SENSOR REPORTOU PROBLEMA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n    msg.sensorproblem= true;\n}\n\n\nif (stateDoor.trim() != \"CLOSED\" && todosOPEN){\n    var alertMessage  = \"A Porta do equipamento em ALERTA: \" + stateDoor;\n    alarmType = \"PORTA ABERTA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n    \n    msg.sensorproblem= false;\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -727,8 +735,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2148,
-        "layoutY" : 917
+        "layoutX" : 1926,
+        "layoutY" : 817
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -936,8 +944,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1954,
-        "layoutY" : 1049
+        "layoutX" : 1927,
+        "layoutY" : 912
       },
       "configuration" : {
         "scriptLang" : "TBEL",
