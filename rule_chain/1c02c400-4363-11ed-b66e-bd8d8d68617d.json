@@ -1018,8 +1018,8 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 24,
-        "startIntervalTimeUnit" : "HOURS",
+        "startInterval" : 30,
+        "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
       },
