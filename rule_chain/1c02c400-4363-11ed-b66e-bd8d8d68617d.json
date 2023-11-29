@@ -512,7 +512,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1028,
+        "layoutX" : 1031,
         "layoutY" : 554
       },
       "configuration" : {
@@ -681,8 +681,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1024,
-        "layoutY" : 750
+        "layoutX" : 1029,
+        "layoutY" : 753
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -783,8 +783,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1029,
-        "layoutY" : 55
+        "layoutX" : 1028,
+        "layoutY" : 53
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1006,8 +1006,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 565,
-        "layoutY" : 755
+        "layoutX" : 567,
+        "layoutY" : 753
       },
       "configuration" : {
         "latestTsKeyNames" : [ "doorSensor" ],
