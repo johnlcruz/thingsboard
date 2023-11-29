@@ -1011,7 +1011,7 @@
       },
       "configuration" : {
         "latestTsKeyNames" : [ "doorSensor" ],
-        "aggregation" : "COUNT",
+        "aggregation" : "SUM",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
         "limit" : 1000,
