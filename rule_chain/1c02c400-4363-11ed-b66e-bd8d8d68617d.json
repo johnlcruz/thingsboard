@@ -529,12 +529,12 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var isolatedStatus = msg.flowSensor_l_per_min_status;\nvar flow_per_min   = msg.flowSensor_l_per_min_instantly;\nvar flow_min_last  = msg.flowSensor_l_per_min_lastMinute; \nvar flow_last_15   = msg.flowSensor_l_per_min_last15Minutes; \n\n\n\n    if(flow_per_min == 0 && flow_min_last == 0 && flow_last_15 == 0 ){\n        var alarmType      = \"Falta de água\";\n        var message        = \"Possivel falta, fluxo de água em \" + flow_per_min + \" l/min\";\n        var alarmCount     = true;\n        var Status = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n            alarmCount: alarmCount\n        };   \n    }else if (flow_per_min > 20){\n        var alarmType      = \"Vazão excessiva de água\";\n        var message        = \"Fluxo de água em \" + flow_per_min + \" l/min\";\n        var Status = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n        };   \n    }\n     \n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var isolatedStatus = msg.flowSensor_l_per_min_status;\nvar flow_per_min   = msg.flowSensor_l_per_min_instantly;\nvar flow_min_last  = msg.flowSensor_l_per_min_lastMinute; \nvar flow_last_15   = msg.flowSensor_l_per_min_last15Minutes; \n\n\n     \n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaTempoEmMinutos(data) {\n    var primeiraData = data[0].ts; // Primeiro timestamp\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\n    return diferencaEmMinutos;\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSaoZerados(data) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value !== 0) {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"OPEN\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nvar deltadoor          = JSON.parse(metadata.flowSensor_l_per_min_last15Minutes);\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(deltadoor);\nvar todosSaoZerados    = todosSaoZerados(deltadoor);\n\nmsg.deltadoor = diferencaEmMinutos;\nmsg.disparar  = todosSaoZerados;\n\nif(flow_per_min == 0 && flow_min_last == 0 && flow_last_15 == 0 && todosSaoZerados == 0){\n        var alarmType      = \"Falta de água\";\n        var message        = \"Possivel falta, fluxo de água em \" + flow_per_min + \" l/min há \" + diferencaEmMinutos + \"Min. \";\n        var alarmCount     = true;\n        var Status = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n            alarmCount: alarmCount\n        };   \n}else if (flow_per_min > 20){\n        var alarmType      = \"Vazão excessiva de água\";\n        var message        = \"Fluxo de água em \" + flow_per_min + \" l/min\";\n        var Status = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n        };   \n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1152,7 +1152,7 @@
         "layoutY" : 554
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "waterstete" ],
+        "latestTsKeyNames" : [ "flowSensor_l_per_min_last15Minutes" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
