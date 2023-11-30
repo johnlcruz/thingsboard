@@ -141,6 +141,10 @@
       "toIndex" : 18,
       "type" : "True"
     }, {
+      "fromIndex" : 17,
+      "toIndex" : 37,
+      "type" : "False"
+    }, {
       "fromIndex" : 18,
       "toIndex" : 19,
       "type" : "Created"
@@ -731,8 +735,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1926,
-        "layoutY" : 817
+        "layoutX" : 1903,
+        "layoutY" : 805
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -763,8 +767,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1602,
-        "layoutY" : 902
+        "layoutX" : 1604,
+        "layoutY" : 855
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -861,8 +865,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1602,
-        "layoutY" : 816
+        "layoutX" : 1603,
+        "layoutY" : 805
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -884,8 +888,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1602,
-        "layoutY" : 730
+        "layoutX" : 1603,
+        "layoutY" : 755
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -916,8 +920,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1927,
-        "layoutY" : 912
+        "layoutX" : 1904,
+        "layoutY" : 855
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -1110,6 +1114,30 @@
         "id" : "1437a270-8f9a-11ee-88bd-b7c2a3c1921f"
       },
       "name" : "Falta de água",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1604,
+        "layoutY" : 705
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "Excesso de peso"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3af95b60-8f9a-11ee-88bd-b7c2a3c1921f"
+      },
+      "name" : "Excesso de peso",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
