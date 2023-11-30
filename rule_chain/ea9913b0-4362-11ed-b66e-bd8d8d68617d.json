@@ -66,6 +66,14 @@
       "fromIndex" : 7,
       "toIndex" : 0,
       "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 11,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 11,
+      "type" : "Cleared"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
@@ -312,6 +320,27 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1287,
+        "layoutY" : 732
+      },
+      "configuration" : {
+        "ruleChainId" : "10ceb940-4363-11ed-b66e-bd8d8d68617d"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e8f06bc0-8f75-11ee-a58a-eb4f99e88ddb"
+      },
+      "name" : "Email",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },
