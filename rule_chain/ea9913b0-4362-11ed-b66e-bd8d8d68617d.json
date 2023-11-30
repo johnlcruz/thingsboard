@@ -67,6 +67,14 @@
       "toIndex" : 12,
       "type" : "Connect Event"
     }, {
+      "fromIndex" : 2,
+      "toIndex" : 13,
+      "type" : "Disconnect Event"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 13,
+      "type" : "Inactivity Event"
+    }, {
       "fromIndex" : 6,
       "toIndex" : 2,
       "type" : "Success"
@@ -352,13 +360,36 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 517,
-        "layoutY" : 689
+        "layoutX" : 652,
+        "layoutY" : 685
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var isolatedStatus = msg.temperatureDrum_status;\nvar temperature    = msg.temperatureDrum;\nvar alarmType      = \"Temperatura do tambor\";\nvar message        = \"Temperatura do tambor em \" + temperature + \"°C\";\n\n\n\nif (isolatedStatus != \"OK\" && temperature > 25 && temperature < 50) {\n    var alertMessage  = \"Sensor de Temperatura do tambor em alerta\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };\n}\n\n\nif (temperature < 25 || temperature > 50){\n    var alertMessage  = \"A temperatura do tambor está em ALERTA: \" + temperature + \"°C\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var alarmType = \"Conexão retomada\";\n\n\n    var timestamp = metadata.ts;\n\n    var segundosTotais = Math.floor(timestamp / 1000);\n    var minutos = Math.floor(segundosTotais / 60);\n    var segundos = segundosTotais % 60;\n\n    var horas = Math.floor(minutos / 60);\n    minutos = minutos % 60;\n\n    var dias = Math.floor(horas / 24);\n    horas = horas % 24;\n\n    var stringDataHora = dias + 'd ' + horas + 'h ' + minutos + 'min ' + segundos + 's';\n    var alertMessage = \"O alerta de conexão foi encerrado há \" + stringDataHora;\n    var isolatedStatus = \"CONEXÃO\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n\n    return { msg: msg, metadata: metadata, msgType: msgType };\n\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "942f92d0-8f77-11ee-a58a-eb4f99e88ddb"
+      },
+      "name" : "Filtro",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 652,
+        "layoutY" : 779
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -366,9 +397,9 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "942f92d0-8f77-11ee-a58a-eb4f99e88ddb"
+        "id" : "2a1231e0-8f82-11ee-a58a-eb4f99e88ddb"
       },
-      "name" : "Filtro",
+      "name" : "filtro2",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
