@@ -71,6 +71,10 @@
       "toIndex" : 15,
       "type" : "Created"
     }, {
+      "fromIndex" : 9,
+      "toIndex" : 15,
+      "type" : "Failure"
+    }, {
       "fromIndex" : 10,
       "toIndex" : 14,
       "type" : "Cleared"
@@ -289,10 +293,10 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmDetailsBuildTbel" : "var details = {count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
+        "alarmDetailsBuildTbel" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
         "useMessageAlarmData" : false,
         "overwriteAlarmDetails" : false,
-        "alarmType" : "Disconnect",
+        "alarmType" : "${status.alarmType}",
         "severity" : "CRITICAL",
         "propagate" : false,
         "relationTypes" : [ ],
@@ -321,8 +325,8 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmDetailsBuildTbel" : "var details = {count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
-        "alarmType" : "Disconnect"
+        "alarmDetailsBuildTbel" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n    var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n    if(prevDetails.count) {\n        details.count = prevDetails.count + 1;\n    }\n}\n\nreturn details;",
+        "alarmType" : "${status.alarmType}"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -366,7 +370,7 @@
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var alarmType = \"Conexão retomada\";\n\n\n    var timestamp = metadata.ts;\n\n    var segundosTotais = Math.floor(timestamp / 1000);\n    var minutos = Math.floor(segundosTotais / 60);\n    var segundos = segundosTotais % 60;\n\n    var horas = Math.floor(minutos / 60);\n    minutos = minutos % 60;\n\n    var dias = Math.floor(horas / 24);\n    horas = horas % 24;\n\n    var stringDataHora = dias + 'd ' + horas + 'h ' + minutos + 'min ' + segundos + 's';\n    var alertMessage = \"O alerta de conexão foi encerrado há \" + stringDataHora;\n    var isolatedStatus = \"CONEXÃO\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n\n    return { msg: msg, metadata: metadata, msgType: msgType };\n\n"
+        "tbelScript" : "var alarmType = \"Conexão\";\n\n\nvar alertMessage = \"O alerta de conexão foi encerrado em agora\";\nvar isolatedStatus = \"CONEXÃO\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n\n"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -383,13 +387,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 675,
-        "layoutY" : 688
+        "layoutX" : 682,
+        "layoutY" : 684
       },
       "configuration" : {
         "scriptLang" : "TBEL",
         "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        "tbelScript" : "var alarmType = \"Conexão\";\ndiferencaEmMinutos = (msg.lastInactivityAlarmTime - msg.lastActivityTime) / (1000 * 60);\nvar alertMessage = \"Comunicação perdida á \" + diferencaEmMinutos + \" minutos\";\nvar isolatedStatus = \"CONEXÃO\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n\n\n\n"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
