@@ -204,10 +204,6 @@
       "fromIndex" : 33,
       "toIndex" : 20,
       "type" : "Success"
-    }, {
-      "fromIndex" : 34,
-      "toIndex" : 33,
-      "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
     "nodes" : [ {
@@ -1047,34 +1043,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 214,
-        "layoutY" : 758
-      },
-      "configuration" : {
-        "msgCount" : 0,
-        "periodInSeconds" : 60,
-        "scriptLang" : "TBEL",
-        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = {\n    \"event\": \"HEATER_ON\",\n    \"currentStatus\": \"RUNNING\",\n    \"accumulatedWaste_kg\": 48433.49,\n    \"currentWeight_kg\": 91.63,\n    \"totalUsedEnergy_KWh\": 4807.76,\n    \"totalWaterUsage_l\": 229754.97,\n    \"temperatureDrum_status\": \"OK\",\n    \"temperatureDrum\": 35.75,\n    \"temperatureWater_status\": \"OK\",\n    \"temperatureWater\": 34.25,\n    \"temperatureInternal_status\": \"OK\",\n    \"temperatureInternal\": 53.77,\n    \"currentPhase01_A_status\": \"OK\",\n    \"currentPhase01_A\": 600,\n    \"currentPhase02_A_status\": \"OK\",\n    \"currentPhase02_A\": 600,\n    \"currentPhase03_A_status\": \"OK\",\n    \"currentPhase03_A\": 600,\n    \"doorSensor_status\": \"OK\",\n    \"doorSensor\": \"OPEN\",\n    \"loadCell01_kg_status\": \"OK\",\n    \"loadCell01_kg\": 112.49,\n    \"loadCell02_kg_status\": \"OK\",\n    \"loadCell02_kg\": 146.7,\n    \"loadCell03_kg_status\": \"OK\",\n    \"loadCell03_kg\": 147.25,\n    \"loadCell04_kg_status\": \"OK\",\n    \"loadCell04_kg\": 121.71,\n    \"flowSensor_l_per_min_status\": \"OK\",\n    \"flowSensor_l_per_min_instantly\": 5.61,\n    \"flowSensor_l_per_min_lastMinute\": 0.09,\n    \"flowSensor_l_per_min_last15Minutes\": 0.09,\n    \"airPump_status\": \"OK\",\n    \"airPump\": \"DISABLED\",\n    \"motor_status\": \"OK\",\n    \"motor\": \"FORWARD\",\n    \"washoutValve_status\": \"OK\",\n    \"washoutValve\": \"DISABLED\",\n    \"drumWaterValve_status\": \"OK\",\n    \"drumWaterValve\": \"ENABLED\",\n    \"heater_status\": \"OK\",\n    \"heater\": \"ENABLED\"\n};\nvar metadata = {    \"deviceName\": \"050.001-202105-PH\",\n    \"deviceType\": \"ECOPRO\"};\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "queueName" : null,
-        "originatorId" : "b2e1ec80-4362-11ed-b66e-bd8d8d68617d",
-        "originatorType" : "DEVICE"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "30571430-8e38-11ee-a58a-eb4f99e88ddb"
-      },
-      "name" : "teste door",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
     } ],
     "ruleChainConnections" : null
   },
