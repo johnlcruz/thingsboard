@@ -44,22 +44,6 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 9,
-      "type" : "Disconnect Event"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 9,
-      "type" : "Inactivity Event"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 10,
-      "type" : "Activity Event"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 10,
-      "type" : "Connect Event"
-    }, {
-      "fromIndex" : 2,
       "toIndex" : 12,
       "type" : "Activity Event"
     }, {
@@ -90,6 +74,14 @@
       "fromIndex" : 10,
       "toIndex" : 14,
       "type" : "Cleared"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 9,
+      "type" : "Success"
     }, {
       "fromIndex" : 14,
       "toIndex" : 11,
@@ -368,8 +360,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 652,
-        "layoutY" : 685
+        "layoutX" : 677,
+        "layoutY" : 777
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -391,8 +383,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 652,
-        "layoutY" : 779
+        "layoutX" : 675,
+        "layoutY" : 688
       },
       "configuration" : {
         "scriptLang" : "TBEL",
