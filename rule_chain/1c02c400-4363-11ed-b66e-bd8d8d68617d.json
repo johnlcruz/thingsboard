@@ -54,7 +54,7 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 31,
+      "toIndex" : 30,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
@@ -70,16 +70,12 @@
       "type" : "True"
     }, {
       "fromIndex" : 4,
-      "toIndex" : 27,
+      "toIndex" : 32,
       "type" : "False"
     }, {
       "fromIndex" : 5,
       "toIndex" : 6,
       "type" : "True"
-    }, {
-      "fromIndex" : 5,
-      "toIndex" : 27,
-      "type" : "False"
     }, {
       "fromIndex" : 6,
       "toIndex" : 19,
@@ -93,10 +89,6 @@
       "toIndex" : 9,
       "type" : "True"
     }, {
-      "fromIndex" : 8,
-      "toIndex" : 27,
-      "type" : "False"
-    }, {
       "fromIndex" : 9,
       "toIndex" : 19,
       "type" : "Created"
@@ -108,10 +100,6 @@
       "fromIndex" : 11,
       "toIndex" : 12,
       "type" : "True"
-    }, {
-      "fromIndex" : 11,
-      "toIndex" : 27,
-      "type" : "False"
     }, {
       "fromIndex" : 12,
       "toIndex" : 19,
@@ -125,10 +113,6 @@
       "toIndex" : 15,
       "type" : "True"
     }, {
-      "fromIndex" : 14,
-      "toIndex" : 27,
-      "type" : "False"
-    }, {
       "fromIndex" : 15,
       "toIndex" : 19,
       "type" : "Created"
@@ -140,10 +124,6 @@
       "fromIndex" : 17,
       "toIndex" : 18,
       "type" : "True"
-    }, {
-      "fromIndex" : 17,
-      "toIndex" : 27,
-      "type" : "False"
     }, {
       "fromIndex" : 18,
       "toIndex" : 19,
@@ -158,11 +138,11 @@
       "type" : "False"
     }, {
       "fromIndex" : 21,
-      "toIndex" : 28,
+      "toIndex" : 27,
       "type" : "False"
     }, {
       "fromIndex" : 21,
-      "toIndex" : 29,
+      "toIndex" : 28,
       "type" : "True"
     }, {
       "fromIndex" : 22,
@@ -182,22 +162,22 @@
       "type" : "True"
     }, {
       "fromIndex" : 26,
-      "toIndex" : 27,
+      "toIndex" : 31,
       "type" : "False"
     }, {
-      "fromIndex" : 28,
+      "fromIndex" : 27,
       "toIndex" : 22,
       "type" : "True"
     }, {
-      "fromIndex" : 28,
-      "toIndex" : 30,
+      "fromIndex" : 27,
+      "toIndex" : 29,
       "type" : "False"
     }, {
-      "fromIndex" : 29,
+      "fromIndex" : 28,
       "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 31,
+      "fromIndex" : 30,
       "toIndex" : 20,
       "type" : "Success"
     } ],
@@ -814,8 +794,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1596,
-        "layoutY" : 53
+        "layoutX" : 1602,
+        "layoutY" : 54
       },
       "configuration" : {
         "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n    var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n    delete metadata.prevAlarmDetails;\n    if (prevDetails.count) {\n        details.count = prevDetails.count + 1;\n    }\n\n  \n}\n\nreturn details;\n",
@@ -862,30 +842,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2314,
-        "layoutY" : 730
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n  details = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  metadata.remove('prevAlarmDetails');\n  //now metadata is the same as it comes IN this rule node\n}\n",
-        "alarmType" : "$[status.alarmType]"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "e201e770-71bc-11ee-b282-e7e99d39da5a"
-      },
-      "name" : "Limpeza instatanea",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
     }, {
       "additionalInfo" : {
         "description" : "",
@@ -997,6 +953,54 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1602,
+        "layoutY" : 103
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "Possivel problema no motor"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "23fdade0-8f99-11ee-88bd-b7c2a3c1921f"
+      },
+      "name" : "Possivel problema no motor",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1603,
+        "layoutY" : 204
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "Temperatura da agua"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "23fe9840-8f99-11ee-88bd-b7c2a3c1921f"
+      },
+      "name" : "Temperatura da agua",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
     } ],
     "ruleChainConnections" : null
   },
