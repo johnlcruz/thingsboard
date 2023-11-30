@@ -54,7 +54,7 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 33,
+      "toIndex" : 31,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
@@ -198,10 +198,6 @@
       "type" : "Created"
     }, {
       "fromIndex" : 31,
-      "toIndex" : 32,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 33,
       "toIndex" : 20,
       "type" : "Success"
     } ],
@@ -969,52 +965,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2225,
-        "layoutY" : 697
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\n msg.diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var startTs = msg.startTs;\nvar endTs = msg.endTs;\n\nvar diferencaEmMilissegundos = endTs - startTs;\n\n// Converter a diferença para minutos\nvar diferencaEmMinutos = diferencaEmMilissegundos / 60000;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "8cc00150-72b3-11ee-b282-e7e99d39da5a"
-      },
-      "name" : "teset",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 2481,
-        "layoutY" : 699
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return msg.temperature > 20;",
-        "tbelScript" : "return msg.diferencaEmMinutos > 300;"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "8cc09d90-72b3-11ee-b282-e7e99d39da5a"
-      },
-      "name" : "Finalizar após 6h para reenviar",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     }, {
       "additionalInfo" : {
         "description" : "",
