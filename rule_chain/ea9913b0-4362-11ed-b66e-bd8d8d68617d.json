@@ -287,8 +287,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 933,
-        "layoutY" : 687
+        "layoutX" : 931,
+        "layoutY" : 681
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -319,8 +319,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 932,
-        "layoutY" : 775
+        "layoutX" : 933,
+        "layoutY" : 782
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -364,8 +364,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 677,
-        "layoutY" : 777
+        "layoutX" : 676,
+        "layoutY" : 782
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -387,8 +387,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 682,
-        "layoutY" : 684
+        "layoutX" : 676,
+        "layoutY" : 682
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -410,8 +410,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1203,
-        "layoutY" : 778
+        "layoutX" : 1226,
+        "layoutY" : 781
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -433,8 +433,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1202,
-        "layoutY" : 686
+        "layoutX" : 1226,
+        "layoutY" : 682
       },
       "configuration" : {
         "scriptLang" : "JS",
