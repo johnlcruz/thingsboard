@@ -42,10 +42,6 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 13,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
       "toIndex" : 16,
       "type" : "Post telemetry"
     }, {
@@ -55,6 +51,10 @@
     }, {
       "fromIndex" : 1,
       "toIndex" : 30,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 38,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
@@ -199,6 +199,10 @@
     }, {
       "fromIndex" : 30,
       "toIndex" : 20,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 38,
+      "toIndex" : 13,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -944,8 +948,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 567,
-        "layoutY" : 753
+        "layoutX" : 699,
+        "layoutY" : 755
       },
       "configuration" : {
         "latestTsKeyNames" : [ "doorSensor" ],
@@ -1141,6 +1145,38 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 700,
+        "layoutY" : 554
+      },
+      "configuration" : {
+        "latestTsKeyNames" : [ "waterstete" ],
+        "aggregation" : "NONE",
+        "fetchMode" : "ALL",
+        "orderBy" : "ASC",
+        "limit" : 1000,
+        "useMetadataIntervalPatterns" : false,
+        "startIntervalPattern" : "",
+        "endIntervalPattern" : "",
+        "startInterval" : 15,
+        "startIntervalTimeUnit" : "MINUTES",
+        "endInterval" : 1,
+        "endIntervalTimeUnit" : "MINUTES"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "327497b0-8fd2-11ee-83df-a5eef814d8ab"
+      },
+      "name" : "Water time",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
     } ],
     "ruleChainConnections" : null
   },
