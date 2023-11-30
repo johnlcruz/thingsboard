@@ -84,12 +84,20 @@
       "type" : "Success"
     }, {
       "fromIndex" : 9,
-      "toIndex" : 11,
+      "toIndex" : 15,
       "type" : "Created"
     }, {
       "fromIndex" : 10,
-      "toIndex" : 11,
+      "toIndex" : 14,
       "type" : "Cleared"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 11,
+      "type" : "True"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 11,
+      "type" : "True"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
@@ -339,8 +347,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1385,
-        "layoutY" : 739
+        "layoutX" : 1479,
+        "layoutY" : 728
       },
       "configuration" : {
         "ruleChainId" : "10ceb940-4363-11ed-b66e-bd8d8d68617d"
@@ -403,6 +411,52 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1203,
+        "layoutY" : 778
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.detail.count == 1;",
+        "tbelScript" : "return msg.detail == 1;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d4ebfce0-8f82-11ee-a58a-eb4f99e88ddb"
+      },
+      "name" : "Envia email 1x",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1202,
+        "layoutY" : 684
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.detail.count == 1;",
+        "tbelScript" : "return msg.detail == 1;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d4ecc030-8f82-11ee-a58a-eb4f99e88ddb"
+      },
+      "name" : "Envia email 1x",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     } ],
     "ruleChainConnections" : null
   },
