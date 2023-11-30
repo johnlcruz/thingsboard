@@ -77,6 +77,10 @@
       "toIndex" : 6,
       "type" : "True"
     }, {
+      "fromIndex" : 5,
+      "toIndex" : 33,
+      "type" : "False"
+    }, {
       "fromIndex" : 6,
       "toIndex" : 19,
       "type" : "Created"
@@ -301,8 +305,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1318,
-        "layoutY" : 258
+        "layoutX" : 1316,
+        "layoutY" : 254
       },
       "configuration" : {
         "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
@@ -323,7 +327,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1603,
-        "layoutY" : 260
+        "layoutY" : 254
       },
       "configuration" : {
         "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
@@ -396,8 +400,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1601,
-        "layoutY" : 361
+        "layoutX" : 1603,
+        "layoutY" : 354
       },
       "configuration" : {
         "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
@@ -998,6 +1002,30 @@
         "id" : "23fe9840-8f99-11ee-88bd-b7c2a3c1921f"
       },
       "name" : "Temperatura da agua",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1603,
+        "layoutY" : 303
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "Temperatura do tambor"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6c87a020-8f99-11ee-88bd-b7c2a3c1921f"
+      },
+      "name" : "Temperatura do tambor",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
