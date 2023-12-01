@@ -389,12 +389,12 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var isolatedStatus = msg.temperatureInternal_status;\nvar temperature    = msg.temperatureInternal;\nvar alarmType      = \"Temperatura do painel\";\n\nif (isolatedStatus != \"OK\") {\n    var alertMessage  = \"Sensor de Temperatura do painel em alerta\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };\n}\n\n\nif (temperature > 65){\n    var alertMessage  = \"A temperatura do painel está em ALERTA: \" + temperature + \"°C\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };        \n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var SensorStatus   = msg.temperatureInternal_status;\nvar temperature    = msg.temperatureInternal;\nvar alarmType      = \"Temperatura do painel\";\n\n\n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaTempoEmMinutos(data) {\n    var primeiraData = data[0].ts; // Primeiro timestamp\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\n    return diferencaEmMinutos;\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSao(data, diferente) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value == diferente) {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"x\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSaoMaior(data, maior) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value < maior) {\n            return false; // Retorna falso se encontrar qualquer valor maior de \"x\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nvar temperaturedelta   = JSON.parse(metadata.temperatureInternal);\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(temperaturedelta);\nvar todosSaoMaior      = todosSaoMaior(temperaturedelta, 65);\n\nvar statusdelta              = JSON.parse(metadata.temperatureInternal_status);\nvar diferencaEmMinutosstatus = calcularDiferencaTempoEmMinutos(statusdelta); \nvar todosdiferente           = todosSao(statusdelta, \"OK\")\n\nmsg.deltadoor = diferencaEmMinutosstatus;\nmsg.disparar  = todosdiferente;\n\nif (temperature > 65 && todosSaoMaior){\n    var alertMessage  = \"A temperatura do painel está em ALERTA: \" + temperature + \"°C\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };        \n}\n\nif (SensorStatus != \"OK\" && todosdiferente) {\n    var alertMessage  = \"Sensor de Temperatura do painel em alerta\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };\n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -415,7 +415,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
