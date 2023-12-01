@@ -34,10 +34,6 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 7,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
       "toIndex" : 10,
       "type" : "Post telemetry"
     }, {
@@ -55,6 +51,14 @@
     }, {
       "fromIndex" : 1,
       "toIndex" : 38,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 39,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 39,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
@@ -203,6 +207,10 @@
     }, {
       "fromIndex" : 38,
       "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 39,
+      "toIndex" : 7,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -1180,11 +1188,11 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 684,
-        "layoutY" : 345
+        "layoutX" : 698,
+        "layoutY" : 352
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "flowSensor_l_per_min_last15Minutes" ],
+        "latestTsKeyNames" : [ "temperatureInternal", "temperatureInternal_status" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
@@ -1192,7 +1200,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 30,
+        "startInterval" : 15,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
@@ -1205,7 +1213,7 @@
         "entityType" : "RULE_NODE",
         "id" : "ed33d000-9060-11ee-83df-a5eef814d8ab"
       },
-      "name" : "Water floor validation",
+      "name" : "Painel validation",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
