@@ -818,12 +818,12 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var isolatedStatus = msg.motor_status;\r\nvar state          = msg.motor;\r\nvar alarmType      = \"Possivel problema no motor\";\r\n\r\n\r\n\r\nif (isolatedStatus != \"OK\") {\r\n    var alertMessage  = \"Motor apresenta falha, verificar estado \"+state;\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var isolatedStatus = msg.motor_status;\r\nvar state          = msg.motor;\r\nvar alarmType      = \"Possivel problema no motor motor igual 'STOPPED' e loadCellkgAll_status diferente 'OK;OK;OK;OK'\";\r\n\r\n\r\n\r\nif (isolatedStatus != \"OK\") {\r\n    var alertMessage  = \"Motor apresenta falha, verificar estado \"+state;\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1210,7 +1210,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 15,
+        "startInterval" : 30,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
@@ -1274,7 +1274,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 5,
+        "startInterval" : 30,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
@@ -1288,6 +1288,38 @@
         "id" : "6b0ad1a0-92ae-11ee-8101-79ea8fed56f2"
       },
       "name" : "Drum validation",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 662,
+        "layoutY" : 39
+      },
+      "configuration" : {
+        "latestTsKeyNames" : [ "temperatureWater_status", "temperatureWater" ],
+        "aggregation" : "NONE",
+        "fetchMode" : "ALL",
+        "orderBy" : "ASC",
+        "limit" : 1000,
+        "useMetadataIntervalPatterns" : false,
+        "startIntervalPattern" : "",
+        "endIntervalPattern" : "",
+        "startInterval" : 30,
+        "startIntervalTimeUnit" : "MINUTES",
+        "endInterval" : 2,
+        "endIntervalTimeUnit" : "MINUTES"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "93664090-92b2-11ee-8101-79ea8fed56f2"
+      },
+      "name" : "Water validation",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
