@@ -1330,8 +1330,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 416,
-        "layoutY" : 531
+        "layoutX" : 422,
+        "layoutY" : 552
       },
       "configuration" : {
         "deviceRelationsQuery" : {
