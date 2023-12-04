@@ -1343,7 +1343,7 @@
         },
         "tellFailureIfAbsent" : true,
         "fetchTo" : "METADATA",
-        "clientAttributeNames" : [ "Label" ],
+        "clientAttributeNames" : [ "Label", "originatorLabel" ],
         "sharedAttributeNames" : [ ],
         "serverAttributeNames" : [ ],
         "latestTsKeyNames" : [ ],
