@@ -38,10 +38,6 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 38,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
       "toIndex" : 39,
       "type" : "Post telemetry"
     }, {
@@ -55,6 +51,10 @@
     }, {
       "fromIndex" : 1,
       "toIndex" : 42,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 43,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
@@ -219,6 +219,10 @@
     }, {
       "fromIndex" : 42,
       "toIndex" : 24,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 43,
+      "toIndex" : 38,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -1326,15 +1330,24 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 337,
-        "layoutY" : 566
+        "layoutX" : 416,
+        "layoutY" : 531
       },
       "configuration" : {
-        "dataToFetch" : "ATTRIBUTES",
-        "dataMapping" : {
-          "devicename" : "threshold"
+        "deviceRelationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "relationType" : "Contains",
+          "deviceTypes" : [ "default", "ECOPRO" ]
         },
-        "fetchTo" : "METADATA"
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ "Label" ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
@@ -1342,12 +1355,12 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "f8e59fa0-92b8-11ee-8101-79ea8fed56f2"
+        "id" : "8f6ad660-92ba-11ee-8101-79ea8fed56f2"
       },
       "name" : "teste",
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetCustomerAttributeNode"
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetDeviceAttrNode"
     } ],
     "ruleChainConnections" : null
   },
