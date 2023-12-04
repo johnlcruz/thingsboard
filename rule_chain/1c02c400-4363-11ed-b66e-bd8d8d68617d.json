@@ -57,18 +57,6 @@
       "toIndex" : 42,
       "type" : "Post telemetry"
     }, {
-      "fromIndex" : 1,
-      "toIndex" : 43,
-      "type" : "Other"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 43,
-      "type" : "Post attributes"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 43,
-      "type" : "Post telemetry"
-    }, {
       "fromIndex" : 2,
       "toIndex" : 19,
       "type" : "Created"
@@ -231,10 +219,6 @@
     }, {
       "fromIndex" : 42,
       "toIndex" : 24,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 43,
-      "toIndex" : 38,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -1342,15 +1326,14 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 430,
-        "layoutY" : 626
+        "layoutX" : 337,
+        "layoutY" : 566
       },
       "configuration" : {
+        "dataToFetch" : "ATTRIBUTES",
         "dataMapping" : {
-          "name" : "originatorLabel",
-          "type" : "Etiqueta"
+          "devicename" : "threshold"
         },
-        "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
       },
       "configurationVersion" : 1,
@@ -1359,12 +1342,12 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b06ba860-92b7-11ee-8101-79ea8fed56f2"
+        "id" : "f8e59fa0-92b8-11ee-8101-79ea8fed56f2"
       },
       "name" : "teste",
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetCustomerAttributeNode"
     } ],
     "ruleChainConnections" : null
   },
