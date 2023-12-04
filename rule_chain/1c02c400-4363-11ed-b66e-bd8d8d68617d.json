@@ -38,6 +38,10 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
+      "toIndex" : 38,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 1,
       "toIndex" : 39,
       "type" : "Post telemetry"
     }, {
@@ -51,10 +55,6 @@
     }, {
       "fromIndex" : 1,
       "toIndex" : 42,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 43,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
@@ -219,10 +219,6 @@
     }, {
       "fromIndex" : 42,
       "toIndex" : 24,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 43,
-      "toIndex" : 38,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -1327,40 +1323,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 422,
-        "layoutY" : 552
-      },
-      "configuration" : {
-        "deviceRelationsQuery" : {
-          "fetchLastLevelOnly" : false,
-          "direction" : "FROM",
-          "maxLevel" : 1,
-          "relationType" : "Contains",
-          "deviceTypes" : [ "default", "ECOPRO" ]
-        },
-        "tellFailureIfAbsent" : true,
-        "fetchTo" : "METADATA",
-        "clientAttributeNames" : [ "Label", "originatorLabel", "Etiqueta" ],
-        "sharedAttributeNames" : [ ],
-        "serverAttributeNames" : [ "Etiqueta" ],
-        "latestTsKeyNames" : [ "Etiqueta" ],
-        "getLatestValueWithTs" : false
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "8f6ad660-92ba-11ee-8101-79ea8fed56f2"
-      },
-      "name" : "teste",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetDeviceAttrNode"
     } ],
     "ruleChainConnections" : null
   },
