@@ -26,10 +26,6 @@
       "type" : "Success"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 0,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
       "toIndex" : 3,
       "type" : "Post telemetry"
     }, {
@@ -59,6 +55,10 @@
     }, {
       "fromIndex" : 1,
       "toIndex" : 39,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 40,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
@@ -211,6 +211,10 @@
     }, {
       "fromIndex" : 39,
       "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 40,
+      "toIndex" : 0,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -1214,6 +1218,38 @@
         "id" : "ed33d000-9060-11ee-83df-a5eef814d8ab"
       },
       "name" : "Painel validation",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 700,
+        "layoutY" : 155
+      },
+      "configuration" : {
+        "latestTsKeyNames" : [ "temperatureWater_status", "temperatureWater" ],
+        "aggregation" : "NONE",
+        "fetchMode" : "ALL",
+        "orderBy" : "ASC",
+        "limit" : 1000,
+        "useMetadataIntervalPatterns" : false,
+        "startIntervalPattern" : "",
+        "endIntervalPattern" : "",
+        "startInterval" : 5,
+        "startIntervalTimeUnit" : "MINUTES",
+        "endInterval" : 2,
+        "endIntervalTimeUnit" : "MINUTES"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "66332eb0-92aa-11ee-8101-79ea8fed56f2"
+      },
+      "name" : "Water validation",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
