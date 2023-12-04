@@ -1298,7 +1298,7 @@
         "layoutY" : 52
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "temperatureWater_status", "temperatureWater" ],
+        "latestTsKeyNames" : [ "motor_status", "motor" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
@@ -1306,7 +1306,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 30,
+        "startInterval" : 5,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
