@@ -59,6 +59,10 @@
     }, {
       "fromIndex" : 1,
       "toIndex" : 43,
+      "type" : "Other"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 43,
       "type" : "Post attributes"
     }, {
       "fromIndex" : 1,
