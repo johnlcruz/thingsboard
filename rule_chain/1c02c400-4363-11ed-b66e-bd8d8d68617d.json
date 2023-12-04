@@ -34,10 +34,6 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 24,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
       "toIndex" : 30,
       "type" : "Post telemetry"
     }, {
@@ -1217,7 +1213,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1294,8 +1290,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 662,
-        "layoutY" : 39
+        "layoutX" : 703,
+        "layoutY" : 45
       },
       "configuration" : {
         "latestTsKeyNames" : [ "temperatureWater_status", "temperatureWater" ],
@@ -1313,13 +1309,13 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
         "id" : "93664090-92b2-11ee-8101-79ea8fed56f2"
       },
-      "name" : "Water validation",
+      "name" : "Motor validation",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
