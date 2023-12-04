@@ -1343,10 +1343,10 @@
         },
         "tellFailureIfAbsent" : true,
         "fetchTo" : "METADATA",
-        "clientAttributeNames" : [ "Label", "originatorLabel" ],
+        "clientAttributeNames" : [ "Label", "originatorLabel", "Etiqueta" ],
         "sharedAttributeNames" : [ ],
-        "serverAttributeNames" : [ ],
-        "latestTsKeyNames" : [ ],
+        "serverAttributeNames" : [ "Etiqueta" ],
+        "latestTsKeyNames" : [ "Etiqueta" ],
         "getLatestValueWithTs" : false
       },
       "configurationVersion" : 1,
