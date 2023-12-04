@@ -1343,7 +1343,7 @@
       },
       "configuration" : {
         "dataMapping" : {
-          "name" : "deviceName",
+          "name" : "originatorLabel",
           "type" : "deviceLabel"
         },
         "ignoreNullStrings" : false,
