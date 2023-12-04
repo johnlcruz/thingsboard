@@ -1272,7 +1272,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 30,
+        "startInterval" : 5,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
@@ -1285,7 +1285,7 @@
         "entityType" : "RULE_NODE",
         "id" : "6b0ad1a0-92ae-11ee-8101-79ea8fed56f2"
       },
-      "name" : "Water validation",
+      "name" : "Drum validation",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
