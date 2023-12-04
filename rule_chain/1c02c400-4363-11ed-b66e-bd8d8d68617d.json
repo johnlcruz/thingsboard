@@ -57,6 +57,10 @@
       "toIndex" : 41,
       "type" : "Post telemetry"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 42,
+      "type" : "Post telemetry"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 19,
       "type" : "Created"
@@ -215,6 +219,10 @@
     }, {
       "fromIndex" : 41,
       "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 42,
+      "toIndex" : 24,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -1290,8 +1298,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 703,
-        "layoutY" : 45
+        "layoutX" : 702,
+        "layoutY" : 52
       },
       "configuration" : {
         "latestTsKeyNames" : [ "temperatureWater_status", "temperatureWater" ],
