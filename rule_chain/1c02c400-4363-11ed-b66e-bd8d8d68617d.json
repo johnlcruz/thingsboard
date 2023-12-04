@@ -1344,7 +1344,7 @@
       "configuration" : {
         "dataMapping" : {
           "name" : "originatorLabel",
-          "type" : "deviceLabel"
+          "type" : "Etiqueta"
         },
         "ignoreNullStrings" : false,
         "fetchTo" : "METADATA"
