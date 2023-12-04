@@ -964,8 +964,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 699,
-        "layoutY" : 755
+        "layoutX" : 702,
+        "layoutY" : 754
       },
       "configuration" : {
         "latestTsKeyNames" : [ "doorSensor" ],
@@ -1164,7 +1164,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 700,
+        "layoutX" : 703,
         "layoutY" : 554
       },
       "configuration" : {
@@ -1196,7 +1196,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 698,
+        "layoutX" : 701,
         "layoutY" : 352
       },
       "configuration" : {
@@ -1215,7 +1215,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
