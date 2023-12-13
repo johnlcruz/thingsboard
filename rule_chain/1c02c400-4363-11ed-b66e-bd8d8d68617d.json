@@ -1448,7 +1448,7 @@
         "layoutY" : 904
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "flowSensor_l_per_min_last15Minutes" ],
+        "latestTsKeyNames" : [ "doorSensor", "currentWeight_kg" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
