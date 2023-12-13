@@ -1458,7 +1458,7 @@
         "endIntervalPattern" : "",
         "startInterval" : 3,
         "startIntervalTimeUnit" : "MINUTES",
-        "endInterval" : 2,
+        "endInterval" : 1,
         "endIntervalTimeUnit" : "MINUTES"
       },
       "configurationVersion" : 0,
