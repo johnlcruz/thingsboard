@@ -39,7 +39,7 @@
     }, {
       "fromIndex" : 1,
       "toIndex" : 38,
-      "type" : "Post attributes"
+      "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
       "toIndex" : 39,
