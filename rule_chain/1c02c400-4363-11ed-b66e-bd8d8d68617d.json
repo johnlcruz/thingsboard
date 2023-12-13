@@ -1413,7 +1413,7 @@
         "entityType" : "RULE_NODE",
         "id" : "3cd4d7e0-99bb-11ee-be18-0d517bebc8bd"
       },
-      "name" : "Water Flow Evaluation",
+      "name" : "Clogging",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -1427,7 +1427,7 @@
         "scriptLang" : "TBEL",
         "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
         "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmType" : "Falta de água"
+        "alarmType" : "Possível entupimento"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -1437,7 +1437,7 @@
         "entityType" : "RULE_NODE",
         "id" : "3cd59b30-99bb-11ee-be18-0d517bebc8bd"
       },
-      "name" : "Falta de água",
+      "name" : "Clogging",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
