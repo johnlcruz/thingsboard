@@ -1127,7 +1127,7 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "details.message",
+                "name" : "details.status.message",
                 "type" : "alarm",
                 "label" : "Mensagem",
                 "color" : "#607d8b",
@@ -1144,7 +1144,8 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
-                "postFuncBody" : null
+                "postFuncBody" : null,
+                "aggregationType" : null
               }, {
                 "name" : "createdTime",
                 "type" : "alarm",
@@ -1165,7 +1166,10 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              } ]
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             },
             "alarmsPollingInterval" : 5,
             "showTitleIcon" : false,
@@ -2049,6 +2053,7 @@
     "name" : "[[ NOC ]] - Núcleo de Operações & Controle",
     "title" : "[[ NOC ]] - Núcleo de Operações & Controle"
   },
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
