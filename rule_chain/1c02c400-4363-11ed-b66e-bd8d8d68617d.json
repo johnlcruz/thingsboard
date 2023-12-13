@@ -1456,7 +1456,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 3,
+        "startInterval" : 10,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 1,
         "endIntervalTimeUnit" : "MINUTES"
