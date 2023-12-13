@@ -1456,14 +1456,14 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 10,
+        "startInterval" : 50,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 1,
         "endIntervalTimeUnit" : "MINUTES"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
