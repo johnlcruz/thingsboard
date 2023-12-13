@@ -1362,7 +1362,7 @@
         "entityType" : "RULE_NODE",
         "id" : "3ccf3290-99bb-11ee-be18-0d517bebc8bd"
       },
-      "name" : "Water Flow Evaluation",
+      "name" : "Clogging",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
