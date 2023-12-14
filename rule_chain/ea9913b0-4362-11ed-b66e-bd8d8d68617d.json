@@ -44,22 +44,6 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 9,
-      "type" : "Disconnect Event"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 9,
-      "type" : "Inactivity Event"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 10,
-      "type" : "Activity Event"
-    }, {
-      "fromIndex" : 2,
-      "toIndex" : 10,
-      "type" : "Connect Event"
-    }, {
-      "fromIndex" : 2,
       "toIndex" : 12,
       "type" : "Activity Event"
     }, {
@@ -83,21 +67,17 @@
       "toIndex" : 0,
       "type" : "Success"
     }, {
+      "fromIndex" : 9,
+      "toIndex" : 11,
+      "type" : "Created"
+    }, {
       "fromIndex" : 12,
-      "toIndex" : 14,
+      "toIndex" : 10,
       "type" : "Success"
     }, {
       "fromIndex" : 13,
-      "toIndex" : 15,
+      "toIndex" : 9,
       "type" : "Success"
-    }, {
-      "fromIndex" : 14,
-      "toIndex" : 11,
-      "type" : "True"
-    }, {
-      "fromIndex" : 15,
-      "toIndex" : 11,
-      "type" : "True"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
@@ -291,8 +271,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 928,
-        "layoutY" : 704
+        "layoutX" : 1202,
+        "layoutY" : 718
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -323,8 +303,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 929,
-        "layoutY" : 778
+        "layoutX" : 1205,
+        "layoutY" : 808
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -347,8 +327,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1478,
-        "layoutY" : 929
+        "layoutX" : 1482,
+        "layoutY" : 717
       },
       "configuration" : {
         "ruleChainId" : "10ceb940-4363-11ed-b66e-bd8d8d68617d"
@@ -368,8 +348,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 928,
-        "layoutY" : 980
+        "layoutX" : 929,
+        "layoutY" : 809
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -391,8 +371,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 928,
-        "layoutY" : 879
+        "layoutX" : 927,
+        "layoutY" : 715
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -411,52 +391,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1180,
-        "layoutY" : 981
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "return msg.detail.count == 1;",
-        "tbelScript" : "return msg.detail == 1;"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "d4ebfce0-8f82-11ee-a58a-eb4f99e88ddb"
-      },
-      "name" : "Envia email 1x",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1177,
-        "layoutY" : 881
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "return msg.detail.count == 1;",
-        "tbelScript" : "return msg.detail == 1;"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "d4ecc030-8f82-11ee-a58a-eb4f99e88ddb"
-      },
-      "name" : "Envia email 1x",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     } ],
     "ruleChainConnections" : null
   },
