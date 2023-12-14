@@ -71,6 +71,10 @@
       "toIndex" : 11,
       "type" : "Created"
     }, {
+      "fromIndex" : 10,
+      "toIndex" : 11,
+      "type" : "Cleared"
+    }, {
       "fromIndex" : 12,
       "toIndex" : 10,
       "type" : "Success"
