@@ -44,19 +44,19 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 12,
+      "toIndex" : 10,
       "type" : "Activity Event"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 12,
+      "toIndex" : 10,
       "type" : "Connect Event"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 13,
+      "toIndex" : 11,
       "type" : "Disconnect Event"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 13,
+      "toIndex" : 11,
       "type" : "Inactivity Event"
     }, {
       "fromIndex" : 6,
@@ -67,21 +67,21 @@
       "toIndex" : 0,
       "type" : "Success"
     }, {
-      "fromIndex" : 9,
-      "toIndex" : 11,
-      "type" : "Created"
-    }, {
       "fromIndex" : 10,
-      "toIndex" : 11,
-      "type" : "Cleared"
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 12,
+      "type" : "Success"
     }, {
       "fromIndex" : 12,
-      "toIndex" : 10,
-      "type" : "Success"
+      "toIndex" : 9,
+      "type" : "Created"
     }, {
       "fromIndex" : 13,
       "toIndex" : 9,
-      "type" : "Success"
+      "type" : "Cleared"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
@@ -275,62 +275,6 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1202,
-        "layoutY" : 718
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails) {\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  details = JSON.parse(metadata.prevAlarmDetails);\n}\n",
-        "useMessageAlarmData" : false,
-        "overwriteAlarmDetails" : false,
-        "alarmType" : "Conexão",
-        "severity" : "CRITICAL",
-        "propagate" : false,
-        "relationTypes" : [ ],
-        "propagateToOwner" : false,
-        "propagateToTenant" : false,
-        "dynamicSeverity" : false
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "51426b90-8df7-11ee-b06e-df1ec5eb3f75"
-      },
-      "name" : "Disconnect",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1205,
-        "layoutY" : 808
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmDetailsBuildTbel" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n    var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n    if(prevDetails.count) {\n        details.count = prevDetails.count + 1;\n    }\n}\n\nreturn details;",
-        "alarmType" : "Conexão"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "70af76d0-8df7-11ee-b06e-df1ec5eb3f75"
-      },
-      "name" : "Conected",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 1482,
         "layoutY" : 717
       },
@@ -395,6 +339,62 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1198,
+        "layoutY" : 718
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "Conexão",
+        "severity" : "CRITICAL",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b2b24320-9ab1-11ee-ac9e-072961d4f4db"
+      },
+      "name" : "Disconected",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1199,
+        "layoutY" : 813
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "Conexão"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b2b3a2b0-9ab1-11ee-ac9e-072961d4f4db"
+      },
+      "name" : "Conected",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
     } ],
     "ruleChainConnections" : null
   },
