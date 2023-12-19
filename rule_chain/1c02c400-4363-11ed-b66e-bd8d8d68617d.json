@@ -1272,7 +1272,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 30,
+        "startInterval" : 32,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
