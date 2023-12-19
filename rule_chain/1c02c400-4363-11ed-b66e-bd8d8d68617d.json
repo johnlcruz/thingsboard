@@ -26,10 +26,6 @@
       "type" : "Success"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 10,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
       "toIndex" : 30,
       "type" : "Post telemetry"
     }, {
@@ -59,6 +55,10 @@
     }, {
       "fromIndex" : 1,
       "toIndex" : 48,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 49,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
@@ -243,6 +243,10 @@
     }, {
       "fromIndex" : 48,
       "toIndex" : 16,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 49,
+      "toIndex" : 10,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -502,7 +506,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1508,6 +1512,38 @@
         "id" : "1d95e7e0-9ea5-11ee-854d-7358fe2b0936"
       },
       "name" : "Overweight validation",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 700,
+        "layoutY" : 452
+      },
+      "configuration" : {
+        "latestTsKeyNames" : [ "currentPhase01_A_status", "currentPhase02_A_status", "currentPhase03_A_status" ],
+        "aggregation" : "NONE",
+        "fetchMode" : "ALL",
+        "orderBy" : "ASC",
+        "limit" : 1000,
+        "useMetadataIntervalPatterns" : false,
+        "startIntervalPattern" : "",
+        "endIntervalPattern" : "",
+        "startInterval" : 5,
+        "startIntervalTimeUnit" : "MINUTES",
+        "endInterval" : 2,
+        "endIntervalTimeUnit" : "MINUTES"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4e072710-9ea8-11ee-854d-7358fe2b0936"
+      },
+      "name" : "Current validation",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
