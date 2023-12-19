@@ -1522,7 +1522,7 @@
         "layoutY" : 452
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "currentPhase01_A_status", "currentPhase02_A_status", "currentPhase03_A_status" ],
+        "latestTsKeyNames" : [ "currentPhase01_A", "currentPhase02_A", "currentPhase03_A" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
