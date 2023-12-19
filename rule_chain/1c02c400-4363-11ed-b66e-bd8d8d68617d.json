@@ -1484,7 +1484,7 @@
         "layoutY" : 654
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "flowSensor_l_per_min_last15Minutes" ],
+        "latestTsKeyNames" : [ "currentWeight_kg" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
