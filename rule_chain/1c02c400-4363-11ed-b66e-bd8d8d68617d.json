@@ -1208,7 +1208,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 30,
+        "startInterval" : 17,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
@@ -1240,7 +1240,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 30,
+        "startInterval" : 32,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
@@ -1304,7 +1304,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 30,
+        "startInterval" : 32,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
@@ -1336,7 +1336,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 30,
+        "startInterval" : 32,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
@@ -1466,9 +1466,9 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 50,
+        "startInterval" : 52,
         "startIntervalTimeUnit" : "MINUTES",
-        "endInterval" : 1,
+        "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
       },
       "configurationVersion" : 0,
@@ -1498,7 +1498,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 30,
+        "startInterval" : 32,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
@@ -1530,7 +1530,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 10,
+        "startInterval" : 12,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
