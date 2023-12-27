@@ -61,6 +61,10 @@
       "toIndex" : 49,
       "type" : "Post telemetry"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 54,
+      "type" : "Post telemetry"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 19,
       "type" : "Created"
@@ -1580,7 +1584,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1682,9 +1686,9 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 23,
-        "startIntervalTimeUnit" : "HOURS",
-        "endInterval" : 2,
+        "startInterval" : 7,
+        "startIntervalTimeUnit" : "MINUTES",
+        "endInterval" : 1,
         "endIntervalTimeUnit" : "MINUTES"
       },
       "configurationVersion" : 0,
