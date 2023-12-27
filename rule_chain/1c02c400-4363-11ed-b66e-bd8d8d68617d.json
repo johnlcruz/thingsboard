@@ -1586,7 +1586,7 @@
         "entityType" : "RULE_NODE",
         "id" : "b39f50b0-a4c1-11ee-b098-ab1d363d953b"
       },
-      "name" : "Overweight",
+      "name" : "Water consumption",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -1639,7 +1639,7 @@
         "entityType" : "RULE_NODE",
         "id" : "b3a6cac0-a4c1-11ee-b098-ab1d363d953b"
       },
-      "name" : "Overweight",
+      "name" : "Water consumption",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -1663,7 +1663,7 @@
         "entityType" : "RULE_NODE",
         "id" : "b3a7b520-a4c1-11ee-b098-ab1d363d953b"
       },
-      "name" : "Excesso de peso",
+      "name" : "Water consumption",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1695,7 +1695,7 @@
         "entityType" : "RULE_NODE",
         "id" : "b3a9ff10-a4c1-11ee-b098-ab1d363d953b"
       },
-      "name" : "Overweight validation",
+      "name" : "Daily water consumption",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
