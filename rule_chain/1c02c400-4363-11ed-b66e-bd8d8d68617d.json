@@ -1680,7 +1680,7 @@
       "configuration" : {
         "latestTsKeyNames" : [ "totalWaterUsage_l" ],
         "aggregation" : "NONE",
-        "fetchMode" : "ALL",
+        "fetchMode" : "FIRST",
         "orderBy" : "ASC",
         "limit" : 1000,
         "useMetadataIntervalPatterns" : false,
