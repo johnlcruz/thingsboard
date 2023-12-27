@@ -839,7 +839,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1604,
+        "layoutX" : 1603,
         "layoutY" : 855
       },
       "configuration" : {
@@ -1420,7 +1420,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1606,
+        "layoutX" : 1603,
         "layoutY" : 904
       },
       "configuration" : {
@@ -1450,8 +1450,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1605,
-        "layoutY" : 955
+        "layoutX" : 1603,
+        "layoutY" : 954
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -1614,8 +1614,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1606,
-        "layoutY" : 1005
+        "layoutX" : 1604,
+        "layoutY" : 1004
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1646,8 +1646,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1607,
-        "layoutY" : 1057
+        "layoutX" : 1604,
+        "layoutY" : 1054
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -1682,8 +1682,8 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 32,
-        "startIntervalTimeUnit" : "MINUTES",
+        "startInterval" : 23,
+        "startIntervalTimeUnit" : "HOURS",
         "endInterval" : 2,
         "endIntervalTimeUnit" : "MINUTES"
       },
