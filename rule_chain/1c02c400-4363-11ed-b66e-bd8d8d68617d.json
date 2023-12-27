@@ -1678,7 +1678,7 @@
         "layoutY" : 1006
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "currentWeight_kg" ],
+        "latestTsKeyNames" : [ "totalWaterUsage_l" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
