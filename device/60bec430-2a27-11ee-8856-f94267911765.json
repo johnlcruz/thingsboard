@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "60bec430-2a27-11ee-8856-f94267911765"
     },
-    "label" : "HARD ROCK 1",
-    "name" : "ECO PRO - 600.002-202105-PH",
+    "label" : "L.SHOPBAHIA-600B",
+    "name" : "600.002-202105-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -60,8 +59,16 @@
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1700164964737,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1690212357291,
+      "lastUpdateTs" : 1704895528676,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -77,16 +84,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1690212357291,
-      "longValue" : 1690212357291,
+      "lastUpdateTs" : 1704895526930,
+      "longValue" : 1704895526930,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1701358027926,
+      "longValue" : 60000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1690211705066,
-      "longValue" : 1690211702853,
+      "lastUpdateTs" : 1704912916675,
+      "longValue" : 1704912914335,
       "strValue" : null
     }, {
       "booleanValue" : null,
