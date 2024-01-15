@@ -28,12 +28,12 @@
                 "limit" : 200
               }
             },
-            "showTitle" : true,
+            "showTitle" : false,
             "backgroundColor" : "rgb(255, 255, 255)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "4px",
             "settings" : {
-              "alarmsTitle" : "Alarms",
+              "alarmsTitle" : "Alarmes EcoPro",
               "enableSelection" : true,
               "enableSearch" : true,
               "enableSelectColumnDisplay" : true,
@@ -66,7 +66,7 @@
             "alarmSource" : {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "6a9234d1-e593-7d43-8d19-f662ccf505d7",
+              "entityAliasId" : "9f0832ae-ba92-c8f1-df63-744ea5bd8ddf",
               "dataKeys" : [ {
                 "name" : "createdTime",
                 "type" : "alarm",
@@ -168,14 +168,17 @@
             "searchPropagatedAlarms" : false,
             "configMode" : "advanced",
             "alarmFilterConfig" : {
-              "statusList" : [ "ACTIVE" ],
+              "statusList" : [ "ACTIVE", "CLEARED", "ACK", "UNACK" ],
               "severityList" : [ "CRITICAL", "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
               "assignedToCurrentUser" : false,
               "assigneeId" : null
             },
             "titleFont" : null,
             "titleColor" : null,
-            "datasources" : [ ]
+            "datasources" : [ ],
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
@@ -235,24 +238,17 @@
       },
       "filters" : { },
       "timewindow" : {
-        "displayValue" : "",
         "hideInterval" : false,
         "hideLastInterval" : false,
         "hideQuickInterval" : false,
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
-        "selectedTab" : 0,
-        "realtime" : {
-          "realtimeType" : 0,
-          "interval" : 1000,
-          "timewindowMs" : 60000,
-          "quickInterval" : "CURRENT_DAY"
-        },
+        "selectedTab" : 1,
         "history" : {
           "historyType" : 0,
-          "interval" : 1000,
-          "timewindowMs" : 60000,
+          "timewindowMs" : 2592000000,
+          "interval" : 7200000,
           "fixedTimewindow" : {
             "startTimeMs" : 1700753778765,
             "endTimeMs" : 1700840178765
@@ -262,7 +258,8 @@
         "aggregation" : {
           "type" : "AVG",
           "limit" : 25000
-        }
+        },
+        "timezone" : null
       },
       "settings" : {
         "stateControllerId" : "entity",
