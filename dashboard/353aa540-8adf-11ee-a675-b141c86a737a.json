@@ -33,21 +33,25 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "4px",
             "settings" : {
+              "alarmsTitle" : "Alarms",
               "enableSelection" : true,
               "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableFilter" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : false,
+              "showCellActionsMenu" : true,
+              "reserveSpaceForHiddenAction" : "true",
               "displayDetails" : true,
               "allowAcknowledgment" : true,
               "allowClear" : true,
               "allowAssign" : true,
               "displayActivity" : true,
               "displayPagination" : true,
-              "defaultPageSize" : 10,
+              "defaultPageSize" : 35,
               "defaultSortOrder" : "-createdTime",
-              "enableSelectColumnDisplay" : true,
-              "enableStickyAction" : false,
-              "enableFilter" : true,
-              "entitiesTitle" : null,
-              "alarmsTitle" : "Alarms"
+              "useRowStyleFunction" : false,
+              "rowStyleFunction" : ""
             },
             "title" : "Alarms table",
             "dropShadow" : true,
@@ -186,8 +190,8 @@
             "main" : {
               "widgets" : {
                 "59d42abf-51de-49d0-b1de-1380290015bf" : {
-                  "sizeX" : 10,
-                  "sizeY" : 6,
+                  "sizeX" : 24,
+                  "sizeY" : 12,
                   "row" : 0,
                   "col" : 0
                 }
