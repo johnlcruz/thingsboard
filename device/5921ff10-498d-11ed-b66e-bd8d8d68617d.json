@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "5921ff10-498d-11ed-b66e-bd8d8d68617d"
     },
-    "label" : "L.PORTONAVE-150",
+    "label" : "L.LLINEA.THYSSN-150",
     "name" : "150.005-202204-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -55,6 +54,14 @@
       "key" : "Fluxo de águaRepeatCount",
       "lastUpdateTs" : 1691088817691,
       "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1705517207301,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -85,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1696010439408,
+      "lastUpdateTs" : 1705926096321,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -101,16 +108,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1696006632510,
-      "longValue" : 1696006632510,
+      "lastUpdateTs" : 1705523968044,
+      "longValue" : 1705523968043,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1696428186406,
-      "longValue" : 1696428184173,
+      "lastUpdateTs" : 1705938737385,
+      "longValue" : 1705938735946,
       "strValue" : null
     }, {
       "booleanValue" : null,
