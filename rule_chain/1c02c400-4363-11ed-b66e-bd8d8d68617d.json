@@ -1394,7 +1394,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1494,7 +1494,7 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 35,
+        "startInterval" : 40,
         "startIntervalTimeUnit" : "MINUTES",
         "endInterval" : 1,
         "endIntervalTimeUnit" : "MINUTES"
