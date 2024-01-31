@@ -1,0 +1,45 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "165d6970-4362-11ed-b66e-bd8d8d68617d"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "487b8ff0-c02e-11ee-8514-29a79daeb394"
+    },
+    "label" : "Tania Bulhões",
+    "name" : "050.002-202311-PHr",
+    "softwareId" : null,
+    "type" : "ECOPRO"
+  },
+  "credentials" : {
+    "credentialsId" : "giXIBEBmLija0YmyU0nb",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ],
+    "SHARED_SCOPE" : [ ]
+  }
+}
