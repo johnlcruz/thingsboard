@@ -28,23 +28,31 @@
       "entityType" : "DEVICE",
       "id" : "3f84b4e0-c037-11ee-8514-29a79daeb394"
     },
-    "label" : "XXX.TANIA.BULHOES",
+    "label" : "L.REST.TANIA.BL-050",
     "name" : "050.002-202311-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "050.002.202311-PHR",
+    "credentialsId" : "050.002.202311-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1706794894348,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1706793608963,
+      "lastUpdateTs" : 1707509585494,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,8 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1706706029933,
-      "longValue" : 1706706029933,
+      "lastUpdateTs" : 1706795303942,
+      "longValue" : 1706795303942,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1706794697665,
+      "longValue" : 1706794696500,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
