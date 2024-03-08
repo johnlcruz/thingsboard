@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "f05e87a0-d235-11ed-8b16-118240e818cd"
     },
-    "label" : "L.SDX.BRSKM.BA-300",
-    "name" : "ECO PRO - 300.002-202205-PH",
+    "label" : "L.RENAI.SP-300",
+    "name" : "300.002-202205-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -55,6 +54,14 @@
       "key" : "Fluxo de águaRepeatCount",
       "lastUpdateTs" : 1692797571190,
       "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1709900344861,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -93,7 +100,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1693407357291,
+      "lastUpdateTs" : 1709909124494,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -109,16 +116,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1693407357291,
-      "longValue" : 1693407357291,
+      "lastUpdateTs" : 1709909124494,
+      "longValue" : 1709909124494,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1693406702066,
-      "longValue" : 1693406700069,
+      "lastUpdateTs" : 1709905483540,
+      "longValue" : 1709905482884,
       "strValue" : null
     }, {
       "booleanValue" : null,
