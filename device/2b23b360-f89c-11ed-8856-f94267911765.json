@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "2b23b360-f89c-11ed-8856-f94267911765"
     },
-    "label" : "L.RENAI.SP-300",
-    "name" : "ECO PRO - 300.001-202302-PH",
+    "label" : "L.HOSP.PORT-300",
+    "name" : "300.001-202302-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -55,6 +54,14 @@
       "key" : "Fluxo de águaRepeatCount",
       "lastUpdateTs" : 1695301125184,
       "longValue" : 18,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1700234137000,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -89,11 +96,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1696163064404,
+      "lastUpdateTs" : 1709902284472,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -109,16 +116,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1696162452510,
-      "longValue" : 1696162452510,
+      "lastUpdateTs" : 1709902284474,
+      "longValue" : 1709902284472,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1696428195405,
-      "longValue" : 1696428194641,
+      "lastUpdateTs" : 1709898679541,
+      "longValue" : 1709898678751,
       "strValue" : null
     }, {
       "booleanValue" : null,
