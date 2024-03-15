@@ -1838,31 +1838,55 @@
               "dataKeys" : [ {
                 "name" : "loadCell01_kg",
                 "type" : "timeseries",
-                "label" : "loadCell01_kg",
+                "label" : "Célula 1",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.1785934647499836
+                "_hash" : 0.1785934647499836,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "loadCell02_kg",
                 "type" : "timeseries",
-                "label" : "loadCell02_kg",
+                "label" : "Célula 2",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.5081742499889217
+                "_hash" : 0.5081742499889217,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "loadCell03_kg",
                 "type" : "timeseries",
-                "label" : "loadCell03_kg",
+                "label" : "Célula 3",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.3476147611270908
+                "_hash" : 0.3476147611270908,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "loadCell04_kg",
                 "type" : "timeseries",
-                "label" : "loadCell04_kg",
+                "label" : "Célula 4",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.46931667756823625
+                "_hash" : 0.46931667756823625,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1930,7 +1954,7 @@
               },
               "customLegendEnabled" : false
             },
-            "title" : "Timeseries Line Chart",
+            "title" : "Células de carga",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
@@ -1945,7 +1969,12 @@
             "useDashboardTimewindow" : true,
             "displayTimewindow" : true,
             "titleFont" : null,
-            "titleColor" : null
+            "titleColor" : null,
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
@@ -2143,14 +2172,12 @@
         "hideTimezone" : false,
         "selectedTab" : 1,
         "history" : {
-          "historyType" : 0,
-          "timewindowMs" : 86400000,
-          "interval" : 1800000,
+          "historyType" : 1,
           "fixedTimewindow" : {
-            "startTimeMs" : 1.6451864970988008E12,
-            "endTimeMs" : 1.6452009594750476E12
+            "startTimeMs" : 1.7102371589125535E12,
+            "endTimeMs" : 1710530995518
           },
-          "quickInterval" : "CURRENT_DAY"
+          "interval" : 7200000
         },
         "aggregation" : {
           "type" : "MAX",
