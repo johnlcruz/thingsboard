@@ -1,10 +1,14 @@
 {
   "entityType" : "DEVICE",
   "entity" : {
-    "additionalInfo" : null,
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "13814000-1dd2-11b2-8080-808080808080"
+      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
     },
     "deviceData" : {
       "configuration" : {
@@ -25,17 +29,33 @@
       "id" : "97f93bc0-e5ec-11ee-ac07-71cd2fb3ac0c"
     },
     "label" : "050.003-202311-PHr",
-    "name" : "050.003-202311-PHr",
+    "name" : "050.003-202311-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "2WJlpLiozbRsxxnXvXLX",
+    "credentialsId" : "050.003-202311-PHr",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1710852102425,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1710852102426,
+      "longValue" : 1710852102424,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
