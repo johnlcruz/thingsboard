@@ -421,8 +421,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 467,
-        "layoutY" : 847
+        "layoutX" : 496,
+        "layoutY" : 865
       },
       "configuration" : {
         "latestTsKeyNames" : [ "${currentStatus}" ],
