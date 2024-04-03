@@ -425,7 +425,7 @@
         "layoutY" : 865
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "${currentStatus}" ],
+        "latestTsKeyNames" : [ "$[receivedDatetime]" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
