@@ -59,12 +59,12 @@
       "toIndex" : 11,
       "type" : "Inactivity Event"
     }, {
-      "fromIndex" : 6,
-      "toIndex" : 2,
-      "type" : "Success"
+      "fromIndex" : 2,
+      "toIndex" : 14,
+      "type" : "Post attributes"
     }, {
       "fromIndex" : 6,
-      "toIndex" : 14,
+      "toIndex" : 2,
       "type" : "Success"
     }, {
       "fromIndex" : 7,
