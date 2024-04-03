@@ -29,7 +29,7 @@
       "id" : "f6301f90-2249-11ee-8856-f94267911765"
     },
     "label" : "V.TAUA.HT.AT-600",
-    "name" : "600.003-202306-PH",
+    "name" : "600.003.202306-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -56,11 +56,11 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1712158133498,
+      "lastUpdateTs" : 1712159513876,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -92,8 +92,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1712154517223,
-      "longValue" : 1712154515915,
+      "lastUpdateTs" : 1712159513875,
+      "longValue" : 1712159512973,
       "strValue" : null
     }, {
       "booleanValue" : null,
