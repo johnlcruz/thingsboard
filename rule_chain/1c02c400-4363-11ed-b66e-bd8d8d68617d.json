@@ -65,6 +65,10 @@
       "toIndex" : 54,
       "type" : "Post telemetry"
     }, {
+      "fromIndex" : 1,
+      "toIndex" : 55,
+      "type" : "Post telemetry"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 19,
       "type" : "Created"
@@ -298,6 +302,7 @@
         "id" : "89943d90-5d4e-11ee-9559-2f8be92bafca"
       },
       "name" : "Water Temperature",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -319,6 +324,7 @@
         "id" : "ad2e0c50-5d7f-11ee-9559-2f8be92bafca"
       },
       "name" : "filter",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
@@ -349,6 +355,7 @@
         "id" : "b7266050-5e0f-11ee-9559-2f8be92bafca"
       },
       "name" : "Alarme agua",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -372,6 +379,7 @@
         "id" : "03837c90-612f-11ee-9559-2f8be92bafca"
       },
       "name" : "Drum Temperature",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -393,6 +401,7 @@
         "id" : "a070c1a0-6131-11ee-9559-2f8be92bafca"
       },
       "name" : "Filter status",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -414,6 +423,7 @@
         "id" : "a85c8260-6135-11ee-9559-2f8be92bafca"
       },
       "name" : "Filter status",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -444,6 +454,7 @@
         "id" : "08b39860-6136-11ee-9559-2f8be92bafca"
       },
       "name" : "Alarme tambor",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -467,6 +478,7 @@
         "id" : "f9580630-6144-11ee-9559-2f8be92bafca"
       },
       "name" : "Painel Temperature",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -488,6 +500,7 @@
         "id" : "f9580631-6144-11ee-9559-2f8be92bafca"
       },
       "name" : "Filter status",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -518,6 +531,7 @@
         "id" : "f9582d40-6144-11ee-9559-2f8be92bafca"
       },
       "name" : "Alarme Painel",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -541,6 +555,7 @@
         "id" : "168a03a0-6147-11ee-9559-2f8be92bafca"
       },
       "name" : "Current Evaluation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -562,6 +577,7 @@
         "id" : "168a03a1-6147-11ee-9559-2f8be92bafca"
       },
       "name" : "Filter status",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -592,6 +608,7 @@
         "id" : "168a03a2-6147-11ee-9559-2f8be92bafca"
       },
       "name" : "Current Evaluation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -615,6 +632,7 @@
         "id" : "ad3c02d0-6160-11ee-9559-2f8be92bafca"
       },
       "name" : "Water Flow Evaluation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -636,6 +654,7 @@
         "id" : "ad3c02d1-6160-11ee-9559-2f8be92bafca"
       },
       "name" : "Filter status",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -666,6 +685,7 @@
         "id" : "ad3c02d2-6160-11ee-9559-2f8be92bafca"
       },
       "name" : "Water Flow Evaluation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -689,6 +709,7 @@
         "id" : "e9aa6920-6163-11ee-9559-2f8be92bafca"
       },
       "name" : "Overweight",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -710,6 +731,7 @@
         "id" : "e9aa6921-6163-11ee-9559-2f8be92bafca"
       },
       "name" : "Filter status",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -742,6 +764,7 @@
         "id" : "e9aa6922-6163-11ee-9559-2f8be92bafca"
       },
       "name" : "Overweight",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -763,6 +786,7 @@
         "id" : "df18c560-6212-11ee-9559-2f8be92bafca"
       },
       "name" : "ToEmail",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
@@ -786,6 +810,7 @@
         "id" : "ebb40040-621d-11ee-9559-2f8be92bafca"
       },
       "name" : "Open Door",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -809,6 +834,7 @@
         "id" : "ebb42750-621d-11ee-9559-2f8be92bafca"
       },
       "name" : "Filter status",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -841,6 +867,7 @@
         "id" : "ebb42751-621d-11ee-9559-2f8be92bafca"
       },
       "name" : "Open Door",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -865,6 +892,7 @@
         "id" : "66dd00a0-6241-11ee-9559-2f8be92bafca"
       },
       "name" : "Clear alarm Door Sensor",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -888,6 +916,7 @@
         "id" : "f92ed070-624e-11ee-9559-2f8be92bafca"
       },
       "name" : "Motor Error",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -918,6 +947,7 @@
         "id" : "f92ed071-624e-11ee-9559-2f8be92bafca"
       },
       "name" : "Motor Error",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -939,6 +969,7 @@
         "id" : "f92ed072-624e-11ee-9559-2f8be92bafca"
       },
       "name" : "Filter status",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -962,6 +993,7 @@
         "id" : "f0e9f340-729d-11ee-b282-e7e99d39da5a"
       },
       "name" : "startcount",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -994,6 +1026,7 @@
         "id" : "7fe3bf70-72a0-11ee-b282-e7e99d39da5a"
       },
       "name" : "Sensor Door",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -1018,6 +1051,7 @@
         "id" : "7d447190-72a2-11ee-b282-e7e99d39da5a"
       },
       "name" : "Porta Aberta limpar",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1050,6 +1084,7 @@
         "id" : "95a49d90-8e2d-11ee-a58a-eb4f99e88ddb"
       },
       "name" : "Door validation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
@@ -1074,6 +1109,7 @@
         "id" : "23fdade0-8f99-11ee-88bd-b7c2a3c1921f"
       },
       "name" : "Possivel problema no motor",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1098,6 +1134,7 @@
         "id" : "23fe9840-8f99-11ee-88bd-b7c2a3c1921f"
       },
       "name" : "Temperatura da agua",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1122,6 +1159,7 @@
         "id" : "6c87a020-8f99-11ee-88bd-b7c2a3c1921f"
       },
       "name" : "Temperatura do tambor",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1146,6 +1184,7 @@
         "id" : "c4b99910-8f99-11ee-88bd-b7c2a3c1921f"
       },
       "name" : "Temperatura do painel",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1170,6 +1209,7 @@
         "id" : "ddf87540-8f99-11ee-88bd-b7c2a3c1921f"
       },
       "name" : "Alertas de fases",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1194,6 +1234,7 @@
         "id" : "1437a270-8f9a-11ee-88bd-b7c2a3c1921f"
       },
       "name" : "Falta de água",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1218,6 +1259,7 @@
         "id" : "3af95b60-8f9a-11ee-88bd-b7c2a3c1921f"
       },
       "name" : "Excesso de peso",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1250,6 +1292,7 @@
         "id" : "327497b0-8fd2-11ee-83df-a5eef814d8ab"
       },
       "name" : "Water floor validation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
@@ -1282,6 +1325,7 @@
         "id" : "ed33d000-9060-11ee-83df-a5eef814d8ab"
       },
       "name" : "Painel validation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
@@ -1314,6 +1358,7 @@
         "id" : "66332eb0-92aa-11ee-8101-79ea8fed56f2"
       },
       "name" : "Water validation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
@@ -1346,6 +1391,7 @@
         "id" : "6b0ad1a0-92ae-11ee-8101-79ea8fed56f2"
       },
       "name" : "Drum validation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
@@ -1378,6 +1424,7 @@
         "id" : "93664090-92b2-11ee-8101-79ea8fed56f2"
       },
       "name" : "Motor validation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
@@ -1401,6 +1448,7 @@
         "id" : "3ccf3290-99bb-11ee-be18-0d517bebc8bd"
       },
       "name" : "Clogging",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -1422,6 +1470,7 @@
         "id" : "3cd3c670-99bb-11ee-be18-0d517bebc8bd"
       },
       "name" : "Filter status",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -1452,6 +1501,7 @@
         "id" : "3cd4d7e0-99bb-11ee-be18-0d517bebc8bd"
       },
       "name" : "Clogging",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -1476,6 +1526,7 @@
         "id" : "3cd59b30-99bb-11ee-be18-0d517bebc8bd"
       },
       "name" : "Clogging",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1508,6 +1559,7 @@
         "id" : "3cd65e80-99bb-11ee-be18-0d517bebc8bd"
       },
       "name" : "Clogging validation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
@@ -1540,6 +1592,7 @@
         "id" : "1d95e7e0-9ea5-11ee-854d-7358fe2b0936"
       },
       "name" : "Overweight validation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
@@ -1572,6 +1625,7 @@
         "id" : "4e072710-9ea8-11ee-854d-7358fe2b0936"
       },
       "name" : "Current validation",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
@@ -1595,6 +1649,7 @@
         "id" : "b39f50b0-a4c1-11ee-b098-ab1d363d953b"
       },
       "name" : "Water consumption",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -1616,6 +1671,7 @@
         "id" : "b3a4cef0-a4c1-11ee-b098-ab1d363d953b"
       },
       "name" : "Filter status",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
@@ -1648,6 +1704,7 @@
         "id" : "b3a6cac0-a4c1-11ee-b098-ab1d363d953b"
       },
       "name" : "Water consumption",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -1672,6 +1729,7 @@
         "id" : "b3a7b520-a4c1-11ee-b098-ab1d363d953b"
       },
       "name" : "Water consumption",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
@@ -1704,6 +1762,40 @@
         "id" : "b3a9ff10-a4c1-11ee-b098-ab1d363d953b"
       },
       "name" : "Daily water consumption",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 708,
+        "layoutY" : 1141
+      },
+      "configuration" : {
+        "latestTsKeyNames" : [ "${Data}" ],
+        "aggregation" : "NONE",
+        "fetchMode" : "ALL",
+        "orderBy" : "ASC",
+        "limit" : 1000,
+        "useMetadataIntervalPatterns" : false,
+        "startIntervalPattern" : "",
+        "endIntervalPattern" : "",
+        "startInterval" : 5,
+        "startIntervalTimeUnit" : "DAYS",
+        "endInterval" : 1,
+        "endIntervalTimeUnit" : "DAYS"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b16cde30-f20e-11ee-912c-05b704c2f8af"
+      },
+      "name" : "teste",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
