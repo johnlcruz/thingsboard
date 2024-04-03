@@ -1,7 +1,11 @@
 {
   "entityType" : "DEVICE",
   "entity" : {
-    "additionalInfo" : null,
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
     "customerId" : {
       "entityType" : "CUSTOMER",
       "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
@@ -24,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "f6301f90-2249-11ee-8856-f94267911765"
     },
-    "label" : "ECO PRO - 600.003-202306-PH",
-    "name" : "ECO PRO - 600.003-202306-PH",
+    "label" : "V.TAUA.HT.AT-600",
+    "name" : "600.003-202306-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -34,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -48,8 +51,16 @@
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1712149438968,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1689343617291,
+      "lastUpdateTs" : 1712149660223,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -65,16 +76,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1689343617291,
-      "longValue" : 1689343617291,
+      "lastUpdateTs" : 1712144873440,
+      "longValue" : 1712144873440,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1689343007066,
-      "longValue" : 1689343005257,
+      "lastUpdateTs" : 1712154517223,
+      "longValue" : 1712154515915,
       "strValue" : null
     }, {
       "booleanValue" : null,
