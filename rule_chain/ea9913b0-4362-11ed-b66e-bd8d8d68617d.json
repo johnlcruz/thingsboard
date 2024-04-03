@@ -63,6 +63,10 @@
       "toIndex" : 2,
       "type" : "Success"
     }, {
+      "fromIndex" : 6,
+      "toIndex" : 14,
+      "type" : "Success"
+    }, {
       "fromIndex" : 7,
       "toIndex" : 0,
       "type" : "Success"
@@ -82,6 +86,10 @@
       "fromIndex" : 13,
       "toIndex" : 9,
       "type" : "Cleared"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 15,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
@@ -102,6 +110,7 @@
         "id" : "9459e750-5ba7-11ee-9559-2f8be92bafca"
       },
       "name" : "Save Timeseries",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
@@ -113,10 +122,11 @@
       },
       "configuration" : {
         "scope" : "CLIENT_SCOPE",
-        "notifyDevice" : "false",
-        "updateAttributesOnlyOnValueChange" : "false"
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false
       },
-      "configurationVersion" : 1,
+      "configurationVersion" : 2,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -125,6 +135,7 @@
         "id" : "945d1ba0-5ba7-11ee-9559-2f8be92bafca"
       },
       "name" : "Save Client Attributes",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
@@ -145,6 +156,7 @@
         "id" : "945d42b0-5ba7-11ee-9559-2f8be92bafca"
       },
       "name" : "Message Type Switch",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
@@ -165,6 +177,7 @@
         "id" : "945d69c0-5ba7-11ee-9559-2f8be92bafca"
       },
       "name" : "Log RPC from Device",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
@@ -185,6 +198,7 @@
         "id" : "945d90d0-5ba7-11ee-9559-2f8be92bafca"
       },
       "name" : "Log Other",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
@@ -205,6 +219,7 @@
         "id" : "945d90d1-5ba7-11ee-9559-2f8be92bafca"
       },
       "name" : "RPC Call Request",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCRequestNode"
@@ -227,6 +242,7 @@
         "id" : "945db7e0-5ba7-11ee-9559-2f8be92bafca"
       },
       "name" : "Device Profile Node",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
@@ -248,6 +264,7 @@
         "id" : "22692500-5ee2-11ee-9559-2f8be92bafca"
       },
       "name" : "ECO PRO DECODER",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -269,6 +286,7 @@
         "id" : "67f4aee0-5ee3-11ee-9559-2f8be92bafca"
       },
       "name" : "GOTO RULES",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
@@ -290,6 +308,7 @@
         "id" : "e8f06bc0-8f75-11ee-a58a-eb4f99e88ddb"
       },
       "name" : "Email",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
@@ -313,6 +332,7 @@
         "id" : "942f92d0-8f77-11ee-a58a-eb4f99e88ddb"
       },
       "name" : "Filtro",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -336,6 +356,7 @@
         "id" : "2a1231e0-8f82-11ee-a58a-eb4f99e88ddb"
       },
       "name" : "filtro2",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
@@ -368,6 +389,7 @@
         "id" : "b2b24320-9ab1-11ee-ac9e-072961d4f4db"
       },
       "name" : "Disconected",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
@@ -392,9 +414,67 @@
         "id" : "b2b3a2b0-9ab1-11ee-ac9e-072961d4f4db"
       },
       "name" : "Conected",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 588,
+        "layoutY" : 813
+      },
+      "configuration" : {
+        "latestTsKeyNames" : [ "${currentStatus}" ],
+        "aggregation" : "NONE",
+        "fetchMode" : "ALL",
+        "orderBy" : "ASC",
+        "limit" : 1000,
+        "useMetadataIntervalPatterns" : false,
+        "startIntervalPattern" : "",
+        "endIntervalPattern" : "",
+        "startInterval" : 5,
+        "startIntervalTimeUnit" : "DAYS",
+        "endInterval" : 2,
+        "endIntervalTimeUnit" : "DAYS"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c4722430-f20f-11ee-912c-05b704c2f8af"
+      },
+      "name" : "teste",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 809,
+        "layoutY" : 867
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c4724b40-f20f-11ee-912c-05b704c2f8af"
+      },
+      "name" : "teste",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
