@@ -61,7 +61,7 @@
     }, {
       "fromIndex" : 2,
       "toIndex" : 14,
-      "type" : "Post attributes"
+      "type" : "Post telemetry"
     }, {
       "fromIndex" : 6,
       "toIndex" : 2,
