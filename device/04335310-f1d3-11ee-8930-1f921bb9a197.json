@@ -34,7 +34,7 @@
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "600.003.202306-PH",
+    "credentialsId" : "600.003-202306-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
