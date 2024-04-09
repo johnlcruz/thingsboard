@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "a36319d0-ad3b-11ed-9e97-edb490987d9f"
     },
-    "label" : "L.ACCOR-JEQUI-600",
-    "name" : "ECO PRO - 600.001-202301-PH",
+    "label" : "600.001-202301-PH",
+    "name" : "600.001-202301-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -55,6 +54,14 @@
       "key" : "Fluxo de águaRepeatCount",
       "lastUpdateTs" : 1693474107145,
       "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1700234137000,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -89,11 +96,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1694890238074,
+      "lastUpdateTs" : 1711718332739,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -109,16 +116,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1694888457291,
-      "longValue" : 1694888457291,
+      "lastUpdateTs" : 1711718317748,
+      "longValue" : 1711718317747,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1696428195404,
-      "longValue" : 1696428193761,
+      "lastUpdateTs" : 1711666525856,
+      "longValue" : 1711666525376,
       "strValue" : null
     }, {
       "booleanValue" : null,
