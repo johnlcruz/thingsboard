@@ -1,7 +1,11 @@
 {
   "entityType" : "DEVICE",
   "entity" : {
-    "additionalInfo" : null,
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
     "customerId" : {
       "entityType" : "CUSTOMER",
       "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
@@ -24,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "fc9700f0-2240-11ee-8856-f94267911765"
     },
-    "label" : "ECO PRO - 600.004-202306-PH",
-    "name" : "ECO PRO - 600.004-202306-PH",
+    "label" : "L.ACCOR-JEQUI-600",
+    "name" : "600.004-202306-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -34,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -45,6 +48,14 @@
       "longValue" : 0,
       "strValue" : null
     }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1712672066148,
+      "longValue" : null,
+      "strValue" : null
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
@@ -53,11 +64,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1694004597291,
+      "lastUpdateTs" : 1712680969346,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -73,16 +84,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1694004597291,
-      "longValue" : 1694004597291,
+      "lastUpdateTs" : 1701438826566,
+      "longValue" : 1701438826566,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1694003987066,
-      "longValue" : 1694003986750,
+      "lastUpdateTs" : 1712686571104,
+      "longValue" : 1712686568140,
       "strValue" : null
     }, {
       "booleanValue" : null,
