@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "60bec430-2a27-11ee-8856-f94267911765"
     },
-    "label" : "L.SHOPBAHIA-600B",
+    "label" : "L.SHOPBAHIA-600",
     "name" : "600.002-202105-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -68,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1704895528676,
+      "lastUpdateTs" : 1712696321104,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -84,8 +84,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1704895526930,
-      "longValue" : 1704895526930,
+      "lastUpdateTs" : 1712696321104,
+      "longValue" : 0,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -100,8 +100,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1704912916675,
-      "longValue" : 1704912914335,
+      "lastUpdateTs" : 1712751332104,
+      "longValue" : 1712751330416,
       "strValue" : null
     }, {
       "booleanValue" : null,
