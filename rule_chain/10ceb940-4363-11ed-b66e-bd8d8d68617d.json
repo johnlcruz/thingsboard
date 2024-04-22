@@ -50,6 +50,7 @@
         "id" : "66d4cea0-6212-11ee-9559-2f8be92bafca"
       },
       "name" : "Envio",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
@@ -77,13 +78,14 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
         "id" : "66d4cea1-6212-11ee-9559-2f8be92bafca"
       },
-      "name" : "teste email",
+      "name" : "Send Email",
+      "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.mail.TbSendEmailNode"
