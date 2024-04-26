@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "2b23b360-f89c-11ed-8856-f94267911765"
     },
-    "label" : "L.HOSP.PORT-300",
+    "label" : "300.001-202302-PH",
     "name" : "300.001-202302-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -100,7 +100,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1709902284472,
+      "lastUpdateTs" : 1711718339105,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -116,8 +116,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1709902284474,
-      "longValue" : 1709902284472,
+      "lastUpdateTs" : 1711718339105,
+      "longValue" : 1711718339105,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -132,8 +132,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1709898679541,
-      "longValue" : 1709898678751,
+      "lastUpdateTs" : 1711666522721,
+      "longValue" : 1711666522173,
       "strValue" : null
     }, {
       "booleanValue" : null,
