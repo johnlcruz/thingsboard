@@ -29,7 +29,7 @@
       "id" : "a446cf60-a190-11ed-bb9f-0f4b94fbe816"
     },
     "label" : "L.GRSA.BIC.AM-150",
-    "name" : "ECO PRO - 150.006-202210-PH",
+    "name" : "150.006-202210-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -55,6 +54,14 @@
       "key" : "Fluxo de águaRepeatCount",
       "lastUpdateTs" : 1694527844304,
       "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1700234137000,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -93,7 +100,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1694308616065,
+      "lastUpdateTs" : 1715886918787,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -109,16 +116,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1694307897291,
-      "longValue" : 1694307897291,
+      "lastUpdateTs" : 1711718338108,
+      "longValue" : 1711718338108,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1696428192406,
-      "longValue" : 1696428191054,
+      "lastUpdateTs" : 1715886918787,
+      "longValue" : 1715886916471,
       "strValue" : null
     }, {
       "booleanValue" : null,
