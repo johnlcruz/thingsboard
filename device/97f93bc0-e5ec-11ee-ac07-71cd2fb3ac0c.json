@@ -28,13 +28,13 @@
       "entityType" : "DEVICE",
       "id" : "97f93bc0-e5ec-11ee-ac07-71cd2fb3ac0c"
     },
-    "label" : "050.003-202311-PHr",
+    "label" : "L.SDX.AKER.RJ-50",
     "name" : "050.003-202311-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "050.003-202311-PHr",
+    "credentialsId" : "050.003-202311-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -43,8 +43,16 @@
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1710854752990,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1710852102425,
+      "lastUpdateTs" : 1715866468001,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,8 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1710852102426,
-      "longValue" : 1710852102424,
+      "lastUpdateTs" : 1715866468001,
+      "longValue" : 1715866468001,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1715865864787,
+      "longValue" : 1715865862200,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
