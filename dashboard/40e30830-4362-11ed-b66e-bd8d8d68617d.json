@@ -1998,7 +1998,7 @@
                   "sizeX" : 24,
                   "sizeY" : 5,
                   "row" : 0,
-                  "col" : 0
+                  "col" : 1
                 },
                 "3ac5bb9e-9a8e-c0a2-9bf3-3cb8c1d9a126" : {
                   "sizeX" : 24,
@@ -2170,14 +2170,12 @@
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
-        "selectedTab" : 1,
-        "history" : {
-          "historyType" : 1,
-          "fixedTimewindow" : {
-            "startTimeMs" : 1.7102371589125535E12,
-            "endTimeMs" : 1710530995518
-          },
-          "interval" : 7200000
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "timewindowMs" : 604800000,
+          "quickInterval" : "CURRENT_DAY",
+          "interval" : 1800000
         },
         "aggregation" : {
           "type" : "MAX",
