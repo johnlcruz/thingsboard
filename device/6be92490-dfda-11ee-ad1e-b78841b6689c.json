@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "13814000-1dd2-11b2-8080-808080808080"
+      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "6be92490-dfda-11ee-ad1e-b78841b6689c"
     },
-    "label" : "L.REST.TANIA.BL-050",
+    "label" : "050.002-202311-PH",
     "name" : "050.002-202311-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -43,9 +43,33 @@
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
-      "key" : "active",
-      "lastUpdateTs" : 1710183970224,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1710184445175,
       "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1715685875377,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1715685875377,
+      "longValue" : 1715685875377,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1715685275822,
+      "longValue" : 1715685272848,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
