@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "bdd25090-4e72-11ef-babb-6512dd9df197"
     },
-    "label" : "300.002.202404-PH",
-    "name" : "300.002.202404-PH",
+    "label" : "300.002-202404-PH",
+    "name" : "300.002-202404-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -39,7 +39,15 @@
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1722344019004,
+      "longValue" : null,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
