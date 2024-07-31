@@ -253,6 +253,10 @@
       "toIndex" : 16,
       "type" : "Success"
     }, {
+      "fromIndex" : 48,
+      "toIndex" : 55,
+      "type" : "Success"
+    }, {
       "fromIndex" : 49,
       "toIndex" : 10,
       "type" : "Success"
@@ -275,6 +279,10 @@
     }, {
       "fromIndex" : 54,
       "toIndex" : 50,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 55,
+      "toIndex" : 56,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -1762,6 +1770,52 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1023,
+        "layoutY" : 704
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var currentWeight_kg = msg.currentWeight_kg;\nvar deviceName       = metadata.deviceName; // Obtém o valor do campo deviceName\nvar modeldevice      = deviceName.substring(0, 3); // Pega os 3 primeiros caracteres\nvar limit            = parseInt(modeldevice) + (parseInt(modeldevice)*0.2);//limit= modelo do equipamento + 20%\n\nif (deviceName == \"150.006-202210-PH\")\n{\n     return {msg: msg, metadata: metadata, msgType: msgType};   \n}\n\n",
+        "tbelScript" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4e4e3f50-4f7a-11ef-aea1-25c66420e9cd"
+      },
+      "name" : "Overweight",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1311,
+        "layoutY" : 703
+      },
+      "configuration" : {
+        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4e4e8d70-4f7a-11ef-aea1-25c66420e9cd"
+      },
+      "name" : "Filter status",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
     } ],
     "ruleChainConnections" : null
   },
