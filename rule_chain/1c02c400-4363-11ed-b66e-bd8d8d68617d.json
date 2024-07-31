@@ -1773,17 +1773,17 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1023,
-        "layoutY" : 704
+        "layoutX" : 1031,
+        "layoutY" : 705
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var currentWeight_kg = msg.currentWeight_kg;\nvar deviceName       = metadata.deviceName; // Obtém o valor do campo deviceName\nvar modeldevice      = deviceName.substring(0, 3); // Pega os 3 primeiros caracteres\nvar limit            = parseInt(modeldevice) + (parseInt(modeldevice)*0.2);//limit= modelo do equipamento + 20%\n\nif (deviceName == \"150.006-202210-PH\")\n{\n     return {msg: msg, metadata: metadata, msgType: msgType};   \n}\n\n",
+        "jsScript" : "var currentWeight_kg = msg.currentWeight_kg;\nvar deviceName       = metadata.deviceName; // Obtém o valor do campo deviceName\nvar modeldevice      = deviceName.substring(0, 3); // Pega os 3 primeiros caracteres\nvar limit            = parseInt(modeldevice) + (parseInt(modeldevice)*0.2);//limit= modelo do equipamento + 20%\n\nif (deviceName == \"150.006-202210-PH\")\n{\nreturn {msg: msg, metadata: metadata, msgType: msgType};\n}else{\nreturn {msg: \"\", metadata: metadata, msgType: msgType};    \n}\n\n   ",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
