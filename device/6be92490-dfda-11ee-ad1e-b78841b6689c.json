@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "6be92490-dfda-11ee-ad1e-b78841b6689c"
     },
-    "label" : "050.002-202311-PH",
-    "name" : "L.FIRMGRSAF1.50-48M",
+    "label" : "L.FIRMGRSAF1.50-48M",
+    "name" : "050.002-202311-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -68,8 +68,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1723481655306,
-      "longValue" : 1723481653916,
+      "lastUpdateTs" : 1723486977307,
+      "longValue" : 1723486977101,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
