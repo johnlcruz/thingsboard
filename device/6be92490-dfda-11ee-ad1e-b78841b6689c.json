@@ -29,7 +29,7 @@
       "id" : "6be92490-dfda-11ee-ad1e-b78841b6689c"
     },
     "label" : "050.002-202311-PH",
-    "name" : "050.002-202311-PH",
+    "name" : "L.FIRMGRSAF1.50-48M",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -44,15 +44,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1710184445175,
+      "lastUpdateTs" : 1723474984772,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1715685875377,
+      "lastUpdateTs" : 1723481127305,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1715685875377,
-      "longValue" : 1715685875377,
+      "lastUpdateTs" : 1723476931651,
+      "longValue" : 1723476931650,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1715685275822,
-      "longValue" : 1715685272848,
+      "lastUpdateTs" : 1723481655306,
+      "longValue" : 1723481653916,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
