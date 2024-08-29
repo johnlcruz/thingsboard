@@ -29,17 +29,49 @@
       "id" : "6c2b3970-12d9-11ef-aa05-edda6949823d"
     },
     "label" : "150.006-202404-PH",
-    "name" : "150.006-202404-PH",
+    "name" : "L.RZN.IPAUSSU-150",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "ERnOdPo3PDmT98mlp93Y",
+    "credentialsId" : "150.006-202404-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1724940871314,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1724941052784,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1724941052784,
+      "longValue" : 1724941052783,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1724940445548,
+      "longValue" : 1724940442594,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
