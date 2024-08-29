@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "6c2b3970-12d9-11ef-aa05-edda6949823d"
     },
-    "label" : "150.006-202404-PH",
-    "name" : "L.RZN.IPAUSSU-150",
+    "label" : "L.RZN.IPAUSSU-150",
+    "name" : "150.006-202404-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
