@@ -275,9 +275,10 @@
         "layoutY" : 313
       },
       "configuration" : {
-        "ruleChainId" : "1c02c400-4363-11ed-b66e-bd8d8d68617d"
+        "ruleChainId" : "1c02c400-4363-11ed-b66e-bd8d8d68617d",
+        "forwardMsgToDefaultRuleChain" : false
       },
-      "configurationVersion" : 0,
+      "configurationVersion" : 1,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
@@ -297,9 +298,10 @@
         "layoutY" : 717
       },
       "configuration" : {
-        "ruleChainId" : "10ceb940-4363-11ed-b66e-bd8d8d68617d"
+        "ruleChainId" : "10ceb940-4363-11ed-b66e-bd8d8d68617d",
+        "forwardMsgToDefaultRuleChain" : false
       },
-      "configurationVersion" : 0,
+      "configurationVersion" : 1,
       "createdTime" : 0,
       "debugMode" : false,
       "externalId" : null,
