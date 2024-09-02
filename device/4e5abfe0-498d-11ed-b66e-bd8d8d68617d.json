@@ -15,12 +15,12 @@
         "type" : "DEFAULT"
       },
       "transportConfiguration" : {
-        "type" : "DEFAULT"
+        "type" : "MQTT"
       }
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "165d6970-4362-11ed-b66e-bd8d8d68617d"
+      "id" : "77870180-693e-11ef-bb0e-bfe4c9a43816"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -31,14 +31,13 @@
     "label" : "L.WHIRLPOOL-300",
     "name" : "300.001-202105-PH",
     "softwareId" : null,
-    "type" : "ECOPRO"
+    "type" : "TESte"
   },
   "credentials" : {
     "credentialsId" : "300.001-202105-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -63,6 +62,14 @@
       "key" : "Fluxo de águaRepeatCount",
       "lastUpdateTs" : 1695150542292,
       "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1700234137000,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -97,11 +104,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1696127367404,
+      "lastUpdateTs" : 1725289386893,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -117,16 +124,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1696126872510,
-      "longValue" : 1696126872510,
+      "lastUpdateTs" : 1725289386892,
+      "longValue" : 1725289386892,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1724421876237,
+      "longValue" : 120,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1696428207404,
-      "longValue" : 1696428206271,
+      "lastUpdateTs" : 1725289334383,
+      "longValue" : 1725289332119,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -135,6 +150,22 @@
       "key" : "lastCalibration_kg",
       "lastUpdateTs" : 1695303509163,
       "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1725287406568,
+      "longValue" : 1725287406566,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1725287406687,
+      "longValue" : 1725287406687,
       "strValue" : null
     }, {
       "booleanValue" : null,
