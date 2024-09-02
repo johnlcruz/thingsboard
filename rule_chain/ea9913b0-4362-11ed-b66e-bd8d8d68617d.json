@@ -489,7 +489,7 @@
         "layoutY" : 462
       },
       "configuration" : {
-        "topicPattern" : "#",
+        "topicPattern" : "eco/v2/biodigestor/${device}/telemetry",
         "host" : "191.234.212.166",
         "port" : 1883,
         "connectTimeoutSec" : 10,
@@ -514,7 +514,7 @@
       "name" : "MQTT",
       "queueName" : null,
       "ruleChainId" : null,
-      "singletonMode" : true,
+      "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.mqtt.TbMqttNode"
     } ],
     "ruleChainConnections" : null
