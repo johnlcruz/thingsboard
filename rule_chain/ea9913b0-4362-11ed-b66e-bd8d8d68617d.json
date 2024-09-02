@@ -498,7 +498,9 @@
         "retainedMessage" : false,
         "ssl" : false,
         "credentials" : {
-          "type" : "anonymous"
+          "type" : "basic",
+          "username" : "ecocircuito",
+          "password" : "eco@2020"
         }
       },
       "configurationVersion" : 0,
