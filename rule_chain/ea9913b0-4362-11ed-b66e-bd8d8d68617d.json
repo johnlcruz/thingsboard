@@ -489,7 +489,7 @@
         "layoutY" : 462
       },
       "configuration" : {
-        "topicPattern" : "eco/v2/biodigestor/${device}/telemetry",
+        "topicPattern" : "eco/v2/biodigestor/ 300.001-202105-PH/telemetry",
         "host" : "191.234.212.166",
         "port" : 1883,
         "connectTimeoutSec" : 10,
