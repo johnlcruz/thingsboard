@@ -90,6 +90,10 @@
       "fromIndex" : 14,
       "toIndex" : 15,
       "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 6,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
@@ -478,6 +482,38 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 69,
+        "layoutY" : 462
+      },
+      "configuration" : {
+        "topicPattern" : "#",
+        "host" : "191.234.212.166",
+        "port" : 1883,
+        "connectTimeoutSec" : 10,
+        "clientId" : null,
+        "cleanSession" : true,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "credentials" : {
+          "type" : "anonymous"
+        }
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4b341440-6927-11ef-ade5-e14767a333c2"
+      },
+      "name" : "MQTT",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : true,
+      "type" : "org.thingsboard.rule.engine.mqtt.TbMqttNode"
     } ],
     "ruleChainConnections" : null
   },
