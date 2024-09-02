@@ -514,7 +514,7 @@
       "name" : "MQTT",
       "queueName" : null,
       "ruleChainId" : null,
-      "singletonMode" : false,
+      "singletonMode" : true,
       "type" : "org.thingsboard.rule.engine.mqtt.TbMqttNode"
     } ],
     "ruleChainConnections" : null
