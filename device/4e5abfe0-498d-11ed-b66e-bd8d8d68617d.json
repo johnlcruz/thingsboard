@@ -15,12 +15,12 @@
         "type" : "DEFAULT"
       },
       "transportConfiguration" : {
-        "type" : "MQTT"
+        "type" : "DEFAULT"
       }
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "77870180-693e-11ef-bb0e-bfe4c9a43816"
+      "id" : "165d6970-4362-11ed-b66e-bd8d8d68617d"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -31,7 +31,7 @@
     "label" : "L.WHIRLPOOL-300",
     "name" : "300.001-202105-PH",
     "softwareId" : null,
-    "type" : "TESte"
+    "type" : "ECOPRO"
   },
   "credentials" : {
     "credentialsId" : "300.001-202105-PH",
