@@ -231,8 +231,8 @@
         "layoutY" : 316
       },
       "configuration" : {
-        "persistAlarmRulesState" : true,
-        "fetchAlarmRulesStateOnStart" : true
+        "persistAlarmRulesState" : false,
+        "fetchAlarmRulesStateOnStart" : false
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
