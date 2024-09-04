@@ -281,7 +281,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -295,8 +295,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1482,
-        "layoutY" : 717
+        "layoutX" : 1468,
+        "layoutY" : 721
       },
       "configuration" : {
         "ruleChainId" : "10ceb940-4363-11ed-b66e-bd8d8d68617d",
