@@ -29,17 +29,49 @@
       "id" : "3b6fbf50-4b54-11ef-a113-ed3d1f460591"
     },
     "label" : "150.002-202402-PH",
-    "name" : "150.002-202402-PH",
+    "name" : "L.BOTI.REG.SP-150",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "a7E0M7h0dzX19HCfzX0h",
+    "credentialsId" : "150.002-202402-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1725393011583,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1725449652764,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1725413633232,
+      "longValue" : 1725413633232,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1725483540058,
+      "longValue" : 1725483538700,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
