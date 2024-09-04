@@ -19,6 +19,10 @@
   },
   "metaData" : {
     "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 1,
       "type" : "Post attributes"
@@ -67,10 +71,6 @@
       "toIndex" : 0,
       "type" : "Success"
     }, {
-      "fromIndex" : 7,
-      "toIndex" : 8,
-      "type" : "Success"
-    }, {
       "fromIndex" : 10,
       "toIndex" : 13,
       "type" : "Success"
@@ -95,8 +95,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : null,
-        "layoutX" : 1277,
-        "layoutY" : 279
+        "layoutX" : 1199,
+        "layoutY" : 318
       },
       "configuration" : {
         "defaultTTL" : 0
@@ -272,8 +272,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1277,
-        "layoutY" : 351
+        "layoutX" : 1464,
+        "layoutY" : 320
       },
       "configuration" : {
         "ruleChainId" : "1c02c400-4363-11ed-b66e-bd8d8d68617d",
