@@ -19,10 +19,6 @@
   },
   "metaData" : {
     "connections" : [ {
-      "fromIndex" : 0,
-      "toIndex" : 8,
-      "type" : "Success"
-    }, {
       "fromIndex" : 2,
       "toIndex" : 1,
       "type" : "Post attributes"
@@ -44,23 +40,23 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 10,
+      "toIndex" : 9,
       "type" : "Activity Event"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 10,
+      "toIndex" : 9,
       "type" : "Connect Event"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 11,
+      "toIndex" : 10,
       "type" : "Disconnect Event"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 11,
+      "toIndex" : 10,
       "type" : "Inactivity Event"
     }, {
       "fromIndex" : 2,
-      "toIndex" : 14,
+      "toIndex" : 13,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 6,
@@ -71,24 +67,24 @@
       "toIndex" : 0,
       "type" : "Success"
     }, {
-      "fromIndex" : 10,
-      "toIndex" : 13,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 11,
+      "fromIndex" : 9,
       "toIndex" : 12,
       "type" : "Success"
     }, {
-      "fromIndex" : 12,
-      "toIndex" : 9,
+      "fromIndex" : 10,
+      "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 8,
       "type" : "Created"
     }, {
-      "fromIndex" : 13,
-      "toIndex" : 9,
+      "fromIndex" : 12,
+      "toIndex" : 8,
       "type" : "Cleared"
     }, {
-      "fromIndex" : 14,
-      "toIndex" : 15,
+      "fromIndex" : 13,
+      "toIndex" : 14,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
@@ -269,29 +265,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1464,
-        "layoutY" : 320
-      },
-      "configuration" : {
-        "ruleChainId" : "1c02c400-4363-11ed-b66e-bd8d8d68617d",
-        "forwardMsgToDefaultRuleChain" : false
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "67f4aee0-5ee3-11ee-9559-2f8be92bafca"
-      },
-      "name" : "GOTO RULES",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     }, {
       "additionalInfo" : {
         "description" : "",
