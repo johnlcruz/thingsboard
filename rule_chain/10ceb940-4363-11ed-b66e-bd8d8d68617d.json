@@ -25,8 +25,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 452,
-        "layoutY" : 154
+        "layoutX" : 420,
+        "layoutY" : 151
       },
       "configuration" : {
         "fromTemplate" : "alertas@ecocircuito.com.br",
@@ -39,7 +39,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
