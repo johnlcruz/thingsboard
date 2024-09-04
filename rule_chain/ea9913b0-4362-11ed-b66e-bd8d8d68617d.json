@@ -19,6 +19,10 @@
   },
   "metaData" : {
     "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 1,
       "type" : "Post attributes"
@@ -451,6 +455,28 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Validação de alarmes",
+        "layoutX" : 1467,
+        "layoutY" : 318
+      },
+      "configuration" : {
+        "ruleChainId" : "1c02c400-4363-11ed-b66e-bd8d8d68617d"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "42760510-6af4-11ef-80ee-99d0d0ea0fdf"
+      },
+      "name" : "GOTO RULES",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
     } ],
     "ruleChainConnections" : null
   },
