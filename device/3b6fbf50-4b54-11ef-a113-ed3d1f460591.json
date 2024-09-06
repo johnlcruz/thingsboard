@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "3b6fbf50-4b54-11ef-a113-ed3d1f460591"
     },
-    "label" : "150.002-202402-PH",
-    "name" : "L.BOTI.REG.SP-150",
+    "label" : "L.BOTI.REG.SP-150",
+    "name" : "150.002-202402-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -68,8 +68,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1725483540058,
-      "longValue" : 1725483538700,
+      "lastUpdateTs" : 1725625614059,
+      "longValue" : 1725625613564,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
