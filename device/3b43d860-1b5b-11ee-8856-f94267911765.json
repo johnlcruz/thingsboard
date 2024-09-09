@@ -1,7 +1,11 @@
 {
   "entityType" : "DEVICE",
   "entity" : {
-    "additionalInfo" : null,
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
     "customerId" : {
       "entityType" : "CUSTOMER",
       "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
@@ -24,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "3b43d860-1b5b-11ee-8856-f94267911765"
     },
-    "label" : "ECO PRO - 600.005-202306-PH",
-    "name" : "ECO PRO - 600.005-202306-PH",
+    "label" : "V.TAKEDA.JGN-600",
+    "name" : "600.005-202306-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -34,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -45,11 +48,19 @@
       "longValue" : 0,
       "strValue" : null
     }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1705089381150,
+      "longValue" : null,
+      "strValue" : null
+    }, {
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1688581617291,
+      "lastUpdateTs" : 1701381854021,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -67,6 +78,14 @@
       "key" : "inactivityAlarmTime",
       "lastUpdateTs" : 1688581617291,
       "longValue" : 1688581617291,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
