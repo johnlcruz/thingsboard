@@ -1909,20 +1909,27 @@
       "filters" : { },
       "timewindow" : {
         "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
-        "selectedTab" : 0,
-        "realtime" : {
-          "realtimeType" : 0,
+        "selectedTab" : 1,
+        "history" : {
+          "historyType" : 1,
           "timewindowMs" : 600000,
-          "quickInterval" : "CURRENT_DAY",
-          "interval" : 1000
+          "interval" : 1000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1726242418664,
+            "endTimeMs" : 1726328818664
+          },
+          "quickInterval" : "CURRENT_DAY"
         },
         "aggregation" : {
           "type" : "NONE",
           "limit" : 25000
-        }
+        },
+        "timezone" : null
       },
       "settings" : {
         "stateControllerId" : "entity",
