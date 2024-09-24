@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "816ffd50-498d-11ed-b66e-bd8d8d68617d"
     },
-    "label" : "050.002-202105-PH",
+    "label" : "L.WPPG-050",
     "name" : "050.002-202105-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1700234137000,
+      "lastUpdateTs" : 1727179017299,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -80,11 +80,11 @@
       "longValue" : 3889,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1701485885907,
+      "lastUpdateTs" : 1727178359070,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -116,8 +116,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1685470655065,
-      "longValue" : 1685470653759,
+      "lastUpdateTs" : 1727179286065,
+      "longValue" : 1727179285912,
       "strValue" : null
     }, {
       "booleanValue" : null,
