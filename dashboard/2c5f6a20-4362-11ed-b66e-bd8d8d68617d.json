@@ -1,7 +1,21 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ ],
+    "assignedCustomers" : [ {
+      "customerId" : {
+        "entityType" : "CUSTOMER",
+        "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+      },
+      "title" : "User",
+      "public" : false
+    }, {
+      "customerId" : {
+        "entityType" : "CUSTOMER",
+        "id" : "75b71e50-1113-11ee-8856-f94267911765"
+      },
+      "title" : "Public",
+      "public" : true
+    } ],
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -1916,7 +1930,7 @@
         "hideTimezone" : false,
         "selectedTab" : 1,
         "history" : {
-          "historyType" : 1,
+          "historyType" : 0,
           "timewindowMs" : 600000,
           "interval" : 1000,
           "fixedTimewindow" : {
