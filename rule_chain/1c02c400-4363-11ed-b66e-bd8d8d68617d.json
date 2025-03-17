@@ -6,10 +6,13 @@
     },
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "1c02c400-4363-11ed-b66e-bd8d8d68617d"
+    },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "ad2e0c50-5d7f-11ee-9559-2f8be92bafca"
+      "id" : "b7744e71-0028-11f0-96c9-3d0c718b759f"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -299,7 +302,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "89943d90-5d4e-11ee-9559-2f8be92bafca"
+        "id" : "b7744e70-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Water Temperature",
       "queueName" : null,
@@ -321,7 +324,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ad2e0c50-5d7f-11ee-9559-2f8be92bafca"
+        "id" : "b7744e71-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "filter",
       "queueName" : null,
@@ -352,7 +355,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b7266050-5e0f-11ee-9559-2f8be92bafca"
+        "id" : "b7747580-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Alarme agua",
       "queueName" : null,
@@ -376,7 +379,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "03837c90-612f-11ee-9559-2f8be92bafca"
+        "id" : "b7747581-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Drum Temperature",
       "queueName" : null,
@@ -398,7 +401,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "a070c1a0-6131-11ee-9559-2f8be92bafca"
+        "id" : "b7749c90-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Filter status",
       "queueName" : null,
@@ -420,7 +423,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "a85c8260-6135-11ee-9559-2f8be92bafca"
+        "id" : "b7749c91-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Filter status",
       "queueName" : null,
@@ -451,7 +454,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "08b39860-6136-11ee-9559-2f8be92bafca"
+        "id" : "b7749c92-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Alarme tambor",
       "queueName" : null,
@@ -475,7 +478,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "f9580630-6144-11ee-9559-2f8be92bafca"
+        "id" : "b774c3a0-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Painel Temperature",
       "queueName" : null,
@@ -497,7 +500,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "f9580631-6144-11ee-9559-2f8be92bafca"
+        "id" : "b774c3a1-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Filter status",
       "queueName" : null,
@@ -528,7 +531,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "f9582d40-6144-11ee-9559-2f8be92bafca"
+        "id" : "b774eab0-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Alarme Painel",
       "queueName" : null,
@@ -552,7 +555,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "168a03a0-6147-11ee-9559-2f8be92bafca"
+        "id" : "b774eab1-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Current Evaluation",
       "queueName" : null,
@@ -574,7 +577,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "168a03a1-6147-11ee-9559-2f8be92bafca"
+        "id" : "b77511c0-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Filter status",
       "queueName" : null,
@@ -605,7 +608,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "168a03a2-6147-11ee-9559-2f8be92bafca"
+        "id" : "b77511c1-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Current Evaluation",
       "queueName" : null,
@@ -629,7 +632,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ad3c02d0-6160-11ee-9559-2f8be92bafca"
+        "id" : "b77511c2-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Water Flow Evaluation",
       "queueName" : null,
@@ -651,7 +654,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ad3c02d1-6160-11ee-9559-2f8be92bafca"
+        "id" : "b77538d0-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Filter status",
       "queueName" : null,
@@ -682,7 +685,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ad3c02d2-6160-11ee-9559-2f8be92bafca"
+        "id" : "b77538d1-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Water Flow Evaluation",
       "queueName" : null,
@@ -706,7 +709,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "e9aa6920-6163-11ee-9559-2f8be92bafca"
+        "id" : "b7755fe0-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Overweight",
       "queueName" : null,
@@ -728,7 +731,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "e9aa6921-6163-11ee-9559-2f8be92bafca"
+        "id" : "b7755fe1-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Filter status",
       "queueName" : null,
@@ -761,7 +764,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "e9aa6922-6163-11ee-9559-2f8be92bafca"
+        "id" : "b7755fe2-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Overweight",
       "queueName" : null,
@@ -783,7 +786,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "df18c560-6212-11ee-9559-2f8be92bafca"
+        "id" : "b77586f0-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "ToEmail",
       "queueName" : null,
@@ -807,7 +810,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ebb40040-621d-11ee-9559-2f8be92bafca"
+        "id" : "b77586f1-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Open Door",
       "queueName" : null,
@@ -831,7 +834,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ebb42750-621d-11ee-9559-2f8be92bafca"
+        "id" : "b775ae00-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Filter status",
       "queueName" : null,
@@ -864,7 +867,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ebb42751-621d-11ee-9559-2f8be92bafca"
+        "id" : "b775ae01-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Open Door",
       "queueName" : null,
@@ -889,7 +892,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "66dd00a0-6241-11ee-9559-2f8be92bafca"
+        "id" : "b775ae02-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Clear alarm Door Sensor",
       "queueName" : null,
@@ -913,7 +916,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "f92ed070-624e-11ee-9559-2f8be92bafca"
+        "id" : "b775d510-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Motor Error",
       "queueName" : null,
@@ -944,7 +947,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "f92ed071-624e-11ee-9559-2f8be92bafca"
+        "id" : "b775d511-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Motor Error",
       "queueName" : null,
@@ -966,7 +969,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "f92ed072-624e-11ee-9559-2f8be92bafca"
+        "id" : "b775fc20-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Filter status",
       "queueName" : null,
@@ -990,7 +993,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "f0e9f340-729d-11ee-b282-e7e99d39da5a"
+        "id" : "b775fc21-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "startcount",
       "queueName" : null,
@@ -1023,7 +1026,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "7fe3bf70-72a0-11ee-b282-e7e99d39da5a"
+        "id" : "b775fc22-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Sensor Door",
       "queueName" : null,
@@ -1048,7 +1051,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "7d447190-72a2-11ee-b282-e7e99d39da5a"
+        "id" : "b7762330-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Porta Aberta limpar",
       "queueName" : null,
@@ -1081,7 +1084,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "95a49d90-8e2d-11ee-a58a-eb4f99e88ddb"
+        "id" : "b7762331-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Door validation",
       "queueName" : null,
@@ -1106,7 +1109,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "23fdade0-8f99-11ee-88bd-b7c2a3c1921f"
+        "id" : "b7764a40-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Possivel problema no motor",
       "queueName" : null,
@@ -1131,7 +1134,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "23fe9840-8f99-11ee-88bd-b7c2a3c1921f"
+        "id" : "b7764a41-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Temperatura da agua",
       "queueName" : null,
@@ -1156,7 +1159,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "6c87a020-8f99-11ee-88bd-b7c2a3c1921f"
+        "id" : "b7764a42-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Temperatura do tambor",
       "queueName" : null,
@@ -1181,7 +1184,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "c4b99910-8f99-11ee-88bd-b7c2a3c1921f"
+        "id" : "b7767150-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Temperatura do painel",
       "queueName" : null,
@@ -1206,7 +1209,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ddf87540-8f99-11ee-88bd-b7c2a3c1921f"
+        "id" : "b7767151-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Alertas de fases",
       "queueName" : null,
@@ -1231,7 +1234,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1437a270-8f9a-11ee-88bd-b7c2a3c1921f"
+        "id" : "b7769860-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Falta de água",
       "queueName" : null,
@@ -1256,7 +1259,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "3af95b60-8f9a-11ee-88bd-b7c2a3c1921f"
+        "id" : "b7769861-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Excesso de peso",
       "queueName" : null,
@@ -1289,7 +1292,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "327497b0-8fd2-11ee-83df-a5eef814d8ab"
+        "id" : "b7769862-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Water floor validation",
       "queueName" : null,
@@ -1322,7 +1325,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ed33d000-9060-11ee-83df-a5eef814d8ab"
+        "id" : "b776bf70-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Painel validation",
       "queueName" : null,
@@ -1355,7 +1358,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "66332eb0-92aa-11ee-8101-79ea8fed56f2"
+        "id" : "b776bf71-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Water validation",
       "queueName" : null,
@@ -1388,7 +1391,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "6b0ad1a0-92ae-11ee-8101-79ea8fed56f2"
+        "id" : "b776e680-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Drum validation",
       "queueName" : null,
@@ -1421,7 +1424,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "93664090-92b2-11ee-8101-79ea8fed56f2"
+        "id" : "b776e681-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Motor validation",
       "queueName" : null,
@@ -1445,7 +1448,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "3ccf3290-99bb-11ee-be18-0d517bebc8bd"
+        "id" : "b776e682-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Clogging",
       "queueName" : null,
@@ -1467,7 +1470,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "3cd3c670-99bb-11ee-be18-0d517bebc8bd"
+        "id" : "b7770d90-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Filter status",
       "queueName" : null,
@@ -1498,7 +1501,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "3cd4d7e0-99bb-11ee-be18-0d517bebc8bd"
+        "id" : "b7770d91-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Clogging",
       "queueName" : null,
@@ -1523,7 +1526,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "3cd59b30-99bb-11ee-be18-0d517bebc8bd"
+        "id" : "b77734a0-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Clogging",
       "queueName" : null,
@@ -1556,7 +1559,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "3cd65e80-99bb-11ee-be18-0d517bebc8bd"
+        "id" : "b77734a1-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Clogging validation",
       "queueName" : null,
@@ -1589,7 +1592,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "1d95e7e0-9ea5-11ee-854d-7358fe2b0936"
+        "id" : "b77734a2-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Overweight validation",
       "queueName" : null,
@@ -1622,7 +1625,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "4e072710-9ea8-11ee-854d-7358fe2b0936"
+        "id" : "b7775bb0-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Current validation",
       "queueName" : null,
@@ -1646,7 +1649,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b39f50b0-a4c1-11ee-b098-ab1d363d953b"
+        "id" : "b7775bb1-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Water consumption",
       "queueName" : null,
@@ -1668,7 +1671,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b3a4cef0-a4c1-11ee-b098-ab1d363d953b"
+        "id" : "b77782c0-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Filter status",
       "queueName" : null,
@@ -1701,7 +1704,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b3a6cac0-a4c1-11ee-b098-ab1d363d953b"
+        "id" : "b77782c1-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Water consumption",
       "queueName" : null,
@@ -1726,7 +1729,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b3a7b520-a4c1-11ee-b098-ab1d363d953b"
+        "id" : "b77782c2-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Water consumption",
       "queueName" : null,
@@ -1759,7 +1762,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b3a9ff10-a4c1-11ee-b098-ab1d363d953b"
+        "id" : "b777a9d0-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Daily water consumption",
       "queueName" : null,
@@ -1779,11 +1782,11 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "ddc885e0-6af6-11ef-80ee-99d0d0ea0fdf"
+        "id" : "b777a9d1-0028-11f0-96c9-3d0c718b759f"
       },
       "name" : "Current Evaluation",
       "queueName" : null,
