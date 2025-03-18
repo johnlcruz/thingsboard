@@ -33,8 +33,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 617,
-        "layoutY" : 161
+        "layoutX" : 742,
+        "layoutY" : 59
       },
       "configuration" : {
         "fromTemplate" : "application@ecocircuito.com.br",
@@ -61,8 +61,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 953,
-        "layoutY" : 154
+        "layoutX" : 1006,
+        "layoutY" : 189
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -96,8 +96,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 297,
-        "layoutY" : 158
+        "layoutX" : 267,
+        "layoutY" : 250
       },
       "configuration" : {
         "scriptLang" : "JS",
