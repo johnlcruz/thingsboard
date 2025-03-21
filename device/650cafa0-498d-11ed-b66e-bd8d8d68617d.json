@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "650cafa0-498d-11ed-b66e-bd8d8d68617d"
     },
-    "label" : "L.APSEN-150",
+    "label" : "L.GRSA.NSK.SUZ-150",
     "name" : "150.003-202108-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -65,6 +64,14 @@
       "longValue" : 0,
       "strValue" : null
     }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1741953003736,
+      "longValue" : null,
+      "strValue" : null
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
@@ -81,11 +88,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1695071097291,
+      "lastUpdateTs" : 1742561704287,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -101,16 +108,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1695071097291,
-      "longValue" : 1695071097291,
+      "lastUpdateTs" : 1741965551344,
+      "longValue" : 1741965551344,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1695070493065,
-      "longValue" : 1695070492334,
+      "lastUpdateTs" : 1742578543280,
+      "longValue" : 1742578542978,
       "strValue" : null
     }, {
       "booleanValue" : null,
