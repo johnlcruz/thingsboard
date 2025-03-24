@@ -29,10 +29,6 @@
       "type" : "Success"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 30,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
       "toIndex" : 38,
       "type" : "Post telemetry"
     }, {
@@ -282,6 +278,10 @@
     }, {
       "fromIndex" : 55,
       "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 56,
+      "toIndex" : 30,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -806,7 +806,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1796,8 +1796,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 294,
-        "layoutY" : 358
+        "layoutX" : 258,
+        "layoutY" : 753
       },
       "configuration" : {
         "msgCount" : 0,
