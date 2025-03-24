@@ -29,6 +29,10 @@
       "type" : "Success"
     }, {
       "fromIndex" : 1,
+      "toIndex" : 30,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
       "toIndex" : 38,
       "type" : "Post telemetry"
     }, {
@@ -278,10 +282,6 @@
     }, {
       "fromIndex" : 55,
       "toIndex" : 11,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 56,
-      "toIndex" : 30,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
