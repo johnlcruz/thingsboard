@@ -1073,9 +1073,9 @@
         "useMetadataIntervalPatterns" : false,
         "startIntervalPattern" : "",
         "endIntervalPattern" : "",
-        "startInterval" : 52,
+        "startInterval" : 2,
         "startIntervalTimeUnit" : "MINUTES",
-        "endInterval" : 2,
+        "endInterval" : 1,
         "endIntervalTimeUnit" : "MINUTES"
       },
       "configurationVersion" : 0,
