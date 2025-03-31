@@ -28,6 +28,10 @@
       "fromIndex" : 2,
       "toIndex" : 0,
       "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 2,
+      "type" : "Success"
     } ],
     "firstNodeIndex" : 2,
     "nodes" : [ {
@@ -101,7 +105,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "function transform(msg, metadata, msgType) {\r\n        \r\n        // Agora, verificar o nome do dispositivo\r\n        if (metadata.deviceName === \"050.005-202412-PH\") {\r\n            metadata.emailDestino = \"fernando.costa@ecocircuito.com.br\";\r\n        } else {\r\n            // Se quiser um padrão pra qualquer outro dispositivo, define aqui\r\n            metadata.emailDestino = \"default@empresa.com\";\r\n        }\r\n\r\n        // Retorna a msg pra seguir no fluxo\r\n        return {\r\n            msg: msg,\r\n            metadata: metadata,\r\n            msgType: msgType\r\n        };\r\n    \r\n    return null;\r\n    }\r\n\r\n",
+        "jsScript" : "function transform(msg, metadata, msgType) {\r\n        \r\n        // Agora, verificar o nome do dispositivo\r\n        if (metadata.deviceName === \"150.003-202108-PH\") {\r\n            metadata.emailDestino = \"fernando.costa@ecocircuito.com.br\";\r\n        } else {\r\n            // Se quiser um padrão pra qualquer outro dispositivo, define aqui\r\n            metadata.emailDestino = \"default@empresa.com\";\r\n        }\r\n\r\n        // Retorna a msg pra seguir no fluxo\r\n        return {\r\n            msg: msg,\r\n            metadata: metadata,\r\n            msgType: msgType\r\n        };\r\n    \r\n    return null;\r\n    }\r\n\r\n",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
@@ -128,8 +132,8 @@
         "periodInSeconds" : 30,
         "scriptLang" : "TBEL",
         "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
-        "tbelScript" : "var msg = {\n  event: \"PERIODIC\",\n  currentStatus: \"RUNNING\",\n  accumulatedWaste_kg: 106981.93,\n  currentWeight_kg: 197.25,\n  totalUsedEnergy_KWh: 7893.03,\n  totalWaterUsage_l: 491136.5,\n  temperatureDrum_status: \"OK\",\n  temperatureDrum: 35.06,\n  temperatureWater_status: \"OK\",\n  temperatureWater: 29.38,\n  temperatureInternal_status: \"ALERT\",\n  temperatureInternal: 70.03,\n  currentPhase01_A_status: \"OK\",\n  currentPhase01_A: 0,\n  currentPhase02_A_status: \"OK\",\n  currentPhase02_A: 0,\n  currentPhase03_A_status: \"OK\",\n  currentPhase03_A: 0,\n  doorSensor_status: \"Error\",\n  doorSensor: \"OPEN\",\n  loadCell01_kg_status: \"OK\",\n  loadCell01_kg: 227.93,\n  loadCell02_kg_status: \"OK\",\n  loadCell02_kg: 207.32,\n  loadCell03_kg_status: \"OK\",\n  loadCell03_kg: 193.03,\n  loadCell04_kg_status: \"OK\",\n  loadCell04_kg: 222.95,\n  flowSensor_l_per_min_status: \"OK\",\n  flowSensor_l_per_min_instantly: 0,\n  flowSensor_l_per_min_lastMinute: 0,\n  flowSensor_l_per_min_last15Minutes: 0,\n  airPump_status: \"OK\",\n  airPump: \"DISABLED\",\n  motor_status: \"OK\",\n  motor: \"STOPEED\",\n  washoutValve_status: \"OK\",\n  washoutValve: \"DISABLED\",\n  drumWaterValve_status: \"OK\",\n  drumWaterValve: \"DISABLED\",\n  heater_status: \"OK\",\n  heater: \"DISABLED\"\n}\nvar metadata = {\n    deviceName: \"600.001-202405-PH\",\n    deviceType: \"ECOPRO\",\n    ts: \"1742847939000\"\n};\n\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n\n",
-        "originatorId" : "e3356460-e492-11ef-9700-397727878b8b",
+        "tbelScript" : "var msg = {\n    id: {\n        entityType: \"ALARM\",\n        id: \"03bd3d63-3884-4d7f-af90-89209b8bda07\"\n    },\n    createdTime: 1743441710377,\n    tenantId: {\n        entityType: \"TENANT\",\n        id: \"908e0a70-4361-11ed-b66e-bd8d8d68617d\"\n    },\n    customerId: {\n        entityType: \"CUSTOMER\",\n        id: \"2893cc90-588a-11ee-9f7b-8198b0245bf9\"\n    },\n    type: \"Baixo consumo de água\",\n    originator: {\n        entityType: \"DEVICE\",\n        id: \"650cafa0-498d-11ed-b66e-bd8d8d68617d\"\n    },\n    severity: \"CRITICAL\",\n    acknowledged: false,\n    cleared: false,\n    assigneeId: null,\n    startTs: 1742862524000,\n    endTs: 1742862524000,\n    ackTs: 0,\n    clearTs: 0,\n    assignTs: 0,\n    details: {\n        status: {\n            errorStatus: \"ALERTA\",\n            message: \"Quantidade de água em litros utilizados nas ultimas 24h : 0l, minimo: 450\",\n            alarmType: \"Baixo consumo de água\"\n        },\n        count: 1\n    },\n    propagate: false,\n    propagateToOwner: false,\n    propagateToTenant: false,\n    propagateRelationTypes: [],\n    originatorName: \"150.003-202108-PH\",\n    originatorLabel: \"L.GRSA.NSK.SUZ-150\",\n    assignee: null,\n    name: \"Baixo consumo de água\",\n    status: \"ACTIVE_UNACK\"\n}\n\nvar metadata = {\n    deviceName: \"150.003-202108-PH\",\n    deviceType: \"ECOPRO\",\n    isNewAlarm: \"true\",\n    totalWaterUsage_l: \"\\\"5557.33\\\"\",\n    ts: \"1742862524000\"\n};\n\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };\n\n",
+        "originatorId" : "650cafa0-498d-11ed-b66e-bd8d8d68617d",
         "originatorType" : "DEVICE"
       },
       "configurationVersion" : 1,
