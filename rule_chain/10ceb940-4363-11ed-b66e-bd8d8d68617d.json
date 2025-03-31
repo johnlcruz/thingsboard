@@ -105,7 +105,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "function transform(msg, metadata, msgType) {\r\n    // Garantir que metadata existe\r\n    if (!metadata) {\r\n        metadata = {}; // Inicializa como um objeto vazio se for null/undefined\r\n    }\r\n\r\n    // Verifica se o nome do dispositivo está presente\r\n    if (metadata.deviceName === \"150.003-202108-PH\") {\r\n        metadata.emailDestino = \"fernando.costa@ecocircuito.com.br\";\r\n    } else {\r\n        metadata.emailDestino = \"default@empresa.com\";\r\n    }\r\n\r\n    // Retorna a msg para seguir no fluxo\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: msgType\r\n    };\r\n}\r\n",
+        "jsScript" : "function transform(msg, metadata, msgType) {\r\n    return {\r\n        msg: { status: \"teste\" },\r\n        metadata: { emailDestino: \"fernando.costa@ecocircuito.com.br\", deviceName: \"150.003-202108-PH\" },\r\n        msgType: \"teste\"\r\n    };\r\n}\r\n\r\n",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
