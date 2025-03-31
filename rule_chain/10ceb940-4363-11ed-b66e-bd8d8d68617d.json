@@ -18,12 +18,8 @@
   },
   "metaData" : {
     "connections" : [ {
-      "fromIndex" : 0,
-      "toIndex" : 1,
-      "type" : "Success"
-    }, {
       "fromIndex" : 2,
-      "toIndex" : 0,
+      "toIndex" : 4,
       "type" : "Success"
     }, {
       "fromIndex" : 3,
@@ -34,8 +30,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 990,
-        "layoutY" : 224
+        "layoutX" : 1385,
+        "layoutY" : 56
       },
       "configuration" : {
         "fromTemplate" : "application@ecocircuito.com.br",
@@ -146,6 +142,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 989,
+        "layoutY" : 401
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function ToString(msg, metadata, msgType) {\r\n    return 'DEBUG LOG:\\n' +\r\n        'MSG: ' + JSON.stringify(msg, null, 2) + '\\n\\n' +\r\n        'METADATA: ' + JSON.stringify(metadata, null, 2) + '\\n\\n' +\r\n        'MSG TYPE: ' + msgType;\r\n}",
+        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "16b7b9e0-0e74-11f0-98c5-37e1d09aa61a"
+      },
+      "name" : "log",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     } ],
     "ruleChainConnections" : null
   },
