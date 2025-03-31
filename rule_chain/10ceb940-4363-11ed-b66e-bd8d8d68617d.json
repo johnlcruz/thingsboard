@@ -18,8 +18,12 @@
   },
   "metaData" : {
     "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
       "fromIndex" : 2,
-      "toIndex" : 4,
+      "toIndex" : 0,
       "type" : "Success"
     }, {
       "fromIndex" : 3,
@@ -30,8 +34,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1385,
-        "layoutY" : 56
+        "layoutX" : 887,
+        "layoutY" : 300
       },
       "configuration" : {
         "fromTemplate" : "application@ecocircuito.com.br",
@@ -145,7 +149,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 989,
+        "layoutX" : 1079,
         "layoutY" : 401
       },
       "configuration" : {
