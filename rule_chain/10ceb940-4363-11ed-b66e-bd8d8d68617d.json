@@ -105,12 +105,12 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "function transform(msg, metadata, msgType) {\r\n        \r\n        // Agora, verificar o nome do dispositivo\r\n        if (metadata.deviceName === \"150.003-202108-PH\") {\r\n            metadata.emailDestino = \"fernando.costa@ecocircuito.com.br\";\r\n        } else {\r\n            // Se quiser um padrão pra qualquer outro dispositivo, define aqui\r\n            metadata.emailDestino = \"default@empresa.com\";\r\n        }\r\n\r\n        // Retorna a msg pra seguir no fluxo\r\n        return {\r\n            msg: msg,\r\n            metadata: metadata,\r\n            msgType: msgType\r\n        };\r\n    \r\n    return null;\r\n    }\r\n\r\n",
+        "jsScript" : "function transform(msg, metadata, msgType) {\r\n        \r\n        // Agora, verificar o nome do dispositivo\r\n        if (metadata.deviceName === \"150.003-202108-PH\") {\r\n            metadata.emailDestino = \"fernando.costa@ecocircuito.com.br\";\r\n        } else {\r\n            // Se quiser um padrão pra qualquer outro dispositivo, define aqui\r\n            metadata.emailDestino = \"default@empresa.com\";\r\n        }\r\n\r\n        // Retorna a msg pra seguir no fluxo\r\n        return {\r\n            msg: msg,\r\n            metadata: metadata,\r\n            msgType: msgType\r\n        };\r\n    \r\n    }\r\n\r\n",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
