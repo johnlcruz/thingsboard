@@ -17,7 +17,11 @@
     "type" : "CORE"
   },
   "metaData" : {
-    "connections" : null,
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
@@ -47,6 +51,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 593,
+        "layoutY" : 418
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function transform(msg, metadata, msgType) {\r\n    metadata = metadata || {};\r\n    msg = msg || {};\r\n    msgType = msgType || \"POST_TELEMETRY_REQUEST\";\r\n\r\n    // Garantir que 'details' seja objeto\r\n    if (!msg.details || typeof msg.details !== \"object\") {\r\n        try {\r\n            msg.details = typeof msg.details === \"string\" ? JSON.parse(msg.details) : {};\r\n        } catch (e) {\r\n            msg.details = {};\r\n        }\r\n    }\r\n\r\n    // Garantir que 'details.status' seja objeto\r\n    if (!msg.details.status || typeof msg.details.status !== \"object\") {\r\n        msg.details.status = {};\r\n    }\r\n\r\n    // Preenche campos de forma segura\r\n    metadata.deviceName = metadata.deviceName || msg.originatorName || \"DESCONHECIDO\";\r\n    metadata.emailDestino = metadata.deviceName === \"150.001-202402-PH\" ?\r\n        \"fernando.costa@ecocircuito.com.br\" : \"suporte@ecocircuito.com.br\";\r\n\r\n    metadata.alarmType = msg.details.status.alarmType || msg.type || \"Alarme sem tipo\";\r\n    metadata.statusError = msg.details.status.errorStatus || \"Desconhecido\";\r\n    metadata.statusMessage = msg.details.status.message || \"Sem mensagem\";\r\n    metadata.statusAlarmType = metadata.alarmType;\r\n\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: msgType\r\n    };\r\n}\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b565de40-0e75-11f0-98c5-37e1d09aa61a"
+      },
+      "name" : "Script",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
