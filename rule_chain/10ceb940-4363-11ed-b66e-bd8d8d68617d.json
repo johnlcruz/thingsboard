@@ -210,12 +210,12 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "// Verifica se o e-mail de destino foi configurado corretamente\r\nif (metadata.emailDestino && metadata.emailDestino.trim() !== '') {\r\n    metadata.emailDestino = metadata.emailDestino.trim().replace(/\\s+/g, '');  // Limpa espaços\r\n} else {\r\n    metadata.emailDestino = 'suporte@ecocircuito.com.br';  // E-mail padrão\r\n}\r\n\r\n// Configura o remetente do e-mail\r\nmsg.from = 'application@ecocircuito.com.br';  // Quem vai enviar\r\n\r\n// Configura o destinatário do e-mail\r\nmsg.to = metadata.emailDestino;\r\n\r\n// Define o conteúdo do e-mail\r\nmsg.subject = 'Alerta de Equipamento: ' + metadata.deviceName;\r\nmsg.body = '<h1>Alerta!</h1><p>O equipamento ' + metadata.deviceName + ' apresentou um alerta.</p>';\r\n\r\n// Debug opcional\r\nmetadata.debugEmail = 'E-mail preparado para: ' + msg.to + ' de: ' + msg.from;\r\n\r\n// Retorna os dados preparados\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
+        "jsScript" : "msg.from = 'application@ecocircuito.com.br';  // Remetente\r\nmsg.to = metadata.emailDestino;  // Destinatário\r\nmsg.subject = 'Alerta de Equipamento: ' + metadata.deviceName;\r\nmsg.body = 'O equipamento ' + metadata.deviceName + ' apresentou um alerta.';\r\n\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
