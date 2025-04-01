@@ -105,8 +105,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 125,
-        "layoutY" : 456
+        "layoutX" : 64,
+        "layoutY" : 614
       },
       "configuration" : {
         "msgCount" : 0,
@@ -157,8 +157,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 487,
-        "layoutY" : 685
+        "layoutX" : 395,
+        "layoutY" : 269
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -181,8 +181,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 741,
-        "layoutY" : 791
+        "layoutX" : 675,
+        "layoutY" : 264
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -191,7 +191,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugMode" : true,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
