@@ -105,8 +105,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 298,
-        "layoutY" : 579
+        "layoutX" : 125,
+        "layoutY" : 456
       },
       "configuration" : {
         "msgCount" : 0,
@@ -157,8 +157,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 583,
-        "layoutY" : 269
+        "layoutX" : 487,
+        "layoutY" : 685
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -197,7 +197,7 @@
         "entityType" : "RULE_NODE",
         "id" : "3b320c10-0f3e-11f0-98c5-37e1d09aa61a"
       },
-      "name" : "log",
+      "name" : "debugemail",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
