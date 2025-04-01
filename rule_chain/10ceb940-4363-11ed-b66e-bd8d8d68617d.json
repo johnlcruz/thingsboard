@@ -181,27 +181,27 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 745,
-        "layoutY" : 583
+        "layoutX" : 741,
+        "layoutY" : 791
       },
       "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "\r\n",
-        "tbelScript" : "metadata.debugEmail = \"[\" + metadata.emailDestino + \"]\";\r\n"
+        "scriptLang" : "JS",
+        "jsScript" : "// Verifica se o metadata.emailDestino existe e é válido\r\nif (!metadata.emailDestino || metadata.emailDestino.trim() === '') {\r\n    metadata.emailDestino = 'suporte@ecocircuito.com.br'; // fallback padrão\r\n}\r\n\r\n// Remove espaços acidentais\r\nmetadata.emailDestino = metadata.emailDestino.trim().replace(/\\s+/g, '');\r\n\r\n// Define o campo msg.to como array (é obrigatório)\r\nmsg.to = metadata.emailDestino;\r\n\r\n// Log opcional para debug\r\nmetadata.debugEmailDestino = msg.to;\r\n\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
+        "tbelScript" : ""
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "3b320c10-0f3e-11f0-98c5-37e1d09aa61a"
+        "id" : "024a5320-0f49-11f0-98c5-37e1d09aa61a"
       },
-      "name" : "debugemail",
+      "name" : "TO do email",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
