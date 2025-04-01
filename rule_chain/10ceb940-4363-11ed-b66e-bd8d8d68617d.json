@@ -18,6 +18,10 @@
   },
   "metaData" : {
     "connections" : [ {
+      "fromIndex" : 2,
+      "toIndex" : 4,
+      "type" : "Success"
+    }, {
       "fromIndex" : 3,
       "toIndex" : 1,
       "type" : "Success"
@@ -153,8 +157,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 395,
-        "layoutY" : 269
+        "layoutX" : 269,
+        "layoutY" : 325
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -177,8 +181,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 563,
-        "layoutY" : 497
+        "layoutX" : 603,
+        "layoutY" : 195
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -201,12 +205,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 913,
-        "layoutY" : 446
+        "layoutX" : 1027,
+        "layoutY" : 245
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var originator = msg.originatorName ? msg.originatorName : \"Desconhecido\";\r\nvar status = (msg.details && msg.details.status && msg.details.status.errorStatus) ? msg.details.status.errorStatus : \"N/A\";\r\nvar message = (msg.details && msg.details.status && msg.details.status.message) ? msg.details.status.message : \"N/A\";\r\nvar alarmType = (msg.details && msg.details.status && msg.details.status.alarmType) ? msg.details.status.alarmType : \"N/A\";\r\n\r\nvar msgOut = {\r\n    from: \"application@ecocircuito.com.br\",\r\n    to: msg.to,\r\n    subject: \"⚠️ Alerta no equipamento: \" + originator,\r\n    body:\r\n        \"<h2>⚠️ Alerta no equipamento: \" + originator + \"</h2>\" +\r\n        \"<p><strong>Status:</strong> \" + status + \"</p>\" +\r\n        \"<p><strong>Mensagem:</strong> \" + message + \"</p>\" +\r\n        \"<p><strong>Tipo do Alarme:</strong> \" + alarmType + \"</p>\" +\r\n        \"<p>✅ Verifique o equipamento o quanto antes.</p>\" +\r\n        \"<hr>\" +\r\n        \"<p style='font-size: 12px; color: gray;'>Mensagem automática do sistema EcoCircuito</p>\",\r\n    html: true\r\n};\r\n\r\nreturn {\r\n    msg: msgOut,\r\n    metadata: metadata,\r\n    msgType: \"SEND_EMAIL\"\r\n};\r\n",
+        "jsScript" : "var originator = msg.originatorName || \"Desconhecido\";\r\n\r\nvar status = (msg.details && msg.details.status && msg.details.status.errorStatus) ? msg.details.status.errorStatus : \"N/A\";\r\nvar message = (msg.details && msg.details.status && msg.details.status.message) ? msg.details.status.message : \"N/A\";\r\nvar alarmType = (msg.details && msg.details.status && msg.details.status.alarmType) ? msg.details.status.alarmType : \"N/A\";\r\n\r\nvar msgOut = {\r\n    from: \"application@ecocircuito.com.br\",\r\n    to: msg.to,\r\n    subject: \"⚠️ Alerta do sistema - Equipamento \" + originator,\r\n    body: \r\n        \"<div style=\\\"font-family: Arial, sans-serif; font-size: 14px; color: #333;\\\">\" +\r\n        \"<p>Prezado(a),</p>\" +\r\n        \"<p>Identificamos um alerta no equipamento <strong>\" + originator + \"</strong>:</p>\" +\r\n        \"<ul>\" +\r\n            \"<li><strong>Status:</strong> \" + status + \"</li>\" +\r\n            \"<li><strong>Mensagem:</strong> \" + message + \"</li>\" +\r\n            \"<li><strong>Tipo do Alarme:</strong> \" + alarmType + \"</li>\" +\r\n        \"</ul>\" +\r\n        \"<p>Solicitamos que a equipe responsável verifique o equipamento com urgência para garantir o pleno funcionamento do sistema.</p>\" +\r\n        \"<p>Este é um e-mail automático gerado pelo sistema EcoCircuito.</p>\" +\r\n        \"<p style=\\\"font-size: 12px; color: gray;\\\">Em caso de dúvidas, entre em contato com nosso suporte técnico.</p>\" +\r\n        \"</div>\",\r\n    html: true\r\n};\r\n\r\nreturn {\r\n    msg: msgOut,\r\n    metadata: metadata,\r\n    msgType: \"SEND_EMAIL\"\r\n};\r\n",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
