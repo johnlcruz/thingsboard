@@ -18,8 +18,12 @@
   },
   "metaData" : {
     "connections" : [ {
+      "fromIndex" : 2,
+      "toIndex" : 0,
+      "type" : "Success"
+    }, {
       "fromIndex" : 3,
-      "toIndex" : 1,
+      "toIndex" : 4,
       "type" : "Success"
     }, {
       "fromIndex" : 4,
@@ -27,43 +31,11 @@
       "type" : "Success"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 6,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 6,
-      "toIndex" : 3,
+      "toIndex" : 2,
       "type" : "Success"
     } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 654,
-        "layoutY" : 670
-      },
-      "configuration" : {
-        "fromTemplate" : "application@ecocircuito.com.br",
-        "toTemplate" : "${msg.to}",
-        "ccTemplate" : null,
-        "bccTemplate" : null,
-        "subjectTemplate" : "Biodigestor ${metadata.deviceName} em ${metadata.alarmType}",
-        "mailBodyType" : "true",
-        "bodyTemplate" : "<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <title>Alerta de Equipamento</title>\n    </head>\n    <body>\n        <p>Alerta de Equipamento: ${metadata.deviceName}</p>\n        <p>Tipo de Alarme: ${metadata.alarmType}</p>\n        <p>Status: ${metadata.details.status.message}</p>\n    </body>\n</html>\n"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "66d4cea0-6212-11ee-9559-2f8be92bafca"
-      },
-      "name" : "Envio",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
-    }, {
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1374,
