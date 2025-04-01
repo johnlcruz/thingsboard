@@ -18,10 +18,6 @@
   },
   "metaData" : {
     "connections" : [ {
-      "fromIndex" : 0,
-      "toIndex" : 3,
-      "type" : "Success"
-    }, {
       "fromIndex" : 2,
       "toIndex" : 4,
       "type" : "Success"
@@ -35,15 +31,19 @@
       "type" : "Success"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 0,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 3,
       "type" : "Success"
     } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 951,
-        "layoutY" : 268
+        "layoutX" : 654,
+        "layoutY" : 670
       },
       "configuration" : {
         "fromTemplate" : "application@ecocircuito.com.br",
@@ -198,6 +198,30 @@
         "id" : "024a5320-0f49-11f0-98c5-37e1d09aa61a"
       },
       "name" : "TO do email",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 913,
+        "layoutY" : 446
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Verifica se o e-mail de destino foi configurado corretamente\r\nif (metadata.emailDestino && metadata.emailDestino.trim() !== '') {\r\n    metadata.emailDestino = metadata.emailDestino.trim().replace(/\\s+/g, '');  // Limpa espaços\r\n} else {\r\n    metadata.emailDestino = 'suporte@ecocircuito.com.br';  // E-mail padrão\r\n}\r\n\r\n// Configura o remetente do e-mail\r\nmsg.from = 'application@ecocircuito.com.br';  // Quem vai enviar\r\n\r\n// Configura o destinatário do e-mail\r\nmsg.to = metadata.emailDestino;\r\n\r\n// Define o conteúdo do e-mail\r\nmsg.subject = 'Alerta de Equipamento: ' + metadata.deviceName;\r\nmsg.body = '<h1>Alerta!</h1><p>O equipamento ' + metadata.deviceName + ' apresentou um alerta.</p>';\r\n\r\n// Debug opcional\r\nmetadata.debugEmail = 'E-mail preparado para: ' + msg.to + ' de: ' + msg.from;\r\n\r\n// Retorna os dados preparados\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d66718d0-0f4b-11f0-98c5-37e1d09aa61a"
+      },
+      "name" : "Email",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
