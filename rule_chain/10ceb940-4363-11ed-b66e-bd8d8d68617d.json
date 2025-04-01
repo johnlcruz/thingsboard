@@ -181,8 +181,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 807,
-        "layoutY" : 115
+        "layoutX" : 563,
+        "layoutY" : 497
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -210,7 +210,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg = {\r\n    from: \"application@ecocircuito.com.br\",\r\n    to: metadata.emailDestino,\r\n    subject: \"⚠️ Alerta no equipamento: \" + metadata.deviceName,\r\n    body: `\r\n        <h2>Alerta no equipamento: ${metadata.deviceName}</h2>\r\n        <p><strong>Status:</strong> ${metadata.statusError}</p>\r\n        <p><strong>Mensagem:</strong> ${metadata.statusMessage}</p>\r\n        <p><strong>Tipo do Alarme:</strong> ${metadata.statusAlarmType}</p>\r\n        <p>Verifique o equipamento o quanto antes.</p>\r\n        <hr>\r\n        <p style=\"font-size: 12px; color: gray;\">Mensagem automática do sistema EcoCircuito</p>\r\n    `,\r\n    html: true\r\n};\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: \"SEND_EMAIL\" };\r\n",
+        "jsScript" : "var originator = msg.originatorName ? msg.originatorName : \"Desconhecido\";\r\nvar status = (msg.details && msg.details.status && msg.details.status.errorStatus) ? msg.details.status.errorStatus : \"N/A\";\r\nvar message = (msg.details && msg.details.status && msg.details.status.message) ? msg.details.status.message : \"N/A\";\r\nvar alarmType = (msg.details && msg.details.status && msg.details.status.alarmType) ? msg.details.status.alarmType : \"N/A\";\r\n\r\nvar msgOut = {\r\n    from: \"application@ecocircuito.com.br\",\r\n    to: msg.to,\r\n    subject: \"⚠️ Alerta no equipamento: \" + originator,\r\n    body:\r\n        \"<h2>⚠️ Alerta no equipamento: \" + originator + \"</h2>\" +\r\n        \"<p><strong>Status:</strong> \" + status + \"</p>\" +\r\n        \"<p><strong>Mensagem:</strong> \" + message + \"</p>\" +\r\n        \"<p><strong>Tipo do Alarme:</strong> \" + alarmType + \"</p>\" +\r\n        \"<p>✅ Verifique o equipamento o quanto antes.</p>\" +\r\n        \"<hr>\" +\r\n        \"<p style='font-size: 12px; color: gray;'>Mensagem automática do sistema EcoCircuito</p>\",\r\n    html: true\r\n};\r\n\r\nreturn {\r\n    msg: msgOut,\r\n    metadata: metadata,\r\n    msgType: \"SEND_EMAIL\"\r\n};\r\n",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
