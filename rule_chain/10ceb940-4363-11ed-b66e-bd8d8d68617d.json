@@ -47,7 +47,7 @@
       },
       "configuration" : {
         "fromTemplate" : "application@ecocircuito.com.br",
-        "toTemplate" : "${metadata.emailDestino}",
+        "toTemplate" : "msg.to = metadata.emailDestino;",
         "ccTemplate" : null,
         "bccTemplate" : null,
         "subjectTemplate" : "Biodigestor ${metadata.deviceName} em ${metadata.alarmType}\n",
