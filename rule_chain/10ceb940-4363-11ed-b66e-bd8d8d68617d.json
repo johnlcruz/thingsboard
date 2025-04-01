@@ -22,11 +22,15 @@
   "metaData" : {
     "connections" : [ {
       "fromIndex" : 0,
-      "toIndex" : 1,
+      "toIndex" : 3,
       "type" : "Success"
     }, {
       "fromIndex" : 2,
       "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 1,
       "type" : "Success"
     }, {
       "fromIndex" : 4,
@@ -128,12 +132,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1079,
-        "layoutY" : 401
+        "layoutX" : 1034,
+        "layoutY" : 146
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "function ToString(msg, metadata, msgType) {\r\n    return 'DEBUG LOG:\\n' +\r\n        'MSG: ' + JSON.stringify(msg, null, 2) + '\\n\\n' +\r\n        'METADATA: ' + JSON.stringify(metadata, null, 2) + '\\n\\n' +\r\n        'MSG TYPE: ' + msgType;\r\n}",
+        "jsScript" : "return \"EMAIL DESTINO: \" + metadata.emailDestino;\r\n",
         "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
       },
       "configurationVersion" : 0,
