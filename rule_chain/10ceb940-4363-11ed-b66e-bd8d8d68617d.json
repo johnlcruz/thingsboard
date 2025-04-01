@@ -18,10 +18,6 @@
   },
   "metaData" : {
     "connections" : [ {
-      "fromIndex" : 2,
-      "toIndex" : 4,
-      "type" : "Success"
-    }, {
       "fromIndex" : 3,
       "toIndex" : 1,
       "type" : "Success"
