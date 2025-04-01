@@ -210,7 +210,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.from = 'application@ecocircuito.com.br';  // Remetente\r\nmsg.to = metadata.emailDestino;               // Destinatário\r\nmsg.subject = 'Alerta de Equipamento: ' + metadata.deviceName;\r\nmsg.body = 'O equipamento ' + metadata.deviceName + ' apresentou um alerta.';\r\n\r\n// Retornar com o tipo correto para o nó de envio de e-mail funcionar\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: 'SEND_EMAIL'  // <- ESSENCIAL! O erro era por causa disso\r\n};\r\n\r\n",
+        "jsScript" : "// Cria novo objeto apenas com os dados necessários pro envio de e-mail\r\nvar email = {\r\n    from: \"application@ecocircuito.com.br\",\r\n    to: metadata.emailDestino,\r\n    subject: \"Alerta de Equipamento: \" + metadata.deviceName,\r\n    body: \"O equipamento \" + metadata.deviceName + \" apresentou um alerta.\",\r\n    html: false  // coloca true se quiser usar HTML no body\r\n};\r\n\r\n// Retorna apenas o objeto de e-mail no `msg`\r\nreturn {\r\n    msg: email,  // aqui sim, só o que o nó laranja entende\r\n    metadata: metadata,\r\n    msgType: \"SEND_EMAIL\"\r\n};\r\n",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
