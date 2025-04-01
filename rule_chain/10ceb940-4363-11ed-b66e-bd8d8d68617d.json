@@ -137,9 +137,9 @@
         "layoutY" : 578
       },
       "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "return \"EMAIL DESTINO: \" + metadata.emailDestino;\r\n",
-        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+        "scriptLang" : "TBEL",
+        "jsScript" : "return \"EMAIL DESTINO: \"+metadata.emailDestino;\r\n",
+        "tbelScript" : "if (metadata.emailDestino == null || metadata.emailDestino == '') {\r\n\r\n  if (metadata.deviceName == \"150.001-202402-PH\") {\r\n    metadata.emailDestino = \"fernando.costa@ecocircuito.com.br\";\r\n  } else {\r\n    metadata.emailDestino = \"suporte@ecocircuito.com.br\";\r\n  }\r\n\r\n  // Campo de debug pra inspecionar no e-mail\r\n  metadata.debug = \"Device: \" + metadata.deviceName + \r\n                   \" | Email: \" + metadata.emailDestino;\r\n}\r\n\r\nreturn {\r\n  msg: msg,\r\n  metadata: metadata,\r\n  msgType: msgType\r\n};\r\n"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
