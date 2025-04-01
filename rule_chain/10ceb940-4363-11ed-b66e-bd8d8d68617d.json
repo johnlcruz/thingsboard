@@ -7,10 +7,7 @@
     "configuration" : null,
     "debugMode" : false,
     "externalId" : null,
-    "firstRuleNodeId" : {
-      "entityType" : "RULE_NODE",
-      "id" : "e8bc3160-0f3b-11f0-98c5-37e1d09aa61a"
-    },
+    "firstRuleNodeId" : null,
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "10ceb940-4363-11ed-b66e-bd8d8d68617d"
@@ -41,7 +38,7 @@
       "toIndex" : 0,
       "type" : "Success"
     } ],
-    "firstNodeIndex" : 4,
+    "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
@@ -108,8 +105,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 245,
-        "layoutY" : 497
+        "layoutX" : 222,
+        "layoutY" : 362
       },
       "configuration" : {
         "msgCount" : 0,
@@ -160,8 +157,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 495,
-        "layoutY" : 547
+        "layoutX" : 581,
+        "layoutY" : 466
       },
       "configuration" : {
         "scriptLang" : "TBEL",
