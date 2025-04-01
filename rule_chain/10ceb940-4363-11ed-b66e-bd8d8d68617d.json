@@ -34,6 +34,10 @@
       "type" : "Success"
     }, {
       "fromIndex" : 4,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
       "toIndex" : 0,
       "type" : "Success"
     } ],
@@ -41,8 +45,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 887,
-        "layoutY" : 300
+        "layoutX" : 1072,
+        "layoutY" : 512
       },
       "configuration" : {
         "fromTemplate" : "application@ecocircuito.com.br",
@@ -177,6 +181,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 776,
+        "layoutY" : 285
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return \"EMAIL DESTINO: \" + metadata.emailDestino;\r\n",
+        "tbelScript" : "return \"Destinatário: [\" + metadata.emailDestino + \"]\";\r\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3b320c10-0f3e-11f0-98c5-37e1d09aa61a"
+      },
+      "name" : "log",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     } ],
     "ruleChainConnections" : null
   },
