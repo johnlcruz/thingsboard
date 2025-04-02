@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : "Rua Parapuã, 62",
+    "address2" : "Rua Parapuã, 62",
+    "city" : "Osasco",
+    "country" : "Brazil",
+    "email" : "fernando.costa@ecocircuito.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "c36d6a20-0fcf-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "Teste",
+    "phone" : "+5511921391923",
+    "state" : "São Paulo",
+    "title" : "Teste",
+    "zip" : "06240030"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
