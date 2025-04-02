@@ -38,8 +38,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1374,
-        "layoutY" : 276
+        "layoutX" : 1500,
+        "layoutY" : 303
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -73,8 +73,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 64,
-        "layoutY" : 614
+        "layoutX" : 53,
+        "layoutY" : 468
       },
       "configuration" : {
         "msgCount" : 0,
@@ -101,8 +101,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1121,
-        "layoutY" : 578
+        "layoutX" : 1267,
+        "layoutY" : 801
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -125,8 +125,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 269,
-        "layoutY" : 325
+        "layoutX" : 330,
+        "layoutY" : 297
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -149,12 +149,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 603,
-        "layoutY" : 195
+        "layoutX" : 690,
+        "layoutY" : 299
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "// Garantir que o e-mail de destino seja válido\r\nif (metadata.emailDestino && metadata.emailDestino.trim() !== '') {\r\n    // Remover espaços extras no e-mail\r\n    metadata.emailDestino = metadata.emailDestino.trim();\r\n} else {\r\n    // Se o e-mail não estiver definido ou estiver vazio, definir um fallback padrão\r\n    metadata.emailDestino = 'suporte@ecocircuito.com.br';\r\n}\r\n\r\n// Definindo msg.to com o valor do e-mail formatado\r\nmsg.to = metadata.emailDestino;  // Não usa template string, apenas passa diretamente\r\n\r\n// Optional: Debugar o e-mail para verificar se está correto\r\nmetadata.debugEmail = 'E-mail para: ' + msg.to;\r\n\r\n// Retornar o pacote com msg, metadata e msgType\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
+        "jsScript" : "// Garantir que o e-mail de destino seja válido\r\nif (metadata.emailDestino && metadata.emailDestino.trim() !== '') {\r\n    // Remover espaços extras no e-mail\r\n    metadata.emailDestino = metadata.emailDestino.trim();\r\n} else {\r\n    // Se o e-mail não estiver definido ou estiver vazio, definir um fallback padrão\r\n    metadata.emailDestino = 'appthingsboard@ecocircuito.com.br';\r\n}\r\n\r\n// Definindo msg.to com o valor do e-mail formatado\r\nmsg.to = metadata.emailDestino;  // Não usa template string, apenas passa diretamente\r\n\r\n// Optional: Debugar o e-mail para verificar se está correto\r\nmetadata.debugEmail = 'E-mail para: ' + msg.to;\r\n\r\n// Retornar o pacote com msg, metadata e msgType\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
         "tbelScript" : ""
       },
       "configurationVersion" : 0,
@@ -173,8 +173,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1027,
-        "layoutY" : 245
+        "layoutX" : 1017,
+        "layoutY" : 303
       },
       "configuration" : {
         "scriptLang" : "JS",
