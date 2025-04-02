@@ -208,6 +208,10 @@
       "toIndex" : 19,
       "type" : "Created"
     }, {
+      "fromIndex" : 28,
+      "toIndex" : 57,
+      "type" : "Created"
+    }, {
       "fromIndex" : 30,
       "toIndex" : 20,
       "type" : "Success"
@@ -282,6 +286,10 @@
     }, {
       "fromIndex" : 55,
       "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 57,
+      "toIndex" : 19,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 1,
@@ -1821,6 +1829,29 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2310,
+        "layoutY" : 596
+      },
+      "configuration" : {
+        "detailsList" : [ "EMAIL" ],
+        "fetchTo" : "METADATA"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3c7b8eb0-0fd0-11f0-98c5-37e1d09aa61a"
+      },
+      "name" : "addEmail",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetCustomerDetailsNode"
     } ],
     "ruleChainConnections" : null
   },
