@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "97f93bc0-e5ec-11ee-ac07-71cd2fb3ac0c"
     },
-    "label" : "L.SDX.AKER.RJ-50",
+    "label" : "L.EXAL.RIOOSTRAS-050",
     "name" : "050.003-202311-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1715866468001,
+      "lastUpdateTs" : 1744115584735,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1715866468001,
-      "longValue" : 1715866468001,
+      "lastUpdateTs" : 1744115584735,
+      "longValue" : 1744115584735,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1715865864787,
-      "longValue" : 1715865862200,
+      "lastUpdateTs" : 1744114945281,
+      "longValue" : 1744114942597,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
