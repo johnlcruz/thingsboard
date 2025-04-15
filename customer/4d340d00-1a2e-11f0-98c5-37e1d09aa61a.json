@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "renata.pioalves@projefood.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4d340d00-1a2e-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.WHIRLPOOL-300 - Renata",
+    "phone" : "+5511976829055",
+    "state" : null,
+    "title" : "L.WHIRLPOOL-300 - Renata",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
