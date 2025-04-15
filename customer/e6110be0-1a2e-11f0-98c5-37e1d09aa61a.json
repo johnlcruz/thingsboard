@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "bruno.belizario@taua.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e6110be0-1a2e-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "V.TAUA.HT.AT-600 - Bruno",
+    "phone" : "+5511975764603",
+    "state" : null,
+    "title" : "V.TAUA.HT.AT-600 - Bruno",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
