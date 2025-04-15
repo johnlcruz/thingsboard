@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "unop1661@grsa-gps.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "781d0170-1a2e-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.WPPG-050 - Mônica",
+    "phone" : "+5511983274857",
+    "state" : null,
+    "title" : "L.WPPG-050 - Mônica",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
