@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "dioula.chaves@br.sumiriko.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "94d468f0-1a36-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.SMRKO-150 - Dioula",
+    "phone" : "",
+    "state" : null,
+    "title" : "L.SMRKO-150 - Dioula",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
