@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "h6383-te@accor.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e2b7bdd0-1a25-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.ACCOR.JEQUI-600 - Marcos Dyszy",
+    "phone" : "+5511989259797",
+    "state" : null,
+    "title" : "L.ACCOR.JEQUI-600 - Marcos Dyszy",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
