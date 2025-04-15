@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "karina.gomes@pestana.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f1a948f0-1a29-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.HOTEL.PESTANA.SP-050 - Karina",
+    "phone" : "+5511989247387",
+    "state" : null,
+    "title" : "L.HOTEL.PESTANA.SP-050 - Karina",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
