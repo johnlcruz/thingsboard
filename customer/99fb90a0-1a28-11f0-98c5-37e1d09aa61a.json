@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "unopc950@grsa.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "99fb90a0-1a28-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.GRSA.NSK.SUZ-150 - Sandra",
+    "phone" : "+5511999392476",
+    "state" : null,
+    "title" : "L.GRSA.NSK.SUZ-150 - Sandra",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
