@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "juliete.santos@sodexo.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ff8bca80-1a2c-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.SDX.HNKL.ITA-150 - Juliete",
+    "phone" : "+5511992977872",
+    "state" : null,
+    "title" : "L.SDX.HNKL.ITA-150 - Juliete",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
