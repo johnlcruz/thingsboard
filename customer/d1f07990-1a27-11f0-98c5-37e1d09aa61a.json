@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "felipe.mancio@grupoboticario.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d1f07990-1a27-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.BOTI.REG.SP-150  - Felipe",
+    "phone" : "+5545999509085",
+    "state" : null,
+    "title" : "L.BOTI.REG.SP-150  - Felipe",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
