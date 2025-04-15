@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "gestaoambiental@lecanton.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "a562f8b0-1a2e-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "V.LECANTON.TE-RJ-600 - Pedro",
+    "phone" : "+5521995729415",
+    "state" : null,
+    "title" : "V.LECANTON.TE-RJ-600 - Pedro",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
