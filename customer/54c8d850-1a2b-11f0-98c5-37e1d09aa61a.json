@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "douglas.silva@pvshopping.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "54c8d850-1a2b-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.PV.SHOPPING-600 - Douglas",
+    "phone" : "",
+    "state" : null,
+    "title" : "L.PV.SHOPPING-600 - Douglas",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
