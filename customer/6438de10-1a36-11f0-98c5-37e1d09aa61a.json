@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "adriano.camillo@raizen.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "6438de10-1a36-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.RZN.IPAUSSU-150 - Adriano",
+    "phone" : "+5514998288381",
+    "state" : null,
+    "title" : "L.RZN.IPAUSSU-150 - Adriano",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
