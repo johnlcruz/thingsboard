@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "vagner.queiroz@mwm.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "09019560-1a2b-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.MWM.NAVI.SP-600 - Vagner",
+    "phone" : "+5511972782034",
+    "state" : null,
+    "title" : "L.MWM.NAVI.SP-600 - Vagner",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
