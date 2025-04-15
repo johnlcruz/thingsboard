@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "sara.silva@rhp.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "320e3aa0-1a29-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.HOSP.PORT-300 - Sara",
+    "phone" : null,
+    "state" : null,
+    "title" : "L.HOSP.PORT-300 - Sara",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
