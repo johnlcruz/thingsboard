@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "unopc507a@grsa.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "c3d49bb0-1a28-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.GRSA.RCKT-150 - Alice",
+    "phone" : "+5511961213420",
+    "state" : null,
+    "title" : "L.GRSA.RCKT-150 - Alice",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
