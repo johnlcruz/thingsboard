@@ -154,7 +154,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "// Garantir que o e-mail de destino seja válido\r\nif (metadata.emailDestino && metadata.emailDestino.trim() !== '') {\r\n    // Remover espaços extras no e-mail\r\n    metadata.emailDestino = metadata.emailDestino.trim();\r\n} else {\r\n    // Se o e-mail não estiver definido ou estiver vazio, definir um fallback padrão\r\n    metadata.emailDestino = 'appthingsboard@ecocircuito.com.br';\r\n}\r\n\r\n// Definindo msg.to com o valor do e-mail formatado\r\nmsg.to = metadata.emailDestino;  // Não usa template string, apenas passa diretamente\r\n\r\n// Optional: Debugar o e-mail para verificar se está correto\r\nmetadata.debugEmail = 'E-mail para: ' + msg.to;\r\n\r\n// Retornar o pacote com msg, metadata e msgType\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
+        "jsScript" : "// 1. Captura o e-mail do cliente (vindo do enriquecimento)\r\nvar emailDestino = metadata.cs_emailAlerta || metadata.shared_emailAlerta || '';\r\n\r\n// 2. Validação e fallback\r\nif (!emailDestino || emailDestino.trim() === '') {\r\n    emailDestino = 'appthingsboard@ecocircuito.com.br'; // fallback\r\n} else {\r\n    emailDestino = emailDestino.trim();\r\n}\r\n\r\n// 3. Definir remetente, destinatário e cópia\r\nmsg.from = 'appthingsboard@ecocircuito.com.br';\r\nmsg.to = emailDestino;\r\nmsg.cc = 'fernando.costa@ecocircuito.com.br';\r\n\r\n// 4. Log de debug\r\nmetadata.debugEmail = 'Destino: ' + msg.to + ' | CC: ' + msg.cc;\r\n\r\n// 5. Retornar pacote final\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
         "tbelScript" : ""
       },
       "configurationVersion" : 0,
@@ -194,6 +194,34 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 37,
+        "layoutY" : 260
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ "emailAlerta" ],
+        "serverAttributeNames" : [ ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "53e40150-1a51-11f0-98c5-37e1d09aa61a"
+      },
+      "name" : "Enriquecimento e-mail",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
     } ],
     "ruleChainConnections" : null
   },
