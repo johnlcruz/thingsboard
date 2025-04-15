@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "maria.pimentel@portoaltoresort.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "6c82c990-1a28-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.GAVRESORT.IPOJ.PE-150 - Eduarda",
+    "phone" : "+5583987955047",
+    "state" : null,
+    "title" : "L.GAVRESORT.IPOJ.PE-150 - Eduarda",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
