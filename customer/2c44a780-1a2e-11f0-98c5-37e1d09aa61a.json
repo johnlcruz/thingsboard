@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "extern.viviane.ruza@volkswagen.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2c44a780-1a2e-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.VW.VIN-150 - Viviane",
+    "phone" : "+5519996889823",
+    "state" : null,
+    "title" : "L.VW.VIN-150 - Viviane",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
