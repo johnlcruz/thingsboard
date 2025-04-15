@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "liviavaladao@vah.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "47d12160-1a27-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.ATHENA.HST.VIT-150 - Livia",
+    "phone" : "+5528999189446",
+    "state" : null,
+    "title" : "L.ATHENA.HST.VIT-150 - Livia",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
