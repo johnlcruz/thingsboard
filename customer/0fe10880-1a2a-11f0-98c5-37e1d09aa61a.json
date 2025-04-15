@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "rbrlog@llinea.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "0fe10880-1a2a-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.LLINEA.EXT-150  -  Kamila",
+    "phone" : "+5535999343825",
+    "state" : null,
+    "title" : "L.LLINEA.EXT-150  -  Kamila",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
