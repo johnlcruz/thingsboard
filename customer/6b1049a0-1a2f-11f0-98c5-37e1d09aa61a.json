@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "ana-paula.oliveira@accor.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "6b1049a0-1a2f-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.NVOTEL.ITU-150 - Ana Paula",
+    "phone" : "+5515997879647",
+    "state" : null,
+    "title" : "L.NVOTEL.ITU-150 - Ana Paula",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
