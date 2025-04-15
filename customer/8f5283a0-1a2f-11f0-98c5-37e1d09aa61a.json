@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "defmartins@rd.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "8f5283a0-1a2f-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.RAIADROGA.MTZ-150 - Dennis",
+    "phone" : "+5511971255796",
+    "state" : null,
+    "title" : "L.RAIADROGA.MTZ-150 - Dennis",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
