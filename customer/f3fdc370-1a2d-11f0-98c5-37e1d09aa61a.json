@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "Izabella.Bittencourt@acco.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f3fdc370-1a2d-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.TILIBRA.150 - Izabella",
+    "phone" : null,
+    "state" : null,
+    "title" : "L.TILIBRA.150 - Izabella",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
