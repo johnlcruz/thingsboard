@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "lcarolina@aviva.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "8d4f8150-1a27-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.AVIVA.PRQ-600 - Lara",
+    "phone" : "+5564992891322",
+    "state" : null,
+    "title" : "L.AVIVA.PRQ-600 - Lara",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
