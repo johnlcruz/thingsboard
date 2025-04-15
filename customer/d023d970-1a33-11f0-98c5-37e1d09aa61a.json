@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "Thomaz.Leao@whotels.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d023d970-1a33-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.WHOTELS.SP-50_02 - Thomaz",
+    "phone" : "+5511969297552",
+    "state" : null,
+    "title" : "L.WHOTELS.SP-50_02 - Thomaz",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
