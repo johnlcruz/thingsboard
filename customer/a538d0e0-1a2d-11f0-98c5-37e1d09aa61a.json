@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "estela.zacchi@sapore.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "a538d0e0-1a2d-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.SPR-LOREAL-150 - Estela",
+    "phone" : "+5511975450397",
+    "state" : null,
+    "title" : "L.SPR-LOREAL-150 - Estela",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
