@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "unop4398@grsa.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "1d195570-1a2f-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.GRSA.BIC.AM-150 - Catherine",
+    "phone" : "+5592992533381",
+    "state" : null,
+    "title" : "L.GRSA.BIC.AM-150 - Catherine",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
