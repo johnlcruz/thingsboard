@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "tksp@llinea.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "dcf381e0-1a2a-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.LLINEA.THYSSN-150 - Jenifer",
+    "phone" : "+5511980579398",
+    "state" : null,
+    "title" : "L.LLINEA.THYSSN-150 - Jenifer",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
