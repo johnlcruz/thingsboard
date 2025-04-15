@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "mauricio.santana@takeda.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d4611550-1a30-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "V.TAKEDA.JGN-600 - Mauricio",
+    "phone" : null,
+    "state" : null,
+    "title" : "V.TAKEDA.JGN-600 - Mauricio",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
