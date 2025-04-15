@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "eva.queiroz@parqueshoppingba.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "36217c20-1a2d-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.SHOPBAHIA-600 - Evanuzia",
+    "phone" : "+5571999332300",
+    "state" : null,
+    "title" : "L.SHOPBAHIA-600 - Evanuzia",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
