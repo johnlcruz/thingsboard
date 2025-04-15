@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "karen.rufino2@sheraton.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "66074b90-1a2d-11f0-98c5-37e1d09aa61a"
+    },
+    "name" : "L.SHRTN.RJ-150 - Karen",
+    "phone" : "+5521994280173",
+    "state" : null,
+    "title" : "L.SHRTN.RJ-150 - Karen",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
