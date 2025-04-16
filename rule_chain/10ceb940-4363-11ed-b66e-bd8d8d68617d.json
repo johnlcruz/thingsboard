@@ -297,8 +297,8 @@
         "layoutY" : 612
       },
       "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return \"EMAIL DESTINO: \"+metadata.emailDestino;\r\n",
+        "scriptLang" : "JS",
+        "jsScript" : "return \"📭 E-mail não enviado: intervalo mínimo de reenvio não alcançado.\\n\" +\r\n       \"Equipamento: \" + metadata.deviceName + \"\\n\" +\r\n       \"Destino: \" + msg.to + \"\\n\" +\r\n       \"Último envio em: \" + metadata.ultimoEnvioEmail;\r\n",
         "tbelScript" : "return \"Para: [\" + msg.to + \"]\";\r\n"
       },
       "configurationVersion" : 0,
