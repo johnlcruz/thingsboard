@@ -22,7 +22,7 @@
   "metaData" : {
     "connections" : [ {
       "fromIndex" : 0,
-      "toIndex" : 8,
+      "toIndex" : 10,
       "type" : "Success"
     }, {
       "fromIndex" : 2,
@@ -51,6 +51,10 @@
     }, {
       "fromIndex" : 7,
       "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 8,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
@@ -268,8 +272,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1680,
-        "layoutY" : 659
+        "layoutX" : 1834,
+        "layoutY" : 611
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
@@ -314,6 +318,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1952,
+        "layoutY" : 387
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "msg.ultimoEnvioEmail = Date.now();\r\n\r\nreturn {\r\n  msg: msg,\r\n  metadata: metadata,\r\n  msgType: msgType\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "889d5af0-1ad7-11f0-98c5-37e1d09aa61a"
+      },
+      "name" : "Timestap",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },
