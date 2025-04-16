@@ -21,10 +21,6 @@
   },
   "metaData" : {
     "connections" : [ {
-      "fromIndex" : 0,
-      "toIndex" : 8,
-      "type" : "Success"
-    }, {
       "fromIndex" : 2,
       "toIndex" : 0,
       "type" : "Success"
@@ -38,6 +34,10 @@
       "type" : "Success"
     }, {
       "fromIndex" : 7,
+      "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 7,
       "toIndex" : 5,
       "type" : "Success"
     } ],
@@ -45,8 +45,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1525,
-        "layoutY" : 481
+        "layoutX" : 1666,
+        "layoutY" : 464
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -132,8 +132,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 541,
-        "layoutY" : 328
+        "layoutX" : 511,
+        "layoutY" : 336
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -156,12 +156,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 110,
-        "layoutY" : 808
+        "layoutX" : 1065,
+        "layoutY" : 634
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "// 1. Captura o e-mail do cliente (vindo do enriquecimento)\r\nvar emailDestino = metadata.cs_emailAlerta || metadata.shared_emailAlerta || '';\r\n\r\n// 2. Validação e fallback\r\nif (!emailDestino || emailDestino.trim() === '') {\r\n    emailDestino = 'appthingsboard@ecocircuito.com.br'; // fallback\r\n} else {\r\n    emailDestino = emailDestino.trim();\r\n}\r\n\r\n// 3. Definir remetente, destinatário e cópia\r\nmsg.from = 'appthingsboard@ecocircuito.com.br';\r\nmsg.to = emailDestino;\r\nmsg.cc = 'fernando.costa@ecocircuito.com.br';\r\n\r\n// 4. Log de debug\r\nmetadata.debugEmail = 'Destino: ' + msg.to + ' | CC: ' + msg.cc;\r\n\r\n// 5. Retornar pacote final\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
+        "jsScript" : "// Nome do atributo onde vamos armazenar o último envio\r\nvar chaveUltimoEnvio = \"ultimoEnvioEmail\";\r\n\r\n// Tempo atual (em milissegundos)\r\nvar agora = Date.now();\r\n\r\n// Pega o último envio salvo (enriquecido via originator attributes)\r\nvar ultimoEnvio = metadata[chaveUltimoEnvio];\r\n\r\n// Se não tiver valor ainda, considera 0\r\nif (!ultimoEnvio) {\r\n    ultimoEnvio = 0;\r\n} else {\r\n    ultimoEnvio = parseInt(ultimoEnvio);\r\n}\r\n\r\n// Calcula diferença de tempo\r\nvar tempoPassado = agora - ultimoEnvio;\r\n\r\n// Define intervalo mínimo (3h = 3 * 60 * 60 * 1000)\r\nvar intervaloMinimo = 3 * 60 * 60 * 1000;\r\n\r\n// Se já passaram mais de 3h, permite envio\r\nif (tempoPassado >= intervaloMinimo) {\r\n    // Salva timestamp atual no metadata para ser salvo no atributo depois\r\n    metadata[chaveUltimoEnvio] = agora;\r\n\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: msgType\r\n    };\r\n} else {\r\n    // Ignora fluxo se não passou o tempo mínimo\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: \"false\"\r\n    };\r\n}\r\n",
         "tbelScript" : ""
       },
       "configurationVersion" : 0,
@@ -172,7 +172,7 @@
         "entityType" : "RULE_NODE",
         "id" : "024a5320-0f49-11f0-98c5-37e1d09aa61a"
       },
-      "name" : "TO do email",
+      "name" : "Verificar intervalo de envio",
       "queueName" : null,
       "ruleChainId" : null,
       "singletonMode" : false,
@@ -232,8 +232,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 893,
-        "layoutY" : 329
+        "layoutX" : 840,
+        "layoutY" : 338
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -253,31 +253,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1809,
-        "layoutY" : 526
-      },
-      "configuration" : {
-        "scope" : "SERVER_SCOPE",
-        "notifyDevice" : false,
-        "sendAttributesUpdatedNotification" : false,
-        "updateAttributesOnlyOnValueChange" : true
-      },
-      "configurationVersion" : 2,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "0f2247f0-1ad0-11f0-98c5-37e1d09aa61a"
-      },
-      "name" : "Salvar timestamp do e-mail",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
     } ],
     "ruleChainConnections" : null
   },
