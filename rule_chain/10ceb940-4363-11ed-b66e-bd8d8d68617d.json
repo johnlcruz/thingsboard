@@ -21,6 +21,10 @@
   },
   "metaData" : {
     "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 0,
       "type" : "Success"
@@ -41,8 +45,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1777,
-        "layoutY" : 317
+        "layoutX" : 1525,
+        "layoutY" : 481
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -249,6 +253,31 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1809,
+        "layoutY" : 526
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "0f2247f0-1ad0-11f0-98c5-37e1d09aa61a"
+      },
+      "name" : "Salvar timestamp do e-mail",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
     } ],
     "ruleChainConnections" : null
   },
