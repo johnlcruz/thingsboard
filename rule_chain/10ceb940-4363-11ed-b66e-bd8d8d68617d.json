@@ -45,8 +45,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1633,
-        "layoutY" : 302
+        "layoutX" : 1777,
+        "layoutY" : 317
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -108,8 +108,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1282,
-        "layoutY" : 306
+        "layoutX" : 1436,
+        "layoutY" : 318
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -132,8 +132,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 615,
-        "layoutY" : 314
+        "layoutX" : 541,
+        "layoutY" : 328
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -180,8 +180,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1164,
-        "layoutY" : 491
+        "layoutX" : 1161,
+        "layoutY" : 341
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -204,8 +204,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 198,
-        "layoutY" : 314
+        "layoutX" : 194,
+        "layoutY" : 332
       },
       "configuration" : {
         "tellFailureIfAbsent" : false,
@@ -232,8 +232,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 908,
-        "layoutY" : 372
+        "layoutX" : 893,
+        "layoutY" : 329
       },
       "configuration" : {
         "scriptLang" : "JS",
