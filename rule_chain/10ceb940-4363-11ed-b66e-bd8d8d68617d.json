@@ -26,7 +26,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 3,
-      "toIndex" : 5,
+      "toIndex" : 7,
       "type" : "Success"
     }, {
       "fromIndex" : 5,
@@ -133,7 +133,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "// 1. Captura o e-mail enriquecido via originator attributes (server scope)\r\nvar emailDestino = metadata.emailAlerta;\r\n\r\n// 2. Se vier em formato JSON string, faz o parse\r\nif (emailDestino && emailDestino.indexOf('{') === 0) {\r\n    try {\r\n        var parsed = JSON.parse(emailDestino);\r\n        emailDestino = parsed.emailAlerta;\r\n    } catch (e) {\r\n        emailDestino = '';\r\n    }\r\n}\r\n\r\n// 3. Validação e fallback\r\nif (!emailDestino || emailDestino.trim() === '') {\r\n    emailDestino = 'fernando.costa@ecocircuito.com.br'; // fallback\r\n}\r\n\r\n// 4. Definir remetente, destinatário e cópia\r\nmsg.from = 'application@ecocircuito.com.br';\r\nmsg.to = emailDestino.trim();  // agora garantidamente correto\r\nmsg.cc = 'fernando.costa@ecocircuito.com.br';\r\n\r\n// 5. Log de debug\r\nmetadata.debugEmail = 'Destino: ' + msg.to + ' | CC: ' + msg.cc;\r\n\r\n// 6. Retornar pacote final\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
+        "jsScript" : "// 1. Captura o e-mail do atributo enriquecido\r\nvar emailDestino = metadata.emailAlerta;\r\n\r\n// 2. Verifica se veio como JSON em string\r\nif (emailDestino && typeof emailDestino === 'string' && emailDestino.indexOf('{') === 0) {\r\n    try {\r\n        var parsed = JSON.parse(emailDestino);\r\n        emailDestino = parsed.emailAlerta;\r\n    } catch (e) {\r\n        emailDestino = ''; // fallback se erro no parse\r\n    }\r\n}\r\n\r\n// 3. Validação e fallback\r\nif (!emailDestino || emailDestino.trim() === '') {\r\n    emailDestino = 'fernando.costa@ecocircuito.com.br'; // fallback\r\n}\r\n\r\n// 4. Definir remetente, destinatário e cópia\r\nmsg.from = 'application@ecocircuito.com.br';\r\nmsg.to = emailDestino.trim(); // deve ser string, não array\r\nmsg.cc = 'fernando.costa@ecocircuito.com.br';\r\n\r\n// 5. Log pra debug\r\nmetadata.debugEmail = 'Destino: ' + msg.to + ' | CC: ' + msg.cc;\r\n\r\n// 6. Retornar o pacote final\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
         "tbelScript" : "// Garantir que deviceName esteja limpo\r\nmetadata.deviceName = metadata.deviceName != null ? metadata.deviceName.trim() : 'DESCONHECIDO';\r\n\r\n// Define o e-mail baseado no nome do dispositivo\r\nif (metadata.deviceName == '150.001-202402-PH') {\r\n    metadata.emailDestino = 'fernando.costa@ecocircuito.com.br';\r\n} else {\r\n    metadata.emailDestino = 'suporte@ecocircuito.com.br';\r\n}\r\n\r\n// Remove espaços indesejados (inclusive entre o nome e o @)\r\nmetadata.emailDestino = metadata.emailDestino.replace(/\\s/g, '');\r\n\r\n// Debug opcional\r\nmetadata.debugEmail = \"[\" + metadata.emailDestino + \"]\";\r\n\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n"
       },
       "configurationVersion" : 0,
@@ -176,8 +176,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1017,
-        "layoutY" : 303
+        "layoutX" : 1164,
+        "layoutY" : 491
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -225,6 +225,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 908,
+        "layoutY" : 372
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return (\r\n  '📩 msg.to: ' + msg.to + '\\n' +\r\n  '📩 msg.cc: ' + msg.cc + '\\n' +\r\n  '📩 metadata.emailAlerta: ' + metadata.emailAlerta + '\\n' +\r\n  '🐞 debugEmail: ' + metadata.debugEmail\r\n);\r\n",
+        "tbelScript" : "return (\r\n  '📩 msg.to: ' + msg.to + '\\n' +\r\n  '📩 msg.cc: ' + msg.cc + '\\n' +\r\n  '📩 metadata.emailAlerta: ' + metadata.emailAlerta + '\\n' +\r\n  '🐞 debugEmail: ' + metadata.debugEmail\r\n);\r\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "5e798350-1a6b-11f0-98c5-37e1d09aa61a"
+      },
+      "name" : "LOG CAPTUR EMAIL",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     } ],
     "ruleChainConnections" : null
   },
