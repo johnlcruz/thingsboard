@@ -33,10 +33,6 @@
       "toIndex" : 2,
       "type" : "Success"
     }, {
-      "fromIndex" : 6,
-      "toIndex" : 3,
-      "type" : "Success"
-    }, {
       "fromIndex" : 7,
       "toIndex" : 5,
       "type" : "Success"
