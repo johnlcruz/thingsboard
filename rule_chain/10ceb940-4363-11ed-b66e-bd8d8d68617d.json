@@ -34,6 +34,10 @@
       "toIndex" : 5,
       "type" : "Success"
     }, {
+      "fromIndex" : 4,
+      "toIndex" : 9,
+      "type" : "Failure"
+    }, {
       "fromIndex" : 5,
       "toIndex" : 2,
       "type" : "Success"
@@ -137,8 +141,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 958,
-        "layoutY" : 148
+        "layoutX" : 756,
+        "layoutY" : 155
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -166,7 +170,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "// Nome do atributo onde vamos armazenar o último envio\r\nvar chaveUltimoEnvio = \"ultimoEnvioEmail\";\r\n\r\n// Tempo atual (em milissegundos)\r\nvar agora = Date.now();\r\n\r\n// Pega o último envio salvo (enriquecido via originator attributes)\r\nvar ultimoEnvio = metadata[chaveUltimoEnvio];\r\n\r\n// Se não tiver valor ainda, considera 0\r\nif (!ultimoEnvio) {\r\n    ultimoEnvio = 0;\r\n} else {\r\n    ultimoEnvio = parseInt(ultimoEnvio);\r\n}\r\n\r\n// Calcula diferença de tempo\r\nvar tempoPassado = agora - ultimoEnvio;\r\n\r\n// Define intervalo mínimo (3h = 3 * 60 * 60 * 1000)\r\nvar intervaloMinimo = 3 * 60 * 60 * 1000;\r\n\r\n// Se já passaram mais de 3h, permite envio\r\nif (tempoPassado >= intervaloMinimo) {\r\n    // Salva timestamp atual no metadata para ser salvo no atributo depois\r\n    metadata[chaveUltimoEnvio] = agora;\r\n\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: msgType\r\n    };\r\n} else {\r\n    // Ignora fluxo se não passou o tempo mínimo\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: \"false\"\r\n    };\r\n}\r\n",
+        "jsScript" : "// Timestamp atual\r\nvar agora = Date.now();\r\n\r\n// Pega o timestamp do último envio\r\nvar tsUltimoEnvio = metadata.ultimoEnvioEmail ? parseInt(metadata.ultimoEnvioEmail) : 0;\r\n\r\n// Define intervalo de 3 horas (em milissegundos)\r\nvar intervaloMs = 3 * 60 * 60 * 1000;\r\n\r\n// Se nunca enviou ou já passou do tempo, permite envio\r\nif (tsUltimoEnvio === 0 || (agora - tsUltimoEnvio > intervaloMs)) {\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: msgType\r\n    };\r\n} else {\r\n    var minutosRestantes = Math.ceil((intervaloMs - (agora - tsUltimoEnvio)) / 60000);\r\n    metadata.debugEmail = \"⏳ Email bloqueado. Faltam \" + minutosRestantes + \" min para próximo envio.\";\r\n    \r\n    // Opcional: loga ou envia para um caminho de \"ignorado\"\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: \"EMAIL_BLOQUEADO\"\r\n    };\r\n}\r\n",
         "tbelScript" : ""
       },
       "configurationVersion" : 0,
@@ -185,8 +189,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1146,
-        "layoutY" : 333
+        "layoutX" : 1509,
+        "layoutY" : 149
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -209,8 +213,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 616,
-        "layoutY" : 156
+        "layoutX" : 407,
+        "layoutY" : 152
       },
       "configuration" : {
         "tellFailureIfAbsent" : false,
@@ -237,8 +241,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 740,
-        "layoutY" : 338
+        "layoutX" : 837,
+        "layoutY" : 303
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -283,6 +287,30 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1099,
+        "layoutY" : 440
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return \"EMAIL DESTINO: \"+metadata.emailDestino;\r\n",
+        "tbelScript" : "return \"Para: [\" + msg.to + \"]\";\r\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "793b21c0-1ad5-11f0-98c5-37e1d09aa61a"
+      },
+      "name" : "Ignorado por intervalo",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     } ],
     "ruleChainConnections" : null
   },
