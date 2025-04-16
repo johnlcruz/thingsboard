@@ -53,8 +53,8 @@
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1855,
-        "layoutY" : 335
+        "layoutX" : 1687,
+        "layoutY" : 323
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -116,8 +116,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1592,
-        "layoutY" : 338
+        "layoutX" : 1362,
+        "layoutY" : 512
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -140,8 +140,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 439,
-        "layoutY" : 336
+        "layoutX" : 958,
+        "layoutY" : 148
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -164,8 +164,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1049,
-        "layoutY" : 339
+        "layoutX" : 1218,
+        "layoutY" : 150
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -188,8 +188,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1327,
-        "layoutY" : 337
+        "layoutX" : 1146,
+        "layoutY" : 333
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -212,8 +212,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 194,
-        "layoutY" : 332
+        "layoutX" : 616,
+        "layoutY" : 156
       },
       "configuration" : {
         "tellFailureIfAbsent" : false,
@@ -264,8 +264,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 2094,
-        "layoutY" : 331
+        "layoutX" : 1917,
+        "layoutY" : 527
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
