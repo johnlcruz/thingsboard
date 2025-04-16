@@ -208,11 +208,11 @@
         "layoutY" : 314
       },
       "configuration" : {
-        "tellFailureIfAbsent" : true,
+        "tellFailureIfAbsent" : false,
         "fetchTo" : "METADATA",
         "clientAttributeNames" : [ ],
-        "sharedAttributeNames" : [ "emailAlerta" ],
-        "serverAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "emailAlerta" ],
         "latestTsKeyNames" : [ ],
         "getLatestValueWithTs" : false
       },
