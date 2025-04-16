@@ -21,12 +21,20 @@
   },
   "metaData" : {
     "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
       "fromIndex" : 2,
       "toIndex" : 0,
       "type" : "Success"
     }, {
       "fromIndex" : 3,
       "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 5,
       "type" : "Success"
     }, {
       "fromIndex" : 5,
@@ -36,17 +44,13 @@
       "fromIndex" : 7,
       "toIndex" : 4,
       "type" : "Success"
-    }, {
-      "fromIndex" : 7,
-      "toIndex" : 5,
-      "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1666,
-        "layoutY" : 464
+        "layoutX" : 1855,
+        "layoutY" : 335
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -108,8 +112,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1440,
-        "layoutY" : 341
+        "layoutX" : 1592,
+        "layoutY" : 338
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -132,7 +136,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 511,
+        "layoutX" : 439,
         "layoutY" : 336
       },
       "configuration" : {
@@ -156,8 +160,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1056,
-        "layoutY" : 635
+        "layoutX" : 1049,
+        "layoutY" : 339
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -180,8 +184,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1161,
-        "layoutY" : 341
+        "layoutX" : 1327,
+        "layoutY" : 337
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -232,7 +236,7 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 840,
+        "layoutX" : 740,
         "layoutY" : 338
       },
       "configuration" : {
@@ -256,8 +260,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1362,
-        "layoutY" : 646
+        "layoutX" : 2094,
+        "layoutY" : 331
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
