@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "b2388600-8563-11ef-843d-6984f4e458ce"
     },
-    "label" : "L.LATORRE600-PH",
+    "label" : "L.LATORRE-600-PH",
     "name" : "600.005-202406-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -68,8 +68,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1749124280612,
-      "longValue" : 1749124280295,
+      "lastUpdateTs" : 1749124382613,
+      "longValue" : 1749124380114,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
