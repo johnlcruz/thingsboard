@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "60bec430-2a27-11ee-8856-f94267911765"
     },
-    "label" : "600.002-202105-PH",
+    "label" : "L.RZS-QUIT.SP-600",
     "name" : "600.002-202105-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -60,15 +60,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1700164964737,
+      "lastUpdateTs" : 1745848590721,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1715794235697,
+      "lastUpdateTs" : 1750106054612,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -84,8 +84,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1715794235697,
-      "longValue" : 1715794235696,
+      "lastUpdateTs" : 1750105976974,
+      "longValue" : 1750105976974,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -100,8 +100,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1715794169823,
-      "longValue" : 1715794167609,
+      "lastUpdateTs" : 1750106138612,
+      "longValue" : 1750106137691,
       "strValue" : null
     }, {
       "booleanValue" : null,
