@@ -28,13 +28,13 @@
       "entityType" : "DEVICE",
       "id" : "2953dca0-4dd5-11f0-a7e3-53d8871a4ad2"
     },
-    "label" : "150.004-202106-PH",
-    "name" : "150.004-202106-PH",
+    "label" : "150.004-202106-PHr",
+    "name" : "150.004-202106-PHr",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "150.004-202106-PHr",
+    "credentialsId" : "150.004-202106-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -48,11 +48,11 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1750424458669,
+      "lastUpdateTs" : 1750443140613,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -62,6 +62,14 @@
       "key" : "inactivityAlarmTime",
       "lastUpdateTs" : 1750424458669,
       "longValue" : 1750424458669,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1750443221612,
+      "longValue" : 1750443221217,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
