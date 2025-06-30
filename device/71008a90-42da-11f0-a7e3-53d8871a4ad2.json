@@ -28,18 +28,50 @@
       "entityType" : "DEVICE",
       "id" : "71008a90-42da-11f0-a7e3-53d8871a4ad2"
     },
-    "label" : "600.009-202412-PH",
+    "label" : "L.EMBRAER.GP-600",
     "name" : "600.009-202412-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "gv0ZbcaNYEq1GBsEB4cm",
+    "credentialsId" : "600.009-202412-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1749216689112,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1751292143613,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1751290324733,
+      "longValue" : 1751290324733,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1751309000612,
+      "longValue" : 1751309000023,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
