@@ -71,6 +71,10 @@
       "toIndex" : 0,
       "type" : "Success"
     }, {
+      "fromIndex" : 7,
+      "toIndex" : 16,
+      "type" : "Success"
+    }, {
       "fromIndex" : 9,
       "toIndex" : 12,
       "type" : "Success"
@@ -477,6 +481,32 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1228,
+        "layoutY" : 508
+      },
+      "configuration" : {
+        "templateId" : {
+          "entityType" : "NOTIFICATION_TEMPLATE",
+          "id" : "a8ca7a30-630a-11f0-a7e3-53d8871a4ad2"
+        },
+        "targets" : [ "6256a860-62f5-11ee-8a1c-9929a6519c5d", "6252b0c0-62f5-11ee-8a1c-9929a6519c5d" ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d214b2c0-630a-11f0-a7e3-53d8871a4ad2"
+      },
+      "name" : "teste",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.notification.TbNotificationNode"
     } ],
     "ruleChainConnections" : null
   },
