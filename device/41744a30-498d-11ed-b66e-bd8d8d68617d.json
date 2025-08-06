@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "41744a30-498d-11ed-b66e-bd8d8d68617d"
     },
-    "label" : "150.003-202204-PH",
+    "label" : "L.SENAC.RJ-150",
     "name" : "150.003-202204-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -56,11 +56,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1731238862328,
+      "lastUpdateTs" : 1754484959806,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -92,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1727702004256,
+      "lastUpdateTs" : 1753459184763,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -116,8 +116,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1727702004256,
-      "longValue" : 1727702004255,
+      "lastUpdateTs" : 1753459184763,
+      "longValue" : 1753459184763,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -132,8 +132,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1727701955064,
-      "longValue" : 1727701952278,
+      "lastUpdateTs" : 1753459097613,
+      "longValue" : 1753459097459,
       "strValue" : null
     }, {
       "booleanValue" : null,
