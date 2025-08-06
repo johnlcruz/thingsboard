@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "8d260870-6af0-11ef-80ee-99d0d0ea0fdf"
     },
-    "label" : "V.FAZZPARK.SC-600",
+    "label" : "V.FAZZPARK.SC-600_01",
     "name" : "600.003-202406-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -40,19 +40,19 @@
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1751762866262,
+      "lastUpdateTs" : 1754341371144,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1754338520612,
+      "lastUpdateTs" : 1754424989006,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1754330662684,
-      "longValue" : 1754330662684,
+      "lastUpdateTs" : 1754424989006,
+      "longValue" : 1754424989006,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1754341310613,
-      "longValue" : 1754341309757,
+      "lastUpdateTs" : 1754424380612,
+      "longValue" : 1754424379633,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
