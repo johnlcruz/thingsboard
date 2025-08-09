@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+      "id" : "cb5e3f40-1a2c-11f0-98c5-37e1d09aa61a"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "42303300-a70a-11ed-bb9f-0f4b94fbe816"
     },
-    "label" : "L.SDX-HNKL.JUN-150",
-    "name" : "ECO PRO - 150.007-202210-PH",
+    "label" : "L.SDX.HNKL.JUN-150",
+    "name" : "150.007-202210-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -55,6 +54,14 @@
       "key" : "Fluxo de águaRepeatCount",
       "lastUpdateTs" : 1694962016160,
       "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1700234137000,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -85,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1696161180404,
+      "lastUpdateTs" : 1754737934613,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -99,18 +106,34 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"josicleide.santos@sodexo.com\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765547968,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1696159812510,
-      "longValue" : 1696159812510,
+      "lastUpdateTs" : 1754520512177,
+      "longValue" : 1754520512177,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1696428189404,
-      "longValue" : 1696428186713,
+      "lastUpdateTs" : 1754747822612,
+      "longValue" : 1754747820168,
       "strValue" : null
     }, {
       "booleanValue" : null,
