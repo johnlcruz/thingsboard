@@ -2,7 +2,7 @@
   "entityType" : "CUSTOMER",
   "entity" : {
     "additionalInfo" : {
-      "description" : "Gislaine.aparecida@sodexo.com",
+      "description" : "",
       "homeDashboardId" : null,
       "homeDashboardHideToolbar" : true
     },
@@ -10,7 +10,7 @@
     "address2" : null,
     "city" : null,
     "country" : null,
-    "email" : null,
+    "email" : "Gislaine.aparecida@sodexo.com",
     "externalId" : null,
     "id" : {
       "entityType" : "CUSTOMER",
