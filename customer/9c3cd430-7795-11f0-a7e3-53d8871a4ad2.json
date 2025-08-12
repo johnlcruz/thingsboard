@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Gislaine.aparecida@sodexo.com",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "9c3cd430-7795-11f0-a7e3-53d8871a4ad2"
+    },
+    "name" : "L.SDX.MAXION.CZ.SP-300 - Gislaine",
+    "phone" : null,
+    "state" : null,
+    "title" : "L.SDX.MAXION.CZ.SP-300 - Gislaine",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
