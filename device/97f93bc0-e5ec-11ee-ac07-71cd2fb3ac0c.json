@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+      "id" : "f13fe9b0-1a32-11f0-98c5-37e1d09aa61a"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "97f93bc0-e5ec-11ee-ac07-71cd2fb3ac0c"
     },
-    "label" : "L.EXAL.RIOOSTRAS-050",
+    "label" : "L.FIRMGRSAF2.50-48M",
     "name" : "050.003-202311-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -40,11 +40,11 @@
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1710854752990,
+      "lastUpdateTs" : 1755692283868,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1744115584735,
+      "lastUpdateTs" : 1755625501604,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"onesubsea.rdo@exal.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765551127,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +68,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1744115584735,
-      "longValue" : 1744115584735,
+      "lastUpdateTs" : 1755625501604,
+      "longValue" : 1755625501604,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1744114945281,
-      "longValue" : 1744114942597,
+      "lastUpdateTs" : 1755624890613,
+      "longValue" : 1755624888426,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
