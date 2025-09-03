@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+      "id" : "8d4f8150-1a27-11f0-98c5-37e1d09aa61a"
     },
     "deviceData" : {
       "configuration" : {
@@ -34,12 +34,52 @@
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "5jGHsDDjFVQ1ezhuEJny",
+    "credentialsId" : "600.001-202405-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1751763009269,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1744468866883,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"lcarolina@aviva.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765547728,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1744468866883,
+      "longValue" : 1744468866883,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1744468243280,
+      "longValue" : 1744468242442,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
