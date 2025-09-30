@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+      "id" : "d1f07990-1a27-11f0-98c5-37e1d09aa61a"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "3b6fbf50-4b54-11ef-a113-ed3d1f460591"
     },
-    "label" : "L.BOTI.REG.SP-150",
+    "label" : "L.EXAL.SJPINHAIS-150",
     "name" : "150.002-202402-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -44,15 +44,23 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1725393011583,
+      "lastUpdateTs" : 1759252393917,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1725449652764,
+      "lastUpdateTs" : 1750969982176,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"felipe.mancio@grupoboticario.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765547617,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +68,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1725413633232,
-      "longValue" : 1725413633232,
+      "lastUpdateTs" : 1750969982176,
+      "longValue" : 1750969982176,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1725625614059,
-      "longValue" : 1725625613564,
+      "lastUpdateTs" : 1750969364612,
+      "longValue" : 1750969361977,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
