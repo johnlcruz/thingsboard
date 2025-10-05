@@ -28,18 +28,34 @@
       "entityType" : "DEVICE",
       "id" : "d7cb04e0-a1e3-11f0-b8a2-d13e302848fd"
     },
-    "label" : "050.000-000000-PH",
-    "name" : "050.000-000000-PH",
+    "label" : "ESP32-000001",
+    "name" : "ESP32-000001",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "InDad2Xn6JEwoWKUjXeq",
+    "credentialsId" : "050.021-202512-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1759666650175,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1759666650174,
+      "longValue" : 1759666650172,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
