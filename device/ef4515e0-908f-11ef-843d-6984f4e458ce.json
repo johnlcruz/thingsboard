@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "f6f2f650-1a27-11f0-98c5-37e1d09aa61a"
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "ef4515e0-908f-11ef-843d-6984f4e458ce"
     },
-    "label" : "600.007-202407-PH",
+    "label" : "L.WHOTELS.SP-600",
     "name" : "600.007-202407-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -40,11 +40,11 @@
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1733416207560,
+      "lastUpdateTs" : 1761567736178,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1745338572168,
+      "lastUpdateTs" : 1757086239993,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,16 +68,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1745338572168,
-      "longValue" : 1745338572168,
+      "lastUpdateTs" : 1757086239993,
+      "longValue" : 1757086239993,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1745337937280,
-      "longValue" : 1745337935376,
+      "lastUpdateTs" : 1757085638612,
+      "longValue" : 1757085636989,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
