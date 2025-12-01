@@ -7,10 +7,7 @@
     "configuration" : null,
     "debugMode" : false,
     "externalId" : null,
-    "firstRuleNodeId" : {
-      "entityType" : "RULE_NODE",
-      "id" : "53e40150-1a51-11f0-98c5-37e1d09aa61a"
-    },
+    "firstRuleNodeId" : null,
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "10ceb940-4363-11ed-b66e-bd8d8d68617d"
@@ -57,7 +54,7 @@
       "toIndex" : 8,
       "type" : "Success"
     } ],
-    "firstNodeIndex" : 6,
+    "firstNodeIndex" : null,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
