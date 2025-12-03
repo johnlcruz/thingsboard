@@ -28,24 +28,48 @@
       "entityType" : "DEVICE",
       "id" : "41b88a60-0ee8-11f0-98c5-37e1d09aa61a"
     },
-    "label" : "050.004-202412-PH",
+    "label" : "L.DPW.SANTOS.ECOPRO-SMART",
     "name" : "050.004-202412-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "5Mt075RO9jLvDvONP6c9",
+    "credentialsId" : "050.004-202412-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1751762750531,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1743505114687,
+      "lastUpdateTs" : 1764769956495,
       "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1764769553054,
+      "longValue" : 1764769553054,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1764770226495,
+      "longValue" : 1764770224349,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
