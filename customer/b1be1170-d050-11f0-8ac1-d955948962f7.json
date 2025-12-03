@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "lucas.miguel@senac.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "b1be1170-d050-11f0-8ac1-d955948962f7"
+    },
+    "name" : "L.SENAC.RJ-150 - Lucas",
+    "phone" : null,
+    "state" : null,
+    "title" : "L.SENAC.RJ-150 - Lucas",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
