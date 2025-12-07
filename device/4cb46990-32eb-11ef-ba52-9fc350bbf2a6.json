@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+      "id" : "c36d6a20-0fcf-11f0-98c5-37e1d09aa61a"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "4cb46990-32eb-11ef-ba52-9fc350bbf2a6"
     },
-    "label" : "L.BOTI.SGON.BA-150",
+    "label" : "150.001-202402-PH",
     "name" : "150.001-202402-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -44,15 +44,23 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1727120507189,
+      "lastUpdateTs" : 1764952521630,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1727181533067,
+      "lastUpdateTs" : 1764956031380,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"frnandocosta90@gmail.com\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765548072,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,18 +68,26 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1722000781624,
-      "longValue" : 1722000781624,
+      "lastUpdateTs" : 1764956031380,
+      "longValue" : 1764956031379,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1727181941064,
-      "longValue" : 1727181938537,
+      "lastUpdateTs" : 1764955411035,
+      "longValue" : 1764955410874,
       "strValue" : null
     } ],
-    "SHARED_SCOPE" : [ ]
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744760041068,
+      "longValue" : null,
+      "strValue" : "frnandocosta90@gmail.com"
+    } ]
   }
 }
