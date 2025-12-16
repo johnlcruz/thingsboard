@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "4cb46990-32eb-11ef-ba52-9fc350bbf2a6"
     },
-    "label" : "150.001-202402-PH",
+    "label" : "L.SMD.LEME.MG-150",
     "name" : "150.001-202402-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -44,15 +44,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1764952521630,
+      "lastUpdateTs" : 1765908832101,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1764956031380,
+      "lastUpdateTs" : 1765908706204,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -76,8 +76,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1764955411035,
-      "longValue" : 1764955410874,
+      "lastUpdateTs" : 1765908967199,
+      "longValue" : 1765908965154,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ {
