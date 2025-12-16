@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+      "id" : "25b8cc40-1a27-11f0-98c5-37e1d09aa61a"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,18 +28,58 @@
       "entityType" : "DEVICE",
       "id" : "8b72cc50-f743-11ee-81c4-e58d508aed74"
     },
-    "label" : "150.004-202403-PH",
+    "label" : "APTIV-ESP.SANT.PINHAL-150",
     "name" : "150.004-202403-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "lWCdhmLAA0GU3vY97tvW",
+    "credentialsId" : "150.004-202403-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1765833573854,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1765833569435,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"tatiane.alves@apsen.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765550061,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1744900630661,
+      "longValue" : 1744900630661,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1744900033280,
+      "longValue" : 1744900030632,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
