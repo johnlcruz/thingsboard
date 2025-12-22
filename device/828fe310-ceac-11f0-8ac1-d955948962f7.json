@@ -28,13 +28,13 @@
       "entityType" : "DEVICE",
       "id" : "828fe310-ceac-11f0-8ac1-d955948962f7"
     },
-    "label" : "ESP32-000001",
+    "label" : "050_000-000000-PH",
     "name" : "050_000-000000-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "ESP32-000001",
+    "credentialsId" : "050_000-000000-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
