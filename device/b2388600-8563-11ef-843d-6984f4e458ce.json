@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "b2388600-8563-11ef-843d-6984f4e458ce"
     },
-    "label" : "L.LATORRE-600",
+    "label" : "600.005-202406-PH",
     "name" : "600.005-202406-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -48,11 +48,11 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1748974229613,
+      "lastUpdateTs" : 1764124129534,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1748973663895,
-      "longValue" : 1748973663895,
+      "lastUpdateTs" : 1764124129534,
+      "longValue" : 1764124129534,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1749124442612,
-      "longValue" : 1749124440127,
+      "lastUpdateTs" : 1764123507495,
+      "longValue" : 1764123504644,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
