@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "Thamara.guimaraes@sapore.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "9bf7e5f0-e293-11f0-b0d5-bde84d645af8"
+    },
+    "name" : "L.SMD.LEME.MG-150",
+    "phone" : null,
+    "state" : null,
+    "title" : "L.SMD.LEME.MG-150",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
