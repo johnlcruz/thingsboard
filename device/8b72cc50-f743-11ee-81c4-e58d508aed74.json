@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "25b8cc40-1a27-11f0-98c5-37e1d09aa61a"
+      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "8b72cc50-f743-11ee-81c4-e58d508aed74"
     },
-    "label" : "APTIV-ESP.SANT.PINHAL-150",
+    "label" : "L.SDX.APTIV.PIN-150",
     "name" : "150.004-202403-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
