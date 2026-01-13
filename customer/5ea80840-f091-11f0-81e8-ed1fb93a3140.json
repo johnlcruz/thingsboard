@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "helen.almeida@sodexo.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "5ea80840-f091-11f0-81e8-ed1fb93a3140"
+    },
+    "name" : "L.SDX.APTIV.PIN-150",
+    "phone" : null,
+    "state" : null,
+    "title" : "L.SDX.APTIV.PIN-150",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
