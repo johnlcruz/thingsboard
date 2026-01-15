@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "54b467b0-d8c9-11ef-9700-397727878b8b"
     },
-    "label" : "L.WHOTELS.SP-50_01",
+    "label" : "L.MMCA-MINA.GO-50",
     "name" : "050.002-202408-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1738163434019,
+      "lastUpdateTs" : 1767097085842,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1738613132533,
+      "lastUpdateTs" : 1766082276479,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"Thomaz.Leao@whotels.com\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765548436,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +68,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1738613132533,
-      "longValue" : 1738613132533,
+      "lastUpdateTs" : 1766082276479,
+      "longValue" : 1766082276479,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1738612498928,
-      "longValue" : 1738612498252,
+      "lastUpdateTs" : 1766081617198,
+      "longValue" : 1766081616643,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
