@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "dielly.silva@lundinmining.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "8bbfc1b0-f401-11f0-81e8-ed1fb93a3140"
+    },
+    "name" : "L.MMCA-MINA.GO-50  Dielly",
+    "phone" : null,
+    "state" : null,
+    "title" : "L.MMCA-MINA.GO-50  Dielly",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
