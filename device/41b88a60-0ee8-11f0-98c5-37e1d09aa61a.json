@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "13814000-1dd2-11b2-8080-808080808080"
+      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "41b88a60-0ee8-11f0-98c5-37e1d09aa61a"
     },
-    "label" : "L.DPW.SANTOS.ECOPRO-SMART",
+    "label" : "L.DPW.SP-050",
     "name" : "050.004-202412-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -40,11 +40,11 @@
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1751762750531,
+      "lastUpdateTs" : 1764770345042,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1764769956495,
+      "lastUpdateTs" : 1768698062210,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1764769553054,
-      "longValue" : 1764769553054,
+      "lastUpdateTs" : 1768696803566,
+      "longValue" : 1768696803565,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1764770226495,
-      "longValue" : 1764770224349,
+      "lastUpdateTs" : 1768853504199,
+      "longValue" : 1768853502877,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
