@@ -1,0 +1,28 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "email" : "Unop8668@grsa.com.br",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "087cd320-fbc6-11f0-81e8-ed1fb93a3140"
+    },
+    "name" : "L.GRSA.CVALE.PA-600_01 Debora",
+    "phone" : null,
+    "state" : null,
+    "title" : "L.GRSA.CVALE.PA-600_01 Debora",
+    "zip" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
