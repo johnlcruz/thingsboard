@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "b2388600-8563-11ef-843d-6984f4e458ce"
     },
-    "label" : "600.005-202406-PH",
+    "label" : "L.BOSCH-CAMP.SP-600",
     "name" : "600.005-202406-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -48,11 +48,11 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1764124129534,
+      "lastUpdateTs" : 1770391823222,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1764124129534,
-      "longValue" : 1764124129534,
+      "lastUpdateTs" : 1770391274121,
+      "longValue" : 1770391274121,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1764123507495,
-      "longValue" : 1764123504644,
+      "lastUpdateTs" : 1770469265198,
+      "longValue" : 1770469264329,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
