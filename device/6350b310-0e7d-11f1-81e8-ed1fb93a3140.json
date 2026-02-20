@@ -4,7 +4,7 @@
     "additionalInfo" : {
       "gateway" : false,
       "overwriteActivityTime" : false,
-      "description" : "050.001-202505"
+      "description" : "050.001-202505-PH"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
