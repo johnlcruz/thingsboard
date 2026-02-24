@@ -29,7 +29,7 @@
       "id" : "f05e87a0-d235-11ed-8b16-118240e818cd"
     },
     "label" : "L.RENAI.SP-300",
-    "name" : "300.002-202205-PH",
+    "name" : "300_002-202205-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -96,11 +96,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1709909124494,
+      "lastUpdateTs" : 1771955219199,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -114,10 +114,18 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"rhi.saobr.stewarding.sup@renaissancehotels.com\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765552875,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1709909124494,
-      "longValue" : 1709909124494,
+      "lastUpdateTs" : 1771939226585,
+      "longValue" : 1771939226584,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -132,8 +140,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1709905483540,
-      "longValue" : 1709905482884,
+      "lastUpdateTs" : 1771956284198,
+      "longValue" : 1771956283558,
       "strValue" : null
     }, {
       "booleanValue" : null,
