@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "13814000-1dd2-11b2-8080-808080808080"
+      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,13 +28,13 @@
       "entityType" : "DEVICE",
       "id" : "0568c7d0-0386-11f1-81e8-ed1fb93a3140"
     },
-    "label" : "050_002-202505-PH",
+    "label" : "Unilver-50",
     "name" : "050_002-202505-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "050.002-202505-PH",
+    "credentialsId" : "050_002-202505-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -48,11 +48,11 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1770401594192,
+      "lastUpdateTs" : 1773339308198,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,8 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1770401594192,
-      "longValue" : 1770401594192,
+      "lastUpdateTs" : 1773338984153,
+      "longValue" : 1773338984153,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1773340106198,
+      "longValue" : 1773340105637,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
