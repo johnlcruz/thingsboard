@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "86368e00-1a30-11f0-98c5-37e1d09aa61a"
+      "id" : "c36d6a20-0fcf-11f0-98c5-37e1d09aa61a"
     },
     "deviceData" : {
       "configuration" : {
@@ -34,7 +34,7 @@
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "300.002-202105-PH",
+    "credentialsId" : "300_002-202105-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -60,7 +60,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1700234137000,
+      "lastUpdateTs" : 1776265141383,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -88,11 +88,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1743246959538,
+      "lastUpdateTs" : 1776264470565,
       "longValue" : null,
       "strValue" : null
     }, {
