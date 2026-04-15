@@ -29,7 +29,19 @@
       "type" : "Success"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 30,
+      "toIndex" : 27,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 35,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 36,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 37,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
@@ -41,31 +53,19 @@
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 40,
+      "toIndex" : 44,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 41,
+      "toIndex" : 45,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 42,
+      "toIndex" : 46,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 1,
-      "toIndex" : 47,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 48,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 49,
-      "type" : "Post telemetry"
-    }, {
-      "fromIndex" : 1,
-      "toIndex" : 54,
+      "toIndex" : 51,
       "type" : "Post telemetry"
     }, {
       "fromIndex" : 2,
@@ -81,7 +81,7 @@
       "type" : "True"
     }, {
       "fromIndex" : 4,
-      "toIndex" : 32,
+      "toIndex" : 29,
       "type" : "False"
     }, {
       "fromIndex" : 5,
@@ -89,7 +89,7 @@
       "type" : "True"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 33,
+      "toIndex" : 30,
       "type" : "False"
     }, {
       "fromIndex" : 6,
@@ -105,23 +105,19 @@
       "type" : "True"
     }, {
       "fromIndex" : 8,
-      "toIndex" : 34,
+      "toIndex" : 31,
       "type" : "False"
     }, {
       "fromIndex" : 9,
       "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 10,
-      "toIndex" : 55,
-      "type" : "Success"
-    }, {
       "fromIndex" : 11,
       "toIndex" : 12,
       "type" : "True"
     }, {
       "fromIndex" : 11,
-      "toIndex" : 35,
+      "toIndex" : 32,
       "type" : "False"
     }, {
       "fromIndex" : 12,
@@ -137,7 +133,7 @@
       "type" : "True"
     }, {
       "fromIndex" : 14,
-      "toIndex" : 36,
+      "toIndex" : 33,
       "type" : "False"
     }, {
       "fromIndex" : 15,
@@ -153,7 +149,7 @@
       "type" : "True"
     }, {
       "fromIndex" : 17,
-      "toIndex" : 37,
+      "toIndex" : 34,
       "type" : "False"
     }, {
       "fromIndex" : 18,
@@ -165,122 +161,106 @@
       "type" : "Success"
     }, {
       "fromIndex" : 21,
-      "toIndex" : 23,
+      "toIndex" : 22,
       "type" : "False"
     }, {
       "fromIndex" : 21,
-      "toIndex" : 27,
-      "type" : "False"
-    }, {
-      "fromIndex" : 21,
-      "toIndex" : 28,
+      "toIndex" : 26,
       "type" : "True"
     }, {
-      "fromIndex" : 22,
-      "toIndex" : 19,
-      "type" : "Created"
-    }, {
-      "fromIndex" : 24,
-      "toIndex" : 26,
+      "fromIndex" : 23,
+      "toIndex" : 25,
       "type" : "Success"
     }, {
+      "fromIndex" : 24,
+      "toIndex" : 19,
+      "type" : "Created"
+    }, {
       "fromIndex" : 25,
+      "toIndex" : 24,
+      "type" : "True"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 28,
+      "type" : "False"
+    }, {
+      "fromIndex" : 26,
       "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 26,
-      "toIndex" : 25,
-      "type" : "True"
-    }, {
-      "fromIndex" : 26,
-      "toIndex" : 31,
-      "type" : "False"
-    }, {
       "fromIndex" : 27,
-      "toIndex" : 22,
-      "type" : "True"
-    }, {
-      "fromIndex" : 27,
-      "toIndex" : 29,
-      "type" : "False"
-    }, {
-      "fromIndex" : 28,
-      "toIndex" : 19,
-      "type" : "Created"
-    }, {
-      "fromIndex" : 30,
       "toIndex" : 20,
       "type" : "Success"
     }, {
-      "fromIndex" : 38,
+      "fromIndex" : 35,
       "toIndex" : 13,
       "type" : "Success"
     }, {
-      "fromIndex" : 39,
+      "fromIndex" : 36,
       "toIndex" : 7,
       "type" : "Success"
     }, {
-      "fromIndex" : 40,
+      "fromIndex" : 37,
       "toIndex" : 0,
       "type" : "Success"
     }, {
-      "fromIndex" : 41,
+      "fromIndex" : 38,
       "toIndex" : 3,
       "type" : "Success"
     }, {
-      "fromIndex" : 42,
-      "toIndex" : 24,
+      "fromIndex" : 39,
+      "toIndex" : 23,
       "type" : "Success"
     }, {
-      "fromIndex" : 43,
-      "toIndex" : 44,
+      "fromIndex" : 40,
+      "toIndex" : 41,
       "type" : "Success"
     }, {
-      "fromIndex" : 44,
-      "toIndex" : 45,
+      "fromIndex" : 41,
+      "toIndex" : 42,
       "type" : "True"
     }, {
-      "fromIndex" : 44,
-      "toIndex" : 46,
+      "fromIndex" : 41,
+      "toIndex" : 43,
       "type" : "False"
     }, {
-      "fromIndex" : 45,
+      "fromIndex" : 42,
       "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 47,
-      "toIndex" : 43,
+      "fromIndex" : 44,
+      "toIndex" : 40,
       "type" : "Success"
     }, {
-      "fromIndex" : 48,
+      "fromIndex" : 45,
       "toIndex" : 16,
       "type" : "Success"
     }, {
-      "fromIndex" : 49,
-      "toIndex" : 10,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 50,
-      "toIndex" : 51,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 51,
+      "fromIndex" : 46,
       "toIndex" : 52,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 47,
+      "toIndex" : 48,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 48,
+      "toIndex" : 49,
       "type" : "True"
     }, {
-      "fromIndex" : 51,
-      "toIndex" : 53,
+      "fromIndex" : 48,
+      "toIndex" : 50,
       "type" : "False"
     }, {
-      "fromIndex" : 52,
+      "fromIndex" : 49,
       "toIndex" : 19,
       "type" : "Created"
     }, {
-      "fromIndex" : 54,
-      "toIndex" : 50,
+      "fromIndex" : 51,
+      "toIndex" : 47,
       "type" : "Success"
     }, {
-      "fromIndex" : 55,
+      "fromIndex" : 52,
       "toIndex" : 11,
       "type" : "Success"
     } ],
@@ -293,7 +273,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var SensorStatus   = msg.temperatureWater_status;\r\nvar temperature    = msg.temperatureWater;\r\nvar alarmType      = \"Temperatura da agua\";\r\nvar message        = \"Temperatura da agua em \" + temperature + \"°C\";\r\n\r\n// Função para calcular a diferença de tempo em minutos\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    var primeiraData = data[0].ts; // Primeiro timestamp\r\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\r\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\r\n    return diferencaEmMinutos;\r\n}\r\n\r\n// Função para verificar se todos os valores são \"OPEN\"\r\nfunction todosSao(data, diferente) {\r\n    for (var i = 0; i < data.length; i++) {\r\n        if (data[i].value == diferente) {\r\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"x\"\r\n        }\r\n    }\r\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\r\n}\r\n\r\n// Função para verificar se todos os valores são \"OPEN\"\r\nfunction todosSaoMaior(data, maior) {\r\n    for (var i = 0; i < data.length; i++) {\r\n        if (data[i].value < maior) {\r\n            return false; // Retorna falso se encontrar qualquer valor maior de \"x\"\r\n        }\r\n    }\r\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\r\n}\r\n\r\n// Função para verificar se todos os valores são \"OPEN\"\r\nfunction todosSaoMenor(data, menor) {\r\n    for (var i = 0; i < data.length; i++) {\r\n        if (data[i].value > menor) {\r\n            return false; // Retorna falso se encontrar qualquer valor maior de \"x\"\r\n        }\r\n    }\r\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\r\n}\r\n\r\nvar temperaturedelta   = JSON.parse(metadata.temperatureWater);\r\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(temperaturedelta);\r\nvar todosSaoMaior      = todosSaoMaior(temperaturedelta, 50);\r\nvar todosSaoMenor      = todosSaoMenor(temperaturedelta, 20);\r\n\r\nvar statusdelta              = JSON.parse(metadata.temperatureWater_status);\r\nvar diferencaEmMinutosstatus = calcularDiferencaTempoEmMinutos(statusdelta); \r\nvar todosdiferente           = todosSao(statusdelta, \"OK\")\r\n\r\nvar tamanho = statusdelta.length;\r\n\r\nif (tamanho > 20){\r\n\r\nif (temperature > 50 && todosSaoMaior){\r\n    var alertMessage  = \"A temperatura da água está ALTA há \"+ diferencaEmMinutos + \" min.\" + temperature + \"°C \";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };        \r\n}\r\n\r\nif (temperature < 20 && todosSaoMenor){\r\n    var alertMessage  = \"A temperatura da água está BAIXA há \"+ diferencaEmMinutos + \" min.\" + temperature + \"°C \";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };        \r\n}\r\nif (SensorStatus != \"OK\" && todosdiferente) {\r\n    var alertMessage  = \"Sensor de Temperatura da água em alerta há \" + diferencaEmMinutosstatus + \" minutos\";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n\r\n}\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var sensorStatus = msg.temperatureWater_status;\r\nvar temperature = msg.temperatureWater;\r\nvar alarmType = \"Temperatura da agua\";\r\n\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    if (!data || data.length < 2) {\r\n        return 0;\r\n    }\r\n    var primeiraData = data[0].ts;\r\n    var ultimaData = data[data.length - 1].ts;\r\n    return (ultimaData - primeiraData) / (1000 * 60);\r\n}\r\n\r\nfunction todosMaiorOuIgual(data, limite) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return Number(item.value) >= limite;\r\n    });\r\n}\r\n\r\nfunction todosMenorOuIgual(data, limite) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return Number(item.value) <= limite;\r\n    });\r\n}\r\n\r\nfunction todosDiferentes(data, valor) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return item.value !== valor;\r\n    });\r\n}\r\n\r\nvar temperatureDelta = JSON.parse(metadata.temperatureWater || \"[]\");\r\nvar statusDelta = JSON.parse(metadata.temperatureWater_status || \"[]\");\r\n\r\nvar diferencaTemperaturaMin = calcularDiferencaTempoEmMinutos(temperatureDelta);\r\nvar diferencaStatusMin = calcularDiferencaTempoEmMinutos(statusDelta);\r\n\r\nvar historicoTemperaturaAlta = todosMaiorOuIgual(temperatureDelta, 50);\r\nvar historicoTemperaturaBaixa = todosMenorOuIgual(temperatureDelta, 20);\r\nvar historicoStatusEmAlerta = todosDiferentes(statusDelta, \"OK\");\r\n\r\nif (temperatureDelta.length > 20) {\r\n    if (temperature > 50 && historicoTemperaturaAlta) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"A temperatura da agua esta ALTA ha \" + diferencaTemperaturaMin + \" minutos. Valor atual: \" + temperature + \" C\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n\r\n    if (temperature < 20 && historicoTemperaturaBaixa) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"A temperatura da agua esta BAIXA ha \" + diferencaTemperaturaMin + \" minutos. Valor atual: \" + temperature + \" C\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n\r\n    if (sensorStatus !== \"OK\" && historicoStatusEmAlerta) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Sensor de temperatura da agua em alerta ha \" + diferencaStatusMin + \" minutos\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n}\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -370,7 +350,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var SensorStatus   = msg.temperatureDrum_status;\r\nvar temperature    = msg.temperatureDrum;\r\nvar alarmType      = \"Temperatura do tambor\";\r\n\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    var primeiraData = data[0].ts; // Primeiro timestamp\r\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\r\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\r\n    return diferencaEmMinutos;\r\n}\r\n\r\nfunction todosSao(data, diferente) {\r\nvar allOk = statusdelta.every(function(item) {\r\n    return item.value !== diferente;\r\n});\r\nreturn allOk;\r\n}\r\n\r\nfunction todosSaoMaior(data, maior) {\r\n    for (var i = 0; i < data.length; i++) {\r\n        if (data[i].value < maior) {\r\n            return false; // Retorna falso se encontrar qualquer valor maior de \"x\"\r\n        }\r\n    }\r\n    return true; \r\n}\r\n\r\nfunction todosSaoMenor(data, menor) {\r\n    for (var i = 0; i < data.length; i++) {\r\n        if (data[i].value > menor) {\r\n            return false; // Retorna falso se encontrar qualquer valor maior de \"x\"\r\n        }\r\n    }\r\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\r\n}\r\n\r\nvar temperaturedelta   = JSON.parse(metadata.temperatureDrum);\r\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(temperaturedelta);\r\nvar todosSaoMaior      = todosSaoMaior(temperaturedelta, 50);\r\nvar todosSaoMenor      = todosSaoMenor(temperaturedelta, 25);\r\n\r\nvar statusdelta              = JSON.parse(metadata.temperatureDrum_status);\r\nvar diferencaEmMinutosstatus = calcularDiferencaTempoEmMinutos(statusdelta); \r\nvar todosdiferente           = todosSao(statusdelta, \"OK\")\r\n\r\n\r\nvar tamanho = statusdelta.length;\r\n\r\nif (tamanho > 25){\r\n\r\nif (temperature > 50 && todosSaoMaior){\r\n    var alertMessage  = \"A temperatura do tambor está ALTA há \"+ diferencaEmMinutos + \" min.\" + temperature + \"°C \";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };        \r\n}\r\n\r\nif (temperature < 25 && todosSaoMenor){\r\n    var alertMessage  = \"A temperatura do tambor está BAIXA há \"+ diferencaEmMinutos + \" min.\" + temperature + \"°C \";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };        \r\n}\r\nif (SensorStatus != \"OK\" && todosdiferente) {\r\n    var alertMessage  = \"Sensor de Temperatura do tambor em alerta há \" + diferencaEmMinutosstatus + \" minutos\";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n\r\n}\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var sensorStatus = msg.temperatureDrum_status;\r\nvar temperature = msg.temperatureDrum;\r\nvar alarmType = \"Temperatura do tambor\";\r\n\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    if (!data || data.length < 2) {\r\n        return 0;\r\n    }\r\n    var primeiraData = data[0].ts;\r\n    var ultimaData = data[data.length - 1].ts;\r\n    return (ultimaData - primeiraData) / (1000 * 60);\r\n}\r\n\r\nfunction todosMaiorOuIgual(data, limite) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return Number(item.value) >= limite;\r\n    });\r\n}\r\n\r\nfunction todosMenorOuIgual(data, limite) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return Number(item.value) <= limite;\r\n    });\r\n}\r\n\r\nfunction todosDiferentes(data, valor) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return item.value !== valor;\r\n    });\r\n}\r\n\r\nvar temperatureDelta = JSON.parse(metadata.temperatureDrum || \"[]\");\r\nvar statusDelta = JSON.parse(metadata.temperatureDrum_status || \"[]\");\r\n\r\nvar diferencaTemperaturaMin = calcularDiferencaTempoEmMinutos(temperatureDelta);\r\nvar diferencaStatusMin = calcularDiferencaTempoEmMinutos(statusDelta);\r\n\r\nvar historicoTemperaturaAlta = todosMaiorOuIgual(temperatureDelta, 50);\r\nvar historicoTemperaturaBaixa = todosMenorOuIgual(temperatureDelta, 25);\r\nvar historicoStatusEmAlerta = todosDiferentes(statusDelta, \"OK\");\r\n\r\nif (temperatureDelta.length > 25) {\r\n    if (temperature > 50 && historicoTemperaturaAlta) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"A temperatura do tambor esta ALTA ha \" + diferencaTemperaturaMin + \" minutos. Valor atual: \" + temperature + \" C\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n\r\n    if (temperature < 25 && historicoTemperaturaBaixa) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"A temperatura do tambor esta BAIXA ha \" + diferencaTemperaturaMin + \" minutos. Valor atual: \" + temperature + \" C\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n\r\n    if (sensorStatus !== \"OK\" && historicoStatusEmAlerta) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Sensor de temperatura do tambor em alerta ha \" + diferencaStatusMin + \" minutos\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n}\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -393,7 +373,9 @@
         "layoutY" : 155
       },
       "configuration" : {
-        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+        "scriptLang" : "JS",
+        "jsScript" : "return !!msg.status;\r\n",
+        "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -415,7 +397,9 @@
         "layoutY" : 254
       },
       "configuration" : {
-        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+        "scriptLang" : "JS",
+        "jsScript" : "return !!msg.status;\r\n",
+        "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -469,7 +453,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var SensorStatus   = msg.temperatureInternal_status;\nvar temperature    = msg.temperatureInternal;\nvar alarmType      = \"Temperatura do painel\";\n\n\n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaTempoEmMinutos(data) {\n    var primeiraData = data[0].ts; // Primeiro timestamp\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\n    return diferencaEmMinutos;\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSao(data, diferente) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value == diferente) {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"x\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSaoMaior(data, maior) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value < maior) {\n            return false; // Retorna falso se encontrar qualquer valor maior de \"x\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nvar temperaturedelta   = JSON.parse(metadata.temperatureInternal);\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(temperaturedelta);\nvar todosSaoMaior      = todosSaoMaior(temperaturedelta, 65);\n\nvar statusdelta              = JSON.parse(metadata.temperatureInternal_status);\nvar diferencaEmMinutosstatus = calcularDiferencaTempoEmMinutos(statusdelta); \nvar todosdiferente           = todosSao(statusdelta, \"OK\")\n\n\nvar tamanho = statusdelta.length;\n\nif (tamanho > 25){\n\n\nif (temperature > 65 && todosSaoMaior){\n    var alertMessage  = \"A temperatura do painel está em ALERTA há \"+ diferencaEmMinutos + \" min.\" + temperature + \"°C \";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };        \n}\n\nif (SensorStatus != \"OK\" && todosdiferente) {\n    var alertMessage  = \"Sensor de Temperatura do painel em alerta há \" + diferencaEmMinutosstatus + \" minutos\";\n    var isolatedStatus = \"ALERTA\";\n\n    msg.status = {\n        errorStatus: isolatedStatus,\n        message: alertMessage,\n        alarmType: alarmType,\n    };\n}\n\n}\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var sensorStatus = msg.temperatureInternal_status;\r\nvar temperature = msg.temperatureInternal;\r\nvar alarmType = \"Temperatura do painel\";\r\n\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    if (!data || data.length < 2) {\r\n        return 0;\r\n    }\r\n    var primeiraData = data[0].ts;\r\n    var ultimaData = data[data.length - 1].ts;\r\n    return (ultimaData - primeiraData) / (1000 * 60);\r\n}\r\n\r\nfunction todosMaiorOuIgual(data, limite) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return Number(item.value) >= limite;\r\n    });\r\n}\r\n\r\nfunction todosDiferentes(data, valor) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return item.value !== valor;\r\n    });\r\n}\r\n\r\nvar temperatureDelta = JSON.parse(metadata.temperatureInternal || \"[]\");\r\nvar statusDelta = JSON.parse(metadata.temperatureInternal_status || \"[]\");\r\n\r\nvar diferencaTemperaturaMin = calcularDiferencaTempoEmMinutos(temperatureDelta);\r\nvar diferencaStatusMin = calcularDiferencaTempoEmMinutos(statusDelta);\r\n\r\nvar historicoTemperaturaAlta = todosMaiorOuIgual(temperatureDelta, 65);\r\nvar historicoStatusEmAlerta = todosDiferentes(statusDelta, \"OK\");\r\n\r\nif (temperatureDelta.length > 25) {\r\n    if (temperature > 65 && historicoTemperaturaAlta) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"A temperatura do painel esta em ALERTA ha \" + diferencaTemperaturaMin + \" minutos. Valor atual: \" + temperature + \" C\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n\r\n    if (sensorStatus !== \"OK\" && historicoStatusEmAlerta) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Sensor de temperatura do painel em alerta ha \" + diferencaStatusMin + \" minutos\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n}\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -492,7 +476,9 @@
         "layoutY" : 359
       },
       "configuration" : {
-        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+        "scriptLang" : "JS",
+        "jsScript" : "return !!msg.status;\r\n",
+        "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -541,8 +527,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 929,
-        "layoutY" : 455
+        "layoutX" : 278,
+        "layoutY" : 874
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -569,7 +555,9 @@
         "layoutY" : 455
       },
       "configuration" : {
-        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+        "scriptLang" : "JS",
+        "jsScript" : "return !!msg.status;\r\n",
+        "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -623,7 +611,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var isolatedStatus = msg.flowSensor_l_per_min_status;\nvar flow_per_min   = msg.flowSensor_l_per_min_instantly;\nvar flow_min_last  = msg.flowSensor_l_per_min_lastMinute; \nvar flow_last_15   = msg.flowSensor_l_per_min_last15Minutes; \n\n\n     \n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaTempoEmMinutos(data) {\n    var primeiraData = data[0].ts; // Primeiro timestamp\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\n    return diferencaEmMinutos;\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSaoZerados(data) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value !== 0) {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"OPEN\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nvar deltadoor          = JSON.parse(metadata.flowSensor_l_per_min_last15Minutes);\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(deltadoor);\nvar todosSaoZerados    = todosSaoZerados(deltadoor);\n\nmsg.deltadoor = diferencaEmMinutos;\nmsg.disparar  = todosSaoZerados;\n\nvar tamanho = deltadoor.length;\n\nif (tamanho > 18){\n\nif(flow_per_min == 0 && flow_min_last == 0 && flow_last_15 == 0 && todosSaoZerados){\n        var alarmType      = \"Falta de água\";\n        var message        = \"Possivel falta, fluxo de água em \" + flow_per_min + \" l/min há \" + diferencaEmMinutos + \"Min. \";\n        var alarmCount     = true;\n        var Status = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n            alarmCount: alarmCount\n        };   \n}else if (flow_per_min > 20){\n        var alarmType      = \"Vazão excessiva de água\";\n        var message        = \"Fluxo de água em \" + flow_per_min + \" l/min\";\n        var Status = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n        };   \n}\n\n}\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var sensorStatus = msg.flowSensor_l_per_min_status;\r\nvar flowPerMin = Number(msg.flowSensor_l_per_min_instantly);\r\nvar flowMinLast = Number(msg.flowSensor_l_per_min_lastMinute);\r\nvar flowLast15 = Number(msg.flowSensor_l_per_min_last15Minutes);\r\n\r\nvar alarmType = \"Fluxo de água\";\r\n\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    if (!data || data.length < 2) {\r\n        return 0;\r\n    }\r\n    var primeiraData = data[0].ts;\r\n    var ultimaData = data[data.length - 1].ts;\r\n    return (ultimaData - primeiraData) / (1000 * 60);\r\n}\r\n\r\nfunction todosZerados(data) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return Number(item.value) === 0;\r\n    });\r\n}\r\n\r\nfunction todosDiferentes(data, valor) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return item.value !== valor;\r\n    });\r\n}\r\n\r\nvar flowHistory = JSON.parse(metadata.flowSensor_l_per_min_last15Minutes || \"[]\");\r\nvar statusHistory = JSON.parse(metadata.flowSensor_l_per_min_status || \"[]\");\r\n\r\nvar diferencaFluxoMin = calcularDiferencaTempoEmMinutos(flowHistory);\r\nvar diferencaStatusMin = calcularDiferencaTempoEmMinutos(statusHistory);\r\n\r\nvar historicoFluxoZerado = todosZerados(flowHistory);\r\nvar historicoStatusEmAlerta = todosDiferentes(statusHistory, \"OK\");\r\n\r\nif (flowHistory.length > 18) {\r\n    if (sensorStatus !== \"OK\" && historicoStatusEmAlerta) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Sensor de fluxo de agua em alerta ha \" + diferencaStatusMin + \" minutos\",\r\n            alarmType: alarmType\r\n        };\r\n    } else if (\r\n        flowPerMin === 0 &&\r\n        flowMinLast === 0 &&\r\n        flowLast15 === 0 &&\r\n        historicoFluxoZerado\r\n    ) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Falta de agua detectada. Fluxo em 0 l/min ha \" + diferencaFluxoMin + \" minutos\",\r\n            alarmType: alarmType,\r\n            alarmCount: true\r\n        };\r\n    } else if (flowPerMin > 20) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Vazao excessiva de agua. Fluxo atual em \" + flowPerMin + \" l/min\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n}\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -646,7 +634,9 @@
         "layoutY" : 555
       },
       "configuration" : {
-        "jsScript" : "if (msg.status){\n        return true;\n}else{\n    return false;\n}\n"
+        "scriptLang" : "JS",
+        "jsScript" : "return !!msg.status;\r\n",
+        "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -700,7 +690,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var currentWeight_kg = msg.currentWeight_kg;\nvar deviceName       = metadata.deviceName; // Obtém o valor do campo deviceName\nvar modeldevice      = deviceName.substring(0, 3); // Pega os 3 primeiros caracteres\nvar limit            = parseInt(modeldevice) + (parseInt(modeldevice)*0.2);//limit= modelo do equipamento + 20%\n\nfunction PesoAumentando(data) {\nvar aumentando = true;\n\nfor (var i = 1; i < data.length; i++) {\n  if (data[i].value <= data[i - 1].value) {\n    aumentando = false;\n    break;\n  }\n}\n\nreturn aumentando;\n}\n     \n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaTempoEmMinutos(data) {\n    var primeiraData = data[0].ts; // Primeiro timestamp\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\n    return diferencaEmMinutos;\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSao(data, estado) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value !== estado) {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"OPEN\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nfunction maiorQue(data, valor){\n        for (var i = 0; i < data.length; i++) {\n        if (data[i].value < valor) {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"OPEN\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nvar deltaweight = JSON.parse(metadata.currentWeight_kg);\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(deltaweight);\nvar maior = maiorQue(deltaweight, limit);\n\nmsg.deltadoor = diferencaEmMinutos;\nmsg.disparar  = maior;\n\nvar tamanho = deltaweight.length;\n\nif (tamanho > 25){\n\nif (maior){\n        var alarmType    = \"Excesso de peso\";\n        var message      = \"Peso atual em : \" + currentWeight_kg + \"Kg á \" + diferencaEmMinutos+\"min\";\n        var Status       = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n        };   \n}\n\n}\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var currentWeightKg = Number(msg.currentWeight_kg);\r\nvar deviceName = metadata.deviceName || \"\";\r\nvar modelDevice = deviceName.substring(0, 3);\r\nvar baseLimit = parseInt(modelDevice, 10);\r\nvar limit = baseLimit + (baseLimit * 0.2);\r\n\r\nvar alarmType = \"Excesso de peso\";\r\n\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    if (!data || data.length < 2) {\r\n        return 0;\r\n    }\r\n    var primeiraData = data[0].ts;\r\n    var ultimaData = data[data.length - 1].ts;\r\n    return (ultimaData - primeiraData) / (1000 * 60);\r\n}\r\n\r\nfunction todosMaiorOuIgual(data, valor) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return Number(item.value) >= valor;\r\n    });\r\n}\r\n\r\nvar weightHistory = JSON.parse(metadata.currentWeight_kg || \"[]\");\r\n\r\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(weightHistory);\r\nvar historicoAcimaDoLimite = todosMaiorOuIgual(weightHistory, limit);\r\n\r\nif (!isNaN(limit) && weightHistory.length > 25) {\r\n    if (historicoAcimaDoLimite) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Peso acima do limite ha \" + diferencaEmMinutos + \" minutos. Peso atual: \" + currentWeightKg + \" Kg. Limite: \" + limit + \" Kg\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n}\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -723,7 +713,9 @@
         "layoutY" : 654
       },
       "configuration" : {
-        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+        "scriptLang" : "JS",
+        "jsScript" : "return !!msg.status;\r\n",
+        "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -782,7 +774,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -801,7 +793,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var isolatedStatus = msg.doorSensor_status;\nvar stateDoor      = msg.doorSensor;\nvar alarmType;\nvar status         = \"ALERTA\";\n\n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaTempoEmMinutos(data) {\n    var primeiraData = data[0].ts; // Primeiro timestamp\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\n    return diferencaEmMinutos;\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSaoOPEN(data) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value !== \"OPEN\") {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"OPEN\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nvar deltadoor          = JSON.parse(metadata.doorSensor);\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(deltadoor);\nvar todosOPEN          = todosSaoOPEN(deltadoor);\n\nmsg.deltadoor = diferencaEmMinutos;\nmsg.disparar  = todosOPEN;\n\n\nvar tamanho = deltadoor.length;\n\nif (tamanho > 35){\n\nif (isolatedStatus.trim() != \"OK\" ) {\n    var alertMessage  = \"Sensor de porta em alerta\";\n    alarmType = \"SENSOR REPORTOU PROBLEMA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };\n    msg.sensorproblem= true;\n}\n\n\nif (stateDoor.trim() != \"CLOSED\" && todosOPEN){\n    var alertMessage  = \"A Porta do equipamento em ALERTA: \" + stateDoor + \" há \" + diferencaEmMinutos+ \" Minutos\";\n    alarmType = \"PORTA ABERTA\";\n    msg.status = {\n        errorStatus: status,\n        message: alertMessage,\n        alarmType: alarmType\n    };        \n    \n    msg.sensorproblem= false;\n}\n\n}\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var isolatedStatus = (msg.doorSensor_status || \"\").trim();\r\nvar stateDoor = (msg.doorSensor || \"\").trim();\r\nvar status = \"ALERTA\";\r\nvar alarmType = \"Sensor Door\";\r\n\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    if (!data || data.length < 2) {\r\n        return 0;\r\n    }\r\n    var primeiraData = data[0].ts;\r\n    var ultimaData = data[data.length - 1].ts;\r\n    return (ultimaData - primeiraData) / (1000 * 60);\r\n}\r\n\r\nfunction todosSaoOpen(data) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return item.value === \"OPEN\";\r\n    });\r\n}\r\n\r\nfunction todosDiferentes(data, valor) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return item.value !== valor;\r\n    });\r\n}\r\n\r\nvar doorHistory = JSON.parse(metadata.doorSensor || \"[]\");\r\nvar statusHistory = JSON.parse(metadata.doorSensor_status || \"[]\");\r\n\r\nvar diferencaDoorMin = calcularDiferencaTempoEmMinutos(doorHistory);\r\nvar diferencaStatusMin = calcularDiferencaTempoEmMinutos(statusHistory);\r\n\r\nvar historicoPortaAberta = todosSaoOpen(doorHistory);\r\nvar historicoStatusEmAlerta = todosDiferentes(statusHistory, \"OK\");\r\n\r\nif (doorHistory.length > 35) {\r\n    if (isolatedStatus !== \"OK\" && historicoStatusEmAlerta) {\r\n        msg.status = {\r\n            errorStatus: status,\r\n            message: \"Sensor de porta em alerta ha \" + diferencaStatusMin + \" minutos\",\r\n            alarmType: alarmType\r\n        };\r\n        msg.sensorproblem = true;\r\n    } else if (stateDoor !== \"CLOSED\" && historicoPortaAberta) {\r\n        msg.status = {\r\n            errorStatus: status,\r\n            message: \"A porta do equipamento esta em ALERTA: \" + stateDoor + \" ha \" + diferencaDoorMin + \" minutos\",\r\n            alarmType: alarmType\r\n        };\r\n        msg.sensorproblem = false;\r\n    }\r\n}\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -825,7 +817,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "if (msg.sensorproblem){\n    return true\n}else{\n    return false\n}\n",
+        "jsScript" : "return !!msg.status;\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -844,47 +836,14 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1903,
-        "layoutY" : 805
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
-        "alarmDetailsBuildTbel" : null,
-        "useMessageAlarmData" : false,
-        "overwriteAlarmDetails" : false,
-        "alarmType" : "Porta Aberta",
-        "severity" : "CRITICAL",
-        "propagate" : false,
-        "relationTypes" : [ ],
-        "propagateToOwner" : false,
-        "propagateToTenant" : false,
-        "dynamicSeverity" : false
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "b775ae01-0028-11f0-96c9-3d0c718b759f"
-      },
-      "name" : "Open Door",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1603,
-        "layoutY" : 855
+        "layoutX" : 1601,
+        "layoutY" : 809
       },
       "configuration" : {
         "scriptLang" : "JS",
         "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
         "alarmDetailsBuildTbel" : null,
-        "alarmType" : "Sensor da Porta"
+        "alarmType" : "Sensor Door"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -907,7 +866,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var SensorStatus   = msg.motor_status;\r\nvar motor          = msg.motor;\r\nvar alarmType      = \"Problema no motor\";\r\n\r\n// Função para calcular a diferença de tempo em minutos\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    var primeiraData = data[0].ts; // Primeiro timestamp\r\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\r\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\r\n    return diferencaEmMinutos;\r\n}\r\n\r\nfunction todosiguais(data, igual) {\r\nvar allOk = data.every(function(item) {\r\n    return item.value === igual;\r\n});\r\nreturn allOk\r\n}\r\n\r\nfunction todosdiferente(data, diferente) {\r\nvar allOk = data.every(function(item) {\r\n    return item.value !== diferente;\r\n});\r\nreturn allOk\r\n}\r\n\r\nfunction todosSaoMaior(data, maior) {\r\n    for (var i = 0; i < data.length; i++) {\r\n        if (data[i].value < maior) {\r\n            return false; // Retorna falso se encontrar qualquer valor maior de \"x\"\r\n        }\r\n    }\r\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\r\n}\r\n\r\nfunction todosSaoMenor(data, menor) {\r\n    for (var i = 0; i < data.length; i++) {\r\n        if (data[i].value > menor) {\r\n            return false; // Retorna falso se encontrar qualquer valor maior de \"x\"\r\n        }\r\n    }\r\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\r\n}\r\n\r\nvar statusdelta              = JSON.parse(metadata.motor_status);\r\nvar diferencaEmMinutosstatus = calcularDiferencaTempoEmMinutos(statusdelta); \r\nvar todosdiferente           = todosdiferente(statusdelta, \"OK\")\r\n\r\nvar motordelta               = JSON.parse(metadata.motor);\r\nvar diferencaEmMinutos       = calcularDiferencaTempoEmMinutos(motordelta); \r\nvar todosiguais              = todosiguais(motordelta, \"STOPEED\")\r\n\r\nvar tamanho = motordelta.length;\r\n\r\nif (tamanho > 25){\r\n\r\n\r\nif (motor == \"STOPEED\" && todosiguais) {\r\n    var alertMessage  = \"Motor PARADO há \" + diferencaEmMinutosstatus + \" minutos favor verificar\";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n\r\nif (SensorStatus != \"OK\" && todosdiferente) {\r\n    var alertMessage  = \"Sensor do motor em ALERTA há \" + diferencaEmMinutosstatus + \" minutos favor verificar\";\r\n    var isolatedStatus = \"ALERTA\";\r\n\r\n    msg.status = {\r\n        errorStatus: isolatedStatus,\r\n        message: alertMessage,\r\n        alarmType: alarmType,\r\n    };\r\n}\r\n    \r\n}\r\n\r\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var sensorStatus = msg.motor_status;\r\nvar motor = msg.motor;\r\nvar alarmType = \"Problema no motor\";\r\n\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    if (!data || data.length < 2) {\r\n        return 0;\r\n    }\r\n    var primeiraData = data[0].ts;\r\n    var ultimaData = data[data.length - 1].ts;\r\n    return (ultimaData - primeiraData) / (1000 * 60);\r\n}\r\n\r\nfunction todosIguais(data, valor) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return item.value === valor;\r\n    });\r\n}\r\n\r\nfunction todosDiferentes(data, valor) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return item.value !== valor;\r\n    });\r\n}\r\n\r\nvar statusDelta = JSON.parse(metadata.motor_status || \"[]\");\r\nvar motorDelta = JSON.parse(metadata.motor || \"[]\");\r\n\r\nvar tamanho = motorDelta.length;\r\n\r\nif (tamanho > 25) {\r\n    var tempoStatusMin = calcularDiferencaTempoEmMinutos(statusDelta);\r\n    var tempoMotorMin = calcularDiferencaTempoEmMinutos(motorDelta);\r\n\r\n    var historicoStatusEmAlerta = todosDiferentes(statusDelta, \"OK\");\r\n    var historicoMotorParado = todosIguais(motorDelta, \"STOPPED\");\r\n\r\n    if (motor === \"STOPPED\" && historicoMotorParado) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Motor PARADO ha \" + tempoMotorMin + \" minutos, favor verificar\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n\r\n    if (sensorStatus !== \"OK\" && historicoStatusEmAlerta) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Sensor do motor em ALERTA ha \" + tempoStatusMin + \" minutos, favor verificar\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n}\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -961,7 +920,9 @@
         "layoutY" : 53
       },
       "configuration" : {
-        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+        "scriptLang" : "JS",
+        "jsScript" : "return !!msg.status;\r\n",
+        "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -980,31 +941,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1603,
-        "layoutY" : 805
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n",
-        "tbelScript" : "return msg.temperature > 20;"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "b775fc21-0028-11f0-96c9-3d0c718b759f"
-      },
-      "name" : "startcount",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1603,
-        "layoutY" : 755
+        "layoutY" : 757
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -1012,7 +949,7 @@
         "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
         "useMessageAlarmData" : false,
         "overwriteAlarmDetails" : false,
-        "alarmType" : "Sensor da Porta",
+        "alarmType" : "$[status.alarmType]",
         "severity" : "CRITICAL",
         "propagate" : false,
         "relationTypes" : [ ],
@@ -1036,36 +973,11 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1904,
-        "layoutY" : 855
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n  details = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  metadata.remove('prevAlarmDetails');\n  //now metadata is the same as it comes IN this rule node\n}\n",
-        "alarmType" : "Porta Aberta"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "b7762330-0028-11f0-96c9-3d0c718b759f"
-      },
-      "name" : "Porta Aberta limpar",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 702,
         "layoutY" : 754
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "doorSensor" ],
+        "latestTsKeyNames" : [ "doorSensor", "doorSensor_status" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
@@ -1080,7 +992,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -1101,7 +1013,7 @@
         "scriptLang" : "TBEL",
         "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
         "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmType" : "Possivel problema no motor"
+        "alarmType" : "Problema no motor"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -1226,7 +1138,7 @@
         "scriptLang" : "TBEL",
         "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
         "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
-        "alarmType" : "Falta de água"
+        "alarmType" : "Fluxo de água"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -1273,7 +1185,7 @@
         "layoutY" : 554
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "flowSensor_l_per_min_last15Minutes" ],
+        "latestTsKeyNames" : [ "flowSensor_l_per_min_last15Minutes", "flowSensor_l_per_min_status", "flowSensor_l_per_min_instantly", "flowSensor_l_per_min_lastMinute" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
@@ -1434,12 +1346,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1034,
-        "layoutY" : 904
+        "layoutX" : 1030,
+        "layoutY" : 846
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "\n\nfunction PesoAumentandoultimo(data){\n    var deviceName  = metadata.deviceName; // Obtém o valor do campo deviceName\n    var modeldevice = deviceName.substring(0, 3); // Pega os 3 primeiros caracteres\n    var porcentagem = 2;// tolerável 5%\n    var tolerancia  = (porcentagem / 100) * modeldevice;\n    var primeiro    = Math.ceil(data[0].value + tolerancia); //colocando mais dois kilos para desprezar enganos\n    var ultimo      = Math.ceil(data[data.length - 1].value);\n    var meio        = Math.ceil(data[data.length/2].value)\n    //msg.modeldevice = modeldevice;\n    //msg.tolerancia  = tolerancia;\n    //msg.primeiro    = primeiro;\n    //msg.meio        = meio;\n    //msg.ultimo      = ultimo;\n    //msg.total       = Math.ceil(data.length/2);\n    if (ultimo > meio && meio > primeiro){\n        return true;\n    }else{\n        return false;\n    }\n}\n\nfunction PesoAumentando(data) {\nvar aumentando = true;\n\nfor (var i = 1; i < data.length; i++) {\n  if (data[i].value <= data[i - 1].value) {\n    aumentando = false;\n    break;\n  }\n}\n    return aumentando;\n}\n     \n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaTempoEmMinutos(data) {\n    var primeiraData = data[0].ts; // Primeiro timestamp\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\n    return diferencaEmMinutos;\n}\n\n// Função para verificar se todos os valores são \"OPEN\" ou \"CLOSED\"\nfunction todosSao(data, estado) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value !== estado) {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"OPEN\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\n\nvar deltadoor          = JSON.parse(metadata.doorSensor);\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(deltadoor);\nvar todosSao           = todosSao(deltadoor, 'CLOSED');\n\nvar deltaweight = JSON.parse(metadata.currentWeight_kg);\nvar aumentando  = PesoAumentandoultimo(deltaweight);\n\nmsg.deltadoor = diferencaEmMinutos;\n//msg.disparar  = todosSao;\n//msg.pesocrescendo = aumentando;\n\nvar tamanho = deltadoor.length;\n\nif (tamanho > 25){\n\nif (todosSao && aumentando){\n        var alarmType = \"Possível entupimento\";\n        var message   = \"O peso do equipamento esta aumentando a \" + diferencaEmMinutos + \"min\";\n        var Status    = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n        };   \n}\n\n}\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "function pesoAumentandoUltimo(data) {\r\n    if (!data || data.length < 3) {\r\n        return false;\r\n    }\r\n\r\n    var deviceName = metadata.deviceName || \"\";\r\n    var modelDevice = parseInt(deviceName.substring(0, 3), 10);\r\n\r\n    if (isNaN(modelDevice)) {\r\n        return false;\r\n    }\r\n\r\n    var porcentagem = 2;\r\n    var tolerancia = (porcentagem / 100) * modelDevice;\r\n\r\n    var primeiro = Math.ceil(Number(data[0].value) + tolerancia);\r\n    var meioIndex = Math.floor(data.length / 2);\r\n    var meio = Math.ceil(Number(data[meioIndex].value));\r\n    var ultimo = Math.ceil(Number(data[data.length - 1].value));\r\n\r\n    return ultimo > meio && meio > primeiro;\r\n}\r\n\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    if (!data || data.length < 2) {\r\n        return 0;\r\n    }\r\n    var primeiraData = data[0].ts;\r\n    var ultimaData = data[data.length - 1].ts;\r\n    return (ultimaData - primeiraData) / (1000 * 60);\r\n}\r\n\r\nfunction todosSaoEstado(data, estado) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return item.value === estado;\r\n    });\r\n}\r\n\r\nvar doorHistory = JSON.parse(metadata.doorSensor || \"[]\");\r\nvar weightHistory = JSON.parse(metadata.currentWeight_kg || \"[]\");\r\n\r\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(doorHistory);\r\nvar historicoPortaFechada = todosSaoEstado(doorHistory, \"CLOSED\");\r\nvar pesoEmCrescimento = pesoAumentandoUltimo(weightHistory);\r\n\r\nif (doorHistory.length > 25 && weightHistory.length > 25) {\r\n    if (historicoPortaFechada && pesoEmCrescimento) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Possivel entupimento. O peso do equipamento esta aumentando ha \" + diferencaEmMinutos + \" minutos com a porta fechada\",\r\n            alarmType: \"Possível entupimento\"\r\n        };\r\n    }\r\n}\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -1458,11 +1370,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1320,
-        "layoutY" : 905
+        "layoutX" : 1316,
+        "layoutY" : 847
       },
       "configuration" : {
-        "jsScript" : "if (msg.status){\n        return true;\n}else{\n    return false;\n}\n"
+        "scriptLang" : "JS",
+        "jsScript" : "return !!msg.status;\r\n",
+        "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -1480,8 +1394,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1603,
-        "layoutY" : 904
+        "layoutX" : 1604,
+        "layoutY" : 862
       },
       "configuration" : {
         "alarmDetailsBuildJs" : "var details = {status: msg.status, count: 1};\n\nif (metadata.prevAlarmDetails) {\n  var prevDetails = JSON.parse(metadata.prevAlarmDetails);\n  // remove prevAlarmDetails from metadata\n  delete metadata.prevAlarmDetails;\n  if (prevDetails.count) {\n    details.count = prevDetails.count + 1;\n  }\n}\n\nreturn details;\n",
@@ -1511,8 +1425,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1603,
-        "layoutY" : 954
+        "layoutX" : 1608,
+        "layoutY" : 908
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -1536,8 +1450,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 706,
-        "layoutY" : 904
+        "layoutX" : 702,
+        "layoutY" : 846
       },
       "configuration" : {
         "latestTsKeyNames" : [ "doorSensor", "currentWeight_kg" ],
@@ -1606,7 +1520,7 @@
         "layoutY" : 452
       },
       "configuration" : {
-        "latestTsKeyNames" : [ "currentPhase01_A", "currentPhase02_A", "currentPhase03_A" ],
+        "latestTsKeyNames" : [ "currentPhase01_A", "currentPhase02_A", "currentPhase03_A", "currentPhase01_A_status", "currentPhase02_A_status", "currentPhase03_A_status" ],
         "aggregation" : "NONE",
         "fetchMode" : "ALL",
         "orderBy" : "ASC",
@@ -1636,11 +1550,11 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1032,
-        "layoutY" : 1005
+        "layoutY" : 946
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var totalWaterUsage_l = msg.totalWaterUsage_l;\nvar deviceName        = metadata.deviceName; // Obtém o valor do campo deviceName\nvar modeldevice       = deviceName.substring(0, 3); // Pega os 3 primeiros caracteres\nvar minimo            = modeldevice * 3;\n\nfunction PesoAumentando(data) {\nvar aumentando = true;\n\nfor (var i = 1; i < data.length; i++) {\n  if (data[i].value <= data[i - 1].value) {\n    aumentando = false;\n    break;\n  }\n}\n\nreturn aumentando;\n}\n     \n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaTempoEmMinutos(data) {\n    var primeiraData = data[0].ts; // Primeiro timestamp\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\n    return diferencaEmMinutos;\n}\n\n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaDeLitros(data) {\n    var primeiraData    = data[0].value; // Primeiro timestamp\n    var ultimaData      = data[data.length - 1].value; // Último timestamp\n    var diferencaLitros = ultimaData - primeiraData; // Calcula a diferença em minutos\n    return diferencaLitros;\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSao(data, estado) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value !== estado) {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"OPEN\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nfunction maiorQue(data, valor){\n        for (var i = 0; i < data.length; i++) {\n        if (data[i].value < valor) {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"OPEN\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nvar deltawater         = JSON.parse(metadata.totalWaterUsage_l);\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(deltawater);\nvar diferencaLitros    = totalWaterUsage_l - deltawater;//calcularDiferencaDeLitros(deltawater);\n\nmsg.diferencaLitros = diferencaLitros;\nmsg.minimo = minimo;\n\nif (diferencaLitros < 0){\n    diferencaLitros = 0;\n}\n\nif (diferencaLitros < minimo){\n        var alarmType    = \"Baixo consumo de água\";\n        var message      = \"Quantidade de água em litros utilizados nas ultimas 24h : \" + diferencaLitros + \"l, minimo: \" + minimo;\n        var Status       = \"ALERTA\";\n    \n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n        };   \n}\n\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var totalWaterUsageL = Number(msg.totalWaterUsage_l);\r\nvar deviceName = metadata.deviceName || \"\";\r\nvar modelDevice = parseInt(deviceName.substring(0, 3), 10);\r\nvar minimo = modelDevice * 3;\r\n\r\nfunction calcularDiferencaDeLitros(data) {\r\n    if (!data || data.length < 2) {\r\n        return 0;\r\n    }\r\n    var primeiro = Number(data[0].value);\r\n    var ultimo = Number(data[data.length - 1].value);\r\n    return ultimo - primeiro;\r\n}\r\n\r\nvar waterHistory = JSON.parse(metadata.totalWaterUsage_l || \"[]\");\r\nvar diferencaLitros = calcularDiferencaDeLitros(waterHistory);\r\n\r\nif (diferencaLitros < 0) {\r\n    diferencaLitros = 0;\r\n}\r\n\r\nif (!isNaN(minimo) && waterHistory.length > 1 && diferencaLitros < minimo) {\r\n    msg.status = {\r\n        errorStatus: \"ALERTA\",\r\n        message: \"Quantidade de agua utilizada nas ultimas 24h: \" + diferencaLitros + \" l. Minimo esperado: \" + minimo + \" l\",\r\n        alarmType: \"Baixo consumo de água\"\r\n    };\r\n}\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
@@ -1660,10 +1574,12 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 1323,
-        "layoutY" : 1006
+        "layoutY" : 947
       },
       "configuration" : {
-        "jsScript" : "if (msg.status){\n    return true\n}else{\n    return false\n}\n"
+        "scriptLang" : "JS",
+        "jsScript" : "return !!msg.status;\r\n",
+        "tbelScript" : null
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -1681,8 +1597,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1604,
-        "layoutY" : 1004
+        "layoutX" : 1609,
+        "layoutY" : 958
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -1714,8 +1630,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1604,
-        "layoutY" : 1054
+        "layoutX" : 1613,
+        "layoutY" : 1012
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -1740,7 +1656,7 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 706,
-        "layoutY" : 1006
+        "layoutY" : 947
       },
       "configuration" : {
         "latestTsKeyNames" : [ "totalWaterUsage_l" ],
@@ -1772,12 +1688,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1139,
-        "layoutY" : 461
+        "layoutX" : 1030,
+        "layoutY" : 454
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var isolatedStatus1 = msg.currentPhase01_A_status;\nvar isolatedStatus2 = msg.currentPhase02_A_status;\nvar isolatedStatus3 = msg.currentPhase03_A_status;\n\nvar Phase01 = parseFloat(msg.currentPhase01_A)/1000.0;\nvar Phase02 = parseFloat(msg.currentPhase02_A)/1000.0;\nvar Phase03 = parseFloat(msg.currentPhase03_A)/1000.0;\n\nvar currentWeight_kg = msg.currentWeight_kg;\nvar deviceName       = metadata.deviceName; // Obtém o valor do campo deviceName\n\n// Função para calcular a diferença de tempo em minutos\nfunction calcularDiferencaTempoEmMinutos(data) {\n    var primeiraData = data[0].ts; // Primeiro timestamp\n    var ultimaData = data[data.length - 1].ts; // Último timestamp\n    var diferencaEmMinutos = (ultimaData - primeiraData) / (1000 * 60); // Calcula a diferença em minutos\n    return diferencaEmMinutos;\n}\n\n// Função para verificar se todos os valores são \"OPEN\"\nfunction todosSao(data, estado) {\n    for (var i = 0; i < data.length; i++) {\n        if (data[i].value !== estado) {\n            return false; // Retorna falso se encontrar qualquer valor diferente de \"OPEN\"\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem \"OPEN\"\n}\n\nfunction maiorQue(data, valor){\n        for (var i = 0; i < data.length; i++) {\n        var value = parseFloat(data[i].value)/1000.0    \n        if (value < valor) {\n            return false; // Retorna falso se encontrar qualquer valor diferente\n        }\n    }\n    return true; // Retorna verdadeiro se todos os valores forem\n}\n\nvar mPhase01 = JSON.parse(metadata.currentPhase01_A);\nvar mPhase02 = JSON.parse(metadata.currentPhase02_A);\nvar mPhase03 = JSON.parse(metadata.currentPhase03_A);\n\nvar diferencaEmMinutos = calcularDiferencaTempoEmMinutos(mPhase01);\n\n\nvar m01 = maiorQue(mPhase01, 1);\nvar m02 = maiorQue(mPhase02, 1);\nvar m03 = maiorQue(mPhase03, 1);\n\nmsg.deltadoor = diferencaEmMinutos;\nmsg.disparar  = m01;\n\n\nvar tamanho = mPhase01.length;\n\nif (tamanho > 12) {\n\nif (m01 || m02 || m03){\n        var alarmType    = \"Alertas de fases\";\n        var message      = \"Correntes do motor: \" \n                     + Phase01.toFixed(1) + \"A, \"\n                     + Phase02.toFixed(1) + \"A, \"\n                     + Phase03.toFixed(1) + \"A\"\n                     + \" á \" + diferencaEmMinutos+\"min\";\n        var Status       = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n        };   \n}\n\n\nif (isolatedStatus1 != \"OK\" || isolatedStatus2 != \"OK\" || isolatedStatus3 != \"OK\"){\n        var alarmType    = \"Alertas de fases\";\n        var message      = \"Sensor de corrente com problema, verifique\"; \n        var Status       = \"ALERTA\";\n\n        msg.status = {\n            errorStatus: Status,\n            message: message,\n            alarmType: alarmType,\n        };      \n}\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "var phase01Status = msg.currentPhase01_A_status;\r\nvar phase02Status = msg.currentPhase02_A_status;\r\nvar phase03Status = msg.currentPhase03_A_status;\r\n\r\nvar phase01 = Number(msg.currentPhase01_A) / 1000.0;\r\nvar phase02 = Number(msg.currentPhase02_A) / 1000.0;\r\nvar phase03 = Number(msg.currentPhase03_A) / 1000.0;\r\n\r\nvar alarmType = \"Alertas de fases\";\r\n\r\nfunction calcularDiferencaTempoEmMinutos(data) {\r\n    if (!data || data.length < 2) {\r\n        return 0;\r\n    }\r\n    var primeiraData = data[0].ts;\r\n    var ultimaData = data[data.length - 1].ts;\r\n    return (ultimaData - primeiraData) / (1000 * 60);\r\n}\r\n\r\nfunction todosMaiorOuIgual(data, valor) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return Number(item.value) / 1000.0 >= valor;\r\n    });\r\n}\r\n\r\nfunction todosDiferentes(data, valor) {\r\n    return data && data.length > 0 && data.every(function(item) {\r\n        return item.value !== valor;\r\n    });\r\n}\r\n\r\nvar phase01History = JSON.parse(metadata.currentPhase01_A || \"[]\");\r\nvar phase02History = JSON.parse(metadata.currentPhase02_A || \"[]\");\r\nvar phase03History = JSON.parse(metadata.currentPhase03_A || \"[]\");\r\n\r\nvar phase01StatusHistory = JSON.parse(metadata.currentPhase01_A_status || \"[]\");\r\nvar phase02StatusHistory = JSON.parse(metadata.currentPhase02_A_status || \"[]\");\r\nvar phase03StatusHistory = JSON.parse(metadata.currentPhase03_A_status || \"[]\");\r\n\r\nvar diferencaCorrenteMin = calcularDiferencaTempoEmMinutos(phase01History);\r\nvar diferencaStatusMin = calcularDiferencaTempoEmMinutos(phase01StatusHistory);\r\n\r\nvar historicoPhase01Alta = todosMaiorOuIgual(phase01History, 3);\r\nvar historicoPhase02Alta = todosMaiorOuIgual(phase02History, 3);\r\nvar historicoPhase03Alta = todosMaiorOuIgual(phase03History, 3);\r\n\r\nvar historicoStatus1Ruim = todosDiferentes(phase01StatusHistory, \"OK\");\r\nvar historicoStatus2Ruim = todosDiferentes(phase02StatusHistory, \"OK\");\r\nvar historicoStatus3Ruim = todosDiferentes(phase03StatusHistory, \"OK\");\r\n\r\nif (phase01History.length > 12) {\r\n    if (\r\n        (phase01Status !== \"OK\" && historicoStatus1Ruim) ||\r\n        (phase02Status !== \"OK\" && historicoStatus2Ruim) ||\r\n        (phase03Status !== \"OK\" && historicoStatus3Ruim)\r\n    ) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Sensor de corrente em alerta ha \" + diferencaStatusMin + \" minutos. Status atuais: \"\r\n                + phase01Status + \", \" + phase02Status + \", \" + phase03Status,\r\n            alarmType: alarmType\r\n        };\r\n    } else if (\r\n        historicoPhase01Alta ||\r\n        historicoPhase02Alta ||\r\n        historicoPhase03Alta\r\n    ) {\r\n        msg.status = {\r\n            errorStatus: \"ALERTA\",\r\n            message: \"Correntes do motor em alerta ha \" + diferencaCorrenteMin + \" minutos. Valores atuais: \"\r\n                + phase01.toFixed(1) + \" A, \"\r\n                + phase02.toFixed(1) + \" A, \"\r\n                + phase03.toFixed(1) + \" A\",\r\n            alarmType: alarmType\r\n        };\r\n    }\r\n}\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
         "tbelScript" : null
       },
       "configurationVersion" : 0,
