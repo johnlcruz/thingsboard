@@ -7,7 +7,10 @@
     "configuration" : null,
     "debugMode" : false,
     "externalId" : null,
-    "firstRuleNodeId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "53e40150-1a51-11f0-98c5-37e1d09aa61a"
+    },
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "10ceb940-4363-11ed-b66e-bd8d8d68617d"
@@ -19,7 +22,7 @@
   "metaData" : {
     "connections" : [ {
       "fromIndex" : 0,
-      "toIndex" : 10,
+      "toIndex" : 9,
       "type" : "Success"
     }, {
       "fromIndex" : 2,
@@ -34,10 +37,6 @@
       "toIndex" : 5,
       "type" : "Success"
     }, {
-      "fromIndex" : 4,
-      "toIndex" : 9,
-      "type" : "Failure"
-    }, {
       "fromIndex" : 5,
       "toIndex" : 2,
       "type" : "Success"
@@ -50,16 +49,16 @@
       "toIndex" : 4,
       "type" : "Success"
     }, {
-      "fromIndex" : 10,
+      "fromIndex" : 9,
       "toIndex" : 8,
       "type" : "Success"
     } ],
-    "firstNodeIndex" : null,
+    "firstNodeIndex" : 6,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1786,
-        "layoutY" : 154
+        "layoutX" : 1652,
+        "layoutY" : 156
       },
       "configuration" : {
         "useSystemSmtpSettings" : true,
@@ -93,8 +92,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 109,
-        "layoutY" : 904
+        "layoutX" : 60,
+        "layoutY" : 441
       },
       "configuration" : {
         "msgCount" : 0,
@@ -107,7 +106,7 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -121,8 +120,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1336,
-        "layoutY" : 641
+        "layoutX" : 1428,
+        "layoutY" : 603
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -131,7 +130,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -145,17 +144,17 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 756,
-        "layoutY" : 155
+        "layoutX" : 753,
+        "layoutY" : 157
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "// 1. Captura e trata o e-mail vindo do enriquecimento (Server Scope)\r\nvar emailDestino = \"\";\r\n\r\ntry {\r\n    // Tenta converter string em JSON\r\n    var emailJson = JSON.parse(metadata.ss_emailAlerta);\r\n    emailDestino = emailJson.emailAlerta || '';\r\n} catch (e) {\r\n    emailDestino = '';\r\n}\r\n\r\n// 2. Validação e fallback\r\nif (!emailDestino || emailDestino.trim() === '') {\r\n    emailDestino = 'fernando.costa@ecocircuito.com.br'; // fallback\r\n}\r\n\r\n// 3. Define os campos do e-mail\r\nmsg.from = 'application@ecocircuito.com.br';\r\nmsg.to = emailDestino.trim(); // AGORA é string correta\r\nmsg.cc = 'fernando.costa@ecocircuito.com.br';\r\n\r\n// 4. Log de debug\r\nmetadata.debugEmail = 'Destino: ' + msg.to + ' | CC: ' + msg.cc;\r\n\r\n// 5. Retorna o pacote\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
+        "jsScript" : "// 1. Captura e trata o e-mail vindo do enriquecimento (Server Scope)\r\nvar emailDestino = \"\";\r\n\r\ntry {\r\n    // Tenta converter string em JSON\r\n    var emailJson = JSON.parse(metadata.ss_emailAlerta);\r\n    emailDestino = emailJson.emailAlerta || '';\r\n} catch (e) {\r\n    emailDestino = '';\r\n}\r\n\r\n// 2. Validação e fallback\r\nif (!emailDestino || emailDestino.trim() === '') {\r\n    emailDestino = 'lucas@ecocircuito.com.br'; // fallback\r\n}\r\n\r\nemailDestino = 'lucas@ecocircuito.com.br'; // forçar somente lucas remover quando estabilizar\r\n\r\n// 3. Define os campos do e-mail\r\nmsg.from = 'application@ecocircuito.com.br';\r\nmsg.to = emailDestino.trim(); // AGORA é string correta\r\nmsg.cc = 'john.lennon@ecocircuito.com.br';\r\n\r\n// 4. Log de debug\r\nmetadata.debugEmail = 'Destino: ' + msg.to + ' | CC: ' + msg.cc;\r\n\r\n// 5. Retorna o pacote\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n",
         "tbelScript" : "// Garantir que deviceName esteja limpo\r\nmetadata.deviceName = metadata.deviceName != null ? metadata.deviceName.trim() : 'DESCONHECIDO';\r\n\r\n// Define o e-mail baseado no nome do dispositivo\r\nif (metadata.deviceName == '150.001-202402-PH') {\r\n    metadata.emailDestino = 'fernando.costa@ecocircuito.com.br';\r\n} else {\r\n    metadata.emailDestino = 'suporte@ecocircuito.com.br';\r\n}\r\n\r\n// Remove espaços indesejados (inclusive entre o nome e o @)\r\nmetadata.emailDestino = metadata.emailDestino.replace(/\\s/g, '');\r\n\r\n// Debug opcional\r\nmetadata.debugEmail = \"[\" + metadata.emailDestino + \"]\";\r\n\r\nreturn {\r\n    msg: msg,\r\n    metadata: metadata,\r\n    msgType: msgType\r\n};\r\n"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -169,17 +168,17 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1218,
-        "layoutY" : 150
+        "layoutX" : 1011,
+        "layoutY" : 160
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "// Timestamp atual\r\nvar agora = Date.now();\r\n\r\n// Pega o timestamp do último envio\r\nvar tsUltimoEnvio = metadata.ultimoEnvioEmail ? parseInt(metadata.ultimoEnvioEmail) : 0;\r\n\r\n// Define intervalo de 3 horas (em milissegundos)\r\nvar intervaloMs = 3 * 60 * 60 * 1000;\r\n\r\n// Se nunca enviou ou já passou do tempo, permite envio\r\nif (tsUltimoEnvio === 0 || (agora - tsUltimoEnvio > intervaloMs)) {\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: msgType\r\n    };\r\n} else {\r\n    var minutosRestantes = Math.ceil((intervaloMs - (agora - tsUltimoEnvio)) / 60000);\r\n    metadata.debugEmail = \"⏳ Email bloqueado. Faltam \" + minutosRestantes + \" min para próximo envio.\";\r\n    \r\n    // Opcional: loga ou envia para um caminho de \"ignorado\"\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: \"EMAIL_BLOQUEADO\"\r\n    };\r\n}\r\n",
+        "jsScript" : "var agora = Date.now();\r\n\r\nvar tsUltimoEnvio = 0;\r\n\r\nif (metadata.ultimoEnvioEmail) {\r\n    tsUltimoEnvio = parseInt(metadata.ultimoEnvioEmail, 10);\r\n} else if (metadata.ss_ultimoEnvioEmail) {\r\n    tsUltimoEnvio = parseInt(metadata.ss_ultimoEnvioEmail, 10);\r\n}\r\n\r\nif (isNaN(tsUltimoEnvio)) {\r\n    tsUltimoEnvio = 0;\r\n}\r\n\r\nvar intervaloMs = 3 * 60 * 60 * 1000;\r\n\r\nif (tsUltimoEnvio === 0 || (agora - tsUltimoEnvio > intervaloMs)) {\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: msgType\r\n    };\r\n} else {\r\n    var minutosRestantes = Math.ceil((intervaloMs - (agora - tsUltimoEnvio)) / 60000);\r\n    metadata.debugEmail = \"Email bloqueado. Faltam \" + minutosRestantes + \" min para proximo envio.\";\r\n\r\n    return {\r\n        msg: msg,\r\n        metadata: metadata,\r\n        msgType: \"EMAIL_BLOQUEADO\"\r\n    };\r\n}\r\n",
         "tbelScript" : ""
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -193,8 +192,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1509,
-        "layoutY" : 149
+        "layoutX" : 1352,
+        "layoutY" : 157
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -203,7 +202,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -218,20 +217,20 @@
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 407,
-        "layoutY" : 152
+        "layoutY" : 156
       },
       "configuration" : {
         "tellFailureIfAbsent" : false,
         "fetchTo" : "METADATA",
         "clientAttributeNames" : [ ],
         "sharedAttributeNames" : [ ],
-        "serverAttributeNames" : [ "emailAlerta" ],
+        "serverAttributeNames" : [ "emailAlerta", "ultimoEnvioEmail" ],
         "latestTsKeyNames" : [ ],
         "getLatestValueWithTs" : false
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -245,8 +244,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 765,
-        "layoutY" : 609
+        "layoutX" : 780,
+        "layoutY" : 605
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -255,7 +254,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -269,18 +268,18 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1834,
-        "layoutY" : 611
+        "layoutX" : 1952,
+        "layoutY" : 605
       },
       "configuration" : {
         "scope" : "SERVER_SCOPE",
         "notifyDevice" : false,
-        "sendAttributesUpdatedNotification" : true,
+        "sendAttributesUpdatedNotification" : false,
         "updateAttributesOnlyOnValueChange" : true
       },
       "configurationVersion" : 2,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -294,36 +293,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1027,
-        "layoutY" : 612
-      },
-      "configuration" : {
-        "scriptLang" : "JS",
-        "jsScript" : "return \"📭 E-mail não enviado: intervalo mínimo de reenvio não alcançado.\\n\" +\r\n       \"Equipamento: \" + metadata.deviceName + \"\\n\" +\r\n       \"Destino: \" + msg.to + \"\\n\" +\r\n       \"Último envio em: \" + metadata.ultimoEnvioEmail;\r\n",
-        "tbelScript" : "return \"Para: [\" + msg.to + \"]\";\r\n"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "793b21c0-1ad5-11f0-98c5-37e1d09aa61a"
-      },
-      "name" : "Ignorado por intervalo",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
         "layoutX" : 1952,
-        "layoutY" : 387
+        "layoutY" : 156
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "msg.ultimoEnvioEmail = Date.now();\r\n\r\nreturn {\r\n  msg: msg,\r\n  metadata: metadata,\r\n  msgType: msgType\r\n};\r\n",
+        "jsScript" : "return {\r\n    msg: {\r\n        ultimoEnvioEmail: Date.now()\r\n    },\r\n    metadata: metadata,\r\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\r\n};\r\n",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
@@ -342,7 +317,6 @@
     } ],
     "ruleChainConnections" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
