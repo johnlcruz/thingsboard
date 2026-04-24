@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "fcbd5880-6752-11ed-b02b-0130c4441328"
     },
-    "label" : "L.SHOPBAHIA-600",
+    "label" : "L.GRSA.CVALE.PA-600_01",
     "name" : "600.001-202105-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -80,11 +80,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1718137884805,
+      "lastUpdateTs" : 1777039349199,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -98,10 +98,18 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"eva.queiroz@parqueshoppingba.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765553175,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1718137884805,
-      "longValue" : 1718137884805,
+      "lastUpdateTs" : 1773862311449,
+      "longValue" : 1773862311449,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -116,8 +124,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1718134273515,
-      "longValue" : 1718134270913,
+      "lastUpdateTs" : 1777042259198,
+      "longValue" : 1777042257160,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -134,6 +142,14 @@
       "key" : "lastDoorOpenTimestamp",
       "lastUpdateTs" : 1677543822247,
       "longValue" : 1677543694000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1777040684856,
+      "longValue" : 1777040684855,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
