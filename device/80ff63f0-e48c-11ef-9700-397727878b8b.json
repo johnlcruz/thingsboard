@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "80ff63f0-e48c-11ef-9700-397727878b8b"
     },
-    "label" : "L.GRSA.UNIMED-300",
+    "label" : "300.003-202404-PH",
     "name" : "300.003-202404-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -44,15 +44,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1738847791564,
+      "lastUpdateTs" : 1765198950245,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1746541249284,
+      "lastUpdateTs" : 1775836701098,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1738850915333,
-      "longValue" : 1738850915333,
+      "lastUpdateTs" : 1775836701098,
+      "longValue" : 1775836701098,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1746541465280,
-      "longValue" : 1746541464914,
+      "lastUpdateTs" : 1775836088199,
+      "longValue" : 1775836086957,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
