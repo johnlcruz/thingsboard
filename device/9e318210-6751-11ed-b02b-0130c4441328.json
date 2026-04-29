@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "c36d6a20-0fcf-11f0-98c5-37e1d09aa61a"
+      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,13 +28,13 @@
       "entityType" : "DEVICE",
       "id" : "9e318210-6751-11ed-b02b-0130c4441328"
     },
-    "label" : "300_002-202105-PH",
+    "label" : "UNIMED-BETIM-300",
     "name" : "300_002-202105-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "300.002-202105-PH",
+    "credentialsId" : "300_002-202105-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -60,7 +60,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1776265141383,
+      "lastUpdateTs" : 1776270098299,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -92,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1776264470565,
+      "lastUpdateTs" : 1777495844198,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -116,8 +116,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1743246959538,
-      "longValue" : 1743246959537,
+      "lastUpdateTs" : 1777495795957,
+      "longValue" : 1777495795957,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -132,8 +132,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1743246925280,
-      "longValue" : 1743246922818,
+      "lastUpdateTs" : 1777495844198,
+      "longValue" : 1777495843111,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -150,6 +150,14 @@
       "key" : "lastDoorOpenTimestamp",
       "lastUpdateTs" : 1695170826444,
       "longValue" : 1695170826000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1776973787985,
+      "longValue" : 1776973787985,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
