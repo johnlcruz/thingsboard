@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "d1f07990-1a27-11f0-98c5-37e1d09aa61a"
+      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "3b6fbf50-4b54-11ef-a113-ed3d1f460591"
     },
-    "label" : "L.EXAL.SJPINHAIS-150",
+    "label" : "L.EXAL.RIOOSTRAS-150",
     "name" : "150.002-202402-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -48,11 +48,11 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1750969982176,
+      "lastUpdateTs" : 1777492306922,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -68,16 +68,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1750969982176,
-      "longValue" : 1750969982176,
+      "lastUpdateTs" : 1769195406097,
+      "longValue" : 1769195406097,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1750969364612,
-      "longValue" : 1750969361977,
+      "lastUpdateTs" : 1769194790199,
+      "longValue" : 1769194789664,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
