@@ -29,7 +29,7 @@
       "id" : "2953dca0-4dd5-11f0-a7e3-53d8871a4ad2"
     },
     "label" : "150.004-202106-PHr",
-    "name" : "150.004-202106-PHr",
+    "name" : "L.GAVPTOLIF-2.PE-150",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1750423858996,
+      "lastUpdateTs" : 1778509896623,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1750443140613,
+      "lastUpdateTs" : 1778509894287,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +60,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1750424458669,
-      "longValue" : 1750424458669,
+      "lastUpdateTs" : 1750444978883,
+      "longValue" : 1750444978883,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1750443221612,
-      "longValue" : 1750443221217,
+      "lastUpdateTs" : 1750444349612,
+      "longValue" : 1750444347098,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
