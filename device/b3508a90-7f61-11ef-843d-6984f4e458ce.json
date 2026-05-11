@@ -28,18 +28,50 @@
       "entityType" : "DEVICE",
       "id" : "b3508a90-7f61-11ef-843d-6984f4e458ce"
     },
-    "label" : "600.004-202406-PH",
+    "label" : "V.FAZZPARK.SC-600_02",
     "name" : "600.004-202406-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "07hAzeZDVevduPJDjrvS",
+    "credentialsId" : "600.004-202406-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1730741113363,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1727873725555,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1727873725555,
+      "longValue" : 1727873725554,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1727873123064,
+      "longValue" : 1727873121551,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
