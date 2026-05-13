@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "a119b700-497e-11f1-81e8-ed1fb93a3140"
     },
-    "label" : "Unicharm-50",
+    "label" : "L.UNICHR-JAG.SP-50",
     "name" : "050_003-202510-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -68,16 +68,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1778603460560,
-      "longValue" : 1778603457601,
+      "lastUpdateTs" : 1778695809561,
+      "longValue" : 1778695807401,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "ultimoEnvioEmail",
-      "lastUpdateTs" : 1778603457695,
-      "longValue" : 1778603457694,
+      "lastUpdateTs" : 1778688307453,
+      "longValue" : 1778688307453,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
