@@ -29,7 +29,7 @@
       "id" : "5874f180-b6f0-11ef-9700-397727878b8b"
     },
     "label" : "L.SDX.TETRAPK-150",
-    "name" : "150.010-202412-PH",
+    "name" : "150.010-202405-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -40,11 +40,11 @@
   },
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1737304509970,
+      "lastUpdateTs" : 1760731218359,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1737124452610,
+      "lastUpdateTs" : 1779210137663,
       "longValue" : null,
       "strValue" : null
     }, {
