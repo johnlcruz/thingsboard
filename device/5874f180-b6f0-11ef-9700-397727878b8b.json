@@ -29,12 +29,12 @@
       "id" : "5874f180-b6f0-11ef-9700-397727878b8b"
     },
     "label" : "L.SDX.TETRAPK-150",
-    "name" : "150.010-202405-PH",
+    "name" : "150_010-202405-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "150.010-202412-PH",
+    "credentialsId" : "150.010-202405-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -48,11 +48,11 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1779210137663,
+      "lastUpdateTs" : 1779218223561,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +60,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1737124452610,
-      "longValue" : 1737124452610,
+      "lastUpdateTs" : 1779214217054,
+      "longValue" : 1779214217054,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1737123830174,
-      "longValue" : 1737123827185,
+      "lastUpdateTs" : 1779219336561,
+      "longValue" : 1779219336030,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1779218232969,
+      "longValue" : 1779218232969,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
