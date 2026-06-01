@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+      "id" : "ab958c60-e293-11f0-b0d5-bde84d645af8"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,13 +28,13 @@
       "entityType" : "DEVICE",
       "id" : "2b23b360-f89c-11ed-8856-f94267911765"
     },
-    "label" : "300.001-202302-PH",
-    "name" : "300.001-202302-PH",
+    "label" : "L.HOSP.PORT-300",
+    "name" : "300_001-202302-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "300.001-202302-PH",
+    "credentialsId" : "300_001-202302-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -60,7 +60,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1700234137000,
+      "lastUpdateTs" : 1754833862767,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -96,11 +96,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1711718339105,
+      "lastUpdateTs" : 1780340725550,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -114,10 +114,18 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"sara.silva@rhp.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765547040,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1711718339105,
-      "longValue" : 1711718339105,
+      "lastUpdateTs" : 1780338839201,
+      "longValue" : 1780338839200,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -132,8 +140,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1711666522721,
-      "longValue" : 1711666522173,
+      "lastUpdateTs" : 1780341772546,
+      "longValue" : 1780341771216,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -150,6 +158,14 @@
       "key" : "lastDoorOpenTimestamp",
       "lastUpdateTs" : 1695296424159,
       "longValue" : 1695296423000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1780340732987,
+      "longValue" : 1780340732986,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
