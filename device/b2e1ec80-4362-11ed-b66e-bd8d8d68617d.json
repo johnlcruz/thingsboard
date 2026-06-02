@@ -29,7 +29,7 @@
       "id" : "b2e1ec80-4362-11ed-b66e-bd8d8d68617d"
     },
     "label" : "MALZONI-50",
-    "name" : "ECO PRO - 050.001-202105-PH",
+    "name" : "050_001-202105-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -55,6 +54,14 @@
       "key" : "Corrente do motorRepeatCount",
       "lastUpdateTs" : 1689963858677,
       "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1700234137000,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -77,7 +84,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1689966357291,
+      "lastUpdateTs" : 1778759214372,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -91,18 +98,34 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"eliane@polzer.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765551746,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1689966357291,
-      "longValue" : 1689966357291,
+      "lastUpdateTs" : 1770346093831,
+      "longValue" : 1770346093831,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1689965726066,
-      "longValue" : 1689965723312,
+      "lastUpdateTs" : 1770342476198,
+      "longValue" : 1770342473259,
       "strValue" : null
     }, {
       "booleanValue" : null,
