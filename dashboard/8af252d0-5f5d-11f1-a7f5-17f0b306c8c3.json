@@ -1505,7 +1505,7 @@
               "entityLabelColumnTitle" : "ECO-PRO",
               "displayEntityType" : false,
               "displayPagination" : true,
-              "defaultPageSize" : 30,
+              "defaultPageSize" : 90,
               "defaultSortOrder" : "-lastActivityTime",
               "useRowStyleFunction" : false,
               "rowStyleFunction" : ""
