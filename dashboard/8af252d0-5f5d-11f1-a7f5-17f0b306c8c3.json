@@ -1796,7 +1796,7 @@
               } ],
               "rowClick" : [ ]
             },
-            "widgetCss" : ".mat-icon-button .mat-icon {\n    color: white !important;\n}",
+            "widgetCss" : "",
             "pageSize" : 2048,
             "noDataDisplayMessage" : "",
             "titleFont" : {
