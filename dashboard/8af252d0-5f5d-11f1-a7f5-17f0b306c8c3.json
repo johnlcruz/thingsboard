@@ -1492,6 +1492,7 @@
             "color" : "#ffffff",
             "padding" : "4px",
             "settings" : {
+              "entitiesTitle" : "",
               "enableSearch" : true,
               "enableSelectColumnDisplay" : true,
               "enableStickyHeader" : true,
@@ -1499,13 +1500,15 @@
               "showCellActionsMenu" : true,
               "reserveSpaceForHiddenAction" : "true",
               "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
               "displayEntityLabel" : true,
               "entityLabelColumnTitle" : "ECO-PRO",
-              "displayEntityType" : true,
+              "displayEntityType" : false,
               "displayPagination" : true,
               "defaultPageSize" : 30,
               "defaultSortOrder" : "entityName",
-              "useRowStyleFunction" : false
+              "useRowStyleFunction" : false,
+              "rowStyleFunction" : ""
             },
             "title" : "",
             "dropShadow" : false,
@@ -1543,25 +1546,27 @@
                 "postFuncBody" : "return value === \"true\" ? \"Online\" : \"Offline\";",
                 "aggregationType" : null
               }, {
-                "name" : "currentStatus",
-                "type" : "timeseries",
-                "label" : "Status",
-                "color" : "#4caf50",
+                "name" : "lastActivityTime",
+                "type" : "attribute",
+                "label" : "Última Telemetria",
+                "color" : "#ff9800",
                 "settings" : {
+                  "customTitle" : "",
                   "columnWidth" : "0px",
                   "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "var timestamp = Number(value);\nvar agora = new Date().getTime();\nvar diff = agora - timestamp;\nvar uma_hora = 60 * 60 * 1000;\nvar um_dia = 24 * uma_hora;\n\nvar cor;\nif (diff < uma_hora) {\n    cor = '#2e7d32';\n} else if (diff < um_dia) {\n    cor = '#f9a825';\n} else {\n    cor = '#c62828';\n}\n\nvar d = new Date(timestamp);\nvar data = d.toLocaleString('pt-BR');\n\nreturn '<span style=\"display:inline-flex;align-items:center;gap:6px;\">' +\n       '<span style=\"width:10px;height:10px;border-radius:50%;background-color:' + cor + ';flex-shrink:0;display:inline-block;\"></span>' +\n       '<span>' + data + '</span>' +\n       '</span>';",
                   "useCellContentFunction" : true,
-                  "cellContentFunction" : "function getIcon(value) {\n  if (value == \"Aguardando início\") {\n    return '<mat-icon class=\"mat-icon material-icons mat-icon-no-color\" data-mat-icon-type=\"font\" style=\"color: #EB5757;\">' + \n      '<svg style=\"width:24px;height:24px\" viewBox=\"0 0 24 24\">' + \n      '<path fill=\"currentColor\" d=\"M6,2V8H6V8L10,12L6,16V16H6V22H18V16H18V16L14,12L18,8V8H18V2H6M16,16.5V20H8V16.5L12,12.5L16,16.5M12,11.5L8,7.5V4H16V7.5L12,11.5Z\" />' + \n      '</svg>' + \n    '</mat-icon>';\n  }\n  if (value == \"Em operação\" ) {\n    return '<mat-icon class=\"mat-icon notranslate material-icons mat-icon-no-color\" data-mat-icon-type=\"font\" style=\"color: #27AE60\">' +\n      'done_all' + \n    '</mat-icon>';\n  }\n  return '';\n}\nfunction capitalize (s) {\n  if (typeof s !== 'string') return '';\n  return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();\n}\nvar status = value;\nreturn getIcon(status) + '<span style=\"vertical-align: super;padding-left: 8px;\">' + capitalize(status) + '</span>';\n",
+                  "cellContentFunction" : "var timestamp = Number(value);\nvar agora = new Date().getTime();\nvar diff = agora - timestamp;\nvar uma_hora = 60 * 60 * 1000;\nvar um_dia = 24 * uma_hora;\n\nvar cor;\nif (diff < uma_hora) {\n    cor = '#2e7d32';\n} else if (diff < um_dia) {\n    cor = '#f9a825';\n} else {\n    cor = '#c62828';\n}\n\nvar d = new Date(timestamp);\nvar data = d.toLocaleString('pt-BR');\n\nreturn '<span style=\"display:inline-flex;align-items:center;gap:6px;\">' +\n       '<span style=\"width:10px;height:10px;border-radius:50%;background-color:' + cor + ';flex-shrink:0;display:inline-block;\"></span>' +\n       '<span>' + data + '</span>' +\n       '</span>';",
                   "defaultColumnVisibility" : "visible",
                   "columnSelectionToDisplay" : "enabled"
                 },
-                "_hash" : 0.8491247670969644,
+                "_hash" : 0.6491773861461263,
+                "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "switch(value) {\n    case \"RUNNING\":\n        return \"Em operação\";\n    case \"WAITING\":\n        return \"Aguardando início\";\n    default:\n        return value;\n}\n",
-                "aggregationType" : "NONE"
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               }, {
                 "name" : "motor_status",
                 "type" : "timeseries",
@@ -1585,7 +1590,7 @@
               }, {
                 "name" : "currentWeight_kg",
                 "type" : "timeseries",
-                "label" : "Peso Atual",
+                "label" : "Último Peso",
                 "color" : "#f44336",
                 "settings" : {
                   "columnWidth" : "0px",
@@ -1601,7 +1606,8 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
-                "postFuncBody" : null
+                "postFuncBody" : null,
+                "aggregationType" : "NONE"
               }, {
                 "name" : "doorSensor",
                 "type" : "timeseries",
@@ -1804,7 +1810,8 @@
               "weight" : "bold",
               "style" : "normal"
             },
-            "titleColor" : "#FFFFFF"
+            "titleColor" : "#FFFFFF",
+            "configMode" : "basic"
           },
           "row" : 0,
           "col" : 0,
