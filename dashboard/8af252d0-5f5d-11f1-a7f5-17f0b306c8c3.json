@@ -1781,7 +1781,9 @@
               } ],
               "actionCellButton" : [ {
                 "name" : "Detalhes",
-                "icon" : "arrow_forward",
+                "icon" : "search",
+                "useShowWidgetActionFunction" : false,
+                "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
                 "targetDashboardStateId" : "default",
                 "setEntityId" : true,
