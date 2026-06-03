@@ -1794,20 +1794,7 @@
                 "openRightLayout" : false,
                 "id" : "bb69a90f-e07b-2360-7c63-eb62981f7fb3"
               } ],
-              "rowClick" : [ {
-                "name" : "ir",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "default",
-                "setEntityId" : true,
-                "stateEntityParamName" : null,
-                "openRightLayout" : false,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "18b5158a-c78e-aadd-5bc4-1d66999f2a3a"
-              } ]
+              "rowClick" : [ ]
             },
             "widgetCss" : "",
             "pageSize" : 2048,
