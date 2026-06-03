@@ -1048,9 +1048,18 @@
           "sizeY" : 6.5,
           "config" : {
             "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
               "realtime" : {
-                "interval" : 1000,
-                "timewindowMs" : 86400000
+                "realtimeType" : 0,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1000
               },
               "aggregation" : {
                 "type" : "NONE",
@@ -1085,7 +1094,7 @@
               "fontWeight" : 400,
               "padding" : "5px 10px 5px 10px"
             },
-            "useDashboardTimewindow" : true,
+            "useDashboardTimewindow" : false,
             "showLegend" : false,
             "alarmSource" : {
               "type" : "entity",
