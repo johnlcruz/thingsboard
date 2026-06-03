@@ -29,7 +29,7 @@
       "id" : "7ccb40b0-f562-11ef-96c9-3d0c718b759f"
     },
     "label" : "L.SDX.MAXION.CZ.SP-300",
-    "name" : "300.004-202411-PH",
+    "name" : "300_004-202411-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -44,7 +44,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1754664577205,
+      "lastUpdateTs" : 1777384877217,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -52,7 +52,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1754666379310,
+      "lastUpdateTs" : 1780501790438,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +60,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1754666379310,
-      "longValue" : 1754666379309,
+      "lastUpdateTs" : 1778738713237,
+      "longValue" : 1778738713237,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1754665724613,
-      "longValue" : 1754665723347,
+      "lastUpdateTs" : 1778738091561,
+      "longValue" : 1778738090422,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1778071499899,
+      "longValue" : 1778071499899,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
