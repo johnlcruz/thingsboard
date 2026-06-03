@@ -1506,7 +1506,7 @@
               "displayEntityType" : false,
               "displayPagination" : true,
               "defaultPageSize" : 30,
-              "defaultSortOrder" : "entityName",
+              "defaultSortOrder" : "-lastActivityTime",
               "useRowStyleFunction" : false,
               "rowStyleFunction" : ""
             },
@@ -1811,7 +1811,7 @@
               "style" : "normal"
             },
             "titleColor" : "#FFFFFF",
-            "configMode" : "basic"
+            "configMode" : "advanced"
           },
           "row" : 0,
           "col" : 0,
