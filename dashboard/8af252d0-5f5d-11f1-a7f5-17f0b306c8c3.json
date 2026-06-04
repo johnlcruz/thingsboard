@@ -1555,6 +1555,13 @@
                 "postFuncBody" : "return value === \"true\" ? \"Online\" : \"Offline\";",
                 "aggregationType" : null
               }, {
+                "name" : "event",
+                "type" : "timeseries",
+                "label" : "event",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.6933370309376127
+              }, {
                 "name" : "lastActivityTime",
                 "type" : "attribute",
                 "label" : "Última Telemetria",
