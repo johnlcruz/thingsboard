@@ -1745,24 +1745,40 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "Inoperante",
-                "type" : "attribute",
-                "label" : "Inoperante",
-                "color" : "#03a9f4",
-                "settings" : {
-                  "columnWidth" : "0px",
-                  "useCellStyleFunction" : false,
-                  "useCellContentFunction" : false,
-                  "defaultColumnVisibility" : "hidden",
-                  "columnSelectionToDisplay" : "disabled"
-                },
-                "_hash" : 0.7485113938533604,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "name" : "loadCell01_kg_status",
+                "type" : "timeseries",
+                "label" : "loadCell01_kg_status",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.09848378240172573
+              }, {
+                "name" : "loadCell02_kg_status",
+                "type" : "timeseries",
+                "label" : "loadCell02_kg_status",
+                "color" : "#673ab7",
+                "settings" : { },
+                "_hash" : 0.0495183654370257
+              }, {
+                "name" : "loadCell03_kg_status",
+                "type" : "timeseries",
+                "label" : "loadCell03_kg_status",
+                "color" : "#cddc39",
+                "settings" : { },
+                "_hash" : 0.6180695578274994
+              }, {
+                "name" : "loadCell04_kg_status",
+                "type" : "timeseries",
+                "label" : "loadCell04_kg_status",
+                "color" : "#009688",
+                "settings" : { },
+                "_hash" : 0.7342481135361094
+              }, {
+                "name" : "loadCellkgAll_status",
+                "type" : "timeseries",
+                "label" : "loadCellkgAll_status",
+                "color" : "#795548",
+                "settings" : { },
+                "_hash" : 0.7312304202568863
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
