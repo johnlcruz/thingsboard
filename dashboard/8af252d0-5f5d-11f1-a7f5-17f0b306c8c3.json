@@ -1555,13 +1555,6 @@
                 "postFuncBody" : "return value === \"true\" ? \"Online\" : \"Offline\";",
                 "aggregationType" : null
               }, {
-                "name" : "event",
-                "type" : "timeseries",
-                "label" : "event",
-                "color" : "#ff9800",
-                "settings" : { },
-                "_hash" : 0.6933370309376127
-              }, {
                 "name" : "lastActivityTime",
                 "type" : "attribute",
                 "label" : "Última Telemetria",
@@ -1747,38 +1740,68 @@
               }, {
                 "name" : "loadCell01_kg_status",
                 "type" : "timeseries",
-                "label" : "loadCell01_kg_status",
+                "label" : "C. Carga 1",
                 "color" : "#ff9800",
                 "settings" : { },
-                "_hash" : 0.09848378240172573
+                "_hash" : 0.09848378240172573,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "loadCell02_kg_status",
                 "type" : "timeseries",
-                "label" : "loadCell02_kg_status",
+                "label" : "C. Carga 2",
                 "color" : "#673ab7",
                 "settings" : { },
-                "_hash" : 0.0495183654370257
+                "_hash" : 0.0495183654370257,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "loadCell03_kg_status",
                 "type" : "timeseries",
-                "label" : "loadCell03_kg_status",
+                "label" : "C. Carga 3",
                 "color" : "#cddc39",
                 "settings" : { },
-                "_hash" : 0.6180695578274994
+                "_hash" : 0.6180695578274994,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "loadCell04_kg_status",
                 "type" : "timeseries",
-                "label" : "loadCell04_kg_status",
+                "label" : "C. Carga 4",
                 "color" : "#009688",
                 "settings" : { },
-                "_hash" : 0.7342481135361094
+                "_hash" : 0.7342481135361094,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "loadCellkgAll_status",
                 "type" : "timeseries",
-                "label" : "loadCellkgAll_status",
+                "label" : "C. Carga 1,2,3,4",
                 "color" : "#795548",
                 "settings" : { },
-                "_hash" : 0.7312304202568863
+                "_hash" : 0.7312304202568863,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
