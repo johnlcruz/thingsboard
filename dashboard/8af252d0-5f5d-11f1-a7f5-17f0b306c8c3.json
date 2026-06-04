@@ -1067,7 +1067,7 @@
               }
             },
             "showTitle" : true,
-            "backgroundColor" : "#9e0000",
+            "backgroundColor" : "#6A0303F9",
             "color" : "#ffffff",
             "padding" : "4px",
             "settings" : {
@@ -1197,7 +1197,10 @@
               "severityList" : [ ],
               "typeList" : [ ],
               "searchPropagatedAlarms" : false
-            }
+            },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
@@ -1497,7 +1500,7 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "#00404a",
+            "backgroundColor" : "#012131",
             "color" : "#ffffff",
             "padding" : "4px",
             "settings" : {
