@@ -1796,7 +1796,21 @@
                 "openRightLayout" : false,
                 "id" : "bb69a90f-e07b-2360-7c63-eb62981f7fb3"
               } ],
-              "rowClick" : [ ]
+              "rowClick" : [ ],
+              "rowDoubleClick" : [ {
+                "name" : "Detalhe",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "default",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "6fb28687-d80e-7b5a-d529-0e227226da42"
+              } ]
             },
             "widgetCss" : "",
             "pageSize" : 2048,
