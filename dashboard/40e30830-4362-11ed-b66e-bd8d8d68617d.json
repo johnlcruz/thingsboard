@@ -1755,6 +1755,19 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "lastWaste",
+                "type" : "timeseries",
+                "label" : "Ultimo descarte",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.9060405095617915,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1818,7 +1831,8 @@
               "weight" : "bold",
               "style" : "normal"
             },
-            "titleColor" : "#FFFFFF"
+            "titleColor" : "#FFFFFF",
+            "configMode" : "basic"
           },
           "row" : 0,
           "col" : 0,
@@ -2170,16 +2184,12 @@
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
-        "selectedTab" : 1,
-        "history" : {
-          "historyType" : 1,
-          "timewindowMs" : 60000,
-          "interval" : 27994000,
-          "fixedTimewindow" : {
-            "startTimeMs" : 1737382500000,
-            "endTimeMs" : 1737468900000
-          },
-          "quickInterval" : "CURRENT_DAY"
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "timewindowMs" : 86400000,
+          "quickInterval" : "CURRENT_DAY",
+          "interval" : 1800000
         },
         "aggregation" : {
           "type" : "MAX",
