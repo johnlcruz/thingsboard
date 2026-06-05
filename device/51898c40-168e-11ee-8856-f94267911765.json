@@ -34,7 +34,7 @@
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "600.002-202301-PH",
+    "credentialsId" : "600_002-202301-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -88,11 +88,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1780057378551,
+      "lastUpdateTs" : 1780670153217,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -116,8 +116,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1780057256114,
-      "longValue" : 1780057256114,
+      "lastUpdateTs" : 1780064636344,
+      "longValue" : 1780064636344,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -132,8 +132,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1780059253546,
-      "longValue" : 1780059251287,
+      "lastUpdateTs" : 1780061011546,
+      "longValue" : 1780061011240,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -156,8 +156,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "ultimoEnvioEmail",
-      "lastUpdateTs" : 1779717094103,
-      "longValue" : 1779717094103,
+      "lastUpdateTs" : 1780060776283,
+      "longValue" : 1780060776283,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
