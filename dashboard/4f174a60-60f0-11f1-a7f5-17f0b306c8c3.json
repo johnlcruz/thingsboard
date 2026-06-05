@@ -120,12 +120,12 @@
               "name" : "",
               "entityAliasId" : "ce49e211-20c8-9cfb-a289-680b0edb9874",
               "dataKeys" : [ {
-                "name" : "currentWeight_kg",
+                "name" : "fillPercent",
                 "type" : "timeseries",
-                "label" : "currentWeight_kg",
+                "label" : "fillPercent",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.2225094871043839
+                "_hash" : 0.05593639013317375
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
