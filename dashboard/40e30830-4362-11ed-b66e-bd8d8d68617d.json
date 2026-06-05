@@ -1519,7 +1519,8 @@
               "displayPagination" : true,
               "defaultPageSize" : 30,
               "defaultSortOrder" : "entityName",
-              "useRowStyleFunction" : false
+              "useRowStyleFunction" : false,
+              "entitiesTitle" : null
             },
             "title" : "",
             "dropShadow" : false,
@@ -1766,8 +1767,8 @@
                 "units" : null,
                 "decimals" : null,
                 "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) {\r\n    return '';\r\n}\r\n\r\nlet obj = value;\r\n\r\n// Quando o lastWaste vem como texto JSON\r\nif (typeof value === 'string') {\r\n    try {\r\n        obj = JSON.parse(value);\r\n    } catch (e) {\r\n        return '';\r\n    }\r\n}\r\n\r\n// Retorna só o subcampo weight\r\nif (obj && obj.weight != null) {\r\n    return Number(obj.weight).toFixed(3); // ajuste casas decimais como quiser\r\n}\r\n\r\nreturn '';"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
