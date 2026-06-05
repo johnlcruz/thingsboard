@@ -40,19 +40,23 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "4px",
             "settings" : {
+              "entitiesTitle" : "Entities",
               "enableSearch" : true,
               "enableSelectColumnDisplay" : true,
               "enableStickyHeader" : true,
               "enableStickyAction" : true,
+              "showCellActionsMenu" : true,
               "reserveSpaceForHiddenAction" : "true",
               "displayEntityName" : false,
+              "entityNameColumnTitle" : "",
               "displayEntityLabel" : false,
+              "entityLabelColumnTitle" : "",
               "displayEntityType" : false,
               "displayPagination" : true,
-              "defaultPageSize" : 10,
+              "defaultPageSize" : 35,
               "defaultSortOrder" : "name",
               "useRowStyleFunction" : false,
-              "entitiesTitle" : "Entities"
+              "rowStyleFunction" : ""
             },
             "title" : "Entities table",
             "dropShadow" : true,
@@ -111,7 +115,7 @@
               }
             } ],
             "displayTimewindow" : false,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : {
               "rowClick" : [ {
                 "name" : "detalhe",
