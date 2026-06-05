@@ -1768,7 +1768,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) {\r\n    return '';\r\n}\r\n\r\nlet obj = value;\r\n\r\n// Quando o lastWaste vem como texto JSON\r\nif (typeof value === 'string') {\r\n    try {\r\n        obj = JSON.parse(value);\r\n    } catch (e) {\r\n        return '';\r\n    }\r\n}\r\n\r\n// Retorna só o subcampo weight\r\nif (obj && obj.weight != null) {\r\n    return Number(obj.weight).toFixed(3); // ajuste casas decimais como quiser\r\n}\r\n\r\nreturn '';"
+                "postFuncBody" : "if (value == null) {\r\n  return '';\r\n}\r\n\r\nlet obj = value;\r\n\r\nif (typeof value === 'string') {\r\n  try {\r\n    obj = JSON.parse(value);\r\n  } catch (e) {\r\n    return '';\r\n  }\r\n}\r\n\r\nif (!obj || obj.weight == null || isNaN(Number(obj.weight))) {\r\n  return '';\r\n}\r\n\r\nconst casasDecimais = 2;\r\nreturn Number(obj.weight).toFixed(casasDecimais).replace('.', ',') + ' KG';"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
