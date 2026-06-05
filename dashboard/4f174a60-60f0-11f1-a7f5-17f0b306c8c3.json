@@ -72,10 +72,39 @@
               "dataKeys" : [ {
                 "name" : "name",
                 "type" : "entityField",
-                "label" : "Nome",
+                "label" : "SERIAL",
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.6569714104453286
+              }, {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "NOME",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.6244214264123363,
+                "decimals" : 0
+              }, {
+                "name" : "capacity_kg",
+                "type" : "timeseries",
+                "label" : "CAPACIDADE",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5460334869897309,
+                "decimals" : 1
+              }, {
+                "name" : "fillPercent",
+                "type" : "timeseries",
+                "label" : "OCUPAÇÃO",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.6720016256899679,
+                "units" : "%",
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -249,7 +278,7 @@
               "showTooltip" : true,
               "showTooltipLevel" : true,
               "tooltipUnits" : "%",
-              "tooltipLevelDecimals" : 0,
+              "tooltipLevelDecimals" : 1,
               "tooltipLevelFont" : {
                 "family" : "Roboto",
                 "size" : 13,
