@@ -21,12 +21,8 @@
   },
   "metaData" : {
     "connections" : [ {
-      "fromIndex" : 0,
-      "toIndex" : 9,
-      "type" : "Success"
-    }, {
       "fromIndex" : 2,
-      "toIndex" : 0,
+      "toIndex" : 9,
       "type" : "Success"
     }, {
       "fromIndex" : 3,
@@ -144,8 +140,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 753,
-        "layoutY" : 157
+        "layoutX" : 700,
+        "layoutY" : 167
       },
       "configuration" : {
         "scriptLang" : "JS",
