@@ -1538,6 +1538,13 @@
               "entityAliasId" : "3cbee774-0ebe-54e1-ce2a-69811fc56258",
               "filterId" : "4a5a23c0-53cf-f9e6-0f4e-899230c00203",
               "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#795548",
+                "settings" : { },
+                "_hash" : 0.22171870200751054
+              }, {
                 "name" : "active",
                 "type" : "attribute",
                 "label" : "Comunicação",
