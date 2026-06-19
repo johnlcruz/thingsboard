@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+      "id" : "d4611550-1a30-11f0-98c5-37e1d09aa61a"
     },
     "deviceData" : {
       "configuration" : {
@@ -29,7 +29,7 @@
       "id" : "3b43d860-1b5b-11ee-8856-f94267911765"
     },
     "label" : "V.TAKEDA.JGN-600",
-    "name" : "600.005-202306-PH",
+    "name" : "600_005-202306-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -48,11 +48,19 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1705089381150,
+      "lastUpdateTs" : 1725893957830,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Moldem - Eco",
+      "lastUpdateTs" : 1781019886957,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,7 +68,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1701381854021,
+      "lastUpdateTs" : 1778760474033,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -75,9 +83,49 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "clientEmail",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientName",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectionType",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : "CLIENT"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAsset",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"mauricio.santana@takeda.com\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765547506,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1688581617291,
-      "longValue" : 1688581617291,
+      "lastUpdateTs" : 1762889803418,
+      "longValue" : 1762889803418,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -92,8 +140,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1688580965066,
-      "longValue" : 1688580963009,
+      "lastUpdateTs" : 1762886157495,
+      "longValue" : 1762886157057,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -110,6 +158,54 @@
       "key" : "lastDoorOpenTimestamp",
       "lastUpdateTs" : 1688579284392,
       "longValue" : 1688579284000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n2NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n3NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "offlineSince",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "siteLocation",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "slaLavel",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 1780998947776,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
