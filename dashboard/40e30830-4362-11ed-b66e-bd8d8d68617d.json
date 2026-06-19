@@ -1575,7 +1575,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "switch(value) {\n    case \"RUNNING\":\n        return \"Em operação\";\n    case \"WAITING\":\n        return \"Aguardando início\";\n    default:\n        return value;\n}\n",
+                "postFuncBody" : "switch (value) {\r\n    case \"RUNNING\":\r\n        return \"Em operação\";\r\n    case \"WAITING\":\r\n        return \"Aguardando início\";\r\n    case \"STANDBY\":\r\n        return \"Em espera\";\r\n    case \"STOPPED\":\r\n        return \"Parado\";\r\n    case \"UNKNOWN\":\r\n        return \"Desconhecido\";\r\n    default:\r\n        return value;   // segurança: se surgir valor novo, mostra cru em vez de quebrar\r\n}\r\n",
                 "aggregationType" : "NONE"
               }, {
                 "name" : "motor_status",
