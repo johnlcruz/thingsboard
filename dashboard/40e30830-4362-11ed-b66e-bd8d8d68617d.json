@@ -1564,7 +1564,7 @@
                 "color" : "#4caf50",
                 "settings" : {
                   "customTitle" : "",
-                  "columnWidth" : "100%",
+                  "columnWidth" : "0px",
                   "useCellStyleFunction" : false,
                   "cellStyleFunction" : "",
                   "useCellContentFunction" : true,
