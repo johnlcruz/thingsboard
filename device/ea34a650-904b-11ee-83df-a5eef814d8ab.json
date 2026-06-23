@@ -29,7 +29,7 @@
       "id" : "ea34a650-904b-11ee-83df-a5eef814d8ab"
     },
     "label" : "L.RAIADROGA.MTZ-150",
-    "name" : "150.003-202308-PH",
+    "name" : "150_003-202308-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -48,11 +48,59 @@
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Moldem - Eco",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1722260926558,
+      "lastUpdateTs" : 1778760037349,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientEmail",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientName",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectionType",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : "CLIENT"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAsset",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"defmartins@rd.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765552665,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +108,64 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1701449626571,
-      "longValue" : 1701449626567,
+      "lastUpdateTs" : 1771458742537,
+      "longValue" : 1771458742537,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1722261133556,
-      "longValue" : 1722261133273,
+      "lastUpdateTs" : 1771458098198,
+      "longValue" : 1771458097636,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n2NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n3NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "offlineSince",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "siteLocation",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "slaLavel",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 1780998947776,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
