@@ -28,13 +28,13 @@
       "entityType" : "DEVICE",
       "id" : "ce9af470-4e05-11f0-a7e3-53d8871a4ad2"
     },
-    "label" : "600.008-202411-PH",
+    "label" : "600_008-202411-PH",
     "name" : "600_008-202411-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "600.008-202411-PH",
+    "credentialsId" : "600_008-202411-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
