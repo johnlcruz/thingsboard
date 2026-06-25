@@ -29,7 +29,7 @@
       "id" : "5921ff10-498d-11ed-b66e-bd8d8d68617d"
     },
     "label" : "L.LLINEA.THYSSN-150",
-    "name" : "150.005-202204-PH",
+    "name" : "150_005-202204-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -64,6 +64,14 @@
       "longValue" : null,
       "strValue" : null
     }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Moldem - Eco",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : null
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
@@ -88,11 +96,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1705926096321,
+      "lastUpdateTs" : 1782413811666,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -107,9 +115,49 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "clientEmail",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientName",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectionType",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : "CLIENT"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAsset",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"tksp@llinea.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765548618,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1705523968044,
-      "longValue" : 1705523968043,
+      "lastUpdateTs" : 1782413811666,
+      "longValue" : 1782413811666,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -124,8 +172,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1705938737385,
-      "longValue" : 1705938735946,
+      "lastUpdateTs" : 1782410162620,
+      "longValue" : 1782410162384,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -142,6 +190,54 @@
       "key" : "lastDoorOpenTimestamp",
       "lastUpdateTs" : 1695288202780,
       "longValue" : 1695288201000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n2NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n3NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "offlineSince",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "siteLocation",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "slaLavel",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1782410109036,
+      "longValue" : 1782410109036,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
