@@ -29,7 +29,7 @@
       "id" : "4e5abfe0-498d-11ed-b66e-bd8d8d68617d"
     },
     "label" : "L.WHIRLPOOL-300",
-    "name" : "300.001-202105-PH",
+    "name" : "300_001-202105-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -72,6 +72,14 @@
       "longValue" : null,
       "strValue" : null
     }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Moldem - Eco",
+      "lastUpdateTs" : 1782395877608,
+      "longValue" : null,
+      "strValue" : null
+    }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
@@ -108,7 +116,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1725289386893,
+      "lastUpdateTs" : 1782824657811,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -123,25 +131,65 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "clientEmail",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientName",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectionType",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : "CLIENT"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAsset",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"renata.pioalves@projefood.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765548184,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1725289386892,
-      "longValue" : 1725289386892,
+      "lastUpdateTs" : 1782824657811,
+      "longValue" : 1782824657811,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityTimeout",
-      "lastUpdateTs" : 1724421876237,
-      "longValue" : 120,
+      "lastUpdateTs" : 1725549666608,
+      "longValue" : 3000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1725289334383,
-      "longValue" : 1725289332119,
+      "lastUpdateTs" : 1782824618620,
+      "longValue" : 1782824616226,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -174,6 +222,54 @@
       "key" : "lastDoorOpenTimestamp",
       "lastUpdateTs" : 1695298424113,
       "longValue" : 1695298423000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n2NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n3NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "offlineSince",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "siteLocation",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "slaLavel",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1782824560009,
+      "longValue" : 1782824560009,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
