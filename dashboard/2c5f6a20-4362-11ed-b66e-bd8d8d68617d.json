@@ -492,8 +492,12 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "switch(value) {\n    case \"STOPEED\":\n    case \"STOPPED\":\n        return 0;\n    case \"FORWARD\":\n        return 1;\n    case \"BACKWARD\":\n        return -1;\n}\n\nreturn 0;"
-              } ]
+                "postFuncBody" : "switch(value) {\n    case \"STOPEED\":\n    case \"STOPPED\":\n        return 0;\n    case \"FORWARD\":\n    case \"BACKWARD\":\n    case \"RUNNING\":\n        return 1;\n}\n\nreturn 0;",
+                "aggregationType" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
             } ],
             "timewindow" : {
               "realtime" : {
@@ -558,7 +562,8 @@
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "titleTooltip" : ""
+            "titleTooltip" : "",
+            "displayTimewindow" : true
           },
           "row" : 0,
           "col" : 0,
@@ -1930,12 +1935,12 @@
         "hideTimezone" : false,
         "selectedTab" : 1,
         "history" : {
-          "historyType" : 0,
+          "historyType" : 1,
           "timewindowMs" : 600000,
           "interval" : 1000,
           "fixedTimewindow" : {
-            "startTimeMs" : 1726242418664,
-            "endTimeMs" : 1726328818664
+            "startTimeMs" : 1734018300000,
+            "endTimeMs" : 1734882360000
           },
           "quickInterval" : "CURRENT_DAY"
         },
