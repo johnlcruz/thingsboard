@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "309682a0-498d-11ed-b66e-bd8d8d68617d"
     },
-    "label" : "L.GRSA.ML.EXT-150",
-    "name" : "150.004-202204-PH",
+    "label" : "L.ATHENA.HST.VIT-150",
+    "name" : "150_004-202204-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -55,6 +54,22 @@
       "key" : "Fluxo de águaRepeatCount",
       "lastUpdateTs" : 1686172136861,
       "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1738005304575,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Moldem - Eco",
+      "lastUpdateTs" : 1782397118076,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -93,7 +108,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1692492177291,
+      "lastUpdateTs" : 1782329032274,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -108,17 +123,65 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "clientEmail",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientName",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectionType",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : "CLIENT"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAsset",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"liviavaladao@vah.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765547407,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1692492177291,
-      "longValue" : 1692492177291,
+      "lastUpdateTs" : 1770666075969,
+      "longValue" : 1770666075968,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1692491546074,
-      "longValue" : 1692491545965,
+      "lastUpdateTs" : 1770662423199,
+      "longValue" : 1770662420418,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -135,6 +198,54 @@
       "key" : "lastDoorOpenTimestamp",
       "lastUpdateTs" : 1692491559285,
       "longValue" : 1692491108000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n2NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n3NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "offlineSince",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "siteLocation",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "slaLavel",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 1780998947776,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
