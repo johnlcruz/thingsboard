@@ -492,7 +492,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "switch(value) {\n    case \"STOPEED\":\n    case \"STOPPED\":\n        return 0;\n    case \"FORWARD\":\n    case \"BACKWARD\":\n    case \"RUNNING\":\n        return -1;\n}\n\nreturn 0;",
+                "postFuncBody" : "switch(value) {\n    case \"STOPEED\":\n    case \"STOPPED\":\n        return 0;\n    case \"FORWARD\":\n        return 1;\n    case \"BACKWARD\":\n        return -1;\n    case \"RUNNING\":\n        return 1;\n}\n\nreturn 0;",
                 "aggregationType" : null
               } ],
               "alarmFilterConfig" : {
