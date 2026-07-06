@@ -462,7 +462,7 @@
                 "usePostProcessing" : true,
                 "postFuncBody" : "return value == \"ENABLED\" ? 1 : 0;"
               }, {
-                "name" : "motor_status",
+                "name" : "motor",
                 "type" : "timeseries",
                 "label" : "Motor",
                 "color" : "#ff6d00",
