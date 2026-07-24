@@ -8,7 +8,7 @@
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "13814000-1dd2-11b2-8080-808080808080"
+      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
     },
     "deviceData" : {
       "configuration" : {
@@ -28,18 +28,58 @@
       "entityType" : "DEVICE",
       "id" : "f7927ea0-8510-11f1-986f-8924315be0df"
     },
-    "label" : "050_001-202605-PH",
+    "label" : "L.GRSA.HENKEL.JUN-50",
     "name" : "050_001-202605-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "aurvzMhPlumlBwTJkYSC",
+    "credentialsId" : "050_001-202605-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1784644459884,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1784895569034,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1784700649405,
+      "longValue" : 1784700649405,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1784895797034,
+      "longValue" : 1784895796478,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1784895727396,
+      "longValue" : 1784895727395,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
