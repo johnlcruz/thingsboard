@@ -1,0 +1,165 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "2893cc90-588a-11ee-9f7b-8198b0245bf9"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "165d6970-4362-11ed-b66e-bd8d8d68617d"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "14aa2980-246c-11f1-81e8-ed1fb93a3140"
+    },
+    "label" : "L.CORPUSLD.MG-600",
+    "name" : "600_001-202505-PH",
+    "softwareId" : null,
+    "type" : "ECOPRO"
+  },
+  "credentials" : {
+    "credentialsId" : "600_001-202505-PH",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1774018245364,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Moldem - Eco",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1778760515040,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientEmail",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientName",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectionType",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : "CLIENT"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAsset",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1774444560983,
+      "longValue" : 1774444560983,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1774443908198,
+      "longValue" : 1774443905844,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n2NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n3NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "offlineSince",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "siteLocation",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "slaLavel",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 1780998947776,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}
