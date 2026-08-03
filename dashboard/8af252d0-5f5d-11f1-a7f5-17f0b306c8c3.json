@@ -1799,19 +1799,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              }, {
-                "name" : "loadCellkgAll_status",
-                "type" : "timeseries",
-                "label" : "C. Carga 1,2,3,4",
-                "color" : "#795548",
-                "settings" : { },
-                "_hash" : 0.7312304202568863,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
