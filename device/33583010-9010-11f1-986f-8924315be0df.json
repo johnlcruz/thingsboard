@@ -28,18 +28,34 @@
       "entityType" : "DEVICE",
       "id" : "33583010-9010-11f1-986f-8924315be0df"
     },
-    "label" : "050_001-202624-PH",
-    "name" : "050_001-202624-PH",
+    "label" : "050_001-202604-PH",
+    "name" : "050_001-202604-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "JLew3xn7C6Sjz6hs6KA8",
+    "credentialsId" : "050_001-202624-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "attributes" : {
-    "SERVER_SCOPE" : [ ],
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1785854091846,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1785854091846,
+      "longValue" : 1785854091846,
+      "strValue" : null
+    } ],
     "SHARED_SCOPE" : [ ]
   }
 }
