@@ -28,7 +28,7 @@
       "entityType" : "DEVICE",
       "id" : "8b712d60-498d-11ed-b66e-bd8d8d68617d"
     },
-    "label" : "L.GRSATOKSTK-150",
+    "label" : "150.002-202105-PH",
     "name" : "150.002-202105-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
@@ -38,7 +38,6 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : null,
@@ -47,6 +46,22 @@
       "key" : "Connectivity AlarmRepeatCount",
       "lastUpdateTs" : 1695285066054,
       "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Inoperante",
+      "lastUpdateTs" : 1700234137000,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Moldem - Eco",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -65,11 +80,11 @@
       "longValue" : 0,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1696226967406,
+      "lastUpdateTs" : 1778759463327,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -84,17 +99,65 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "clientEmail",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientName",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectionType",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : "CLIENT"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAsset",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"unopc105@grsa.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765549947,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1696147572510,
-      "longValue" : 1696147572510,
+      "lastUpdateTs" : 1711718338798,
+      "longValue" : 1711718338798,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1702592140000,
+      "longValue" : 3600000,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1696428216404,
-      "longValue" : 1696428215825,
+      "lastUpdateTs" : 1711666525863,
+      "longValue" : 1711666523040,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -111,6 +174,54 @@
       "key" : "lastDoorOpenTimestamp",
       "lastUpdateTs" : 1695294714162,
       "longValue" : 1695294706000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n2NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n3NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "offlineSince",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "siteLocation",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "slaLavel",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 1780998947776,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
