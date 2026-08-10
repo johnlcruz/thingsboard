@@ -28,13 +28,13 @@
       "entityType" : "DEVICE",
       "id" : "a088c470-2440-11f0-98c5-37e1d09aa61a"
     },
-    "label" : "L.SDX.APTIV.PARA-150 (Piloto 4Wind)",
-    "name" : "150.008-202405-PH",
+    "label" : "L.SDX.APTIV.PARA-150",
+    "name" : "150_008-202405-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "150.008-202405-PH",
+    "credentialsId" : "150_008-202405-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -51,8 +51,48 @@
       "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "Moldem - Eco",
+      "lastUpdateTs" : 1782395505012,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1764592296495,
+      "lastUpdateTs" : 1786252276665,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientEmail",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientName",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectionType",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : "CLIENT"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAsset",
+      "lastUpdateTs" : 1781026096623,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,16 +100,64 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1763388225968,
-      "longValue" : 1763388225967,
+      "lastUpdateTs" : 1786252276665,
+      "longValue" : 1786252276664,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1764595728495,
-      "longValue" : 1764595727088,
+      "lastUpdateTs" : 1786251623039,
+      "longValue" : 1786251622660,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n2NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n3NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "offlineSince",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "siteLocation",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "slaLavel",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1786249654630,
+      "longValue" : 1786249654630,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
