@@ -4,63 +4,14 @@
     "assignedCustomers" : null,
     "configuration" : {
       "description" : "",
-      "widgets" : {
-        "b9a4d47c-bb49-a23a-ae18-9b77abe5eb97" : {
-          "typeFullFqn" : "system.control_widgets.update_attributes",
-          "type" : "rpc",
-          "sizeX" : 4,
-          "sizeY" : 2,
-          "config" : {
-            "showTitle" : false,
-            "backgroundColor" : "#e6e7e8",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "styleButton" : {
-                "isRaised" : true,
-                "isPrimary" : false
-              },
-              "entityParameters" : "{}",
-              "entityAttributeType" : "SERVER_SCOPE",
-              "buttonText" : "Update device attribute"
-            },
-            "title" : "Update device attribute",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "targetDeviceAliases" : [ ],
-            "datasources" : [ ],
-            "targetDevice" : {
-              "type" : "device",
-              "deviceId" : "2dd6fde0-dadf-11ed-8b16-118240e818cd"
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "b9a4d47c-bb49-a23a-ae18-9b77abe5eb97"
-        }
-      },
+      "widgets" : { },
       "states" : {
         "default" : {
           "name" : "Testes Vitor",
           "root" : true,
           "layouts" : {
             "main" : {
-              "widgets" : {
-                "b9a4d47c-bb49-a23a-ae18-9b77abe5eb97" : {
-                  "sizeX" : 4,
-                  "sizeY" : 2,
-                  "row" : 0,
-                  "col" : 8
-                }
-              },
+              "widgets" : { },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
