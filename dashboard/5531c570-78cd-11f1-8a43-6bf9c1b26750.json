@@ -3,7 +3,116 @@
   "entity" : {
     "assignedCustomers" : null,
     "configuration" : {
-      "description" : ""
+      "description" : "",
+      "widgets" : {
+        "b9a4d47c-bb49-a23a-ae18-9b77abe5eb97" : {
+          "typeFullFqn" : "system.control_widgets.update_attributes",
+          "type" : "rpc",
+          "sizeX" : 4,
+          "sizeY" : 2,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "#e6e7e8",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "styleButton" : {
+                "isRaised" : true,
+                "isPrimary" : false
+              },
+              "entityParameters" : "{}",
+              "entityAttributeType" : "SERVER_SCOPE",
+              "buttonText" : "Update device attribute"
+            },
+            "title" : "Update device attribute",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "targetDeviceAliases" : [ ],
+            "datasources" : [ ],
+            "targetDevice" : {
+              "type" : "device",
+              "deviceId" : "2dd6fde0-dadf-11ed-8b16-118240e818cd"
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "b9a4d47c-bb49-a23a-ae18-9b77abe5eb97"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Testes Vitor",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "b9a4d47c-bb49-a23a-ae18-9b77abe5eb97" : {
+                  "sizeX" : 4,
+                  "sizeY" : 2,
+                  "row" : 0,
+                  "col" : 8
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : { },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1786329208519,
+            "endTimeMs" : 1786415608519
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
     },
     "externalId" : null,
     "id" : {
