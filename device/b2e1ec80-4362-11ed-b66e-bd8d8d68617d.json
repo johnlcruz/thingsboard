@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "b2e1ec80-4362-11ed-b66e-bd8d8d68617d"
     },
-    "label" : "L.GAV-PIREN.GO-50",
-    "name" : "050_001-202105-PH",
+    "label" : "050_001-202105-PH",
+    "name" : "L.GAV-PIREN.GO-50",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -92,7 +92,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1783645070259,
+      "lastUpdateTs" : 1786428029047,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -148,8 +148,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1780503601171,
-      "longValue" : 1780503601171,
+      "lastUpdateTs" : 1786343364370,
+      "longValue" : 1786343364369,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -164,8 +164,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1783955957243,
-      "longValue" : 1783955954771,
+      "lastUpdateTs" : 1786455884056,
+      "longValue" : 1786455882923,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -228,8 +228,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "ultimoEnvioEmail",
-      "lastUpdateTs" : 1783954664067,
-      "longValue" : 1783954664067,
+      "lastUpdateTs" : 1786327177400,
+      "longValue" : 1786327177399,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
