@@ -28,8 +28,8 @@
       "entityType" : "DEVICE",
       "id" : "816ffd50-498d-11ed-b66e-bd8d8d68617d"
     },
-    "label" : "050.002-202105-PH",
-    "name" : "050.002-202105-PH",
+    "label" : "L.WPPG-050",
+    "name" : "050_002-202105-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
@@ -52,7 +52,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Inoperante",
-      "lastUpdateTs" : 1727179017299,
+      "lastUpdateTs" : 1727984191363,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Moldem - Eco",
+      "lastUpdateTs" : 1782395828512,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -80,11 +88,11 @@
       "longValue" : 3889,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1727376201698,
+      "lastUpdateTs" : 1786509596148,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -99,9 +107,49 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "clientEmail",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "clientName",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "connectionType",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : "CLIENT"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAsset",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"emailAlerta\":\"unop1661@grsa-gps.com.br\"}",
+      "key" : "emailAlerta",
+      "lastUpdateTs" : 1744765549767,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1727376201698,
-      "longValue" : 1727376201698,
+      "lastUpdateTs" : 1786509554185,
+      "longValue" : 1786509554174,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -116,8 +164,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1727372573064,
-      "longValue" : 1727372570875,
+      "lastUpdateTs" : 1786539362136,
+      "longValue" : 1786539361894,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -134,6 +182,54 @@
       "key" : "lastDoorOpenTimestamp",
       "lastUpdateTs" : 1685468619954,
       "longValue" : 1685468619000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n2NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "n3NotifiedTs",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "offlineSince",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : null,
+      "strValue" : "epoch ms "
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "siteLocation",
+      "lastUpdateTs" : 1781026096623,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "slaLavel",
+      "lastUpdateTs" : 1781019886957,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ultimoEnvioEmail",
+      "lastUpdateTs" : 1786538996537,
+      "longValue" : 1786538996537,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
