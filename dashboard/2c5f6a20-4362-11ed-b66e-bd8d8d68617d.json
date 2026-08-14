@@ -684,7 +684,7 @@
             "widgetStyle" : { },
             "useDashboardTimewindow" : false,
             "actions" : { },
-            "displayTimewindow" : true,
+            "displayTimewindow" : false,
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
