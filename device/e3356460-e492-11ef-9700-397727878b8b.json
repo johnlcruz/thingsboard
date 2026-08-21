@@ -28,13 +28,13 @@
       "entityType" : "DEVICE",
       "id" : "e3356460-e492-11ef-9700-397727878b8b"
     },
-    "label" : "L.LLINEA.IBIRITE-050",
+    "label" : "050_005-202412-PH",
     "name" : "050_005-202412-PH",
     "softwareId" : null,
     "type" : "ECOPRO"
   },
   "credentials" : {
-    "credentialsId" : "050.005-202412-PH",
+    "credentialsId" : "050_005-202412-PH",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
